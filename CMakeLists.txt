@@ -75,6 +75,6 @@ set(SOURCE_FILES
         libft/ft_toupper.c
         libft/get_next_line.c
         libft/libft.h
-        main.c RTv1.h)
+        main.c RTv1.h keys.c)
 add_executable(RTv1 ${SOURCE_FILES})
 target_link_libraries(RTv1 ${LIBMLX} ${OPENGL} ${APPKIT})
