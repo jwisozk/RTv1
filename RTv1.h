@@ -6,7 +6,7 @@
 /*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/09 13:37:42 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/08/09 15:54:19 by jwisozk          ###   ########.fr       */
+/*   Updated: 2019/08/16 20:20:13 by jwisozk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,21 +18,55 @@
 # include "minilibx/mlx.h"
 
 # define DW 1600
-# define DH 855
-# define HEADER 45
+# define DH 800
+# define HEADER 46
+# define VW 1
+# define VH 1
+# define D 1
+# define INF 1000
+# define RE_LEN 10
 
-typedef struct 	s_point
-{
-	float x;
-	float y;
-	float z;
-}				t_point;
+# define PROJECTION_PLANE_Z 1
 
-typedef struct 	s_line
+
+typedef struct 		s_point
 {
-	t_point start;
-	t_point	end;
-}				t_line;
+	float 			x;
+	float 			y;
+	float 			z;
+}					t_point;
+
+//typedef struct		s_color
+//{
+//	unsigned char	r;
+//	unsigned char 	g;
+//	unsigned char 	b;
+//}					t_color;
+
+
+typedef  struct 	s_sphere
+{
+	char 			*str;
+	t_point			*center;
+	float			radius;
+	int				color;
+	struct s_sphere	*next;
+}					t_sphere;
+
+
+//
+//typedef struct 	s_point
+//{
+//	float x;
+//	float y;
+//	float z;
+//}				t_point;
+//
+//typedef struct 	s_line
+//{
+//	t_point start;
+//	t_point	end;
+//}				t_line;
 
 typedef struct	s_img
 {
