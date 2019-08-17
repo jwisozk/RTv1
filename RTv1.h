@@ -6,7 +6,7 @@
 /*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/09 13:37:42 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/08/16 20:20:13 by jwisozk          ###   ########.fr       */
+/*   Updated: 2019/08/17 14:33:51 by jwisozk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,22 +18,23 @@
 # include "minilibx/mlx.h"
 
 # define DW 1600
-# define DH 800
+# define DH 854
 # define HEADER 46
 # define VW 1
 # define VH 1
 # define D 1
 # define INF 1000
+# define BACKGROUND 93, 176, 200
 # define RE_LEN 10
 
-# define PROJECTION_PLANE_Z 1
+# define Z 1
 
 
 typedef struct 		s_point
 {
-	float 			x;
-	float 			y;
-	float 			z;
+	double 			x;
+	double 			y;
+	double 			z;
 }					t_point;
 
 //typedef struct		s_color
@@ -48,7 +49,7 @@ typedef  struct 	s_sphere
 {
 	char 			*str;
 	t_point			*center;
-	float			radius;
+	double			radius;
 	int				color;
 	struct s_sphere	*next;
 }					t_sphere;
@@ -57,9 +58,9 @@ typedef  struct 	s_sphere
 //
 //typedef struct 	s_point
 //{
-//	float x;
-//	float y;
-//	float z;
+//	double x;
+//	double y;
+//	double z;
 //}				t_point;
 //
 //typedef struct 	s_line
@@ -82,6 +83,16 @@ typedef struct	s_asset
 	void		*mlx_ptr;
 	void		*win_ptr;
 	t_img		img;
+	t_sphere	*s;
+	t_point		*camera;
+	t_point		*direction;
+	int 		color;
+	double 		view_w;
+	double 		view_h;
+	double 		dwi;
+	double 		dhi;
+	double 		t_min;
+	double		t_max;
 }				t_asset;
 
 int		ft_key_press(int key, t_asset *p);
