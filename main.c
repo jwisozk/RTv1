@@ -6,7 +6,7 @@
 /*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/09 13:37:06 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/08/17 15:33:46 by jwisozk          ###   ########.fr       */
+/*   Updated: 2019/08/17 16:06:56 by jwisozk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -111,8 +111,8 @@ t_point *intersect_ray_sphere(t_asset *p, t_sphere *sphere)
 	discriminant = k2 * k2 - 4 * k1 * k3;
 	if (discriminant > 0)
 	{
-		t1 = (-k2 + sqrt(discriminant)) / (2 * k1);
-		t2 = (-k2 - sqrt(discriminant)) / (2 * k1);
+		t1 = (-k2 + sqrtf(discriminant)) / (2 * k1);
+		t2 = (-k2 - sqrtf(discriminant)) / (2 * k1);
 		intersect = ft_create_point(t1, t2, 0);
 	}
 	else
@@ -168,7 +168,7 @@ void	ft_init_shapes(t_asset *p)
 	p->camera = camera;
 	s1 = ft_create_sphere(ft_rgb(255, 0, 0), ft_create_point(-0.5, 0, 6), 1, "red");
 	s2 = ft_create_sphere(ft_rgb(0, 255, 0), ft_create_point(-2.7, 0, 8), 1, "green");
-	s3 = ft_create_sphere(ft_rgb(0, 0, 255), ft_create_point(0.5, 0, 7), 1, "blue");
+	s3 = ft_create_sphere(ft_rgb(0, 0, 255), ft_create_point(0.5, 0, 7), 2, "blue");
 	s1->next = s2;
 	s2->next = s3;
 	p->s = s1;

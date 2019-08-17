@@ -6,7 +6,7 @@
 /*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/09 13:37:42 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/08/17 14:33:51 by jwisozk          ###   ########.fr       */
+/*   Updated: 2019/08/17 16:10:07 by jwisozk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,8 @@
 # include "minilibx/mlx.h"
 
 # define DW 1600
-# define DH 854
-# define HEADER 46
+# define DH 855
+# define HEADER 45
 # define VW 1
 # define VH 1
 # define D 1
