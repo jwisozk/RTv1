@@ -6,7 +6,7 @@
 /*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/09 13:37:42 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/08/17 16:10:07 by jwisozk          ###   ########.fr       */
+/*   Updated: 2019/08/21 21:14:06 by jwisozk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,8 @@
 # include "libft/libft.h"
 # include "minilibx/mlx.h"
 
-# define DW 1600
-# define DH 855
+# define DW 640
+# define DH 480
 # define HEADER 45
 # define VW 1
 # define VH 1
@@ -97,6 +97,7 @@ typedef struct	s_asset
 
 int		ft_key_press(int key, t_asset *p);
 int		ft_close_window(t_asset *p);
+void 	primary_ray(void);
 # include <stdio.h>
 
 #endif

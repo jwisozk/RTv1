@@ -21,7 +21,8 @@ LIBFT = libft/libft.a
 MAKE_LIBFT = make -C libft
 MAKE_LIBMLX = make -C minilibx
 SOURCE = main.c \
-        keys.c
+        keys.c \
+        primary_ray.c
 OBJ = $(SOURCE:.c=.o)
 
 all: $(NAME)

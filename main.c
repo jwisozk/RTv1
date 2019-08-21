@@ -228,6 +228,7 @@ void	ft_open_window()
 }
 int main()
 {
-	ft_open_window();
+//	ft_open_window();
+	primary_ray();
 	return (0);
 }
