@@ -6,7 +6,7 @@
 /*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/09 13:37:06 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/08/17 16:06:56 by jwisozk          ###   ########.fr       */
+/*   Updated: 2019/08/24 22:13:27 by jwisozk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,6 +52,19 @@ double ft_dot(t_point *v1, t_point *v2)
 	return (v1->x * v2->x + v1->y * v2->y + v1->z * v2->z);
 }
 
+double ft_length_vector(t_point *v1, t_point *v2)
+{
+	return sqrt(ft_dot(v1, v2));
+}
+
+t_point *ft_multiply(double k, t_point *v)
+{
+	v->x *= k;
+	v->y *= k;
+	v->z *= k;
+	return (v);
+}
+
 t_point	*ft_create_point(double x, double y, double z)
 {
 	t_point *p;
@@ -70,7 +83,19 @@ t_point *ft_subtract(t_point *v1, t_point *v2)
 	return (p);
 }
 
-t_sphere *ft_create_sphere(int color, t_point *center, double radius, char *str)
+t_point *ft_add(t_point *v1, t_point *v2)
+{
+	t_point *p;
+	p = ft_create_point(v1->x + v2->x, v1->y + v2->y, v1->z + v2->z);
+	return (p);
+}
+
+int ft_clamp(t_color *v)
+{
+	return(ft_rgb(min(255, max(0, v->r)), min(255, max(0, v->g)), min(255, max(0, v->b))));
+}
+
+t_sphere *ft_create_sphere(t_color *color, t_point *center, double radius, char *str)
 {
 	t_sphere *s;
 
@@ -82,7 +107,7 @@ t_sphere *ft_create_sphere(int color, t_point *center, double radius, char *str)
 	s->next = NULL;
 	return (s);
 }
-
+//
 t_point *ft_canvas_to_view(int x, int y, t_asset *p)
 {
 	t_point *d;
@@ -120,7 +145,69 @@ t_point *intersect_ray_sphere(t_asset *p, t_sphere *sphere)
 	return (intersect);
 }
 
-double ft_trace_ray(t_asset *p)
+double ft_compute_lighting(t_point *point, t_point* normal, t_asset *p)
+{
+	double intensity;
+	double length_n;
+	t_light *l;
+	t_point	*vec_l;
+	double n_dot_l;
+
+	intensity = 0.0;
+	length_n = ft_length_vector(normal, normal);
+	l = p->l;
+	while (l != NULL)
+	{
+		if (ft_strequ(l->type, "ambient") == 1)
+			intensity += l->intensity;
+		else
+		{
+			if (ft_strequ(l->type, "point") == 1)
+				vec_l = ft_subtract(l->position, point);
+			else
+				vec_l = l->position;
+			n_dot_l = ft_dot(normal, vec_l);
+			if (n_dot_l > 0)
+				intensity += l->intensity * n_dot_l / (length_n * ft_length_vector(vec_l, vec_l));
+
+		}
+		l = l->next;
+	}
+	return (intensity);
+}
+t_color *ft_rgb_rev(int r, int g, int b)
+{
+	t_color *c;
+
+	c = (t_color*)malloc(sizeof(t_color));
+	c->r = r;
+	c->g = g;
+	c->b = b;
+	return (c);
+}
+
+t_point	*ft_convert_ctop(t_color *color)
+{
+	t_point *p;
+
+	p = (t_point*)malloc(sizeof(t_point));
+	p->x = (double)color->r;
+	p->y = (double)color->g;
+	p->z = (double)color->b;
+	return (p);
+}
+
+t_color	*ft_convert_ptoc(t_point *point)
+{
+	t_color *c;
+
+	c = (t_color*)malloc(sizeof(t_color));
+	c->r = (int)point->x;
+	c->g = (int)point->y;
+	c->b = (int)point->z;
+	return (c);
+}
+t_color *ft_trace_ray(t_asset *p)
 {
 	t_sphere 	*closest_sphere;
 	t_sphere 	*sphere;
@@ -147,9 +234,15 @@ double ft_trace_ray(t_asset *p)
 		free(t);
 		sphere = sphere->next;
 	}
-	if (closest_sphere != NULL)
-		return (closest_sphere->color);
-	return ft_rgb(BACKGROUND);
+	if (closest_sphere == NULL)
+		return ft_rgb_rev(93, 176, 200);
+
+	t_point *point = ft_add(p->camera, ft_multiply(closest_t, p->direction));
+	t_point *normal = ft_subtract(point, closest_sphere->center);
+	normal = ft_multiply(1.0 / ft_length_vector(normal, normal), normal);
+
+	t_point *m = ft_multiply(ft_compute_lighting(point, normal, p), ft_convert_ctop(closest_sphere->color));
+	return (ft_convert_ptoc(m));
 }
 
 void	ft_invert_display_sizes(t_asset *p)
@@ -157,6 +250,19 @@ void	ft_invert_display_sizes(t_asset *p)
 	p->dwi = (double)1 / DW;
 	p->dhi = (double)1 / DH;
 }
+
+t_light *ft_new_light(char *type, double intensity, t_point *position)
+{
+	t_light *l;
+
+	l = (t_light*)malloc(sizeof(t_light));
+	l->type = type;
+	l->intensity = intensity;
+	l->position = position;
+	l->next = NULL;
+	return (l);
+}
+
 void	ft_init_shapes(t_asset *p)
 {
 	t_point *camera;
@@ -164,11 +270,16 @@ void	ft_init_shapes(t_asset *p)
 	t_sphere *s2;
 	t_sphere *s3;
 
+	t_light	*l1;
+	t_light	*l2;
+	t_light	*l3;
+	t_light	*l4;
+
 	camera = ft_create_point(0, 0, 0);
 	p->camera = camera;
-	s1 = ft_create_sphere(ft_rgb(255, 0, 0), ft_create_point(-0.5, 0, 6), 1, "red");
-	s2 = ft_create_sphere(ft_rgb(0, 255, 0), ft_create_point(-2.7, 0, 8), 1, "green");
-	s3 = ft_create_sphere(ft_rgb(0, 0, 255), ft_create_point(0.5, 0, 7), 2, "blue");
+	s1 = ft_create_sphere(ft_rgb_rev(69, 28, 26), ft_create_point(0, 0, 6), 1, "red");
+	s2 = ft_create_sphere(ft_rgb_rev(102, 102, 79), ft_create_point(-2, 0, 7), 1, "green");
+	s3 = ft_create_sphere(ft_rgb_rev(102, 102, 79), ft_create_point(2, 0, 8), 1, "blue");
 	s1->next = s2;
 	s2->next = s3;
 	p->s = s1;
@@ -177,6 +288,16 @@ void	ft_init_shapes(t_asset *p)
 	p->view_h = p->view_w * p->dwi * DH;
 	p->t_min = 1;
 	p->t_max = INF;
+
+
+	l1 = ft_new_light("ambient", 0.2, ft_create_point(0, 0, 0));
+	l2 = ft_new_light("point", 1.5, ft_create_point(-20, 20, -20));
+	l3 = ft_new_light("directional", 0.5, ft_create_point(-20, 20, -20));
+	l4 = ft_new_light("point", 1.5, ft_create_point(20, -20, -20));
+	l1->next = l2;
+	l2->next = l3;
+	l3->next = l4;
+	p->l = l1;
 }
 
 void	ft_draw(t_asset *p)
@@ -196,7 +317,10 @@ void	ft_draw(t_asset *p)
 		{
 			p->direction = ft_canvas_to_view(j - offset_x, i - offset_y, p);
 			p->color = ft_trace_ray(p);
-			p->img.img_arr[i * DW + j] = p->color;
+//			if (p->color->r != 255)
+//				printf("r = %i, g = %i, b = %i", p->color->r, p->color->g, p->color->b);
+//			printf("%i\n",ft_clamp(p->color));
+			p->img.img_arr[i * DW + j] = ft_clamp(p->color);
 			j++;
 		}
 		i++;
@@ -228,7 +352,7 @@ void	ft_open_window()
 }
 int main()
 {
-//	ft_open_window();
-	primary_ray();
+	ft_open_window();
+//	primary_ray();
 	return (0);
 }
