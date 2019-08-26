@@ -6,7 +6,7 @@
 /*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/09 13:37:42 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/08/24 17:42:57 by jwisozk          ###   ########.fr       */
+/*   Updated: 2019/08/26 20:47:14 by jwisozk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@
 # define BACKGROUND 93, 176, 200
 # define RE_LEN 10
 
-# define Z 1
+# define ZA 1
 # define max(x, y) ( (x) > (y) ? (x) : (y) )
 # define min(x, y) ( (x) < (y) ? (x) : (y) )
 
@@ -104,13 +104,20 @@ typedef struct	s_asset
 
 int		ft_key_press(int key, t_asset *p);
 int		ft_close_window(t_asset *p);
-//void 	primary_ray(t_asset *p);
-//void	ft_init_shapes(t_asset *p);
-//int		ft_rgb(unsigned char r, unsigned char g, unsigned char b);
-//double ft_dot(t_vector *v1, t_vector *v2);
-//t_vector *ft_subtract(t_vector *v1, t_vector *v2);
-//t_point *ft_canvas_to_view(int x, int y, t_asset *p);
-void 	ft_primary_ray(void);
+void	ft_draw(t_asset *p);
+t_point	*ft_create_point(double x, double y, double z);
+
+double ft_dot(t_point *v1, t_point *v2);
+double ft_length_vector(t_point *v1, t_point *v2);
+t_point *ft_multiply(double k, t_point *v);
+t_point *ft_subtract(t_point *v1, t_point *v2);
+t_point *ft_add(t_point *v1, t_point *v2);
+double ft_compute_lighting(t_point *point, t_point* normal, t_asset *p);
+t_point	*ft_convert_ctop(t_color *color);
+t_color	*ft_convert_ptoc(t_point *point);
+int	ft_rgb(unsigned char r, unsigned char g, unsigned char b);
+t_color *ft_rgb_rev(int r, int g, int b);
+int ft_clamp(t_color *v);
 # include <stdio.h>
 
 #endif

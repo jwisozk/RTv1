@@ -22,7 +22,12 @@ MAKE_LIBFT = make -C libft
 MAKE_LIBMLX = make -C minilibx
 SOURCE = main.c \
         keys.c \
+        draw.c \
+        color.c \
+        operations.c \
+        lighting.c \
         primary_ray.c
+
 OBJ = $(SOURCE:.c=.o)
 
 all: $(NAME)
