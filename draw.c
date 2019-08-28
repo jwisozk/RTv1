@@ -6,7 +6,7 @@
 /*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/26 20:23:15 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/08/28 14:30:20 by jwisozk          ###   ########.fr       */
+/*   Updated: 2019/08/28 14:37:42 by jwisozk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,7 +81,7 @@ int ft_trace_ray(t_asset *p)
 	p->point = ft_add(p->camera, ft_multiply(closest_t, p->direction));
 	p->radius = ft_subtract(p->point, closest_s->center);
 	p->normal = ft_multiply(1.0 / ft_lenv(p->radius), p->radius);
-	return (ft_multiply_color(ft_lighting(p), closest_s->color));
+	return (ft_multiply_color(ft_lighting(p, ft_multiply(-1, p->direction)), closest_s->color));
 }
 
 void	ft_draw(t_asset *p)

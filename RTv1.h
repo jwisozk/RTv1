@@ -6,7 +6,7 @@
 /*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/09 13:37:42 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/08/28 14:28:33 by jwisozk          ###   ########.fr       */
+/*   Updated: 2019/08/28 16:51:40 by jwisozk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,8 +28,8 @@
 # define RE_LEN 10
 
 # define ZA 1
-# define max(x, y) ( (x) > (y) ? (x) : (y) )
-# define min(x, y) ( (x) < (y) ? (x) : (y) )
+# define MAX(x, y) ((x) > (y) ? (x) : (y))
+# define MIN(x, y) ((x) < (y) ? (x) : (y))
 
 typedef struct 		s_point
 {
@@ -50,19 +50,13 @@ typedef struct 		s_object
 	void			*data;
 }					t_object;
 
-typedef struct 		s_color
-{
-	int				r;
-	int				g;
-	int				b;
-}					t_color;
-
 typedef  struct 	s_sphere
 {
 	char 			*str;
 	t_point			*center;
 	double			radius;
 	int				color;
+	int				specular;
 	struct s_sphere	*next;
 }					t_sphere;
 
@@ -115,10 +109,10 @@ double ft_length_vector(t_point *v1, t_point *v2);
 t_point *ft_multiply(double k, t_point *v);
 t_point *ft_subtract(t_point *v1, t_point *v2);
 t_point *ft_add(t_point *v1, t_point *v2);
-double ft_lighting(t_asset *p);
 int	ft_rgb(int r, int g, int b);
 double ft_lenv(t_point *v);
 int ft_multiply_color(double k, int color);
+double ft_lighting(t_asset *p, t_point *dir);
 # include <stdio.h>
 
 #endif
