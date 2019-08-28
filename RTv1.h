@@ -6,7 +6,7 @@
 /*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/09 13:37:42 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/08/26 20:47:14 by jwisozk          ###   ########.fr       */
+/*   Updated: 2019/08/28 14:28:33 by jwisozk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,8 +53,8 @@ typedef struct 		s_object
 typedef struct 		s_color
 {
 	int				r;
-	int 			g;
-	int 			b;
+	int				g;
+	int				b;
 }					t_color;
 
 typedef  struct 	s_sphere
@@ -62,7 +62,7 @@ typedef  struct 	s_sphere
 	char 			*str;
 	t_point			*center;
 	double			radius;
-	t_color			*color;
+	int				color;
 	struct s_sphere	*next;
 }					t_sphere;
 
@@ -93,13 +93,16 @@ typedef struct	s_asset
 	t_light		*l;
 	t_point		*camera;
 	t_point		*direction;
-	t_color 	*color;
+	int 		color;
 	double 		view_w;
 	double 		view_h;
 	double 		dwi;
 	double 		dhi;
 	double 		t_min;
 	double		t_max;
+	t_point		*point;
+	t_point		*radius;
+	t_point		*normal;
 }				t_asset;
 
 int		ft_key_press(int key, t_asset *p);
@@ -112,12 +115,10 @@ double ft_length_vector(t_point *v1, t_point *v2);
 t_point *ft_multiply(double k, t_point *v);
 t_point *ft_subtract(t_point *v1, t_point *v2);
 t_point *ft_add(t_point *v1, t_point *v2);
-double ft_compute_lighting(t_point *point, t_point* normal, t_asset *p);
-t_point	*ft_convert_ctop(t_color *color);
-t_color	*ft_convert_ptoc(t_point *point);
-int	ft_rgb(unsigned char r, unsigned char g, unsigned char b);
-t_color *ft_rgb_rev(int r, int g, int b);
-int ft_clamp(t_color *v);
+double ft_lighting(t_asset *p);
+int	ft_rgb(int r, int g, int b);
+double ft_lenv(t_point *v);
+int ft_multiply_color(double k, int color);
 # include <stdio.h>
 
 #endif

@@ -6,7 +6,7 @@
 /*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/09 13:37:06 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/08/26 20:27:49 by jwisozk          ###   ########.fr       */
+/*   Updated: 2019/08/28 14:05:35 by jwisozk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ t_point	*ft_create_point(double x, double y, double z)
 	return (p);
 }
 
-t_sphere *ft_create_sphere(t_color *color, t_point *center, double radius, char *str)
+t_sphere *ft_create_sphere(int color, t_point *center, double radius, char *str)
 {
 	t_sphere *s;
 
@@ -64,13 +64,13 @@ void	ft_init_shapes(t_asset *p)
 	t_light	*l1;
 	t_light	*l2;
 	t_light	*l3;
-	t_light	*l4;
+//	t_light	*l4;
 
 	camera = ft_create_point(0, 0, 0);
 	p->camera = camera;
-	s1 = ft_create_sphere(ft_rgb_rev(69, 28, 26), ft_create_point(0, 0, 6), 1, "red");
-	s2 = ft_create_sphere(ft_rgb_rev(102, 102, 79), ft_create_point(-2, 0, 7), 1, "green");
-	s3 = ft_create_sphere(ft_rgb_rev(102, 102, 79), ft_create_point(2, 0, 8), 1, "blue");
+	s1 = ft_create_sphere(ft_rgb(69, 28, 26), ft_create_point(0, 0, 6), 1, "red");
+	s2 = ft_create_sphere(ft_rgb(102, 102, 79), ft_create_point(-2, 0, 7), 1, "green");
+	s3 = ft_create_sphere(ft_rgb(102, 102, 79), ft_create_point(2, 0, 8), 1, "blue");
 	s1->next = s2;
 	s2->next = s3;
 	p->s = s1;
@@ -82,12 +82,12 @@ void	ft_init_shapes(t_asset *p)
 
 
 	l1 = ft_new_light("ambient", 0.2, ft_create_point(0, 0, 0));
-	l2 = ft_new_light("point", 1.5, ft_create_point(-20, 20, -20));
+	l2 = ft_new_light("point", 1.9, ft_create_point(-20, 20, -20));
 	l3 = ft_new_light("directional", 0.5, ft_create_point(-20, 20, -20));
-	l4 = ft_new_light("point", 1.5, ft_create_point(20, -20, -20));
+//	l4 = ft_new_light("point", 1.5, ft_create_point(20, -20, -20));
 	l1->next = l2;
 	l2->next = l3;
-	l3->next = l4;
+//	l3->next = l4;
 	p->l = l1;
 }
 

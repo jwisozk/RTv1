@@ -6,13 +6,13 @@
 /*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/26 20:29:39 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/08/26 20:29:39 by jwisozk          ###   ########.fr       */
+/*   Updated: 2019/08/28 14:37:42 by jwisozk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "RTv1.h"
 
-double ft_compute_lighting(t_point *point, t_point* normal, t_asset *p)
+double ft_lighting(t_asset *p)
 {
 	double intensity;
 	double length_n;
@@ -21,7 +21,7 @@ double ft_compute_lighting(t_point *point, t_point* normal, t_asset *p)
 	double n_dot_l;
 
 	intensity = 0.0;
-	length_n = ft_length_vector(normal, normal);
+	length_n = ft_lenv(p->normal);
 	l = p->l;
 	while (l != NULL)
 	{
@@ -30,39 +30,14 @@ double ft_compute_lighting(t_point *point, t_point* normal, t_asset *p)
 		else
 		{
 			if (ft_strequ(l->type, "point") == 1)
-				vec_l = ft_subtract(l->position, point);
+				vec_l = ft_subtract(l->position, p->point);
 			else
 				vec_l = l->position;
-			n_dot_l = ft_dot(normal, vec_l);
+			n_dot_l = ft_dot(p->normal, vec_l);
 			if (n_dot_l > 0)
-				intensity += l->intensity * n_dot_l / (length_n * ft_length_vector(vec_l, vec_l));
-
+				intensity += l->intensity * n_dot_l / (length_n * ft_lenv(vec_l));
 		}
 		l = l->next;
 	}
 	return (intensity);
 }
-
-
-t_point	*ft_convert_ctop(t_color *color)
-{
-	t_point *p;
-
-	p = (t_point*)malloc(sizeof(t_point));
-	p->x = (double)color->r;
-	p->y = (double)color->g;
-	p->z = (double)color->b;
-	return (p);
-}
-
-t_color	*ft_convert_ptoc(t_point *point)
-{
-	t_color *c;
-
-	c = (t_color*)malloc(sizeof(t_color));
-	c->r = (int)point->x;
-	c->g = (int)point->y;
-	c->b = (int)point->z;
-	return (c);
-}
-

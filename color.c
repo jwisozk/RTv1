@@ -6,31 +6,26 @@
 /*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/26 20:37:26 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/08/26 20:37:26 by jwisozk          ###   ########.fr       */
+/*   Updated: 2019/08/28 14:21:24 by jwisozk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "RTv1.h"
 
-int	ft_rgb(unsigned char r, unsigned char g, unsigned char b)
+int	ft_rgb(int r, int g, int b)
 {
 	return ((r << 16) | (g << 8) | b);
 }
 
-
-int ft_clamp(t_color *v)
+int ft_multiply_color(double k, int color)
 {
-	return(ft_rgb(min(255, max(0, v->r)), min(255, max(0, v->g)), min(255, max(0, v->b))));
-}
+	int r;
+	int g;
+	int b;
 
-t_color *ft_rgb_rev(int r, int g, int b)
-{
-	t_color *c;
-
-	c = (t_color*)malloc(sizeof(t_color));
-	c->r = r;
-	c->g = g;
-	c->b = b;
-	return (c);
+	r = min(255, max(0, (color >> 16 & 255) * k));
+	g = min(255, max(0, (color >> 8 & 255) * k));
+	b = min(255, max(0, (color & 255) * k));
+	return (ft_rgb(r, g, b));
 }
 

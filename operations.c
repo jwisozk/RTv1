@@ -6,20 +6,20 @@
 /*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/26 20:33:15 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/08/26 20:34:22 by jwisozk          ###   ########.fr       */
+/*   Updated: 2019/08/28 14:38:29 by jwisozk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "RTv1.h"
 
+double ft_lenv(t_point *v)
+{
+	return sqrt(v->x * v->x + v->y * v->y + v->z * v->z);
+}
+
 double ft_dot(t_point *v1, t_point *v2)
 {
 	return (v1->x * v2->x + v1->y * v2->y + v1->z * v2->z);
-}
-
-double ft_length_vector(t_point *v1, t_point *v2)
-{
-	return sqrt(ft_dot(v1, v2));
 }
 
 t_point *ft_multiply(double k, t_point *v)
@@ -30,17 +30,17 @@ t_point *ft_multiply(double k, t_point *v)
 	return (v);
 }
 
-t_point *ft_subtract(t_point *v1, t_point *v2)
-{
-	t_point *p;
-	p = ft_create_point(v1->x - v2->x, v1->y - v2->y, v1->z - v2->z);
-	return (p);
-}
-
 t_point *ft_add(t_point *v1, t_point *v2)
 {
 	t_point *p;
 	p = ft_create_point(v1->x + v2->x, v1->y + v2->y, v1->z + v2->z);
+	return (p);
+}
+
+t_point *ft_subtract(t_point *v1, t_point *v2)
+{
+	t_point *p;
+	p = ft_create_point(v1->x - v2->x, v1->y - v2->y, v1->z - v2->z);
 	return (p);
 }
 

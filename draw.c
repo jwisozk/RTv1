@@ -6,7 +6,7 @@
 /*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/26 20:23:15 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/08/26 21:02:27 by jwisozk          ###   ########.fr       */
+/*   Updated: 2019/08/28 14:30:20 by jwisozk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,42 +49,39 @@ t_point *intersect_ray_sphere(t_asset *p, t_sphere *sphere)
 	return (intersect);
 }
 
-t_color *ft_trace_ray(t_asset *p)
+int ft_trace_ray(t_asset *p)
 {
-	t_sphere 	*closest_sphere;
-	t_sphere 	*sphere;
+	t_sphere 	*closest_s;
+	t_sphere 	*s;
 	t_point		*t;
 	double		closest_t;
 
 	closest_t = INF;
-	closest_sphere = NULL;
-	sphere = p->s;
-	while (sphere != NULL)
+	closest_s = NULL;
+	s = p->s;
+	while (s != NULL)
 	{
-		t = intersect_ray_sphere(p, sphere);
+		t = intersect_ray_sphere(p, s);
 		if (t->x > p->t_min && t->x < p->t_max && t->x < closest_t)
 		{
 			closest_t = t->x;
-			closest_sphere = sphere;
+			closest_s = s;
 		}
 
 		if (t->y > p->t_min && t->y < p->t_max && t->y < closest_t)
 		{
 			closest_t = t->y;
-			closest_sphere = sphere;
+			closest_s = s;
 		}
 		free(t);
-		sphere = sphere->next;
+		s = s->next;
 	}
-	if (closest_sphere == NULL)
-		return ft_rgb_rev(93, 176, 200);
-
-	t_point *point = ft_add(p->camera, ft_multiply(closest_t, p->direction));
-	t_point *normal = ft_subtract(point, closest_sphere->center);
-	normal = ft_multiply(1.0 / ft_length_vector(normal, normal), normal);
-
-	t_point *m = ft_multiply(ft_compute_lighting(point, normal, p), ft_convert_ctop(closest_sphere->color));
-	return (ft_convert_ptoc(m));
+	if (closest_s == NULL)
+		return ft_rgb(93, 176, 200);
+	p->point = ft_add(p->camera, ft_multiply(closest_t, p->direction));
+	p->radius = ft_subtract(p->point, closest_s->center);
+	p->normal = ft_multiply(1.0 / ft_lenv(p->radius), p->radius);
+	return (ft_multiply_color(ft_lighting(p), closest_s->color));
 }
 
 void	ft_draw(t_asset *p)
@@ -104,7 +101,7 @@ void	ft_draw(t_asset *p)
 		{
 			p->direction = ft_display_to_view(j - offset_x, i - offset_y, p);
 			p->color = ft_trace_ray(p);
-			p->img.img_arr[i * DW + j] = ft_clamp(p->color);
+			p->img.img_arr[i * DW + j] = p->color;
 			j++;
 		}
 		i++;
