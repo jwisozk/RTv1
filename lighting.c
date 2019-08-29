@@ -38,10 +38,10 @@ double ft_lighting(t_asset *p, t_point *dir)
 				intensity += l->intensity * n_dot_l / (length_n * ft_lenv(vec_l));
 			if (p->s->specular != -1)
 			{
-				t_point *R = ft_subtract(ft_multiply((double)2, ft_multiply(ft_dot(p->normal, vec_l), p->normal)), vec_l);
-				double r_dot_v = ft_dot(R, dir);
+				t_point *vec_r = ft_subtract(ft_multiply(2.0 * ft_dot(p->normal, vec_l), p->normal), vec_l);
+				double r_dot_v = ft_dot(vec_r, dir);
 				if (r_dot_v > 0)
-					intensity += l->intensity * pow(r_dot_v / (ft_lenv(R) * ft_lenv(dir)), p->s->specular);
+					intensity += l->intensity * pow(r_dot_v / (ft_lenv(vec_r) * ft_lenv(dir)), p->s->specular);
 			}
 		}
 		l = l->next;

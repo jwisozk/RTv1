@@ -6,7 +6,7 @@
 /*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/09 13:37:42 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/08/28 16:51:40 by jwisozk          ###   ########.fr       */
+/*   Updated: 2019/08/29 13:53:09 by jwisozk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 # include "libft/libft.h"
 # include "minilibx/mlx.h"
 
-# define DW 1600
+# define DW 600
 # define DH 855
 # define HEADER 45
 # define VW 1
@@ -56,7 +56,7 @@ typedef  struct 	s_sphere
 	t_point			*center;
 	double			radius;
 	int				color;
-	int				specular;
+	int			specular;
 	struct s_sphere	*next;
 }					t_sphere;
 

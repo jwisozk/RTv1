@@ -6,7 +6,7 @@
 /*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/09 13:37:06 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/08/28 16:54:59 by jwisozk          ###   ########.fr       */
+/*   Updated: 2019/08/29 14:24:58 by jwisozk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,7 +84,7 @@ void	ft_init_shapes(t_asset *p)
 
 	l1 = ft_new_light("ambient", 0.2, ft_create_point(0, 0, 0));
 	l2 = ft_new_light("point", 0.6, ft_create_point(2, 1, 0));
-	l3 = ft_new_light("directional", 0.2, ft_create_point(1, 4, 4));
+	l3 = ft_new_light("directional", 0.0, ft_create_point(1, 4, 4));
 //	l4 = ft_new_light("point", 1.5, ft_create_point(20, -20, -20));
 	l1->next = l2;
 	l2->next = l3;
