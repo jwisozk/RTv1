@@ -37,6 +37,18 @@ t_sphere *ft_create_sphere(int color, t_point *center, double radius, char *str,
 	return (s);
 }
 
+t_intersect	*ft_create_intersect(t_point *origin, t_point *direct, double t_min, double t_max)
+{
+    t_intersect *i;
+
+    i = (t_intersect*)malloc(sizeof(t_intersect));
+    i->origin = origin;
+    i->direct = direct;
+    i->t_min = t_min;
+    i->t_max = t_max;
+    return (i);
+}
+
 void	ft_invert_display_sizes(t_asset *p)
 {
 	p->dwi = 1.0 / DW;
@@ -62,6 +74,7 @@ void	ft_init_shapes(t_asset *p)
 	t_sphere *s1;
 	t_sphere *s2;
 	t_sphere *s3;
+    t_sphere *s4;
 
 	t_light	*l1;
 	t_light	*l2;
@@ -73,8 +86,10 @@ void	ft_init_shapes(t_asset *p)
 	s1 = ft_create_sphere(ft_rgb(255, 0, 0), ft_create_point(0, -1, 3), 1, "red", 500);
 	s2 = ft_create_sphere(ft_rgb(0, 0, 255), ft_create_point(2, 0, 4), 1, "green", 500);
 	s3 = ft_create_sphere(ft_rgb(0, 255, 0), ft_create_point(-2, 0, 4), 1, "blue", 10);
+    s4 = ft_create_sphere(ft_rgb(255, 255, 0), ft_create_point(0, -5001, 0), 5000, "yellow", 1000);
 	s1->next = s2;
 	s2->next = s3;
+	s3->next = s4;
 	p->s = s1;
 	ft_invert_display_sizes(p);
 	p->view_w = 1;

@@ -28,6 +28,7 @@
 # define RE_LEN 10
 
 # define ZA 1
+# define E 0.001
 
 typedef struct 		s_point
 {
@@ -36,17 +37,17 @@ typedef struct 		s_point
 	double 			z;
 }					t_point;
 
-typedef struct 		s_vector
-{
-	double 			x;
-	double 			y;
-	double 			z;
-}					t_vector;
+//typedef struct 		s_vector
+//{
+//	double 			x;
+//	double 			y;
+//	double 			z;
+//}					t_vector;
 
-typedef struct 		s_object
-{
-	void			*data;
-}					t_object;
+//typedef struct 		s_object
+//{
+//	void			*data;
+//}					t_object;
 
 typedef  struct 	s_sphere
 {
@@ -54,7 +55,8 @@ typedef  struct 	s_sphere
 	t_point			*center;
 	double			radius;
 	int				color;
-	int			specular;
+	int			    specular;
+	double          closest_t;
 	struct s_sphere	*next;
 }					t_sphere;
 
@@ -77,6 +79,14 @@ typedef struct	s_img
 	int			*img_arr;
 }				t_img;
 
+typedef  struct s_intersect
+{
+    t_point		*origin;
+    t_point		*direct;
+    double 		t_min;
+    double		t_max;
+}               t_intersect;
+
 typedef struct	s_asset
 {
 	void		*mlx_ptr;
@@ -84,15 +94,15 @@ typedef struct	s_asset
 	t_img		img;
 	t_sphere	*s;
 	t_light		*l;
-	t_point		*camera;
-	t_point		*direction;
+    t_point		*camera;
+    t_point		*direction;
 	int 		color;
+    double 		t_min;
+    double		t_max;
 	double 		view_w;
 	double 		view_h;
 	double 		dwi;
 	double 		dhi;
-	double 		t_min;
-	double		t_max;
 	t_point		*point;
 	t_point		*radius;
 	t_point		*normal;
@@ -102,9 +112,8 @@ int		ft_key_press(int key, t_asset *p);
 int		ft_close_window(t_asset *p);
 void	ft_draw(t_asset *p);
 t_point	*ft_create_point(double x, double y, double z);
-
+t_sphere *ft_closest_intersection(t_asset *p, t_intersect *i);
 double ft_dot(t_point *v1, t_point *v2);
-double ft_length_vector(t_point *v1, t_point *v2);
 t_point *ft_multiply(double k, t_point *v);
 t_point *ft_subtract(t_point *v1, t_point *v2);
 t_point *ft_add(t_point *v1, t_point *v2);
@@ -112,7 +121,7 @@ int	ft_rgb(int r, int g, int b);
 double ft_lenv(t_point *v);
 int ft_multiply_color(double k, int color);
 double ft_lighting(t_asset *p, t_point *dir, t_sphere *s);
-
+t_intersect	*ft_create_intersect(t_point *cam, t_point *dir, double t_min, double t_max);
 int ft_max(int x, int y);
 int ft_min(int x, int y);
 # include <stdio.h>

@@ -20,7 +20,7 @@ t_point *ft_display_to_view(int x, int y, t_asset *p)
 	return (d);
 }
 
-t_point *intersect_ray_sphere(t_asset *p, t_sphere *sphere)
+t_point *intersect_ray_sphere(t_intersect *i, t_sphere *sphere)
 {
 	t_point *cam_to_sc;
 	t_point *intersect;
@@ -33,9 +33,9 @@ t_point *intersect_ray_sphere(t_asset *p, t_sphere *sphere)
 	double t1;
 	double t2;
 
-	cam_to_sc = ft_subtract(p->camera, sphere->center);
-	k1 = ft_dot(p->direction, p->direction);
-	k2 = 2 * ft_dot(cam_to_sc, p->direction);
+	cam_to_sc = ft_subtract(i->origin, sphere->center);
+	k1 = ft_dot(i->direct, i->direct);
+	k2 = 2 * ft_dot(cam_to_sc, i->direct);
 	k3 = ft_dot(cam_to_sc, cam_to_sc) - sphere->radius * sphere->radius;
 	discriminant = k2 * k2 - 4 * k1 * k3;
 	if (discriminant > 0)
@@ -49,43 +49,52 @@ t_point *intersect_ray_sphere(t_asset *p, t_sphere *sphere)
 	return (intersect);
 }
 
+t_sphere *ft_closest_intersection(t_asset *p, t_intersect *i)
+{
+    double		closest_t;
+    t_sphere 	*closest_s;
+    t_sphere 	*s;
+    t_point		*t;
+
+    s = p->s;
+    closest_t = INF;
+    closest_s = NULL;
+    while (s != NULL)
+    {
+        t = intersect_ray_sphere(i, s);
+        if (t->x < closest_t && i->t_min < t->x && t->x < i->t_max )
+        {
+            closest_t = t->x;
+            closest_s = s;
+            s->closest_t = t->x;
+        }
+
+        if (t->y < closest_t && i->t_min < t->y && t->y < i->t_max)
+        {
+            closest_t = t->y;
+            closest_s = s;
+            s->closest_t = t->y;
+        }
+        free(t);
+        s = s->next;
+    }
+    return (closest_s);
+}
+
 int ft_trace_ray(t_asset *p)
 {
-	t_sphere 	*closest_s;
-	t_sphere 	*s;
-	t_point		*t;
-	double		closest_t;
+    t_sphere 	*s;
 
-	closest_t = INF;
-	closest_s = NULL;
-	s = p->s;
-	while (s != NULL)
-	{
-		t = intersect_ray_sphere(p, s);
-		if (t->x < closest_t && p->t_min < t->x && t->x < p->t_max )
-		{
-			closest_t = t->x;
-			closest_s = s;
-		}
-
-		if (t->y < closest_t && p->t_min < t->y && t->y < p->t_max)
-		{
-			closest_t = t->y;
-			closest_s = s;
-		}
-		free(t);
-		s = s->next;
-	}
-	if (closest_s == NULL)
-		return ft_rgb(93, 176, 200);
-
-	p->point = ft_add(p->camera, ft_multiply(closest_t, p->direction));
-	p->radius = ft_subtract(p->point, closest_s->center);
+    s = ft_closest_intersection(p, ft_create_intersect(p->camera, p->direction, p->t_min, p->t_max));
+	if (s == NULL)
+		return ft_rgb(BACKGROUND);
+	p->point = ft_add(p->camera, ft_multiply(s->closest_t, p->direction));
+	p->radius = ft_subtract(p->point, s->center);
 	p->normal = ft_multiply(1.0 / ft_lenv(p->radius), p->radius);
 
 	t_point *view = ft_multiply(-1, p->direction);
-	double lighting = ft_lighting(p, view, closest_s);
-	return (ft_multiply_color(lighting, closest_s->color));
+	double lighting = ft_lighting(p, view, s);
+	return (ft_multiply_color(lighting, s->color));
 }
 
 void	ft_draw(t_asset *p)
