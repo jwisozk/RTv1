@@ -12,36 +12,40 @@
 
 #include "RTv1.h"
 
-double ft_lighting(t_asset *p, t_point *dir)
+double ft_lighting(t_asset *p, t_point *view, t_sphere *s)
 {
 	double intensity;
 	double length_n;
 	t_light *l;
 	t_point	*vec_l;
 	double n_dot_l;
+	double length_v;
 
-	intensity = 0.0;
+	intensity = 0;
+	length_v  = ft_lenv(view);
 	length_n = ft_lenv(p->normal);
 	l = p->l;
 	while (l != NULL)
 	{
-		if (ft_strequ(l->type, "ambient") == 1)
+		if (l->n == 1)
 			intensity += l->intensity;
 		else
 		{
-			if (ft_strequ(l->type, "point") == 1)
+			if (l->n == 2)
 				vec_l = ft_subtract(l->position, p->point);
 			else
 				vec_l = l->position;
+
 			n_dot_l = ft_dot(p->normal, vec_l);
 			if (n_dot_l > 0)
 				intensity += l->intensity * n_dot_l / (length_n * ft_lenv(vec_l));
-			if (p->s->specular != -1)
+
+			if (s->specular != -1)
 			{
-				t_point *vec_r = ft_subtract(ft_multiply(2.0 * ft_dot(p->normal, vec_l), p->normal), vec_l);
-				double r_dot_v = ft_dot(vec_r, dir);
+				t_point *vec_r = ft_subtract(ft_multiply(2.0 * n_dot_l, p->normal), vec_l);
+				double r_dot_v = ft_dot(vec_r, view);
 				if (r_dot_v > 0)
-					intensity += l->intensity * pow(r_dot_v / (ft_lenv(vec_r) * ft_lenv(dir)), p->s->specular);
+					intensity += l->intensity * pow(r_dot_v / (ft_lenv(vec_r) * length_v), s->specular);
 			}
 		}
 		l = l->next;

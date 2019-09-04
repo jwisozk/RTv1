@@ -25,8 +25,7 @@ SOURCE = main.c \
         draw.c \
         color.c \
         operations.c \
-        lighting.c \
-        primary_ray.c
+        lighting.c
 
 OBJ = $(SOURCE:.c=.o)
 

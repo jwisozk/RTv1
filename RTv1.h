@@ -18,7 +18,7 @@
 # include "minilibx/mlx.h"
 
 # define DW 600
-# define DH 855
+# define DH 600
 # define HEADER 45
 # define VW 1
 # define VH 1
@@ -28,8 +28,6 @@
 # define RE_LEN 10
 
 # define ZA 1
-# define MAX(x, y) ((x) > (y) ? (x) : (y))
-# define MIN(x, y) ((x) < (y) ? (x) : (y))
 
 typedef struct 		s_point
 {
@@ -65,6 +63,7 @@ typedef  struct 	s_light
 	char 			*type;
 	double 			intensity;
 	t_point 		*position;
+	int             n;
 	struct s_light	*next;
 }					t_light;
 
@@ -112,7 +111,10 @@ t_point *ft_add(t_point *v1, t_point *v2);
 int	ft_rgb(int r, int g, int b);
 double ft_lenv(t_point *v);
 int ft_multiply_color(double k, int color);
-double ft_lighting(t_asset *p, t_point *dir);
+double ft_lighting(t_asset *p, t_point *dir, t_sphere *s);
+
+int ft_max(int x, int y);
+int ft_min(int x, int y);
 # include <stdio.h>
 
 #endif

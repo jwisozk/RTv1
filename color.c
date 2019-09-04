@@ -23,9 +23,9 @@ int ft_multiply_color(double k, int color)
 	int g;
 	int b;
 
-	r = MIN(255, MAX(0, (color >> 16 & 255) * k));
-	g = MIN(255, MAX(0, (color >> 8 & 255) * k));
-	b = MIN(255, MAX(0, (color & 255) * k));
+	r = ft_min(255, ft_max(0, (color >> 16 & 255) * k));
+	g = ft_min(255, ft_max(0, (color >> 8 & 255) * k));
+	b = ft_min(255, ft_max(0, (color & 255) * k));
 	return (ft_rgb(r, g, b));
 }
 

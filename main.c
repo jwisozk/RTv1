@@ -39,11 +39,11 @@ t_sphere *ft_create_sphere(int color, t_point *center, double radius, char *str,
 
 void	ft_invert_display_sizes(t_asset *p)
 {
-	p->dwi = (double)1 / DW;
-	p->dhi = (double)1 / DH;
+	p->dwi = 1.0 / DW;
+	p->dhi = 1.0 / DH;
 }
 
-t_light *ft_new_light(char *type, double intensity, t_point *position)
+t_light *ft_new_light(char *type, double intensity, t_point *position, int n)
 {
 	t_light *l;
 
@@ -51,6 +51,7 @@ t_light *ft_new_light(char *type, double intensity, t_point *position)
 	l->type = type;
 	l->intensity = intensity;
 	l->position = position;
+	l->n = n;
 	l->next = NULL;
 	return (l);
 }
@@ -77,14 +78,14 @@ void	ft_init_shapes(t_asset *p)
 	p->s = s1;
 	ft_invert_display_sizes(p);
 	p->view_w = 1;
-	p->view_h = p->view_w * p->dwi * DH;
+	p->view_h = 1;
 	p->t_min = 1;
 	p->t_max = INF;
 
 
-	l1 = ft_new_light("ambient", 0.2, ft_create_point(0, 0, 0));
-	l2 = ft_new_light("point", 0.6, ft_create_point(2, 1, 0));
-	l3 = ft_new_light("directional", 0.0, ft_create_point(1, 4, 4));
+	l1 = ft_new_light("ambient", 0.2, ft_create_point(0, 0, 0), 1);
+	l2 = ft_new_light("point", 0.6, ft_create_point(2, 1, 0), 2);
+	l3 = ft_new_light("directional", 0.2, ft_create_point(1, 4, 4), 3);
 //	l4 = ft_new_light("point", 1.5, ft_create_point(20, -20, -20));
 	l1->next = l2;
 	l2->next = l3;
@@ -99,7 +100,7 @@ void	ft_open_window()
 	t_asset	p;
 
 	mlx_ptr = mlx_init();
-	win_ptr = mlx_new_window(mlx_ptr, DW, DH + HEADER, "RTv1");
+	win_ptr = mlx_new_window(mlx_ptr, DW, DH, "RTv1");
 	p.img.img_ptr = mlx_new_image(mlx_ptr, DW, DH);
 	p.img.img_arr = (int*)mlx_get_data_addr(p.img.img_ptr,
 			&p.img.bit_per_pixel, &p.img.size_line, &p.img.endian);

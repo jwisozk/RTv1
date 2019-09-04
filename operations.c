@@ -24,10 +24,10 @@ double ft_dot(t_point *v1, t_point *v2)
 
 t_point *ft_multiply(double k, t_point *v)
 {
-	v->x *= k;
-	v->y *= k;
-	v->z *= k;
-	return (v);
+	t_point* p;
+
+	p = ft_create_point(v->x * k, v->y * k, v->z * k);
+	return (p);
 }
 
 t_point *ft_add(t_point *v1, t_point *v2)
@@ -42,6 +42,17 @@ t_point *ft_subtract(t_point *v1, t_point *v2)
 	t_point *p;
 	p = ft_create_point(v1->x - v2->x, v1->y - v2->y, v1->z - v2->z);
 	return (p);
+}
+
+int ft_max(int x, int y)
+{
+    return (x > y ? x : y);
+}
+
+
+int ft_min(int x, int y)
+{
+    return (x < y ? x : y);
 }
 
 //double ft_length_vector(t_vector v)

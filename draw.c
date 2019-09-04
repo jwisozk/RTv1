@@ -62,13 +62,13 @@ int ft_trace_ray(t_asset *p)
 	while (s != NULL)
 	{
 		t = intersect_ray_sphere(p, s);
-		if (t->x > p->t_min && t->x < p->t_max && t->x < closest_t)
+		if (t->x < closest_t && p->t_min < t->x && t->x < p->t_max )
 		{
 			closest_t = t->x;
 			closest_s = s;
 		}
 
-		if (t->y > p->t_min && t->y < p->t_max && t->y < closest_t)
+		if (t->y < closest_t && p->t_min < t->y && t->y < p->t_max)
 		{
 			closest_t = t->y;
 			closest_s = s;
@@ -78,12 +78,13 @@ int ft_trace_ray(t_asset *p)
 	}
 	if (closest_s == NULL)
 		return ft_rgb(93, 176, 200);
+
 	p->point = ft_add(p->camera, ft_multiply(closest_t, p->direction));
 	p->radius = ft_subtract(p->point, closest_s->center);
 	p->normal = ft_multiply(1.0 / ft_lenv(p->radius), p->radius);
 
 	t_point *view = ft_multiply(-1, p->direction);
-	double lighting = ft_lighting(p, view);
+	double lighting = ft_lighting(p, view, closest_s);
 	return (ft_multiply_color(lighting, closest_s->color));
 }
 
@@ -92,10 +93,10 @@ void	ft_draw(t_asset *p)
 	int 	i;
 	int		j;
 	int 	offset_x;
-	int 	offset_y;
+    int     offset_y;
 
-	offset_x = DW * 0.5;
-	offset_y = DH * 0.5;
+	offset_x = (int)(DW * 0.5);
+	offset_y = (int)(DH * 0.5);
 	i = 0;
 	while (i < DH)
 	{
