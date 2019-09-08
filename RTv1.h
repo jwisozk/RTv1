@@ -6,7 +6,7 @@
 /*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/09 13:37:42 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/08/29 13:53:09 by jwisozk          ###   ########.fr       */
+/*   Updated: 2019/09/08 21:22:08 by jwisozk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -106,6 +106,7 @@ typedef struct	s_asset
 	t_point		*point;
 	t_point		*radius;
 	t_point		*normal;
+	int 		specular;
 }				t_asset;
 
 int		ft_key_press(int key, t_asset *p);
@@ -120,10 +121,11 @@ t_point *ft_add(t_point *v1, t_point *v2);
 int	ft_rgb(int r, int g, int b);
 double ft_lenv(t_point *v);
 int ft_multiply_color(double k, int color);
-double ft_lighting(t_asset *p, t_point *dir, t_sphere *s);
+double ft_lighting(t_asset *p, t_point *dir, int specular);
 t_intersect	*ft_create_intersect(t_point *cam, t_point *dir, double t_min, double t_max);
-int ft_max(int x, int y);
-int ft_min(int x, int y);
+double ft_max(double x, double y);
+double ft_min(double x, double y);
+int scene_intersect(t_asset *p);
 # include <stdio.h>
 
 #endif

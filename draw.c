@@ -6,7 +6,7 @@
 /*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/26 20:23:15 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/08/29 14:11:19 by jwisozk          ###   ########.fr       */
+/*   Updated: 2019/09/08 23:54:13 by jwisozk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,35 +66,81 @@ t_sphere *ft_closest_intersection(t_asset *p, t_intersect *i)
         {
             closest_t = t->x;
             closest_s = s;
-            s->closest_t = t->x;
+			closest_s->closest_t = t->x;
         }
 
         if (t->y < closest_t && i->t_min < t->y && t->y < i->t_max)
         {
             closest_t = t->y;
             closest_s = s;
-            s->closest_t = t->y;
+			closest_s->closest_t = t->y;
         }
+//        printf("%f\n", closest_s->closest_t);
         free(t);
         s = s->next;
     }
-    return (closest_s);
+//    printf("HERE\n");
+	return (closest_s == NULL) ? NULL : closest_s;
+//    return (closest_s);
+}
+
+int scene_intersect(t_asset *p)
+{
+	double plane_dist;
+	double sphere_dist;
+	t_sphere 	*s;
+
+
+	sphere_dist = INF;
+	s = ft_closest_intersection(p, ft_create_intersect(p->camera, p->direction, p->t_min, p->t_max));
+
+	if (s != NULL && s->closest_t < sphere_dist)
+	{
+		sphere_dist = s->closest_t;
+		p->point = ft_add(p->camera, ft_multiply(s->closest_t, p->direction));
+		p->radius = ft_subtract(p->point, s->center);
+		p->normal = ft_multiply(1.0 / ft_lenv(p->radius), p->radius);
+		p->color = s->color;
+		p->specular = s->specular;
+	}
+
+	plane_dist = INF;
+	if (fabs(p->direction->y) > 1e-3)
+	{
+		double d = -(p->camera->y+4) / p->direction->y; // the checkerboard plane has equation y = -4
+		t_point *pt = ft_add(p->camera, ft_multiply(d, p->direction));
+		if (d < sphere_dist && fabs(pt->x) < 10 && pt->z > 10 && pt->z < 30)
+		{
+			plane_dist = d;
+			p->point = pt;
+			p->normal = ft_create_point(0,1,0);
+			t_point *diffuse_color = ((int)(.5 * p->point->x + 1000) + (int)(.5 * p->point->z)) & 1 ? ft_create_point(0, 255, 255) : ft_create_point(255, 255, 0);
+			p->color = (ft_rgb(diffuse_color->x, diffuse_color->y, diffuse_color->z));
+			p->specular = 500;
+		}
+	}
+
+	if (ft_min(plane_dist, sphere_dist) < INF)
+		return (1);
+	return (0);
 }
 
 int ft_trace_ray(t_asset *p)
 {
-    t_sphere 	*s;
 
-    s = ft_closest_intersection(p, ft_create_intersect(p->camera, p->direction, p->t_min, p->t_max));
-	if (s == NULL)
+
+	// s = ft_closest_intersection(p, ft_create_intersect(p->camera, p->direction, p->t_min, p->t_max));
+	if (scene_intersect(p) == 0)
 		return ft_rgb(BACKGROUND);
-	p->point = ft_add(p->camera, ft_multiply(s->closest_t, p->direction));
-	p->radius = ft_subtract(p->point, s->center);
-	p->normal = ft_multiply(1.0 / ft_lenv(p->radius), p->radius);
+//    if (s == NULL)
+//		return ft_rgb(BACKGROUND);
+//	p->point = ft_add(p->camera, ft_multiply(s->closest_t, p->direction));
+//	p->radius = ft_subtract(p->point, s->center);
+//	p->normal = ft_multiply(1.0 / ft_lenv(p->radius), p->radius);
 
 	t_point *view = ft_multiply(-1, p->direction);
-	double lighting = ft_lighting(p, view, s);
-	return (ft_multiply_color(lighting, s->color));
+	double lighting = ft_lighting(p, view, p->specular);
+	return (ft_multiply_color(lighting, p->color));
 }
 
 void	ft_draw(t_asset *p)

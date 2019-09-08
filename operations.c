@@ -44,13 +44,13 @@ t_point *ft_subtract(t_point *v1, t_point *v2)
 	return (p);
 }
 
-int ft_max(int x, int y)
+double ft_max(double x, double y)
 {
     return (x > y ? x : y);
 }
 
 
-int ft_min(int x, int y)
+double ft_min(double x, double y)
 {
     return (x < y ? x : y);
 }
