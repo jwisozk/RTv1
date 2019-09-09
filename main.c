@@ -6,24 +6,24 @@
 /*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/09 13:37:06 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/09/08 23:52:04 by jwisozk          ###   ########.fr       */
+/*   Updated: 2019/09/09 22:59:45 by jwisozk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "RTv1.h"
 
-t_point	*ft_create_point(double x, double y, double z)
+t_vec3	*ft_create_point(double x, double y, double z)
 {
-	t_point *p;
+	t_vec3 *p;
 
-	p = (t_point*)malloc(sizeof(t_point));
+	p = (t_vec3*)malloc(sizeof(t_vec3));
 	p->x = x;
 	p->y = y;
 	p->z = z;
 	return (p);
 }
 
-t_sphere *ft_create_sphere(int color, t_point *center, double radius, char *str, int specular)
+t_sphere *ft_create_sphere(int color, t_vec3 *center, double radius, char *str, int specular)
 {
 	t_sphere *s;
 
@@ -37,11 +37,11 @@ t_sphere *ft_create_sphere(int color, t_point *center, double radius, char *str,
 	return (s);
 }
 
-t_intersect	*ft_create_intersect(t_point *origin, t_point *direct, double t_min, double t_max)
+t_ray	*ft_create_ray(t_vec3 *origin, t_vec3 *direct, double t_min, double t_max)
 {
-    t_intersect *i;
+    t_ray *i;
 
-    i = (t_intersect*)malloc(sizeof(t_intersect));
+    i = (t_ray*)malloc(sizeof(t_ray));
     i->origin = origin;
     i->direct = direct;
     i->t_min = t_min;
@@ -55,7 +55,7 @@ void	ft_invert_display_sizes(t_asset *p)
 	p->dhi = 1.0 / DH;
 }
 
-t_light *ft_new_light(char *type, double intensity, t_point *position, int n)
+t_light *ft_new_light(char *type, double intensity, t_vec3 *position, int n)
 {
 	t_light *l;
 
@@ -70,7 +70,7 @@ t_light *ft_new_light(char *type, double intensity, t_point *position, int n)
 
 void	ft_init_shapes(t_asset *p)
 {
-	t_point *camera;
+	t_vec3 *camera;
 	t_sphere *s1;
 	t_sphere *s2;
 	t_sphere *s3;
@@ -82,7 +82,6 @@ void	ft_init_shapes(t_asset *p)
 //	t_light	*l4;
 
 	camera = ft_create_point(0, 0, 0);
-	p->camera = camera;
 	s1 = ft_create_sphere(ft_rgb(255, 0, 0), ft_create_point(-3,    0,   16), 2, "red", 500);
 	s2 = ft_create_sphere(ft_rgb(0, 0, 255), ft_create_point(-1.0, -1.5, 12), 2, "green", 500);
 	s3 = ft_create_sphere(ft_rgb(0, 255, 0), ft_create_point(1.5, -0.5, 18), 3, "blue", 10);
@@ -94,10 +93,8 @@ void	ft_init_shapes(t_asset *p)
 	ft_invert_display_sizes(p);
 	p->view_w = 1;
 	p->view_h = 1;
-	p->t_min = 1;
-	p->t_max = INF;
-
-
+	p->ray = ft_create_ray(camera, NULL, 1, INF);
+	p->ray->obj = p->s;
 //	l1 = ft_new_light("ambient", 0.2, ft_create_point(0, 0, 0), 1);
 //	l2 = ft_new_light("point", 0.6, ft_create_point(2, 1, 0), 2);
 //	l3 = ft_new_light("directional", 0.2, ft_create_point(1, 4, 4), 3);

@@ -12,34 +12,34 @@
 
 #include "RTv1.h"
 
-double ft_lenv(t_point *v)
+double ft_lenv(t_vec3 *v)
 {
 	return sqrt(v->x * v->x + v->y * v->y + v->z * v->z);
 }
 
-double ft_dot(t_point *v1, t_point *v2)
+double ft_dot(t_vec3 *v1, t_vec3 *v2)
 {
 	return (v1->x * v2->x + v1->y * v2->y + v1->z * v2->z);
 }
 
-t_point *ft_multiply(double k, t_point *v)
+t_vec3 *ft_multiply(double k, t_vec3 *v)
 {
-	t_point* p;
+	t_vec3* p;
 
 	p = ft_create_point(v->x * k, v->y * k, v->z * k);
 	return (p);
 }
 
-t_point *ft_add(t_point *v1, t_point *v2)
+t_vec3 *ft_add(t_vec3 *v1, t_vec3 *v2)
 {
-	t_point *p;
+	t_vec3 *p;
 	p = ft_create_point(v1->x + v2->x, v1->y + v2->y, v1->z + v2->z);
 	return (p);
 }
 
-t_point *ft_subtract(t_point *v1, t_point *v2)
+t_vec3 *ft_subtract(t_vec3 *v1, t_vec3 *v2)
 {
-	t_point *p;
+	t_vec3 *p;
 	p = ft_create_point(v1->x - v2->x, v1->y - v2->y, v1->z - v2->z);
 	return (p);
 }
