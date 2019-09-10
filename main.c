@@ -6,7 +6,7 @@
 /*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/09 13:37:06 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/09/09 22:59:45 by jwisozk          ###   ########.fr       */
+/*   Updated: 2019/09/10 17:05:39 by jwisozk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,12 +74,12 @@ void	ft_init_shapes(t_asset *p)
 	t_sphere *s1;
 	t_sphere *s2;
 	t_sphere *s3;
-   // t_sphere *s4;
+//    t_sphere *s4;
 
 	t_light	*l1;
 	t_light	*l2;
 	t_light	*l3;
-//	t_light	*l4;
+	t_light	*l4;
 
 	camera = ft_create_point(0, 0, 0);
 	s1 = ft_create_sphere(ft_rgb(255, 0, 0), ft_create_point(-3,    0,   16), 2, "red", 500);
@@ -98,14 +98,15 @@ void	ft_init_shapes(t_asset *p)
 //	l1 = ft_new_light("ambient", 0.2, ft_create_point(0, 0, 0), 1);
 //	l2 = ft_new_light("point", 0.6, ft_create_point(2, 1, 0), 2);
 //	l3 = ft_new_light("directional", 0.2, ft_create_point(1, 4, 4), 3);
-//	l4 = ft_new_light("point", 1.5, ft_create_point(20, -20, -20));
+//	l4 = ft_new_light("point", 1.5, ft_create_point(20, -20, -20), 2);
 
 	l1 = ft_new_light("point", 0.5, ft_create_point(-20, 20,  -20), 2);
 	l2 = ft_new_light("point", 0.5, ft_create_point(30, 50, 25), 2);
 	l3 = ft_new_light("point", 0.5, ft_create_point(30, 20,  -30), 2);
+	l4 = ft_new_light("ambient", 0.2, ft_create_point(0, 0, 0), 1);
 	l1->next = l2;
 	l2->next = l3;
-//	l3->next = l4;
+	l3->next = l4;
 	p->l = l1;
 }
 

@@ -6,7 +6,7 @@
 /*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/26 20:29:39 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/09/09 22:24:26 by jwisozk          ###   ########.fr       */
+/*   Updated: 2019/09/10 18:36:38 by jwisozk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,9 @@
 double ft_lighting(t_asset *p, t_vec3 *view, int specular)
 {
 	double intensity;
-	double length_n;
 	t_light *l;
-	t_vec3	*vec_l;
-	double n_dot_l;
+	t_vec3	*pl;
+	double angle_ln;
 	double length_v;
 	t_sphere *shadow_s;
 	double t_max;
@@ -26,7 +25,6 @@ double ft_lighting(t_asset *p, t_vec3 *view, int specular)
 
 	intensity = 0;
 	length_v  = ft_lenv(view);
-	length_n = ft_lenv(p->normal);
 	l = p->l;
 	while (l != NULL)
 	{
@@ -36,15 +34,15 @@ double ft_lighting(t_asset *p, t_vec3 *view, int specular)
 		{
 			if (l->n == 2)
             {
-			    vec_l = ft_subtract(l->position, p->point);
+				pl = ft_subtract(l->position, p->point);
 			    t_max = 1.0;
             }
 			else
             {
-			    vec_l = l->position;
+				pl = l->position;
                 t_max = INF;
             }
-			ray = ft_create_ray(p->point, vec_l, E, t_max);
+			ray = ft_create_ray(p->point, pl, E, t_max);
 			ray->obj = (void*)p->s;
 			shadow_s = ft_sphere_intersect(ray);
             if (shadow_s != NULL)
@@ -53,13 +51,14 @@ double ft_lighting(t_asset *p, t_vec3 *view, int specular)
                 continue ;
             }
 
-			n_dot_l = ft_dot(p->normal, vec_l);
-			if (n_dot_l > 0)
-				intensity += l->intensity * n_dot_l / (length_n * ft_lenv(vec_l));
+			angle_ln = ft_dot(p->normal, pl) / (ft_lenv(p->normal) * ft_lenv(pl));
+			if (angle_ln > 0)
+				intensity += l->intensity * angle_ln;
 
+			specular = 500;
 			if (specular != -1)
 			{
-				t_vec3 *vec_r = ft_subtract(ft_multiply(2.0 * n_dot_l, p->normal), vec_l);
+				t_vec3 *vec_r = ft_subtract(ft_multiply(2.0 * angle_ln, p->normal), pl);
 				double r_dot_v = ft_dot(vec_r, view);
 				if (r_dot_v > 0)
 					intensity += l->intensity * pow(r_dot_v / (ft_lenv(vec_r) * length_v), specular);
