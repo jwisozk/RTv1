@@ -6,25 +6,25 @@
 /*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/26 20:29:39 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/09/10 18:36:38 by jwisozk          ###   ########.fr       */
+/*   Updated: 2019/09/13 00:19:53 by jwisozk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "RTv1.h"
 
-double ft_lighting(t_asset *p, t_vec3 *view, int specular)
+double ft_lighting(t_asset *p, t_vec3 *vec_po, int specular)
 {
 	double intensity;
 	t_light *l;
-	t_vec3	*pl;
+	t_vec3	*vec_pl;
+	t_vec3 	*vec_pr;
 	double angle_ln;
-	double length_v;
+	double angle_rv;
 	t_sphere *shadow_s;
 	double t_max;
 	t_ray	*ray;
 
 	intensity = 0;
-	length_v  = ft_lenv(view);
 	l = p->l;
 	while (l != NULL)
 	{
@@ -34,34 +34,38 @@ double ft_lighting(t_asset *p, t_vec3 *view, int specular)
 		{
 			if (l->n == 2)
             {
-				pl = ft_subtract(l->position, p->point);
+				vec_pl = ft_subtract(l->position, p->point);
 			    t_max = 1.0;
             }
 			else
             {
-				pl = l->position;
+				vec_pl = l->position;
                 t_max = INF;
             }
-			ray = ft_create_ray(p->point, pl, E, t_max);
+
+			ray = ft_create_ray(p->point, vec_pl, E, t_max);
 			ray->obj = (void*)p->s;
+
+
 			shadow_s = ft_sphere_intersect(ray);
-            if (shadow_s != NULL)
+			ray->t_min = 0;
+			t_plane *shadow_p = ft_plane_intersect(ray, p->p);
+            if (shadow_p != NULL || (shadow_s != NULL && p->point->x < 0))
             {
                 l = l->next;
                 continue ;
             }
 
-			angle_ln = ft_dot(p->normal, pl) / (ft_lenv(p->normal) * ft_lenv(pl));
+			angle_ln = ft_dot(p->normal, vec_pl);
 			if (angle_ln > 0)
-				intensity += l->intensity * angle_ln;
+				intensity += l->intensity * angle_ln / (ft_lenv(p->normal) * ft_lenv(vec_pl));
 
-			specular = 500;
 			if (specular != -1)
 			{
-				t_vec3 *vec_r = ft_subtract(ft_multiply(2.0 * angle_ln, p->normal), pl);
-				double r_dot_v = ft_dot(vec_r, view);
-				if (r_dot_v > 0)
-					intensity += l->intensity * pow(r_dot_v / (ft_lenv(vec_r) * length_v), specular);
+				vec_pr = ft_subtract(ft_multiply(2.0 * ft_dot(p->normal, vec_pl), p->normal), vec_pl);
+				angle_rv = ft_dot(vec_pr, vec_po) ;
+				if (angle_rv > 0)
+					intensity += l->intensity * pow(angle_rv / (ft_lenv(vec_pr) * ft_lenv(vec_po)), specular);
 			}
 		}
 		l = l->next;

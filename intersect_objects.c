@@ -6,7 +6,7 @@
 /*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/09 22:38:24 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/09/09 22:52:53 by jwisozk          ###   ########.fr       */
+/*   Updated: 2019/09/12 23:01:13 by jwisozk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,5 +56,33 @@ t_sphere *ft_sphere_intersect(t_ray *ray)
 		s = s->next;
 	}
 	return (closest_s == NULL) ? NULL : closest_s;
+}
+
+t_plane *ft_plane_intersect(t_ray *ray, t_plane *pl)
+{
+	t_plane	*p;
+	t_plane	*closest_p;
+	double	closest_t;
+
+	closest_p = NULL;
+	closest_t = INF;
+	p = pl;
+	while (p != NULL)
+	{
+		double angle = ft_dot(p->normal, ray->direct);
+		if (angle != 0)
+		{
+			t_vec3 *op = ft_subtract(p->point, ray->origin);
+			double t = ft_dot(op, p->normal) / angle;
+			if (t < closest_t && t > 1e-6 && ray->t_min < t && t < ray->t_max )
+			{
+				closest_p = p;
+				closest_t = t;
+				closest_p->t = t;
+			}
+		}
+		p = p->next;
+	}
+	return (closest_p);
 }
 

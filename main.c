@@ -6,7 +6,7 @@
 /*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/09 13:37:06 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/09/10 17:05:39 by jwisozk          ###   ########.fr       */
+/*   Updated: 2019/09/13 00:14:11 by jwisozk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,19 @@ t_sphere *ft_create_sphere(int color, t_vec3 *center, double radius, char *str, 
 	s->specular = specular;
 	s->next = NULL;
 	return (s);
+}
+
+t_plane *ft_create_plane(int color, t_vec3 *point, t_vec3* normal, int specular)
+{
+	t_plane *p;
+
+	p = (t_plane*)malloc(sizeof(t_plane));
+	p->color = color;
+	p->normal = normal;
+	p->point = point;
+	p->specular = specular;
+	p->next = NULL;
+	return (p);
 }
 
 t_ray	*ft_create_ray(t_vec3 *origin, t_vec3 *direct, double t_min, double t_max)
@@ -76,10 +89,16 @@ void	ft_init_shapes(t_asset *p)
 	t_sphere *s3;
 //    t_sphere *s4;
 
+	t_plane *p1;
+//	t_plane *p2;
+//	t_plane *p3;
+//	t_plane *p4;
+//	t_plane *p5;
+
 	t_light	*l1;
 	t_light	*l2;
 	t_light	*l3;
-	t_light	*l4;
+//	t_light	*l4;
 
 	camera = ft_create_point(0, 0, 0);
 	s1 = ft_create_sphere(ft_rgb(255, 0, 0), ft_create_point(-3,    0,   16), 2, "red", 500);
@@ -95,18 +114,32 @@ void	ft_init_shapes(t_asset *p)
 	p->view_h = 1;
 	p->ray = ft_create_ray(camera, NULL, 1, INF);
 	p->ray->obj = p->s;
-//	l1 = ft_new_light("ambient", 0.2, ft_create_point(0, 0, 0), 1);
-//	l2 = ft_new_light("point", 0.6, ft_create_point(2, 1, 0), 2);
-//	l3 = ft_new_light("directional", 0.2, ft_create_point(1, 4, 4), 3);
-//	l4 = ft_new_light("point", 1.5, ft_create_point(20, -20, -20), 2);
 
-	l1 = ft_new_light("point", 0.5, ft_create_point(-20, 20,  -20), 2);
-	l2 = ft_new_light("point", 0.5, ft_create_point(30, 50, 25), 2);
-	l3 = ft_new_light("point", 0.5, ft_create_point(30, 20,  -30), 2);
-	l4 = ft_new_light("ambient", 0.2, ft_create_point(0, 0, 0), 1);
+
+
+	p1 = ft_create_plane(ft_rgb(0, 255, 255), ft_create_point(1,0,0), ft_create_point(1,0,0), 500);
+//	p2 = ft_create_plane(ft_rgb(64, 128, 255), ft_create_point(-6,0,0), ft_create_point(1,0,0), 500);
+//	p3 = ft_create_plane(ft_rgb(200, 100, 64), ft_create_point(0,0,20), ft_create_point(0,0,-1), 500);
+//	p4 = ft_create_plane(ft_rgb(255, 255, 0), ft_create_point(0,-6,0), ft_create_point(0,1,0), 500);
+//	p5 = ft_create_plane(ft_rgb(255, 128, 64), ft_create_point(0,6,0), ft_create_point(0,1,0), 500);
+//	p1->next = p2;
+//	p2->next = p3;
+//	p3->next = p4;
+//	p4->next = p5;
+	p->p = p1;
+
+
+		l1 = ft_new_light("ambient", 0.2, ft_create_point(0, 0, 0), 1);
+		l2 = ft_new_light("point", 0.6, ft_create_point(20, 25, 26), 2);
+		l3 = ft_new_light("directional", 0.2, ft_create_point(20, 25, 26), 3);
+//		l4 = ft_new_light("point", 1.5, ft_create_point(20, -20, -20), 2);
+//	l1 = ft_new_light("point", 0.5, ft_create_point(-20, 20,  -20), 2);
+//	l2 = ft_new_light("point", 0.5, ft_create_point(30, 50, 25), 2);
+//	l3 = ft_new_light("point", 0.5, ft_create_point(30, 20,  -30), 2);
+//	l4 = ft_new_light("ambient", 0.2, ft_create_point(0, 0, 0), 1);
 	l1->next = l2;
 	l2->next = l3;
-	l3->next = l4;
+//	l3->next = l4;
 	p->l = l1;
 }
 

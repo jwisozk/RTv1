@@ -6,7 +6,7 @@
 /*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/09 13:37:42 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/09/09 23:00:54 by jwisozk          ###   ########.fr       */
+/*   Updated: 2019/09/12 23:01:13 by jwisozk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@
 # define RE_LEN 10
 
 # define ZA 1
-# define E 0.001
+# define E 1e-6
 
 typedef struct 		s_vec3
 {
@@ -52,6 +52,17 @@ typedef  struct 	s_sphere
 	double          t;
 	struct s_sphere	*next;
 }					t_sphere;
+
+typedef  struct		s_plane
+{
+	t_vec3			*normal;
+	t_vec3			*point;
+	int 			color;
+	int				specular;
+	double          t;
+	struct s_plane	*next;
+}					t_plane;
+
 
 typedef  struct 	s_light
 {
@@ -87,6 +98,7 @@ typedef struct	s_asset
 	void		*win_ptr;
 	t_img		img;
 	t_sphere	*s;
+	t_plane		*p;
 	t_light		*l;
 	int 		color;
 	double 		view_w;
@@ -117,6 +129,7 @@ t_ray	*ft_create_ray(t_vec3 *cam, t_vec3 *dir, double t_min, double t_max);
 double ft_max(double x, double y);
 double ft_min(double x, double y);
 int ft_scene_intersect(t_asset *p);
+t_plane *ft_plane_intersect(t_ray *ray, t_plane *pl);
 # include <stdio.h>
 
 #endif
