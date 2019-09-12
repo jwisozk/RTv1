@@ -90,10 +90,10 @@ void	ft_init_shapes(t_asset *p)
 //    t_sphere *s4;
 
 	t_plane *p1;
-//	t_plane *p2;
-//	t_plane *p3;
-//	t_plane *p4;
-//	t_plane *p5;
+	t_plane *p2;
+	t_plane *p3;
+	t_plane *p4;
+	t_plane *p5;
 
 	t_light	*l1;
 	t_light	*l2;
@@ -117,21 +117,21 @@ void	ft_init_shapes(t_asset *p)
 
 
 
-	p1 = ft_create_plane(ft_rgb(0, 255, 255), ft_create_point(1,0,0), ft_create_point(1,0,0), 500);
-//	p2 = ft_create_plane(ft_rgb(64, 128, 255), ft_create_point(-6,0,0), ft_create_point(1,0,0), 500);
-//	p3 = ft_create_plane(ft_rgb(200, 100, 64), ft_create_point(0,0,20), ft_create_point(0,0,-1), 500);
-//	p4 = ft_create_plane(ft_rgb(255, 255, 0), ft_create_point(0,-6,0), ft_create_point(0,1,0), 500);
-//	p5 = ft_create_plane(ft_rgb(255, 128, 64), ft_create_point(0,6,0), ft_create_point(0,1,0), 500);
-//	p1->next = p2;
-//	p2->next = p3;
-//	p3->next = p4;
-//	p4->next = p5;
+    p1 = ft_create_plane(ft_rgb(0, 255, 255), ft_create_point(1,0,0), ft_create_point(-1,0,0), 500);
+    p2 = ft_create_plane(ft_rgb(64, 128, 255), ft_create_point(-10,0,0), ft_create_point(1,0,0), 500);
+    p3 = ft_create_plane(ft_rgb(255, 128, 64), ft_create_point(0,10,0), ft_create_point(0,-1,0), 500);
+    p4 = ft_create_plane(ft_rgb(255, 255, 0), ft_create_point(0,-10,0), ft_create_point(0,1,0), 500);
+	p5 = ft_create_plane(ft_rgb(200, 100, 64), ft_create_point(0,0,30), ft_create_point(0,0,-1), 500);
+	p1->next = p2;
+	p2->next = p3;
+	p3->next = p4;
+	p4->next = p5;
 	p->p = p1;
 
 
 		l1 = ft_new_light("ambient", 0.2, ft_create_point(0, 0, 0), 1);
-		l2 = ft_new_light("point", 0.6, ft_create_point(20, 25, 26), 2);
-		l3 = ft_new_light("directional", 0.2, ft_create_point(20, 25, 26), 3);
+		l2 = ft_new_light("point", 0.8, ft_create_point(2, 2, 9), 2);
+		l3 = ft_new_light("directional", 0.8, ft_create_point(2, 2, 9), 3);
 //		l4 = ft_new_light("point", 1.5, ft_create_point(20, -20, -20), 2);
 //	l1 = ft_new_light("point", 0.5, ft_create_point(-20, 20,  -20), 2);
 //	l2 = ft_new_light("point", 0.5, ft_create_point(30, 50, 25), 2);

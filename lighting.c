@@ -43,14 +43,15 @@ double ft_lighting(t_asset *p, t_vec3 *vec_po, int specular)
                 t_max = INF;
             }
 
-			ray = ft_create_ray(p->point, vec_pl, E, t_max);
+
+            ray = ft_create_ray(p->point, vec_pl, E, t_max);
 			ray->obj = (void*)p->s;
 
 
 			shadow_s = ft_sphere_intersect(ray);
 			ray->t_min = 0;
 			t_plane *shadow_p = ft_plane_intersect(ray, p->p);
-            if (shadow_p != NULL || (shadow_s != NULL && p->point->x < 0))
+            if (shadow_p != NULL || shadow_s != NULL)
             {
                 l = l->next;
                 continue ;
