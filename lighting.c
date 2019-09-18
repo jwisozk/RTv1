@@ -12,77 +12,62 @@
 
 #include "RTv1.h"
 
-double ft_lighting(t_asset *p, t_vec3 *vec_po, int specular)
+double ft_add_diffuse_light(t_point *p, t_light *l, t_vec3 *vec_pl)
+{
+	double angle_ln;
+
+	angle_ln = ft_dot(p->normal, vec_pl);
+	if (angle_ln > 0)
+		return (l->intensity * angle_ln / (ft_lenv(p->normal) * ft_lenv(vec_pl)));
+	return (0);
+}
+
+double ft_add_specular_light(t_point *p, t_light *l, t_vec3 *vec_pl, t_vec3 *vec_po)
+{
+	t_vec3 	*vec_pr;
+	double angle_rv;
+
+	if (p->specular != -1)
+	{
+		vec_pr = ft_subtract(ft_multiply(2.0 * ft_dot(p->normal, vec_pl), p->normal), vec_pl);
+		angle_rv = ft_dot(vec_pr, vec_po) ;
+		if (angle_rv > 0)
+			return (l->intensity * pow(angle_rv / (ft_lenv(vec_pr) * ft_lenv(vec_po)), p->specular));
+	}
+	return (0);
+}
+
+int		ft_add_shadow(t_ray *ray, t_obj *o, t_light **l)
+{
+	if (ft_scene_intersect(o, ray) != NULL)
+	{
+		(*l) = (*l)->next;
+		return (1);
+	}
+	return (0);
+}
+
+double ft_lighting(t_point *p, t_light *l, t_obj *o, t_vec3 *vec_po)
 {
 	double intensity;
-	t_light *l;
 	t_vec3	*vec_pl;
-	t_vec3 	*vec_pr;
-	double angle_ln;
-	double angle_rv;
-	t_sphere *shadow_s;
 	double t_max;
 	t_ray	*ray;
 
 	intensity = 0;
-	l = p->l;
 	while (l != NULL)
 	{
 		if (l->n == 1)
 			intensity += l->intensity;
 		else
 		{
-			if (l->n == 2)
-            {
-				vec_pl = ft_subtract(l->position, p->point);
-			    t_max = 1.0;
-            }
-			else
-            {
-				vec_pl = l->position;
-                t_max = INF;
-            }
-
+			vec_pl = (l->n == 2) ? ft_subtract(l->position, p->point) : l->position;
+			t_max = (l->n == 2) ? 1.0 : INF;
             ray = ft_create_ray(p->point, vec_pl, E, t_max);
-			t_obj *new_obj1 = ft_create_object(p->o->objects, -1);
-//			t_obj *new_obj1 = p->o;
-//			new_obj1->obj = NULL;
-//			new_obj1->t = INF;
-			ft_sphere_intersect(ray, new_obj1);
-			shadow_s = new_obj1->obj;
-
-			t_obj *new_obj2 = ft_create_object(p->o->next->objects, -1);
-//			t_obj *new_obj2 = p->o->next;
-//			new_obj2->obj = NULL;
-//			new_obj2->t = INF;
-			ft_cylinder_intersect(ray, new_obj2);
-			t_cylinder *shadow_c = new_obj2->obj;
-
-			t_obj *new_obj3 = ft_create_object(p->o->next->next->objects, -1);
-//			t_obj *new_obj3	= p->o->next->next;
-//			new_obj3->obj = NULL;
-//			new_obj3->t = INF;
-			ft_plane_intersect(ray, new_obj3);
-			t_plane *shadow_p = new_obj3->obj;
-
-
-            if ( shadow_s != NULL || shadow_c != NULL || shadow_p != NULL)
-            {
-                l = l->next;
+			if (ft_add_shadow(ray, o, &l) == 1)
                 continue ;
-            }
-
-			angle_ln = ft_dot(p->normal, vec_pl);
-			if (angle_ln > 0)
-				intensity += l->intensity * angle_ln / (ft_lenv(p->normal) * ft_lenv(vec_pl));
-
-			if (specular != -1)
-			{
-				vec_pr = ft_subtract(ft_multiply(2.0 * ft_dot(p->normal, vec_pl), p->normal), vec_pl);
-				angle_rv = ft_dot(vec_pr, vec_po) ;
-				if (angle_rv > 0)
-					intensity += l->intensity * pow(angle_rv / (ft_lenv(vec_pr) * ft_lenv(vec_po)), specular);
-			}
+			intensity += ft_add_diffuse_light(p, l, vec_pl);
+			intensity += ft_add_specular_light(p, l, vec_pl, vec_po);
 		}
 		l = l->next;
 	}

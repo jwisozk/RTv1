@@ -12,25 +12,25 @@
 
 #include "RTv1.h"
 
-t_vec3	*ft_display_to_view(int x, int y, t_asset *p)
+t_vec3	*ft_display_to_view(int x, int y, t_data *data)
 {
 	t_vec3 *d;
 
-	d = ft_create_vec3(x * p->view_w * p->dwi, -y * p->view_h * p->dhi, ZA);
+	d = ft_create_vec3(x * data->view_w * data->dwi, -y * data->view_h * data->dhi, ZA);
 	return (d);
 }
 
 t_obj	*ft_find_closest_obj(t_obj* obj, t_ray* ray)
 {
 	static t_arr_obj arr[ARR_OBJ_NUM] = ARR_OBJ;
+	int i;
 
-	int i = 0;
+	i = 0;
 	while (i < ARR_OBJ_NUM)
 	{
 		if (arr[i].type == obj->type)
 		{
 			obj->t = INF;
-
 			arr[i].ft_obj_intersect(ray, obj);
 			return (obj);
 		}
@@ -39,67 +39,56 @@ t_obj	*ft_find_closest_obj(t_obj* obj, t_ray* ray)
 	return (NULL);
 }
 
-int ft_obj_fill(t_obj *obj, t_asset *p)
+void 	ft_obj_fill(t_obj *obj, t_point *p, t_ray *ray)
 {
 	static t_arr_obj arr[ARR_OBJ_NUM] = ARR_OBJ;
+	int i;
 
-	int i = 0;
+	i = 0;
 	while (i < ARR_OBJ_NUM)
 	{
 		if (arr[i].type == obj->type)
-		{
-			arr[i].ft_obj_fill(obj, p);
-		}
+			arr[i].ft_obj_fill(obj, p, ray);
 		i++;
 	}
-	return (1);
 }
 
-
-int		ft_scene_intersect(t_asset *p)
+t_obj		*ft_scene_intersect(t_obj *o, t_ray *ray)
 {
-	t_obj *obj_loop;
 	t_obj *obj;
-	t_obj *new_obj;
+	t_obj *tmp_obj;
 	double t;
 
-	obj_loop = p->o;
-	t = INF;
 	obj = NULL;
-	while (obj_loop != NULL)
+	t = INF;
+	while (o != NULL)
 	{
-
-		new_obj = ft_find_closest_obj(obj_loop, p->ray);
-		if (new_obj != NULL && new_obj->t < t)
+		tmp_obj = ft_find_closest_obj(o, ray);
+		if (tmp_obj != NULL && tmp_obj->t < t)
 		{
-			if(obj != NULL)
-			{
-//				free(obj->obj);
-//				free(obj);
-			}
-			t = new_obj->t;
-			obj = new_obj;
+			t = tmp_obj->t;
+			obj = tmp_obj;
 		}
-		obj_loop = obj_loop->next;
+		o = o->next;
 	}
-	if (obj != NULL)
-		return (ft_obj_fill(obj, p));
-	return (0);
-
+	return (obj);
 }
 
-int ft_trace_ray(t_asset *p)
+int ft_trace_ray(t_data *data)
 {
 	t_vec3 *vec_po;
+	t_obj	*obj;
+	double lighting;
 
-	if (ft_scene_intersect(p) == 0)
+	if ((obj = ft_scene_intersect(data->o, data->ray)) == NULL)
 		return ft_rgb(BACKGROUND);
-	vec_po = ft_multiply(-1, p->ray->direct);
-	double lighting = ft_lighting(p, vec_po, p->specular);
-	return (ft_multiply_color(lighting, p->color));
+	ft_obj_fill(obj, data->p, data->ray);
+	vec_po = ft_multiply(-1, data->ray->direct);
+	lighting = ft_lighting(data->p, data->l, data->o, vec_po);
+	return (ft_multiply_color(lighting, data->p->color));
 }
 
-void	ft_draw(t_asset *p)
+void	ft_draw(t_data *data)
 {
 	int 	i;
 	int		j;
@@ -114,17 +103,13 @@ void	ft_draw(t_asset *p)
 		j = 0;
 		while (j < DW)
 		{
-//			p->j = j;
-//			printf("%i\n", j);
-			p->ray->direct = ft_display_to_view(j - offset_x, i - offset_y, p);
-			p->color = ft_trace_ray(p);
-			p->img.img_arr[i * DW + j] = p->color;
+			data->ray->direct = ft_display_to_view(j - offset_x, i - offset_y, data);
+			data->p->color = ft_trace_ray(data);
+			data->img.img_arr[i * DW + j] = data->p->color;
 			j++;
-
 		}
-
 		i++;
 	}
-	mlx_put_image_to_window(p->mlx_ptr, p->win_ptr, p->img.img_ptr, 0, 0);
+	mlx_put_image_to_window(data->mlx_ptr, data->win_ptr, data->img.img_ptr, 0, 0);
 }
 

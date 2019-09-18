@@ -87,10 +87,22 @@ t_ray	*ft_create_ray(t_vec3 *origin, t_vec3 *direct, double t_min, double t_max)
     return (i);
 }
 
-void	ft_invert_display_sizes(t_asset *p)
+t_point	*ft_create_point(void)
 {
-	p->dwi = 1.0 / DW;
-	p->dhi = 1.0 / DH;
+	t_point *p;
+
+	p = (t_point*)malloc(sizeof(t_point));
+	p->point = NULL;
+	p->normal = NULL;
+	p->color = ft_rgb(BACKGROUND);
+	p->specular = -1;
+	return (p);
+}
+
+void	ft_invert_display_sizes(t_data *data)
+{
+	data->dwi = 1.0 / DW;
+	data->dhi = 1.0 / DH;
 }
 
 t_light *ft_new_light(char *type, double intensity, t_vec3 *position, int n)
@@ -106,7 +118,7 @@ t_light *ft_new_light(char *type, double intensity, t_vec3 *position, int n)
 	return (l);
 }
 
-void	ft_init_shapes(t_asset *p)
+void	ft_init_shapes(t_data *data)
 {
 	t_obj *sphere;
 	t_obj *cylinder;
@@ -142,11 +154,10 @@ void	ft_init_shapes(t_asset *p)
 	s2->next = s3;
 	s3->next = s4;
 
-	ft_invert_display_sizes(p);
-	p->view_w = 1;
-	p->view_h = 1;
-	p->ray = ft_create_ray(camera, NULL, 1, INF);
-	p->j = 0;
+	ft_invert_display_sizes(data);
+	data->view_w = 1;
+	data->view_h = 1;
+	data->ray = ft_create_ray(camera, NULL, 1, INF);
 
 
 
@@ -171,10 +182,7 @@ void	ft_init_shapes(t_asset *p)
 	plane = ft_create_object(p1, PLANE);
 	sphere->next = cylinder;
 	cylinder->next = plane;
-	p->o = sphere;
-	p->s = s1;
-	p->c = c1;
-	p->p = p1;
+	data->o = sphere;
 
 
 	l1 = ft_new_light("ambient", 0.2, ft_create_vec3(0, 0, 0), 1);
@@ -188,7 +196,9 @@ void	ft_init_shapes(t_asset *p)
 	l1->next = l2;
 	l2->next = l3;
 	l3->next = l4;
-	p->l = l1;
+	data->l = l1;
+
+	data->p = ft_create_point();
 
 }
 
@@ -196,19 +206,19 @@ void	ft_open_window()
 {
 	void	*mlx_ptr;
 	void	*win_ptr;
-	t_asset	p;
+	t_data	data;
 
 	mlx_ptr = mlx_init();
 	win_ptr = mlx_new_window(mlx_ptr, DW, DH, "RTv1");
-	p.img.img_ptr = mlx_new_image(mlx_ptr, DW, DH);
-	p.img.img_arr = (int*)mlx_get_data_addr(p.img.img_ptr,
-			&p.img.bit_per_pixel, &p.img.size_line, &p.img.endian);
-	p.mlx_ptr = mlx_ptr;
-	p.win_ptr = win_ptr;
-	ft_init_shapes(&p);
-	ft_draw(&p);
-	mlx_hook(win_ptr, 17, 0, ft_close_window, &p);
-	mlx_hook(win_ptr, 2, 0, ft_key_press, &p);
+	data.img.img_ptr = mlx_new_image(mlx_ptr, DW, DH);
+	data.img.img_arr = (int*)mlx_get_data_addr(data.img.img_ptr,
+			&data.img.bit_per_pixel, &data.img.size_line, &data.img.endian);
+	data.mlx_ptr = mlx_ptr;
+	data.win_ptr = win_ptr;
+	ft_init_shapes(&data);
+	ft_draw(&data);
+	mlx_hook(win_ptr, 17, 0, ft_close_window, &data);
+	mlx_hook(win_ptr, 2, 0, ft_key_press, &data);
 //	mlx_hook(win_ptr, 4, 0, ft_mouse_press, p);
 //	mlx_hook(win_ptr, 5, 0, ft_mouse_release, p);
 //	mlx_hook(win_ptr, 6, 0, ft_mouse_move, p);

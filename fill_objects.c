@@ -12,40 +12,48 @@
 
 #include "RTv1.h"
 
-void ft_sphere_fill(t_obj *obj, t_asset *p)
+void ft_sphere_fill(t_obj *obj, t_point *p, t_ray *ray)
 {
     t_sphere *s;
+    t_vec3  *radius;
 
     s = (t_sphere*)obj->obj;
-    p->point = ft_add(p->ray->origin, ft_multiply(obj->t, p->ray->direct));
-    p->radius = ft_subtract(p->point, s->center);
-    p->normal = ft_multiply(1.0 / ft_lenv(p->radius), p->radius);
+    p->point = ft_add(ray->origin, ft_multiply(obj->t, ray->direct));
+    radius = ft_subtract(p->point, s->center);
+    p->normal = ft_normalize_vec3(radius);
     p->color = s->color;
     p->specular = s->specular;
 }
 
-void ft_cylinder_fill(t_obj *obj, t_asset *p)
+void ft_cylinder_fill(t_obj *obj, t_point *p, t_ray *ray)
 {
     t_cylinder *c;
+    t_vec3 *oc;
+    t_vec3 *pc;
+    t_vec3  *radius;
+    double m;
+
     c = (t_cylinder*)obj->obj;
-    p->point = ft_add(p->ray->origin, ft_multiply(obj->t, p->ray->direct));
-    t_vec3 *oc = ft_subtract(p->ray->origin, c->center);
-    double m = ft_dot(p->ray->direct, ft_multiply(obj->t, c->normal)) + ft_dot(oc, c->normal);
-    t_vec3 *pc = ft_subtract(p->point, c->center);
-    p->radius = ft_subtract(pc, ft_multiply(m, c->normal));
-    p->normal = ft_multiply(1.0 / ft_lenv(p->radius), p->radius);
+    p->point = ft_add(ray->origin, ft_multiply(obj->t, ray->direct));
+    oc = ft_subtract(ray->origin, c->center);
+    m = ft_dot(ray->direct, ft_multiply(obj->t, c->normal)) + ft_dot(oc, c->normal);
+    pc = ft_subtract(p->point, c->center);
+    radius = ft_subtract(pc, ft_multiply(m, c->normal));
+    p->normal = ft_normalize_vec3(radius);
     p->color = c->color;
     p->specular = c->specular;
 }
 
-void ft_plane_fill(t_obj *obj, t_asset *p)
+void ft_plane_fill(t_obj *obj, t_point *p, t_ray *ray)
 {
     t_plane *pl;
+    t_vec3 *po;
+    double angle_on;
 
     pl = (t_plane*)obj->obj;
-    p->point = ft_add(p->ray->origin, ft_multiply(obj->t, p->ray->direct));
-    t_vec3 *po = ft_subtract(p->ray->origin, p->point);
-    double angle_on = ft_dot(pl->normal, po);
+    p->point = ft_add(ray->origin, ft_multiply(obj->t, ray->direct));
+    po = ft_subtract(ray->origin, p->point);
+    angle_on = ft_dot(pl->normal, po);
     p->normal = (angle_on < 0) ? ft_multiply(-1, pl->normal) : pl->normal;
     p->color = pl->color;
     p->specular = pl->specular;

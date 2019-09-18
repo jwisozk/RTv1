@@ -49,41 +49,25 @@ double ft_max(double x, double y)
     return (x > y ? x : y);
 }
 
-
 double ft_min(double x, double y)
 {
     return (x < y ? x : y);
 }
 
-//double ft_length_vector(t_vector v)
-//{
-//	return sqrt(v.x * v.x + v.y * v.y + v.z * v.z);
-////	return sqrt(pow(v.x, 2) + pow(v.y, 2) + pow(v.z, 2));
-//}
-//
 t_vec3 *ft_normalize_vec3(t_vec3 *v)
 {
 	double len;
 	double inv_len;
 	t_vec3 *nv;
 
-	nv = ft_create_vec3(0,0,0);
+	nv = ft_create_vec3(v->x, v->y, v->z);
 	len = ft_lenv(v);
 	if (len > 0)
 	{
-		inv_len = 1 / len;
+		inv_len = 1.0 / len;
 		nv->x *= inv_len;
 		nv->y *= inv_len;
 		nv->z *= inv_len;
 	}
 	return (nv);
 }
-
-//O = <0, 0, 0>
-//for x in [-Cw/2, Cw/2] {
-//		for y in [-Ch/2, Ch/2] {
-//			D = CanvasToview(x, y)
-//			color = TraceRay(O, D, 1, inf)
-//			canvas.PutPixel(x, y, color)
-//		}
-//}
