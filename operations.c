@@ -26,21 +26,21 @@ t_vec3 *ft_multiply(double k, t_vec3 *v)
 {
 	t_vec3* p;
 
-	p = ft_create_point(v->x * k, v->y * k, v->z * k);
+	p = ft_create_vec3(v->x * k, v->y * k, v->z * k);
 	return (p);
 }
 
 t_vec3 *ft_add(t_vec3 *v1, t_vec3 *v2)
 {
 	t_vec3 *p;
-	p = ft_create_point(v1->x + v2->x, v1->y + v2->y, v1->z + v2->z);
+	p = ft_create_vec3(v1->x + v2->x, v1->y + v2->y, v1->z + v2->z);
 	return (p);
 }
 
 t_vec3 *ft_subtract(t_vec3 *v1, t_vec3 *v2)
 {
 	t_vec3 *p;
-	p = ft_create_point(v1->x - v2->x, v1->y - v2->y, v1->z - v2->z);
+	p = ft_create_vec3(v1->x - v2->x, v1->y - v2->y, v1->z - v2->z);
 	return (p);
 }
 
@@ -61,21 +61,23 @@ double ft_min(double x, double y)
 ////	return sqrt(pow(v.x, 2) + pow(v.y, 2) + pow(v.z, 2));
 //}
 //
-//t_vector ft_normalize_vector(t_vector v)
-//{
-//	double len;
-//	double inv_len;
-//
-//	len = ft_length_vector(v);
-//	if (len > 0)
-//	{
-//		inv_len = 1 / len;
-//		v.x *= inv_len;
-//		v.y *= inv_len;
-//		v.z *= inv_len;
-//	}
-//	return (v);
-//}
+t_vec3 *ft_normalize_vec3(t_vec3 *v)
+{
+	double len;
+	double inv_len;
+	t_vec3 *nv;
+
+	nv = ft_create_vec3(0,0,0);
+	len = ft_lenv(v);
+	if (len > 0)
+	{
+		inv_len = 1 / len;
+		nv->x *= inv_len;
+		nv->y *= inv_len;
+		nv->z *= inv_len;
+	}
+	return (nv);
+}
 
 //O = <0, 0, 0>
 //for x in [-Cw/2, Cw/2] {

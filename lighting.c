@@ -43,15 +43,30 @@ double ft_lighting(t_asset *p, t_vec3 *vec_po, int specular)
                 t_max = INF;
             }
 
-
             ray = ft_create_ray(p->point, vec_pl, E, t_max);
-			ray->obj = (void*)p->s;
+			t_obj *new_obj1 = ft_create_object(p->o->objects, -1);
+//			t_obj *new_obj1 = p->o;
+//			new_obj1->obj = NULL;
+//			new_obj1->t = INF;
+			ft_sphere_intersect(ray, new_obj1);
+			shadow_s = new_obj1->obj;
+
+			t_obj *new_obj2 = ft_create_object(p->o->next->objects, -1);
+//			t_obj *new_obj2 = p->o->next;
+//			new_obj2->obj = NULL;
+//			new_obj2->t = INF;
+			ft_cylinder_intersect(ray, new_obj2);
+			t_cylinder *shadow_c = new_obj2->obj;
+
+			t_obj *new_obj3 = ft_create_object(p->o->next->next->objects, -1);
+//			t_obj *new_obj3	= p->o->next->next;
+//			new_obj3->obj = NULL;
+//			new_obj3->t = INF;
+			ft_plane_intersect(ray, new_obj3);
+			t_plane *shadow_p = new_obj3->obj;
 
 
-			shadow_s = ft_sphere_intersect(ray);
-			ray->t_min = 0;
-			t_plane *shadow_p = ft_plane_intersect(ray, p->p);
-            if (shadow_p != NULL || shadow_s != NULL)
+            if ( shadow_s != NULL || shadow_c != NULL || shadow_p != NULL)
             {
                 l = l->next;
                 continue ;

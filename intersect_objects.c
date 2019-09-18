@@ -34,55 +34,86 @@ double ft_intersect_ray_sphere(t_ray *ray, t_sphere *s)
 	return (INF);
 }
 
-t_sphere *ft_sphere_intersect(t_ray *ray)
+void ft_sphere_intersect(t_ray *ray, t_obj *o)
 {
 	t_sphere 	*s;
-	t_sphere 	*closest_s;
-	double		closest_t;
 	double		t;
 
-	s = (t_sphere*)ray->obj;
-	closest_t = INF;
-	closest_s = NULL;
+	s = (t_sphere*)o->objects;
 	while (s != NULL)
 	{
 		t = ft_intersect_ray_sphere(ray, s);
-		if (t < closest_t && ray->t_min < t && t < ray->t_max )
+		if (t < o->t && ray->t_min < t && t < ray->t_max )
 		{
-			closest_s = s;
-			closest_s->t = t;
-			closest_t = t;
+			o->obj = s;
+			o->t = t;
 		}
 		s = s->next;
 	}
-	return (closest_s == NULL) ? NULL : closest_s;
 }
 
-t_plane *ft_plane_intersect(t_ray *ray, t_plane *pl)
+double ft_intersect_ray_cylinder(t_ray *ray, t_cylinder *c)
 {
-	t_plane	*p;
-	t_plane	*closest_p;
-	double	closest_t;
+	t_vec3	*oc;
+	double 	discriminant;
+	double	k[3];
+	double t1;
+	double t2;
 
-	closest_p = NULL;
-	closest_t = INF;
-	p = pl;
+	oc = ft_subtract(ray->origin, c->center);
+	k[0] = ft_dot(ray->direct, ray->direct) - pow(ft_dot(ray->direct, c->normal), 2);
+	k[1] = 2 * (ft_dot(oc, ray->direct) - ft_dot(ray->direct, c->normal) * ft_dot(oc, c->normal));
+	k[2] = ft_dot(oc, oc) - pow(ft_dot(oc, c->normal), 2) - c->radius * c->radius;
+	discriminant = k[1] * k[1] - 4 * k[0] * k[2];
+	if (discriminant > 0)
+	{
+		t1 = (-k[1] + sqrt(discriminant)) / (2 * k[0]);
+		t2 = (-k[1] - sqrt(discriminant)) / (2 * k[0]);
+		return (ft_min(t1, t2));
+	}
+	return (INF);
+}
+
+void ft_cylinder_intersect(t_ray *ray, t_obj *o)
+{
+	t_cylinder *c;
+	double		t;
+
+	c = (t_cylinder*)o->objects;
+	while (c != NULL)
+	{
+		t = ft_intersect_ray_cylinder(ray, c);
+		if (t < o->t && ray->t_min < t && t < ray->t_max )
+		{
+			o->obj = c;
+			o->t = t;
+		}
+		c = c->next;
+	}
+}
+
+void ft_plane_intersect(t_ray *ray, t_obj *o)
+{
+	t_plane *p;
+	double angle;
+	double t;
+	t_vec3 *op;
+
+	p = (t_plane*)o->objects;
 	while (p != NULL)
 	{
-		double angle = ft_dot(p->normal, ray->direct);
+		angle = ft_dot(p->normal, ray->direct);
 		if (angle != 0)
 		{
-			t_vec3 *op = ft_subtract(p->point, ray->origin);
-			double t = ft_dot(op, p->normal) / angle;
-			if (t < closest_t && t > 1e-6 && ray->t_min < t && t < ray->t_max )
+			op = ft_subtract(p->point, ray->origin);
+			t = ft_dot(op, p->normal) / angle;
+			if (t < o->t && ray->t_min < t && t < ray->t_max )
 			{
-				closest_p = p;
-				closest_t = t;
-				closest_p->t = t;
+				o->obj = p;
+				o->t = t;
 			}
 		}
 		p = p->next;
 	}
-	return (closest_p);
 }
 

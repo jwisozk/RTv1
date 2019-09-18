@@ -26,7 +26,8 @@ SOURCE = main.c \
         color.c \
         operations.c \
         lighting.c \
-        intersect_objects.c
+        intersect_objects.c \
+        fill_objects.c
 
 OBJ = $(SOURCE:.c=.o)
 

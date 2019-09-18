@@ -16,58 +16,76 @@ t_vec3	*ft_display_to_view(int x, int y, t_asset *p)
 {
 	t_vec3 *d;
 
-	d = ft_create_point(x * p->view_w * p->dwi, -y * p->view_h * p->dhi, ZA);
+	d = ft_create_vec3(x * p->view_w * p->dwi, -y * p->view_h * p->dhi, ZA);
 	return (d);
 }
 
+t_obj	*ft_find_closest_obj(t_obj* obj, t_ray* ray)
+{
+	static t_arr_obj arr[ARR_OBJ_NUM] = ARR_OBJ;
+
+	int i = 0;
+	while (i < ARR_OBJ_NUM)
+	{
+		if (arr[i].type == obj->type)
+		{
+			obj->t = INF;
+
+			arr[i].ft_obj_intersect(ray, obj);
+			return (obj);
+		}
+		i++;
+	}
+	return (NULL);
+}
+
+int ft_obj_fill(t_obj *obj, t_asset *p)
+{
+	static t_arr_obj arr[ARR_OBJ_NUM] = ARR_OBJ;
+
+	int i = 0;
+	while (i < ARR_OBJ_NUM)
+	{
+		if (arr[i].type == obj->type)
+		{
+			arr[i].ft_obj_fill(obj, p);
+		}
+		i++;
+	}
+	return (1);
+}
+
+
 int		ft_scene_intersect(t_asset *p)
 {
-	double plane_dist;
-	double sphere_dist;
-	t_sphere 	*s;
+	t_obj *obj_loop;
+	t_obj *obj;
+	t_obj *new_obj;
+	double t;
 
-	sphere_dist = INF;
-	s = ft_sphere_intersect(p->ray);
-	if (s != NULL && s->t < sphere_dist)
+	obj_loop = p->o;
+	t = INF;
+	obj = NULL;
+	while (obj_loop != NULL)
 	{
-		sphere_dist = s->t;
-		p->point = ft_add(p->ray->origin, ft_multiply(s->t, p->ray->direct));
-		p->radius = ft_subtract(p->point, s->center);
-		p->normal = ft_multiply(1.0 / ft_lenv(p->radius), p->radius);
-		p->color = s->color;
-		p->specular = s->specular;
+
+		new_obj = ft_find_closest_obj(obj_loop, p->ray);
+		if (new_obj != NULL && new_obj->t < t)
+		{
+			if(obj != NULL)
+			{
+//				free(obj->obj);
+//				free(obj);
+			}
+			t = new_obj->t;
+			obj = new_obj;
+		}
+		obj_loop = obj_loop->next;
 	}
-
-	plane_dist = INF;
-	t_plane *pl = ft_plane_intersect(p->ray, p->p);
-	if (pl != NULL && pl->t < sphere_dist && pl->t > 5)
-	{
-		plane_dist = pl->t;
-		p->point = ft_add(p->ray->origin, ft_multiply(pl->t, p->ray->direct));
-		p->normal = pl->normal;
-		p->color = pl->color;
-		p->specular = pl->specular;
-	}
-
-
-//		if (fabs(p->ray->direct->y) > 1e-3)
-//	{
-////		printf("%f\n", p->ray->direct->y);
-//		double d = (p->ray->origin->y - 4) / p->ray->direct->y; // the checkerboard plane has equation y = -4
-//		t_vec3 *pt = ft_add(p->ray->origin, ft_multiply(d, p->ray->direct));
-//		if (d < sphere_dist && pt->z > 1)
-//		{
-//			plane_dist = d;
-//			p->point = pt;
-//			p->normal = ft_create_point(0, 1, 0);
-//			t_vec3 *diffuse_color = ((int)(.5 * p->point->x + 1000) + (int)(.5 * p->point->z)) & 1 ? ft_create_point(0, 255, 255) : ft_create_point(255, 255, 0);
-//			p->color = (ft_rgb(diffuse_color->x, diffuse_color->y, diffuse_color->z));
-//			p->specular = 500;
-//		}
-//	}
-	if (ft_min(plane_dist, sphere_dist) < INF)
-		return (1);
+	if (obj != NULL)
+		return (ft_obj_fill(obj, p));
 	return (0);
+
 }
 
 int ft_trace_ray(t_asset *p)
@@ -96,11 +114,15 @@ void	ft_draw(t_asset *p)
 		j = 0;
 		while (j < DW)
 		{
+//			p->j = j;
+//			printf("%i\n", j);
 			p->ray->direct = ft_display_to_view(j - offset_x, i - offset_y, p);
 			p->color = ft_trace_ray(p);
 			p->img.img_arr[i * DW + j] = p->color;
 			j++;
+
 		}
+
 		i++;
 	}
 	mlx_put_image_to_window(p->mlx_ptr, p->win_ptr, p->img.img_ptr, 0, 0);
