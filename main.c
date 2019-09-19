@@ -62,6 +62,20 @@ t_cylinder *ft_create_cylinder(int color, t_vec3 *center, t_vec3 *normal, double
     return (c);
 }
 
+t_cone *ft_create_cone(int color, t_vec3 *center, t_vec3 *normal, int degree, int specular)
+{
+	t_cone *c;
+
+	c = (t_cone*)malloc(sizeof(t_cone));
+	c->center = center;
+	c->normal = normal;
+	c->color = color;
+	c->angle = COS(degree);
+	c->specular = specular;
+	c->next = NULL;
+	return (c);
+}
+
 t_plane *ft_create_plane(int color, t_vec3 *point, t_vec3* normal, int specular)
 {
 	t_plane *p;
@@ -123,6 +137,7 @@ void	ft_init_shapes(t_data *data)
 	t_obj *sphere;
 	t_obj *cylinder;
 	t_obj *plane;
+	t_obj *cone;
 
 
 	t_vec3 *camera;
@@ -138,6 +153,8 @@ void	ft_init_shapes(t_data *data)
 	t_plane *p5;
 
 	t_cylinder *c1;
+
+	t_cone *co1;
 
 
 	t_light	*l1;
@@ -162,11 +179,11 @@ void	ft_init_shapes(t_data *data)
 
 
 
-    p1 = ft_create_plane(ft_rgb(0, 255, 255), ft_create_vec3(0.1,0,0), ft_create_vec3(1,0,0), 500);
+    p1 = ft_create_plane(ft_rgb(0, 255, 255), ft_create_vec3(-2,0,0), ft_create_vec3(1,0,0), 500);
     p2 = ft_create_plane(ft_rgb(64, 128, 255), ft_create_vec3(-1,0,0), ft_create_vec3(1,0,0), 500);
     p3 = ft_create_plane(ft_rgb(255, 128, 64), ft_create_vec3(0,1,0), ft_create_vec3(0,-1,0), 500);
     p4 = ft_create_plane(ft_rgb(255, 255, 0), ft_create_vec3(0,-1,0), ft_create_vec3(0,1,0), 500);
-	p5 = ft_create_plane(ft_rgb(200, 100, 64), ft_create_vec3(0,0,4), ft_create_vec3(0,0,-1), 500);
+	p5 = ft_create_plane(ft_rgb(200, 100, 64), ft_create_vec3(0,0,10), ft_create_vec3(0,0,-1), 500);
 	p1->next = p2;
 	p2->next = p3;
 	p3->next = p4;
@@ -174,14 +191,16 @@ void	ft_init_shapes(t_data *data)
 
 
 	c1 = ft_create_cylinder(ft_rgb(255, 255, 100), ft_create_vec3(1, 2, 3), ft_create_vec3(0, 1, 0), 0.3, 500);
-//
+	co1 = ft_create_cone(ft_rgb(100, 255, 100), ft_create_vec3(0, 0, 2.7), ft_create_vec3(0, 1, 0), 60, 500);
 
 
 	sphere = ft_create_object(s1, SPHERE);
 	cylinder = ft_create_object(c1, CYLINDER);
 	plane = ft_create_object(p1, PLANE);
+	cone = ft_create_object(co1, CONE);
 	sphere->next = cylinder;
 	cylinder->next = plane;
+	plane->next = cone;
 	data->o = sphere;
 
 

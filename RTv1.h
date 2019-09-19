@@ -30,8 +30,11 @@
 # define OBJ_SPHERE     {SPHERE, &ft_sphere_intersect, &ft_sphere_fill}
 # define OBJ_PLANE      {PLANE, &ft_plane_intersect, &ft_plane_fill}
 # define OBJ_CYLINDER   {CYLINDER,  &ft_cylinder_intersect, &ft_cylinder_fill}
-# define ARR_OBJ        {OBJ_SPHERE, OBJ_CYLINDER, OBJ_PLANE}
-# define ARR_OBJ_NUM    3
+# define OBJ_CONE   	{CONE,  &ft_cone_intersect, &ft_cone_fill}
+# define ARR_OBJ        {OBJ_SPHERE, OBJ_CYLINDER, OBJ_PLANE, OBJ_CONE}
+# define ARR_OBJ_NUM    4
+# define COS(x) cos(x * M_PI / 180)
+# define SIN(x) sin(x * M_PI / 180)
 
 typedef struct 			s_vec3
 {
@@ -52,7 +55,8 @@ typedef enum 			e_type_obj
 {
 	SPHERE,
 	CYLINDER,
-	PLANE
+	PLANE,
+	CONE
 }						t_type_obj;
 
 typedef struct          s_arr_obj
@@ -90,6 +94,16 @@ typedef  struct 	    s_cylinder
     int			        specular;
     struct s_cylinder	*next;
 }                       t_cylinder;
+
+typedef  struct 	    s_cone
+{
+	t_vec3			    *center;
+	t_vec3			    *normal;
+	double			    angle;
+	int				    color;
+	int			        specular;
+	struct s_cone		*next;
+}                       t_cone;
 
 typedef  struct		    s_plane
 {
@@ -161,10 +175,12 @@ t_obj*                  ft_scene_intersect(t_obj *o, t_ray *ray);
 void 					ft_sphere_intersect(t_ray *ray, t_obj *o);
 void 					ft_plane_intersect(t_ray *ray, t_obj *o);
 void 					ft_cylinder_intersect(t_ray *ray, t_obj *o);
+void 					ft_cone_intersect(t_ray *ray, t_obj *o);
 
 void 					ft_sphere_fill(t_obj *obj, t_point *p, t_ray *ray);
 void 					ft_cylinder_fill(t_obj *obj, t_point *p, t_ray *ray);
 void 					ft_plane_fill(t_obj *obj, t_point *p, t_ray *ray);
+void 					ft_cone_fill(t_obj *obj, t_point *p, t_ray *ray);
 
 double 					ft_dot(t_vec3 *v1, t_vec3 *v2);
 t_vec3*                 ft_multiply(double k, t_vec3 *v);
