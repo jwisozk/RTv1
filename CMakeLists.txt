@@ -72,6 +72,6 @@ set(SOURCE_FILES
         libft/ft_toupper.c
         libft/get_next_line.c
         libft/libft.h
-        main.c RTv1.h keys.c draw.c lighting.c operations.c color.c intersect_objects.c fill_objects.c)
+        main.c RTv1.h keys.c draw.c lighting.c operations.c color.c intersect_objects.c fill_objects.c matrix.c)
 add_executable(RTv1 ${SOURCE_FILES})
 target_link_libraries(RTv1 ${LIBMLX} ${OPENGL} ${APPKIT})

@@ -6,7 +6,7 @@
 /*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/09 13:37:06 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/09/13 00:14:11 by jwisozk          ###   ########.fr       */
+/*   Updated: 2019/09/21 21:36:40 by jwisozk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,7 +70,7 @@ t_cone *ft_create_cone(int color, t_vec3 *center, t_vec3 *normal, int degree, in
 	c->center = center;
 	c->normal = normal;
 	c->color = color;
-	c->angle = COS(degree);
+	c->angle = TANH(degree);
 	c->specular = specular;
 	c->next = NULL;
 	return (c);
@@ -162,7 +162,7 @@ void	ft_init_shapes(t_data *data)
 	t_light	*l3;
 	t_light	*l4;
 
-	camera = ft_create_vec3(0, 0, 0);
+	camera = ft_create_vec3(0, 0, -2);
 	s1 = ft_create_sphere(ft_rgb(255, 0, 0), ft_create_vec3(0, -1.2, 3), 1, 500);
 	s2 = ft_create_sphere(ft_rgb(0, 0, 255), ft_create_vec3(1, .5, 2.3), 0.5, 500);
 	s3 = ft_create_sphere(ft_rgb(0, 255, 0), ft_create_vec3(-1.5, 10, 2.5), 1, 500);
@@ -179,7 +179,7 @@ void	ft_init_shapes(t_data *data)
 
 
 
-    p1 = ft_create_plane(ft_rgb(0, 255, 255), ft_create_vec3(-2,0,0), ft_create_vec3(1,0,0), 500);
+    p1 = ft_create_plane(ft_rgb(0, 255, 255), ft_create_vec3(12,0,0), ft_create_vec3(1,0,0), 500);
     p2 = ft_create_plane(ft_rgb(64, 128, 255), ft_create_vec3(-1,0,0), ft_create_vec3(1,0,0), 500);
     p3 = ft_create_plane(ft_rgb(255, 128, 64), ft_create_vec3(0,1,0), ft_create_vec3(0,-1,0), 500);
     p4 = ft_create_plane(ft_rgb(255, 255, 0), ft_create_vec3(0,-1,0), ft_create_vec3(0,1,0), 500);
@@ -191,7 +191,7 @@ void	ft_init_shapes(t_data *data)
 
 
 	c1 = ft_create_cylinder(ft_rgb(255, 255, 100), ft_create_vec3(1, 2, 3), ft_create_vec3(0, 1, 0), 0.3, 500);
-	co1 = ft_create_cone(ft_rgb(100, 255, 100), ft_create_vec3(0, 0, 2.7), ft_create_vec3(0, 1, 0), 60, 500);
+	co1 = ft_create_cone(ft_rgb(100, 255, 100), ft_create_vec3(0, 0, 2.7), ft_create_vec3(0, 1, 0), 30, 500);
 
 
 	sphere = ft_create_object(s1, SPHERE);

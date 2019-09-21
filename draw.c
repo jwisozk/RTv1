@@ -6,7 +6,7 @@
 /*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/26 20:23:15 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/09/12 23:39:13 by jwisozk          ###   ########.fr       */
+/*   Updated: 2019/09/21 21:08:26 by jwisozk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -103,7 +103,7 @@ void	ft_draw(t_data *data)
 		j = 0;
 		while (j < DW)
 		{
-			data->ray->direct = ft_display_to_view(j - offset_x, i - offset_y, data);
+			data->ray->direct = ft_rotate_y(ft_display_to_view(j - offset_x, i - offset_y, data), -30);
 			data->p->color = ft_trace_ray(data);
 			data->img.img_arr[i * DW + j] = data->p->color;
 			j++;

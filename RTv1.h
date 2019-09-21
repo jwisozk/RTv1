@@ -6,7 +6,7 @@
 /*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/09 13:37:42 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/09/12 23:01:13 by jwisozk          ###   ########.fr       */
+/*   Updated: 2019/09/21 18:27:15 by jwisozk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,8 +33,10 @@
 # define OBJ_CONE   	{CONE,  &ft_cone_intersect, &ft_cone_fill}
 # define ARR_OBJ        {OBJ_SPHERE, OBJ_CYLINDER, OBJ_PLANE, OBJ_CONE}
 # define ARR_OBJ_NUM    4
-# define COS(x) cos(x * M_PI / 180)
-# define SIN(x) sin(x * M_PI / 180)
+# define TANH(x) 		tanh(x * M_PI / 180)
+# define COS(x) 		cos(x * M_PI / 180)
+# define SIN(x) 		sin(x * M_PI / 180)
+//# define MY				{{COS(d), 0, -SIN(d)}, {0, 1,0}, {SIN(d), 0, COS(d)}}
 
 typedef struct 			s_vec3
 {
@@ -194,6 +196,7 @@ t_vec3*                 ft_normalize_vec3(t_vec3 *v);
 int						ft_rgb(int r, int g, int b);
 int 					ft_multiply_color(double k, int color);
 
+t_vec3 					*ft_rotate_y(t_vec3 *v, int d);
 
 
 //t_vec3 *ft_normalize_vec3(t_vec3 *v);
