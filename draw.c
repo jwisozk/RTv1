@@ -6,7 +6,7 @@
 /*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/26 20:23:15 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/09/21 21:08:26 by jwisozk          ###   ########.fr       */
+/*   Updated: 2019/09/23 19:19:59 by jwisozk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -98,13 +98,21 @@ void	ft_draw(t_data *data)
 	offset_x = (int)(DW * 0.5);
 	offset_y = (int)(DH * 0.5);
 	i = 0;
-	data->ray->origin = ft_translate(data->ray->origin, data->ray->t);
+	data->ray->origin = ft_translate(data->ray->origin, ft_create_vec3(0.5,0.5,0));
 	while (i < DH)
 	{
 		j = 0;
 		while (j < DW)
 		{
-			data->ray->direct = ft_rotate(ft_display_to_view(j - offset_x, i - offset_y, data), data->ray->a);
+			data->ray->direct = ft_display_to_view(j - offset_x, i - offset_y, data);
+			data->ray->direct = ft_camera_look_at(data->ray->t, data->ray->direct);
+//			data->ray->a->y = 90;
+//			data->ray->direct = ft_rotate_y(ft_display_to_view(j - offset_x, i - offset_y, data), data->ray->a);
+//			data->ray->a->x = 30;
+//			data->ray->direct = ft_rotate_x(data->ray->direct, data->ray->a);
+//			data->ray->a->z = 30;
+//			data->ray->direct = ft_rotate_z(data->ray->direct, data->ray->a);
+
 			data->p->color = ft_trace_ray(data);
 			data->img.img_arr[i * DW + j] = data->p->color;
 			j++;

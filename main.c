@@ -6,7 +6,7 @@
 /*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/09 13:37:06 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/09/21 21:36:40 by jwisozk          ###   ########.fr       */
+/*   Updated: 2019/09/23 19:21:34 by jwisozk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -179,8 +179,10 @@ void	ft_init_shapes(t_data *data)
 
 //    a = ft_create_ang3(30,90,30);
 //    t = ft_create_vec3(2,1,2);
-	a = ft_create_ang3(30,90,0);
-	t = ft_create_vec3(2,0,2);
+//	a = ft_create_ang3(30,90,0);
+//	t = ft_create_vec3(2,0,2);
+	a = ft_create_ang3(0,0,0);
+	t = ft_create_vec3(0.3,0.0,0.05);
 	camera = ft_create_vec3(0, 0, 0);
 	s1 = ft_create_sphere(ft_rgb(255, 0, 0), ft_create_vec3(0, 0, 2), 0.5, 500);
 //	s2 = ft_create_sphere(ft_rgb(0, 0, 255), ft_create_vec3(1, .5, 2.3), 0.5, 500);
@@ -201,7 +203,7 @@ void	ft_init_shapes(t_data *data)
 
 
 
-    p1 = ft_create_plane(ft_rgb(0, 255, 255), ft_create_vec3(12,0,0), ft_create_vec3(1,0,0), 500);
+    p1 = ft_create_plane(ft_rgb(0, 255, 255), ft_create_vec3(2,0,0), ft_create_vec3(1,0,0), 500);
     p2 = ft_create_plane(ft_rgb(64, 128, 255), ft_create_vec3(-1,0,0), ft_create_vec3(1,0,0), 500);
     p3 = ft_create_plane(ft_rgb(255, 128, 64), ft_create_vec3(0,1,0), ft_create_vec3(0,-1,0), 500);
     p4 = ft_create_plane(ft_rgb(255, 255, 0), ft_create_vec3(0,-1,0), ft_create_vec3(0,1,0), 500);
@@ -227,8 +229,8 @@ void	ft_init_shapes(t_data *data)
 
 
 	l1 = ft_new_light("ambient", 0.2, ft_create_vec3(0, 0, 0), 1);
-	l2 = ft_new_light("point", 0.7, ft_create_vec3(7, 1, 2), 2);
-	l3 = ft_new_light("directional", 0.0, ft_create_vec3(7, 1, 2), 3);
+	l2 = ft_new_light("point", 0.7, ft_create_vec3(1, 0, 2), 2);
+	l3 = ft_new_light("directional", 0.0, ft_create_vec3(1, 0, 2), 3);
 //	l4 = ft_new_light("point", 0.5, ft_create_vec3(.9, -.7, 2.2), 2);
 //	l1 = ft_new_light("point", 0.5, ft_create_vec3(-20, 20,  -20), 2);
 //	l2 = ft_new_light("point", 0.5, ft_create_vec3(30, 50, 25), 2);

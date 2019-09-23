@@ -6,7 +6,7 @@
 /*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/09 13:37:42 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/09/21 18:27:15 by jwisozk          ###   ########.fr       */
+/*   Updated: 2019/09/23 17:04:25 by jwisozk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,6 +44,14 @@ typedef struct 			s_vec3
 	double 				y;
 	double 				z;
 }						t_vec3;
+
+typedef struct 			s_vec4
+{
+	double 				x;
+	double 				y;
+	double 				z;
+	double				k;
+}						t_vec4;
 
 typedef struct 			s_ang3
 {
@@ -208,8 +216,12 @@ int 					ft_multiply_color(double k, int color);
 
 t_vec3 					*ft_rotate(t_vec3 *v, t_ang3 *a);
 t_vec3                  *ft_translate(t_vec3* o, t_vec3* t);
+t_vec4				*ft_create_vec4(double x, double y, double z);
 
-t_vec3                     *ft_camera_look_at(t_vec3 *cam_pos);
+t_vec3                     *ft_camera_look_at(t_vec3 *cam_pos, t_vec3 *dir);
+t_vec3 *ft_rotate_x(t_vec3 *v, t_ang3 *a);
+t_vec3 *ft_rotate_y(t_vec3 *v, t_ang3 *a);
+t_vec3 *ft_rotate_z(t_vec3 *v, t_ang3 *a);
 
 
 //t_vec3 *ft_normalize_vec3(t_vec3 *v);
