@@ -57,7 +57,8 @@ void ft_cone_fill(t_obj *obj, t_point *p, t_ray *ray)
     oc = ft_subtract(ray->origin, c->center);
     m = ft_dot(ray->direct, ft_multiply(obj->t, c->normal)) + ft_dot(oc, c->normal);
     pc = ft_subtract(p->point, c->center);
-    radius = ft_subtract(ft_subtract(pc, ft_multiply(m, c->normal)), ft_multiply(m * pow(c->angle, 2), c->normal));
+//    radius = ft_subtract(ft_subtract(pc, ft_multiply(m, c->normal)), ft_multiply(m * pow(c->angle, 2), c->normal));
+    radius = ft_subtract(pc, ft_multiply(m * (1 + pow(c->angle, 2)), c->normal));
     p->normal = ft_normalize_vec3(radius);
     p->color = c->color;
     p->specular = c->specular;

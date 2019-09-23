@@ -12,36 +12,57 @@
 
 #include "RTv1.h"
 
-t_vec3 *ft_rotate_y(t_vec3 *v, int d)
+void	ft_fill_tmp(double *a, double *b, double a_, double b_)
 {
-//	{{COS(d), SIN(d), 0},{-SIN(d), COS(d), 0},{0, 0, 1}};
-//	static double m[] = {COS(d), 0, -SIN(d)};
-//	double matrix_y[3][3] = {{COS(d), 0, -SIN(d)}, {0, 1, 0}, {SIN(d), 0, COS(d)}};
-
-	double matrix_y[9] = {COS(d), 0, -SIN(d), 0, 1, 0, SIN(d), 0, COS(d)};
-	double arr_v[3];
-	arr_v[0] = v->x;
-	arr_v[1] = v->y;
-	arr_v[2] = v->z;
-
-	double result[3];
-	result[0] = 0;
-	result[1] = 0;
-	result[2] = 0;
-	enum vv{x, y, z};
-//	t_vec3 *vr = ft_create_vec3(0,0,0);
-	int i = 0;
-	int j = 0;
-	while (i < 9)
-	{
-			result[j % 3] += arr_v[i % 3] * matrix_y[i];
-			if (i % 3 == 2)
-				j++;
-		i++;
-	}
-
-	t_vec3 *vr = ft_create_vec3(result[0],result[1],result[2]);
-	return (vr);
+	*a = a_;
+	*b = b_;
 }
 
+t_vec3 *ft_rotate(t_vec3 *v, t_ang3 *a)
+{
+	double	x;
+	double	y;
+	double	z;
 
+	ft_fill_tmp(&y, &z, v->y, v->z);
+	if (a->x)
+	{
+		v->y = y * COS(a->x) - z * SIN(a->x);
+		v->z = y * SIN(a->x) + z * COS(a->x);
+	}
+	ft_fill_tmp(&x, &z, v->x, v->z);
+	if (a->y)
+	{
+		v->x = x * COS(a->y) - z * SIN(a->y);
+		v->z = x * SIN(a->y) + z * COS(a->y);
+	}
+	ft_fill_tmp(&x, &y, v->x, v->y);
+	if (a->z)
+	{
+		v->x = x * COS(a->z) - y * SIN(a->z);
+		v->y = x * SIN(a->z) + y * COS(a->z);
+	}
+	return (v);
+}
+
+t_vec3 *ft_translate(t_vec3* o, t_vec3* t)
+{
+	o->x += t->x;
+	o->y += t->y;
+	o->z += t->z;
+	return (o);
+}
+
+t_vec3 *ft_camera_look_at(t_vec3 *cam_pos)
+{
+	t_vec3 *origin;
+	t_vec3 *forward;
+	t_vec3 *right;
+	t_vec3 *up;
+
+	origin = ft_create_vec3(0,0,0);
+	forward = ft_normalize_vec3(ft_subtract(cam_pos, origin));
+	right = ft_cross_product(ft_create_vec3(0,1,0), forward);
+	up = ft_cross_product(forward, right);
+	return (up);
+}

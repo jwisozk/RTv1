@@ -98,12 +98,13 @@ void	ft_draw(t_data *data)
 	offset_x = (int)(DW * 0.5);
 	offset_y = (int)(DH * 0.5);
 	i = 0;
+	data->ray->origin = ft_translate(data->ray->origin, data->ray->t);
 	while (i < DH)
 	{
 		j = 0;
 		while (j < DW)
 		{
-			data->ray->direct = ft_rotate_y(ft_display_to_view(j - offset_x, i - offset_y, data), -30);
+			data->ray->direct = ft_rotate(ft_display_to_view(j - offset_x, i - offset_y, data), data->ray->a);
 			data->p->color = ft_trace_ray(data);
 			data->img.img_arr[i * DW + j] = data->p->color;
 			j++;

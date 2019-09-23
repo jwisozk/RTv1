@@ -45,12 +45,21 @@ typedef struct 			s_vec3
 	double 				z;
 }						t_vec3;
 
+typedef struct 			s_ang3
+{
+    int 				x;
+    int 				y;
+    int 				z;
+}						t_ang3;
+
 typedef  struct s_ray
 {
 	t_vec3				*origin;
 	t_vec3				*direct;
 	double 				t_min;
 	double				t_max;
+    t_ang3              *a;
+    t_vec3              *t;
 }               		t_ray;
 
 typedef enum 			e_type_obj
@@ -185,6 +194,7 @@ void 					ft_plane_fill(t_obj *obj, t_point *p, t_ray *ray);
 void 					ft_cone_fill(t_obj *obj, t_point *p, t_ray *ray);
 
 double 					ft_dot(t_vec3 *v1, t_vec3 *v2);
+t_vec3                  *ft_cross_product(t_vec3 *a, t_vec3 *b);
 t_vec3*                 ft_multiply(double k, t_vec3 *v);
 t_vec3*                 ft_subtract(t_vec3 *v1, t_vec3 *v2);
 t_vec3*                 ft_add(t_vec3 *v1, t_vec3 *v2);
@@ -196,7 +206,10 @@ t_vec3*                 ft_normalize_vec3(t_vec3 *v);
 int						ft_rgb(int r, int g, int b);
 int 					ft_multiply_color(double k, int color);
 
-t_vec3 					*ft_rotate_y(t_vec3 *v, int d);
+t_vec3 					*ft_rotate(t_vec3 *v, t_ang3 *a);
+t_vec3                  *ft_translate(t_vec3* o, t_vec3* t);
+
+t_vec3                     *ft_camera_look_at(t_vec3 *cam_pos);
 
 
 //t_vec3 *ft_normalize_vec3(t_vec3 *v);

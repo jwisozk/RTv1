@@ -22,6 +22,17 @@ double ft_dot(t_vec3 *v1, t_vec3 *v2)
 	return (v1->x * v2->x + v1->y * v2->y + v1->z * v2->z);
 }
 
+t_vec3 *ft_cross_product(t_vec3 *a, t_vec3 *b)
+{
+	t_vec3* c;
+
+	c = ft_create_vec3(0,0,0);
+	c->x = a->y * b->z - a->z * b->y;
+	c->y = a->z * b->x - a->x * b->z;
+	c->z = a->x * b->y - a->y * b->x;
+	return (c);
+}
+
 t_vec3 *ft_multiply(double k, t_vec3 *v)
 {
 	t_vec3* p;
