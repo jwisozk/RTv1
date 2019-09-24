@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   matrix.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: iplastun <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/21 17:12:01 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/09/23 19:21:57 by jwisozk          ###   ########.fr       */
+/*   Updated: 2019/09/24 19:44:26 by iplastun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -115,7 +115,7 @@ double **ft_create_double_ptr()
 	int i = 0;
 	while (i < 4)
 	{
-		c[i] = malloc(sizeof(double) * 4);
+		c[i] = (double*)malloc(sizeof(double) * 4);
 		i++;
 	}
 	return (c);
@@ -191,86 +191,101 @@ t_vec3 *ft_product_mv(double **c, t_vec4 *nd)
 	return (ft_create_vec3(result[0], result[1], result[2]));
 }
 
+//position 0 -2 15
+//look_at 0 0 0
 
-
-t_vec3 *ft_camera_look_at(t_vec3 *cam_pos, t_vec3 *dir)
-{
-	t_vec3 *origin;
-	t_vec3 *forward;
-	t_vec3 *right;
-	t_vec3 *up;
-
-	origin = ft_create_vec3(0,0,0);
-	forward = ft_normalize_vec3(ft_subtract(cam_pos, origin));
-	right = ft_cross_product(ft_create_vec3(0,1,0), forward);
-	up = ft_cross_product(forward, right);
-	double **m = ft_create_double_ptr();
-
-	m[0][0] = 1;
-	m[0][1] = 0;
-	m[0][2] = 0;
-	m[0][3] = -cam_pos->x;
-	m[1][0] = 0;
-	m[1][1] = 1;
-	m[1][2] = 0;
-	m[1][3] = -cam_pos->y;
-	m[2][0] = 0;
-	m[2][1] = 0;
-	m[2][2] = 1;
-	m[2][3] = -cam_pos->z;
-	m[3][0] = 0;
-	m[3][1] = 0;
-	m[3][2] = 0;
-	m[3][3] = 1;
-
-	double **camToWorld = ft_create_double_ptr();
-	camToWorld[0][0] = right->x;
-	camToWorld[0][1] = right->y;
-	camToWorld[0][2] = right->z;
-	camToWorld[0][3] = 0;
-	camToWorld[1][0] = up->x;
-	camToWorld[1][1] = up->y;
-	camToWorld[1][2] = up->z;
-	camToWorld[1][3] = 0;
-	camToWorld[2][0] = forward->x;
-	camToWorld[2][1] = forward->y;
-	camToWorld[2][2] = forward->z;
-	camToWorld[2][3] = 0;
-	camToWorld[3][0] = 0;
-	camToWorld[3][1] = 0;
-	camToWorld[3][2] = 0;
-	camToWorld[3][3] = 1;
-
-
-	double **c = ft_matrix_product(camToWorld, m);
-
-//		int i = 0;
-//		while (i < 4)
-//		{
-//			int j = 0;
-//			while (j < 4)
-//			{
-//				printf("%f ", c[i][j]);
-//				j++;
-//			}
-//			printf("\n");
-//			i++;
-//		}
-
+//t_camera create_camera(t_vec4 position, t_vec4 lookat, double fl)
+//{
+//    t_camera camera;
+//    t_vec4 forward;
+//    t_vec4 world_up;
 //
-//	exit(0);
+//    camera.position = position;
+//    camera.lookat = lookat;
+//    world_up = create_vector(0, 1, 0);
+//
+//    forward = normalize( vector_sub(camera.lookat, camera.position) );
+//    camera.left = normalize( cross_product(world_up, forward) );
+//    camera.up = normalize( cross_product(forward, camera.left) );
+//    camera.forward = forward;
+//
+//    camera.focal_length = fl;
+//    camera.frame_height = 1;
+//    camera.frame_width = 1;
+//    return (camera);
+//}
+//x * data->view_w * data->dwi, -y * data->view_h * data->dhi, ZA);
 
 
 
-//	camToWorld[3][0] = cam_pos->x;
-//	camToWorld[3][1] = cam_pos->y;
-//	camToWorld[3][2] = cam_pos->z;
+//	double **m = ft_create_double_ptr();
+//
+//	m[0][0] = 1;
+//	m[0][1] = 0;
+//	m[0][2] = 0;
+//	m[0][3] = -cam_pos->x;
+//	m[1][0] = 0;
+//	m[1][1] = 1;
+//	m[1][2] = 0;
+//	m[1][3] = -cam_pos->y;
+//	m[2][0] = 0;
+//	m[2][1] = 0;
+//	m[2][2] = 1;
+//	m[2][3] = -cam_pos->z;
+//	m[3][0] = 0;
+//	m[3][1] = 0;
+//	m[3][2] = 0;
+//	m[3][3] = 1;
+//
+//	double **camToWorld = ft_create_double_ptr();
+//	camToWorld[0][0] = right->x;
+//	camToWorld[0][1] = right->y;
+//	camToWorld[0][2] = right->z;
+//	camToWorld[0][3] = 0;
+//	camToWorld[1][0] = up->x;
+//	camToWorld[1][1] = up->y;
+//	camToWorld[1][2] = up->z;
+//	camToWorld[1][3] = 0;
+//	camToWorld[2][0] = forward->x;
+//	camToWorld[2][1] = forward->y;
+//	camToWorld[2][2] = forward->z;
+//	camToWorld[2][3] = 0;
+//	camToWorld[3][0] = 0;
+//	camToWorld[3][1] = 0;
+//	camToWorld[3][2] = 0;
+//	camToWorld[3][3] = 1;
+//
+//
+//	double **c = ft_matrix_product(camToWorld, m);
+//
+////		int i = 0;
+////		while (i < 4)
+////		{
+////			int j = 0;
+////			while (j < 4)
+////			{
+////				printf("%f ", c[i][j]);
+////				j++;
+////			}
+////			printf("\n");
+////			i++;
+////		}
+//
+////
+////	exit(0);
+//
+//
+//
+////	camToWorld[3][0] = cam_pos->x;
+////	camToWorld[3][1] = cam_pos->y;
+////	camToWorld[3][2] = cam_pos->z;
+//
+//	t_vec4 *nd = ft_create_vec4(dir->x, dir->y, dir->z);
+//
+//	t_vec3 *p = ft_product_mv(c, nd);
+//
+//
+//	return (p);
+//}
 
-	t_vec4 *nd = ft_create_vec4(dir->x, dir->y, dir->z);
-
-	t_vec3 *p = ft_product_mv(c, nd);
-
-
-	return (p);
-}
 

@@ -3,22 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   draw.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: iplastun <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/26 20:23:15 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/09/23 19:19:59 by jwisozk          ###   ########.fr       */
+/*   Updated: 2019/09/24 20:50:08 by iplastun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "RTv1.h"
-
-t_vec3	*ft_display_to_view(int x, int y, t_data *data)
-{
-	t_vec3 *d;
-
-	d = ft_create_vec3(x * data->view_w * data->dwi, -y * data->view_h * data->dhi, ZA);
-	return (d);
-}
 
 t_obj	*ft_find_closest_obj(t_obj* obj, t_ray* ray)
 {
@@ -92,27 +84,17 @@ void	ft_draw(t_data *data)
 {
 	int 	i;
 	int		j;
-	int 	offset_x;
-    int     offset_y;
 
-	offset_x = (int)(DW * 0.5);
-	offset_y = (int)(DH * 0.5);
 	i = 0;
-	data->ray->origin = ft_translate(data->ray->origin, ft_create_vec3(0.5,0.5,0));
+    t_vec3 *look_at = ft_create_vec3(0, 0, 0);
+    t_vec3 *cam_pos = ft_create_vec3(2, 1, 0);
+    data->cam = ft_camera_look_at(look_at, cam_pos);
 	while (i < DH)
 	{
 		j = 0;
 		while (j < DW)
 		{
-			data->ray->direct = ft_display_to_view(j - offset_x, i - offset_y, data);
-			data->ray->direct = ft_camera_look_at(data->ray->t, data->ray->direct);
-//			data->ray->a->y = 90;
-//			data->ray->direct = ft_rotate_y(ft_display_to_view(j - offset_x, i - offset_y, data), data->ray->a);
-//			data->ray->a->x = 30;
-//			data->ray->direct = ft_rotate_x(data->ray->direct, data->ray->a);
-//			data->ray->a->z = 30;
-//			data->ray->direct = ft_rotate_z(data->ray->direct, data->ray->a);
-
+			camera_ray(data, j, i);
 			data->p->color = ft_trace_ray(data);
 			data->img.img_arr[i * DW + j] = data->p->color;
 			j++;

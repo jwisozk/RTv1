@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+         #
+#    By: iplastun <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/08/09 13:59:01 by jwisozk           #+#    #+#              #
-#    Updated: 2019/08/09 16:04:50 by jwisozk          ###   ########.fr        #
+#    Updated: 2019/09/24 20:47:33 by iplastun         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,7 +28,10 @@ SOURCE = main.c \
         lighting.c \
         intersect_objects.c \
         fill_objects.c \
-        matrix.c
+        matrix.c \
+        camera.c \
+        create_objects.c \
+        create_geometric_values.c
 
 OBJ = $(SOURCE:.c=.o)
 
@@ -40,7 +43,7 @@ $(NAME): $(OBJ)
 	$(CC) $(CFLAGS) $^ $(LIBFT) $(LIBMLX) $(FRAMEWORKS) -o $(NAME)
 
 %.o: %.c $(HEADERS)
-	$(CC) $(CFLAGS) -pthread -c $<
+	$(CC) $(CFLAGS) -c $<
 
 clean:
 	rm -f $(OBJ)

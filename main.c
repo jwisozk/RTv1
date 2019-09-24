@@ -3,146 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: iplastun <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/09 13:37:06 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/09/23 19:21:34 by jwisozk          ###   ########.fr       */
+/*   Updated: 2019/09/24 20:52:22 by iplastun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "RTv1.h"
-
-t_vec3	*ft_create_vec3(double x, double y, double z)
-{
-	t_vec3 *p;
-
-	p = (t_vec3*)malloc(sizeof(t_vec3));
-	p->x = x;
-	p->y = y;
-	p->z = z;
-	return (p);
-}
-
-t_ang3	*ft_create_ang3(int x, int y, int z)
-{
-    t_ang3 *a;
-
-    a = (t_ang3*)malloc(sizeof(t_ang3));
-    a->x = x;
-    a->y = y;
-    a->z = z;
-    return (a);
-}
-
-t_obj *ft_create_object(void *obj, t_type_obj type)
-{
-	t_obj *o;
-
-	o = (t_obj*)malloc(sizeof(t_obj));
-	o->type = type;
-	o->objects = obj;
-	o->obj = NULL;
-	o->t = INF;
-	o->next = NULL;
-	return (o);
-}
-
-t_sphere *ft_create_sphere(int color, t_vec3 *center, double radius, int specular)
-{
-	t_sphere *s;
-
-	s = (t_sphere*)malloc(sizeof(t_sphere));
-	s->center = center;
-	s->color = color;
-	s->radius = radius;
-	s->specular = specular;
-	s->next = NULL;
-	return (s);
-}
-
-t_cylinder *ft_create_cylinder(int color, t_vec3 *center, t_vec3 *normal, double radius, int specular)
-{
-    t_cylinder *c;
-
-    c = (t_cylinder*)malloc(sizeof(t_cylinder));
-    c->center = center;
-    c->normal = normal;
-    c->color = color;
-    c->radius = radius;
-    c->specular = specular;
-    c->next = NULL;
-    return (c);
-}
-
-t_cone *ft_create_cone(int color, t_vec3 *center, t_vec3 *normal, int degree, int specular)
-{
-	t_cone *c;
-
-	c = (t_cone*)malloc(sizeof(t_cone));
-	c->center = center;
-	c->normal = normal;
-	c->color = color;
-	c->angle = TANH(degree);
-	c->specular = specular;
-	c->next = NULL;
-	return (c);
-}
-
-t_plane *ft_create_plane(int color, t_vec3 *point, t_vec3* normal, int specular)
-{
-	t_plane *p;
-
-	p = (t_plane*)malloc(sizeof(t_plane));
-	p->color = color;
-	p->normal = normal;
-	p->point = point;
-	p->specular = specular;
-	p->next = NULL;
-	return (p);
-}
-
-t_ray	*ft_create_ray(t_vec3 *origin, t_vec3 *direct, double t_min, double t_max)
-{
-    t_ray *i;
-
-    i = (t_ray*)malloc(sizeof(t_ray));
-    i->origin = origin;
-    i->direct = direct;
-    i->t_min = t_min;
-    i->t_max = t_max;
-    return (i);
-}
-
-t_point	*ft_create_point(void)
-{
-	t_point *p;
-
-	p = (t_point*)malloc(sizeof(t_point));
-	p->point = NULL;
-	p->normal = NULL;
-	p->color = ft_rgb(BACKGROUND);
-	p->specular = -1;
-	return (p);
-}
-
-void	ft_invert_display_sizes(t_data *data)
-{
-	data->dwi = 1.0 / DW;
-	data->dhi = 1.0 / DH;
-}
-
-t_light *ft_new_light(char *type, double intensity, t_vec3 *position, int n)
-{
-	t_light *l;
-
-	l = (t_light*)malloc(sizeof(t_light));
-	l->type = type;
-	l->intensity = intensity;
-	l->position = position;
-	l->n = n;
-	l->next = NULL;
-	return (l);
-}
 
 void	ft_init_shapes(t_data *data)
 {
@@ -184,7 +52,7 @@ void	ft_init_shapes(t_data *data)
 	a = ft_create_ang3(0,0,0);
 	t = ft_create_vec3(0.3,0.0,0.05);
 	camera = ft_create_vec3(0, 0, 0);
-	s1 = ft_create_sphere(ft_rgb(255, 0, 0), ft_create_vec3(0, 0, 2), 0.5, 500);
+	s1 = ft_create_sphere(ft_rgb(255, 0, 0), ft_create_vec3(0, 0, 0), 0.5, 500);
 //	s2 = ft_create_sphere(ft_rgb(0, 0, 255), ft_create_vec3(1, .5, 2.3), 0.5, 500);
 //	s3 = ft_create_sphere(ft_rgb(0, 255, 0), ft_create_vec3(-1.5, 10, 2.5), 1, 500);
 //    s4 = ft_create_sphere(ft_rgb(255, 255, 0), ft_create_vec3(-.6, 1.2, 3.8), 1, 500);
@@ -192,9 +60,9 @@ void	ft_init_shapes(t_data *data)
 //	s2->next = s3;
 //	s3->next = s4;
 
-	ft_invert_display_sizes(data);
-	data->view_w = 1;
-	data->view_h = 1;
+//	ft_invert_display_sizes(data);
+//	data->view_w = 1;
+//	data->view_h = 1;
 
 
 	data->ray = ft_create_ray(camera, NULL, 1, INF);
@@ -203,11 +71,11 @@ void	ft_init_shapes(t_data *data)
 
 
 
-    p1 = ft_create_plane(ft_rgb(0, 255, 255), ft_create_vec3(2,0,0), ft_create_vec3(1,0,0), 500);
-    p2 = ft_create_plane(ft_rgb(64, 128, 255), ft_create_vec3(-1,0,0), ft_create_vec3(1,0,0), 500);
-    p3 = ft_create_plane(ft_rgb(255, 128, 64), ft_create_vec3(0,1,0), ft_create_vec3(0,-1,0), 500);
-    p4 = ft_create_plane(ft_rgb(255, 255, 0), ft_create_vec3(0,-1,0), ft_create_vec3(0,1,0), 500);
-	p5 = ft_create_plane(ft_rgb(200, 100, 64), ft_create_vec3(0,0,5), ft_create_vec3(0,0,-1), 500);
+    p1 = ft_create_plane(ft_rgb(0, 255, 255), ft_create_vec3(3,0,0), ft_create_vec3(1,0,0), 500);
+    p2 = ft_create_plane(ft_rgb(64, 128, 255), ft_create_vec3(-3,0,0), ft_create_vec3(1,0,0), 500);
+    p3 = ft_create_plane(ft_rgb(255, 128, 64), ft_create_vec3(0,-3,0), ft_create_vec3(0,-1,0), 500);
+    p4 = ft_create_plane(ft_rgb(255, 255, 0), ft_create_vec3(0,0,-3), ft_create_vec3(0,0,1), 500);
+	p5 = ft_create_plane(ft_rgb(230, 220, 64), ft_create_vec3(0,0,3), ft_create_vec3(0,0,-1), 500);
 	p1->next = p2;
 	p2->next = p3;
 	p3->next = p4;
@@ -229,8 +97,8 @@ void	ft_init_shapes(t_data *data)
 
 
 	l1 = ft_new_light("ambient", 0.2, ft_create_vec3(0, 0, 0), 1);
-	l2 = ft_new_light("point", 0.7, ft_create_vec3(1, 0, 2), 2);
-	l3 = ft_new_light("directional", 0.0, ft_create_vec3(1, 0, 2), 3);
+	l2 = ft_new_light("point", 0.7, ft_create_vec3(1, 0, 0), 2);
+	l3 = ft_new_light("directional", 0.0, ft_create_vec3(1, 0, 0), 3);
 //	l4 = ft_new_light("point", 0.5, ft_create_vec3(.9, -.7, 2.2), 2);
 //	l1 = ft_new_light("point", 0.5, ft_create_vec3(-20, 20,  -20), 2);
 //	l2 = ft_new_light("point", 0.5, ft_create_vec3(30, 50, 25), 2);
@@ -242,7 +110,6 @@ void	ft_init_shapes(t_data *data)
 	data->l = l1;
 
 	data->p = ft_create_point();
-
 }
 
 void	ft_open_window()
@@ -271,6 +138,5 @@ void	ft_open_window()
 int main()
 {
 	ft_open_window();
-//	primary_ray();
 	return (0);
 }
