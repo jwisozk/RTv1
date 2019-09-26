@@ -6,7 +6,7 @@
 /*   By: iplastun <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/24 20:41:27 by iplastun          #+#    #+#             */
-/*   Updated: 2019/09/24 20:41:27 by iplastun         ###   ########.fr       */
+/*   Updated: 2019/09/25 14:31:15 by iplastun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,18 +46,6 @@ t_ray	*ft_create_ray(t_vec3 *origin, t_vec3 *direct, double t_min, double t_max)
     return (i);
 }
 
-t_light *ft_new_light(char *type, double intensity, t_vec3 *position, int n)
-{
-    t_light *l;
-
-    l = (t_light*)malloc(sizeof(t_light));
-    l->type = type;
-    l->intensity = intensity;
-    l->position = position;
-    l->n = n;
-    l->next = NULL;
-    return (l);
-}
 
 t_point	*ft_create_point(void)
 {

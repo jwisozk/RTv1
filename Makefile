@@ -31,7 +31,8 @@ SOURCE = main.c \
         matrix.c \
         camera.c \
         create_objects.c \
-        create_geometric_values.c
+        create_geometric_values.c \
+        create_types.c
 
 OBJ = $(SOURCE:.c=.o)
 

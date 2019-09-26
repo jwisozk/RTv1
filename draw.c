@@ -6,7 +6,7 @@
 /*   By: iplastun <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/26 20:23:15 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/09/24 20:50:08 by iplastun         ###   ########.fr       */
+/*   Updated: 2019/09/26 12:04:14 by iplastun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,13 @@
 
 t_obj	*ft_find_closest_obj(t_obj* obj, t_ray* ray)
 {
-	static t_arr_obj arr[ARR_OBJ_NUM] = ARR_OBJ;
+	static t_arr_obj arr[] = ARR_OBJ;
 	int i;
+	int max;
 
 	i = 0;
-	while (i < ARR_OBJ_NUM)
+	max = sizeof(arr) / sizeof(t_arr_obj);
+	while (i < max)
 	{
 		if (arr[i].type == obj->type)
 		{
@@ -33,11 +35,13 @@ t_obj	*ft_find_closest_obj(t_obj* obj, t_ray* ray)
 
 void 	ft_obj_fill(t_obj *obj, t_point *p, t_ray *ray)
 {
-	static t_arr_obj arr[ARR_OBJ_NUM] = ARR_OBJ;
+	static t_arr_obj arr[] = ARR_OBJ;
 	int i;
+	int max;
 
 	i = 0;
-	while (i < ARR_OBJ_NUM)
+	max = sizeof(arr) / sizeof(t_arr_obj);
+	while (i < max)
 	{
 		if (arr[i].type == obj->type)
 			arr[i].ft_obj_fill(obj, p, ray);
@@ -86,15 +90,13 @@ void	ft_draw(t_data *data)
 	int		j;
 
 	i = 0;
-    t_vec3 *look_at = ft_create_vec3(0, 0, 0);
-    t_vec3 *cam_pos = ft_create_vec3(2, 1, 0);
-    data->cam = ft_camera_look_at(look_at, cam_pos);
+	ft_camera_look_at(data);
 	while (i < DH)
 	{
 		j = 0;
 		while (j < DW)
 		{
-			camera_ray(data, j, i);
+			ft_camera_ray(data, j, i);
 			data->p->color = ft_trace_ray(data);
 			data->img.img_arr[i * DW + j] = data->p->color;
 			j++;

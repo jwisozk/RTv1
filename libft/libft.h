@@ -91,5 +91,6 @@ void				ft_del(void *s, size_t n);
 int					get_next_line(const int fd, char **line);
 int					ft_isspace(char c);
 int					ft_atoi_base(char **str);
+double				ft_atof(const char *str);
 
 #endif

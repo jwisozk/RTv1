@@ -75,7 +75,8 @@ SRC = ft_putchar.c		\
 	  ft_del.c          \
 	  get_next_line.c	\
 	  ft_isspace.c		\
-	  ft_atoi_base.c
+	  ft_atoi_base.c    \
+	  ft_atof.c
 
 OBJ = $(SRC:.c=.o)
 FLAGS = -Wall -Wextra -Werror
