@@ -24,7 +24,7 @@
 # define DH             600
 # define VW             1
 # define VH             1
-# define D              1
+# define D              2
 # define INF            1000
 # define BACKGROUND     93, 176, 200
 # define E              1e-6
