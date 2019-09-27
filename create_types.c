@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   create_types.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: iplastun <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/25 14:33:05 by iplastun          #+#    #+#             */
-/*   Updated: 2019/09/26 13:34:59 by iplastun         ###   ########.fr       */
+/*   Updated: 2019/09/27 15:23:03 by jwisozk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -227,7 +227,7 @@ void 					ft_update_cone(t_data *data, t_lst* lst)
 		else if (ft_strequ(lst->type, "specular") == 1)
 			c->specular = ft_atoi((char*)lst->data);
 		else if (ft_strequ(lst->type, "angle"))
-			c->angle = ft_atof((char*)lst->data);
+			c->angle = TANH(ft_atoi((char*)lst->data));
 		else
 		{
 			d = (double*)lst->data;
@@ -238,7 +238,6 @@ void 					ft_update_cone(t_data *data, t_lst* lst)
 		}
 		lst = lst->next;
 	}
-	c->next = data->cone != NULL ? data->cone : NULL;
 	data->cone = c;
 }
 

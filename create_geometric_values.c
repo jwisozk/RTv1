@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   create_geometric_values.c                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: iplastun <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/24 20:41:27 by iplastun          #+#    #+#             */
-/*   Updated: 2019/09/25 14:31:15 by iplastun         ###   ########.fr       */
+/*   Updated: 2019/09/27 16:40:33 by jwisozk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,5 +56,7 @@ t_point	*ft_create_point(void)
     p->normal = NULL;
     p->color = ft_rgb(BACKGROUND);
     p->specular = -1;
+    p->vec_oc = NULL;
+    p->radius = 0;
     return (p);
 }

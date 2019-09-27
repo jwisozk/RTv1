@@ -6,11 +6,23 @@
 /*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/09 22:38:24 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/09/12 23:01:13 by jwisozk          ###   ########.fr       */
+/*   Updated: 2019/09/27 20:46:23 by jwisozk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "RTv1.h"
+
+static double ft_compare_t(double t1, double t2)
+{
+	if (t1 > 0 && t2 > 0)
+		return (ft_min(t1, t2));
+	else if (0 < t1 && t1 < INF )
+		return (t1);
+	else if (0 < t2 && t2 < INF )
+		return (t2);
+	else
+		return (INF);
+}
 
 double ft_intersect_ray_sphere(t_ray *ray, t_sphere *s)
 {
@@ -29,7 +41,7 @@ double ft_intersect_ray_sphere(t_ray *ray, t_sphere *s)
 	{
 		t1 = (-k[1] + sqrt(discriminant)) / (2 * k[0]);
 		t2 = (-k[1] - sqrt(discriminant)) / (2 * k[0]);
-		return (ft_min(t1, t2));
+		return(ft_compare_t(t1, t2));
 	}
 	return (INF);
 }
@@ -69,7 +81,7 @@ double ft_intersect_ray_cylinder(t_ray *ray, t_cylinder *c)
 	{
 		t1 = (-k[1] + sqrt(discriminant)) / (2 * k[0]);
 		t2 = (-k[1] - sqrt(discriminant)) / (2 * k[0]);
-		return (ft_min(t1, t2));
+		return(ft_compare_t(t1, t2));
 	}
 	return (INF);
 }
@@ -109,7 +121,7 @@ double ft_intersect_ray_cone(t_ray *ray, t_cone *c)
     {
         t1 = (-k[1] + sqrt(discriminant)) / (2 * k[0]);
         t2 = (-k[1] - sqrt(discriminant)) / (2 * k[0]);
-        return (ft_min(t1, t2));
+		return(ft_compare_t(t1, t2));
     }
     return (INF);
 }

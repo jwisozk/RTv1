@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   RTv1.h                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: iplastun <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/09 13:37:42 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/09/26 13:34:59 by iplastun         ###   ########.fr       */
+/*   Updated: 2019/09/27 19:28:57 by jwisozk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@
 
 # define DW             600
 # define DH             600
+# define EXTENSION		".cfg"
 # define VW             1
 # define VH             1
 # define D              2
@@ -83,7 +84,6 @@ typedef enum 			e_type_obj
 	PLANE,
 	CONE
 }						t_type_obj;
-
 
 typedef struct          s_arr_obj
 {
@@ -176,6 +176,8 @@ typedef  struct 		s_point
     t_vec3				*normal;
     int 				color;
     int 				specular;
+    double 				radius;
+    t_vec3				*vec_oc;
 }						t_point;
 
 typedef struct          s_cam

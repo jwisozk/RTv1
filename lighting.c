@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   lighting.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: iplastun <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/26 20:29:39 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/09/26 12:05:57 by iplastun         ###   ########.fr       */
+/*   Updated: 2019/09/27 20:27:27 by jwisozk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ double ft_add_diffuse_light(t_point *p, t_light *l, t_vec3 *vec_pl)
 	double angle_ln;
 
 	angle_ln = ft_dot(p->normal, vec_pl);
+	if (p->vec_oc != NULL && ft_lenv(p->vec_oc) < p->radius)
+		angle_ln *= -1;
 	if (angle_ln > 0)
 		return (l->intensity * angle_ln / (ft_lenv(p->normal) * ft_lenv(vec_pl)));
 	return (0);
