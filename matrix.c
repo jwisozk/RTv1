@@ -89,13 +89,7 @@ t_vec3 *ft_rotate_z(t_vec3 *v, t_ang3 *a)
 	}
 	return (v);
 }
-t_vec3 *ft_translate(t_vec3* o, t_vec3* t)
-{
-	o->x += t->x;
-	o->y += t->y;
-	o->z += t->z;
-	return (o);
-}
+
 
 t_vec4	*ft_create_vec4(double x, double y, double z)
 {

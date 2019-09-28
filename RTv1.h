@@ -6,7 +6,7 @@
 /*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/09 13:37:42 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/09/27 19:28:57 by jwisozk          ###   ########.fr       */
+/*   Updated: 2019/09/28 13:50:55 by jwisozk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -121,6 +121,7 @@ typedef  struct 	    s_sphere
 	double			    radius;
 	int				    color;
 	int			        specular;
+	t_vec3				*translation;
 	struct s_sphere	    *next;
 }					    t_sphere;
 
@@ -131,6 +132,7 @@ typedef  struct 	    s_cylinder
     double			    radius;
     int				    color;
     int			        specular;
+	t_vec3				*translation;
     struct s_cylinder	*next;
 }                       t_cylinder;
 
@@ -141,6 +143,7 @@ typedef  struct 	    s_cone
 	double			    angle;
 	int				    color;
 	int			        specular;
+	t_vec3				*translation;
 	struct s_cone		*next;
 }                       t_cone;
 
@@ -150,6 +153,7 @@ typedef  struct		    s_plane
 	t_vec3			    *point;
 	int 			    color;
 	int				    specular;
+	t_vec3				*translation;
 	struct s_plane	    *next;
 }					    t_plane;
 
@@ -160,6 +164,15 @@ typedef  struct 		s_light
 	t_vec3 		   		*position;
 	struct s_light		*next;
 }						t_light;
+
+typedef struct          s_cam
+{
+	t_vec3              *forward;
+	t_vec3              *left;
+	t_vec3              *up;
+	t_vec3              *pos;
+	t_vec3				*look_at;
+}                       t_cam;
 
 typedef struct			s_img
 {
@@ -180,15 +193,6 @@ typedef  struct 		s_point
     t_vec3				*vec_oc;
 }						t_point;
 
-typedef struct          s_cam
-{
-    t_vec3              *forward;
-    t_vec3              *left;
-    t_vec3              *up;
-    t_vec3              *pos;
-    t_vec3				*look_at;
-}                       t_cam;
-
 typedef struct			s_data
 {
 	void				*mlx_ptr;
@@ -207,6 +211,8 @@ typedef struct			s_data
 
 int						ft_key_press(int key, t_data *data);
 int						ft_close_window(t_data *data);
+
+int						ft_print_error(char *str);
 
 void					ft_draw(t_data *data);
 double 					ft_lighting(t_point *p, t_light *l, t_obj *o, t_vec3 *vec_po);

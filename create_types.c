@@ -6,11 +6,21 @@
 /*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/25 14:33:05 by iplastun          #+#    #+#             */
-/*   Updated: 2019/09/27 15:23:03 by jwisozk          ###   ########.fr       */
+/*   Updated: 2019/09/28 14:23:45 by jwisozk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "RTv1.h"
+
+t_vec3 *ft_translate(t_vec3* o, t_vec3* t)
+{
+	if (o == NULL)
+		ft_print_error("Error: the object has no position");
+	o->x += t->x;
+	o->y += t->y;
+	o->z += t->z;
+	return (o);
+}
 
 t_cam *ft_create_camera(void)
 {
@@ -86,6 +96,7 @@ t_sphere *ft_create_sphere(t_data *data)
 	s->color = 0;
 	s->radius = 0.0;
 	s->specular = 0;
+	s->translation = NULL;
 	s->next = data->sphere != NULL ? data->sphere : NULL;
 	return (s);
 }
@@ -99,11 +110,11 @@ void 	ft_update_sphere(t_data *data, t_lst* lst)
 	s = ft_create_sphere(data);
 	while (lst != NULL)
 	{
+		d = (double*)lst->data;
 		if (ft_strequ(lst->type, "center") == 1)
-		{
-			d = (double*)lst->data;
 			s->center = ft_create_vec3(d[0], d[1], d[2]);
-		}
+		else if (ft_strequ(lst->type, "translation"))
+			s->translation = ft_create_vec3(d[0], d[1], d[2]);
 		else if (ft_strequ(lst->type, "color") == 1)
 		{
 			i = (int*)lst->data;
@@ -115,6 +126,8 @@ void 	ft_update_sphere(t_data *data, t_lst* lst)
 			s->specular = ft_atoi((char*)lst->data);
 		lst = lst->next;
 	}
+	if (s->translation != NULL)
+		s->center = ft_translate(s->center, s->translation);
 	data->sphere = s;
 }
 
@@ -127,6 +140,7 @@ t_plane *ft_create_plane(t_data *data)
 	p->normal = NULL;
 	p->point = NULL;
 	p->specular = 0;
+	p->translation = NULL;
 	p->next = data->plane != NULL ? data->plane : NULL;
 	return (p);
 }
@@ -149,11 +163,15 @@ void 	ft_update_plane(t_data *data, t_lst* lst)
 			d = (double*)lst->data;
 			if (ft_strequ(lst->type, "point") == 1)
 				p->point = ft_create_vec3(d[0], d[1], d[2]);
+			else if (ft_strequ(lst->type, "translation"))
+				p->translation = ft_create_vec3(d[0], d[1], d[2]);
 			else if (ft_strequ(lst->type, "normal"))
 				p->normal = ft_create_vec3(d[0], d[1], d[2]);
 		}
 		lst = lst->next;
 	}
+	if (p->translation != NULL)
+		p->point = ft_translate(p->point, p->translation);
 	data->plane = p;
 }
 
@@ -167,6 +185,7 @@ t_cylinder *ft_create_cylinder(t_data *data)
 	c->color = 0;
 	c->radius = 0.0;
 	c->specular = 0;
+	c->translation = NULL;
 	c->next = data->cylinder != NULL ? data->cylinder : NULL;
 	return (c);
 }
@@ -191,11 +210,15 @@ void 		ft_update_cylinder(t_data *data, t_lst* lst)
 			d = (double*)lst->data;
 			if (ft_strequ(lst->type, "center") == 1)
 				c->center = ft_create_vec3(d[0], d[1], d[2]);
+			else if (ft_strequ(lst->type, "translation"))
+				c->translation = ft_create_vec3(d[0], d[1], d[2]);
 			else if (ft_strequ(lst->type, "normal"))
 				c->normal = ft_create_vec3(d[0], d[1], d[2]);
 		}
 		lst = lst->next;
 	}
+	if (c->translation != NULL)
+		c->center = ft_translate(c->center, c->translation);
 	data->cylinder = c;
 }
 
@@ -209,6 +232,7 @@ t_cone *ft_create_cone(t_data *data)
 	c->color = 0;
 	c->angle = TANH(30);
 	c->specular = 0;
+	c->translation = NULL;
 	c->next = data->cone != NULL ? data->cone : NULL;
 	return (c);
 }
@@ -233,11 +257,15 @@ void 					ft_update_cone(t_data *data, t_lst* lst)
 			d = (double*)lst->data;
 			if (ft_strequ(lst->type, "center") == 1)
 				c->center = ft_create_vec3(d[0], d[1], d[2]);
+			else if (ft_strequ(lst->type, "translation"))
+				c->translation = ft_create_vec3(d[0], d[1], d[2]);
 			else if (ft_strequ(lst->type, "normal"))
 				c->normal = ft_create_vec3(d[0], d[1], d[2]);
 		}
 		lst = lst->next;
 	}
+	if (c->translation != NULL)
+		c->center = ft_translate(c->center, c->translation);
 	data->cone = c;
 }
 
