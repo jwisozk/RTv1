@@ -6,7 +6,7 @@
 /*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/26 20:29:39 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/09/27 20:27:27 by jwisozk          ###   ########.fr       */
+/*   Updated: 2019/09/29 00:00:58 by jwisozk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ double ft_add_specular_light(t_point *p, t_light *l, t_vec3 *vec_pl, t_vec3 *vec
 	t_vec3 	*vec_pr;
 	double angle_rv;
 
-	if (p->specular != -1)
+	if (p->specular > 0)
 	{
 		vec_pr = ft_subtract(ft_multiply(2.0 * ft_dot(p->normal, vec_pl), p->normal), vec_pl);
 		angle_rv = ft_dot(vec_pr, vec_po) ;
@@ -61,7 +61,7 @@ double ft_lighting(t_point *p, t_light *l, t_obj *o, t_vec3 *vec_po)
 	{
 		if (ft_strequ(l->type, "ambient") == 1)
 			intensity += l->intensity;
-		else
+		else if (ft_strequ(l->type, "point") == 1 || ft_strequ(l->type, "directional") == 1)
 		{
 			vec_pl = (ft_strequ(l->type, "point") == 1) ? ft_subtract(l->position, p->point) : l->position;
 			t_max = (ft_strequ(l->type, "point") == 1) ? 1.0 : INF;

@@ -6,7 +6,7 @@
 /*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/09 13:37:42 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/09/28 15:48:14 by jwisozk          ###   ########.fr       */
+/*   Updated: 2019/09/28 19:08:08 by jwisozk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,6 +44,10 @@
 # define CYLINDER_T		{"cylinder", &ft_update_cylinder}
 # define CONE_T			{"cone", &ft_update_cone}
 # define ARR_TYPES		{CAM_T, LIGHT_T, SPHERE_T, PLANE_T, CYLINDER_T, CONE_T}
+# define AMBIENT		"ambient"
+# define POINT			"point"
+# define DIRECTIONAL	"directional"
+# define LIGHT_TYPES	{AMBIENT, POINT, DIRECTIONAL}
 
 typedef struct 			s_vec3
 {
@@ -270,6 +274,10 @@ void 					ft_update_sphere(t_data *data, t_lst* lst);
 void 					ft_update_plane(t_data *data, t_lst* lst);
 void 					ft_update_cylinder(t_data *data, t_lst* lst);
 void 					ft_update_cone(t_data *data, t_lst* lst);
+void 					ft_check_valid(t_data *data);
+
+t_vec3 					*ft_translate(t_vec3* o, t_vec3* t);
+t_vec3 					*ft_rotate(t_vec3 *v, t_ang3 *a);
 
 //t_vec3*ft_rotate(t_vec3 *v, t_ang3 *a);
 //t_vec3*ft_translate(t_vec3* o, t_vec3* t);

@@ -32,7 +32,10 @@ SOURCE = main.c \
         camera.c \
         create_objects.c \
         create_geometric_values.c \
-        create_types.c
+        create_types.c \
+        transform.c \
+        update_objects.c \
+        validate.c
 
 OBJ = $(SOURCE:.c=.o)
 

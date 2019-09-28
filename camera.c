@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   camera.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: iplastun <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/24 19:51:35 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/09/27 00:24:33 by iplastun         ###   ########.fr       */
+/*   Updated: 2019/09/28 19:01:06 by jwisozk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,27 +38,6 @@ void ft_camera_ray(t_data *data, int x, int y)
     data->ray->origin = data->cam->pos;
 }
 
-int ft_compare_vec(t_data *data)
-{
-    t_vec3 *a;
-    t_vec3 *b;
-    if (data->cam == NULL)
-        data->cam = ft_create_camera();
-    a = data->cam->look_at;
-    b = data->cam->pos;
-    if(a == NULL)
-        a = ft_create_vec3(0, 0, 0);
-    if (b == NULL)
-        b = ft_create_vec3(0, 0, -2);
-    data->cam->look_at = a;
-    data->cam->pos = b;
-    if (a->x == b->x &&
-        a->y == b->y &&
-        a->z == b->z)
-        return (1);
-    return (0);
-}
-
 void ft_camera_look_at(t_data *data)
 {
     t_vec3 *forward;
@@ -66,8 +45,6 @@ void ft_camera_look_at(t_data *data)
     t_vec3 *up;
     t_vec3 *tmp;
 
-    if(ft_compare_vec(data) == 1)
-        data->cam->pos->z -= 1;
     forward = ft_normalize_vec3(ft_subtract(data->cam->look_at, data->cam->pos));
     if (forward->x == 0 &&
         (forward->y == 1 || forward->y == -1) &&
