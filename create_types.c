@@ -6,7 +6,7 @@
 /*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/25 14:33:05 by iplastun          #+#    #+#             */
-/*   Updated: 2019/09/28 14:23:45 by jwisozk          ###   ########.fr       */
+/*   Updated: 2019/09/28 17:36:13 by jwisozk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,28 @@ t_vec3 *ft_translate(t_vec3* o, t_vec3* t)
 	o->y += t->y;
 	o->z += t->z;
 	return (o);
+}
+
+void ft_rot(double *a, double *b, int degree)
+{
+	double tmp_a;
+	double tmp_b;
+
+	tmp_a = *a;
+	tmp_b = *b;
+	*a = tmp_a * COS(degree) - tmp_b * SIN(degree);
+	*b = tmp_a * SIN(degree) + tmp_b * COS(degree);
+}
+
+t_vec3 *ft_rotate(t_vec3 *v, t_ang3 *a)
+{
+	if (a->x)
+		ft_rot(&v->y, &v->z, a->x);
+	if (a->y)
+		ft_rot(&v->x, &v->z, a->y);
+	if (a->z)
+		ft_rot(&v->x, &v->y, a->z);
+	return (v);
 }
 
 t_cam *ft_create_camera(void)
@@ -110,16 +132,14 @@ void 	ft_update_sphere(t_data *data, t_lst* lst)
 	s = ft_create_sphere(data);
 	while (lst != NULL)
 	{
+		i = (int*)lst->data;
 		d = (double*)lst->data;
 		if (ft_strequ(lst->type, "center") == 1)
 			s->center = ft_create_vec3(d[0], d[1], d[2]);
 		else if (ft_strequ(lst->type, "translation"))
 			s->translation = ft_create_vec3(d[0], d[1], d[2]);
 		else if (ft_strequ(lst->type, "color") == 1)
-		{
-			i = (int*)lst->data;
 			s->color = ft_rgb(i[0], i[1], i[2]);
-		}
 		else if (ft_strequ(lst->type, "radius"))
 			s->radius = ft_atof((char*)lst->data);
 		else
@@ -141,6 +161,7 @@ t_plane *ft_create_plane(t_data *data)
 	p->point = NULL;
 	p->specular = 0;
 	p->translation = NULL;
+	p->rotation = NULL;
 	p->next = data->plane != NULL ? data->plane : NULL;
 	return (p);
 }
@@ -149,13 +170,16 @@ void 	ft_update_plane(t_data *data, t_lst* lst)
 {
 	t_plane 	*p;
 	double		*d;
+	int 		*i;
 
 	p = ft_create_plane(data);
 	while (lst != NULL)
 	{
+		i = (int*)lst->data;
 		if (ft_strequ(lst->type, "color") == 1)
-			p->color = ft_rgb(((int*)lst->data)[0], ((int*)lst->data)[1],
-					((int*)lst->data)[2]);
+			p->color = ft_rgb(i[0], i[1], i[2]);
+		else if (ft_strequ(lst->type, "rotation"))
+			p->rotation = ft_create_ang3(i[0], i[1], i[2]);
 		else if (ft_strequ(lst->type, "specular") == 1)
 			p->specular = ft_atoi((char*)lst->data);
 		else
@@ -172,6 +196,8 @@ void 	ft_update_plane(t_data *data, t_lst* lst)
 	}
 	if (p->translation != NULL)
 		p->point = ft_translate(p->point, p->translation);
+	if (p->rotation != NULL)
+		p->normal = ft_rotate(p->normal, p->rotation);
 	data->plane = p;
 }
 
@@ -186,6 +212,7 @@ t_cylinder *ft_create_cylinder(t_data *data)
 	c->radius = 0.0;
 	c->specular = 0;
 	c->translation = NULL;
+	c->rotation = NULL;
 	c->next = data->cylinder != NULL ? data->cylinder : NULL;
 	return (c);
 }
@@ -194,13 +221,16 @@ void 		ft_update_cylinder(t_data *data, t_lst* lst)
 {
 	t_cylinder 	*c;
 	double		*d;
+	int 		*i;
 
 	c = ft_create_cylinder(data);
 	while (lst != NULL)
 	{
+		i = (int*)lst->data;
 		if (ft_strequ(lst->type, "color") == 1)
-			c->color = ft_rgb(((int*)lst->data)[0], ((int*)lst->data)[1],
-							  ((int*)lst->data)[2]);
+			c->color = ft_rgb(i[0], i[1], i[2]);
+		else if (ft_strequ(lst->type, "rotation"))
+			c->rotation = ft_create_ang3(i[0], i[1], i[2]);
 		else if (ft_strequ(lst->type, "specular") == 1)
 			c->specular = ft_atoi((char*)lst->data);
 		else if (ft_strequ(lst->type, "radius"))
@@ -219,6 +249,8 @@ void 		ft_update_cylinder(t_data *data, t_lst* lst)
 	}
 	if (c->translation != NULL)
 		c->center = ft_translate(c->center, c->translation);
+	if (c->rotation != NULL)
+		c->normal = ft_rotate(c->normal, c->rotation);
 	data->cylinder = c;
 }
 
@@ -233,6 +265,7 @@ t_cone *ft_create_cone(t_data *data)
 	c->angle = TANH(30);
 	c->specular = 0;
 	c->translation = NULL;
+	c->rotation = NULL;
 	c->next = data->cone != NULL ? data->cone : NULL;
 	return (c);
 }
@@ -241,13 +274,16 @@ void 					ft_update_cone(t_data *data, t_lst* lst)
 {
 	t_cone 		*c;
 	double		*d;
+	int 		*i;
 
 	c = ft_create_cone(data);
 	while (lst != NULL)
 	{
+		i = (int*)lst->data;
 		if (ft_strequ(lst->type, "color") == 1)
-			c->color = ft_rgb(((int*)lst->data)[0], ((int*)lst->data)[1],
-							  ((int*)lst->data)[2]);
+			c->color = ft_rgb(i[0], i[1], i[2]);
+		else if (ft_strequ(lst->type, "rotation"))
+			c->rotation = ft_create_ang3(i[0], i[1], i[2]);
 		else if (ft_strequ(lst->type, "specular") == 1)
 			c->specular = ft_atoi((char*)lst->data);
 		else if (ft_strequ(lst->type, "angle"))
@@ -266,6 +302,8 @@ void 					ft_update_cone(t_data *data, t_lst* lst)
 	}
 	if (c->translation != NULL)
 		c->center = ft_translate(c->center, c->translation);
+	if (c->rotation != NULL)
+		c->normal = ft_rotate(c->normal, c->rotation);
 	data->cone = c;
 }
 

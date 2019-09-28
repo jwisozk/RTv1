@@ -6,7 +6,7 @@
 /*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/09 13:37:42 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/09/28 13:50:55 by jwisozk          ###   ########.fr       */
+/*   Updated: 2019/09/28 15:48:14 by jwisozk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -133,6 +133,7 @@ typedef  struct 	    s_cylinder
     int				    color;
     int			        specular;
 	t_vec3				*translation;
+	t_ang3				*rotation;
     struct s_cylinder	*next;
 }                       t_cylinder;
 
@@ -144,6 +145,7 @@ typedef  struct 	    s_cone
 	int				    color;
 	int			        specular;
 	t_vec3				*translation;
+	t_ang3				*rotation;
 	struct s_cone		*next;
 }                       t_cone;
 
@@ -154,6 +156,7 @@ typedef  struct		    s_plane
 	int 			    color;
 	int				    specular;
 	t_vec3				*translation;
+	t_ang3				*rotation;
 	struct s_plane	    *next;
 }					    t_plane;
 

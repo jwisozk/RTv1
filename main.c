@@ -6,7 +6,7 @@
 /*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/09 13:37:06 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/09/27 15:10:35 by jwisozk          ###   ########.fr       */
+/*   Updated: 2019/09/28 17:30:51 by jwisozk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,14 +83,48 @@ double *ft_new_arr_d(char *a, char *b, char *c)
 	return (arr);
 }
 
-int *ft_new_arr_i(char *a, char *b, char *c)
+int *ft_rotation_order(int *arr, int array[3], char *str)
+{
+	char *pattern = "xyz";
+	int i;
+	int j;
+
+	if (ft_strlen(str) != 3)
+		ft_print_error("Error: the length of the 4th parameter of rotation should be equal to 3");
+	if (ft_strchr(str, 'x') == NULL || ft_strchr(str, 'y') == NULL || ft_strchr(str, 'z') == NULL)
+		ft_print_error("Error: the 4th parameter of rotation is invalid");
+	i = 0;
+	while (i < 3)
+	{
+		j = 0;
+		while (j < 3)
+		{
+			if (str[i] == pattern[j])
+				arr[j] = array[i];
+			j++;
+		}
+		i++;
+	}
+	return (arr);
+}
+
+int *ft_new_arr_i(char *a, char *b, char *c, char *str)
 {
 	int *arr;
+	int array[3];
 
+	array[0] = ft_atoi(a);
+	array[1] = ft_atoi(b);
+	array[2] = ft_atoi(c);
 	arr = (int *)malloc(sizeof(int) * 3);
-	arr[0] = ft_atoi(a);
-	arr[1] = ft_atoi(b);
-	arr[2] = ft_atoi(c);
+	if (str != NULL)
+		arr = ft_rotation_order(arr, array, str);
+	else
+	{
+		arr[0] = array[0];
+		arr[1] = array[1];
+		arr[2] = array[2];
+	}
 	return (arr);
 }
 
@@ -160,8 +194,10 @@ void ft_get_scene(int fd, t_data *data)
 				j++;
 			if (j == 2)
 				tmp = ft_new_lst(str[0], str[1]);
-			else if (ft_strequ(str[0], "color"))
-				tmp = ft_new_lst(str[0], ft_new_arr_i(str[1], str[2], str[3]));
+			else if (j == 5 && ft_strequ(str[0], "rotation"))
+				tmp = ft_new_lst(str[0], ft_new_arr_i(str[1], str[2], str[3], str[4]));
+			else if (ft_strequ(str[0], "color") || ft_strequ(str[0], "rotation"))
+				tmp = ft_new_lst(str[0], ft_new_arr_i(str[1], str[2], str[3], NULL));
 			else
 				tmp = ft_new_lst(str[0], ft_new_arr_d(str[1], str[2], str[3]));
 			ft_add_lst(&lst, tmp);
