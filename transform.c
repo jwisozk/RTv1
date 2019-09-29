@@ -14,8 +14,6 @@
 
 t_vec3 *ft_translate(t_vec3* o, t_vec3* t)
 {
-	if (o == NULL)
-		ft_print_error("Error: the object has no position");
 	o->x += t->x;
 	o->y += t->y;
 	o->z += t->z;

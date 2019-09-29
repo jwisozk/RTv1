@@ -6,7 +6,7 @@
 /*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/29 14:44:38 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/09/29 17:05:35 by jwisozk          ###   ########.fr       */
+/*   Updated: 2019/09/29 17:56:32 by jwisozk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -106,7 +106,7 @@ void ft_get_scene(int fd, t_data *data)
 			if ((str = ft_strsplit(line, ' ')) == NULL)
 				ft_print_error(ft_msg(ERROR_29));
 			if (str[0] == NULL)
-				break ;
+				continue ;
 			j = 0;
 			while (str[j] != NULL)
 				j++;

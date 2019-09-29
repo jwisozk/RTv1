@@ -6,7 +6,7 @@
 /*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/28 19:06:14 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/09/29 13:47:02 by jwisozk          ###   ########.fr       */
+/*   Updated: 2019/09/29 15:20:04 by jwisozk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ void 	ft_update_sphere(t_data *data, t_lst* lst)
 			s->specular = ft_atoi((char*)lst->data);
 		lst = lst->next;
 	}
-	if (s->translation != NULL)
+	if (s->center != NULL && s->translation != NULL)
 		s->center = ft_translate(s->center, s->translation);
 	data->sphere = s;
 }

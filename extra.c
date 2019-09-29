@@ -19,8 +19,8 @@ char 	*ft_msg(char *str)
 
 int		ft_print_error(char *str)
 {
-	ft_putstr(str);
-	ft_putchar('\n');
+	ft_putendl_fd(str, 2);
+
 	exit(0);
 }
 
