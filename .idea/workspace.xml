@@ -12,38 +12,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b6f109c7-610d-42b9-9fde-57783721c5e5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/libft/ft_gc.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/RTv1.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/RTv1.dir/C.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/RTv1.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/RTv1.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/RTv1.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/RTv1.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/RTv1.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/RTv1.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/RTv1.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/RTv1.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/RTv1.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/RTv1.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/RTv1.dir/extra.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/RTv1.dir/extra.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/RTv1.dir/libft/ft_lstadd.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/RTv1.dir/libft/ft_lstadd.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/RTv1.dir/libft/ft_lstadd_back.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/RTv1.dir/libft/ft_lstadd_back.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/RTv1.dir/libft/ft_lstdel.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/RTv1.dir/libft/ft_lstdel.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/RTv1.dir/libft/ft_lstdelone.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/RTv1.dir/libft/ft_lstdelone.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/RTv1.dir/libft/ft_lstiter.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/RTv1.dir/libft/ft_lstiter.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/RTv1.dir/libft/ft_lstmap.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/RTv1.dir/libft/ft_lstmap.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/RTv1.dir/libft/ft_lstnew.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/RTv1.dir/libft/ft_lstnew.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/RTv1.dir/libft/ft_memalloc.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/RTv1.dir/libft/ft_memalloc.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/RTv1.dir/libft/get_next_line.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/RTv1.dir/libft/get_next_line.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/RTv1.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/RTv1.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/RTv1.dir/objects_update.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/RTv1.dir/objects_update.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/RTv1.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/RTv1.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/RTv1.dir/scene_get.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/RTv1.dir/scene_get.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/RTv1" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/RTv1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/RTv1.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/RTv1.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/libft/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/camera_create.c" beforeDir="false" afterPath="$PROJECT_DIR$/camera_create.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geometric_create.c" beforeDir="false" afterPath="$PROJECT_DIR$/geometric_create.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_itoa.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/ft_itoa.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_lstnew.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/ft_lstnew.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libft/ft_memalloc.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/ft_memalloc.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/libft.h" beforeDir="false" afterPath="$PROJECT_DIR$/libft/libft.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/objects_update.c" beforeDir="false" afterPath="$PROJECT_DIR$/objects_update.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_strdup.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/ft_strdup.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_strmapi.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/ft_strmapi.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_strsplit.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/ft_strsplit.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/light_create.c" beforeDir="false" afterPath="$PROJECT_DIR$/light_create.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/objects_create.c" beforeDir="false" afterPath="$PROJECT_DIR$/objects_create.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scene_extra.c" beforeDir="false" afterPath="$PROJECT_DIR$/scene_extra.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scene_get.c" beforeDir="false" afterPath="$PROJECT_DIR$/scene_get.c" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -77,16 +56,25 @@
             <entry file="file://$PROJECT_DIR$/camera.c">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="327">
-                  <caret line="27" column="21" lean-forward="true" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+                  <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/camera_create.c">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="270">
+                  <caret line="18" column="29" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="29" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/camera_create.c">
+            <entry file="file://$PROJECT_DIR$/libft/ft_strmapi.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="270">
-                  <caret line="18" column="24" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="24" />
+                <state relative-caret-position="390">
+                  <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
                 </state>
               </provider>
             </entry>
@@ -125,10 +113,10 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/libft/ft_memalloc.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="225">
-                  <caret line="26" selection-start-line="26" selection-end-line="26" />
+                <state relative-caret-position="270">
+                  <caret line="29" column="20" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="20" />
                   <folding>
-                    <marker date="1569778706000" expanded="false" signature="914:1134" ph="..." />
+                    <marker date="1569779843000" expanded="false" signature="914:1134" ph="..." />
                   </folding>
                 </state>
               </provider>
@@ -221,6 +209,8 @@
       <find>t_light</find>
       <find>ARR_OBJ</find>
       <find>t_obj</find>
+      <find>malloc</find>
+      <find>memalloc</find>
     </findStrings>
     <replaceStrings>
       <replace>POINT</replace>
@@ -234,6 +224,8 @@
       <replace>ROTATION</replace>
       <replace>RANSITION</replace>
       <replace>TRANSLATION</replace>
+      <replace>memalloc</replace>
+      <replace>ft_memalloc</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -286,12 +278,13 @@
         <option value="$PROJECT_DIR$/extra.c" />
         <option value="$PROJECT_DIR$/objects_update.c" />
         <option value="$PROJECT_DIR$/scene_get.c" />
-        <option value="$PROJECT_DIR$/libft/ft_memalloc.c" />
         <option value="$PROJECT_DIR$/libft/ft_gc.h" />
         <option value="$PROJECT_DIR$/libft/ft_gc.c" />
         <option value="$PROJECT_DIR$/libft/libft.h" />
         <option value="$PROJECT_DIR$/libft/Makefile" />
         <option value="$PROJECT_DIR$/camera_create.c" />
+        <option value="$PROJECT_DIR$/libft/ft_strmapi.c" />
+        <option value="$PROJECT_DIR$/libft/ft_memalloc.c" />
       </list>
     </option>
   </component>
@@ -311,11 +304,6 @@
             <path>
               <item name="RTv1" type="b2602c69:ProjectViewProjectNode" />
               <item name="RTv1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RTv1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RTv1" type="462c0819:PsiDirectoryNode" />
-              <item name="scenes" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -373,7 +361,7 @@
       <workItem from="1569587008213" duration="21147000" />
       <workItem from="1569665748606" duration="30103000" />
       <workItem from="1569750160122" duration="21016000" />
-      <workItem from="1569778679717" duration="711000" />
+      <workItem from="1569778679717" duration="1246000" />
     </task>
     <task id="LOCAL-00001" summary="Add matrix beta">
       <created>1569091055726</created>
@@ -452,11 +440,18 @@
       <option name="project" value="LOCAL" />
       <updated>1569771064762</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Check hack">
+      <created>1569779643632</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1569779643632</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107034000" />
+    <option name="totallyTimeSpent" value="107569000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1600" height="900" extended-state="0" />
@@ -524,7 +519,8 @@
     <MESSAGE value="Check allocate memory" />
     <MESSAGE value="Change ft_putend" />
     <MESSAGE value="Change ft_putendl" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change ft_putendl" />
+    <MESSAGE value="Check hack" />
+    <option name="LAST_COMMIT_MESSAGE" value="Check hack" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/libft/ft_atoi.c">
@@ -825,27 +821,34 @@
     <entry file="file://$PROJECT_DIR$/libft/ft_lstadd.c">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/libft/ft_memalloc.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <marker date="1569778706000" expanded="false" signature="914:1134" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/camera.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="327">
-          <caret line="27" column="21" lean-forward="true" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+          <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/camera_create.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
-          <caret line="18" column="24" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="24" />
+          <caret line="18" column="29" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libft/ft_strmapi.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libft/ft_memalloc.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="29" column="20" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="20" />
+          <folding>
+            <marker date="1569779843000" expanded="false" signature="914:1134" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
