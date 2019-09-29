@@ -6,7 +6,7 @@
 /*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/29 14:44:38 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/09/29 14:55:46 by jwisozk          ###   ########.fr       */
+/*   Updated: 2019/09/29 17:04:06 by jwisozk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,19 +32,40 @@ void  ft_add_lst(t_lst **head, t_lst *new)
 	}
 }
 
-void	ft_check_braces(int block, int n)
+void	ft_check_braces(int *block, int n)
 {
 	int err;
 
 	err = 0;
-	if (block > 0 && n == 1)
+	if (*block > 0 && n == 1)
 		err = 1;
-	if (block == 0 && n == 2)
+	if (*block == 0 && n == 2)
 		err = 1;
-	if (block != 0 && n == 3)
+	if (*block != 0 && n == 3)
 		err = 1;
+	if (n == 1)
+		(*block)++;
+	if (n == 2)
+		(*block)--;
 	if (err == 1)
 		ft_print_error(ft_msg(ERROR_3));
+}
+
+int ft_is_hash(char *line, int *i, t_arr_type *arr, int max)
+{
+
+	char 	*type;
+
+	if (*line != '#')
+		return (0);
+
+	type = ft_strsplit(line + 1, ' ')[0];
+	*i = 0;
+	while (*i < max && ft_strequ(type, arr[*i].type) != 1)
+		(*i)++;
+	if (*i == max)
+		ft_print_error(ft_msg(ERROR_2));
+	return (1);
 }
 
 void ft_get_scene(int fd, t_data *data)
@@ -53,7 +74,7 @@ void ft_get_scene(int fd, t_data *data)
 	int		i;
 	int 	j;
 	char	**str;
-	char 	*type;
+//	char 	*type;
 	static t_arr_type arr[] = ARR_TYPES;
 	int 	max;
 	t_lst	*lst;
@@ -69,28 +90,16 @@ void ft_get_scene(int fd, t_data *data)
 			line++;
 		if (*line == '\0')
 			continue ;
-		if (*line == '#')
-		{
-			type = ft_strsplit(line + 1, ' ')[0];
-			i = 0;
-			while (i < max && ft_strequ(type, arr[i].type) != 1)
-				i++;
-			if (i == max)
-				ft_print_error(ft_msg(ERROR_2));
+		if (ft_is_hash(line, &i, arr, max) == 1)
 			continue ;
-		}
 		if (*line == '{')
-		{
-			ft_check_braces(block, 1);
-			block++;
-		}
+			ft_check_braces(&block, 1);
 		else if (*line == '}')
 		{
 			if (lst != NULL)
 				arr[i].ft_create_type(data, lst);
 			lst = NULL;
-			ft_check_braces(block, 2);
-			block--;
+			ft_check_braces(&block, 2);
 		}
 		else if (block == 1 && (str = ft_strsplit(line, ' '))[0] != NULL)
 		{
@@ -108,6 +117,6 @@ void ft_get_scene(int fd, t_data *data)
 			ft_add_lst(&lst, tmp);
 		}
 	}
-	ft_check_braces(block, 3);
+	ft_check_braces(&block, 3);
 	ft_create_scene_objects(data);
 }
