@@ -6,7 +6,7 @@
 /*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/09 13:37:42 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/09/28 19:08:08 by jwisozk          ###   ########.fr       */
+/*   Updated: 2019/09/29 14:14:26 by jwisozk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@
 # include <fcntl.h>
 # include <sys/types.h>
 # include <sys/uio.h>
-
 # define DW             600
 # define DH             600
 # define EXTENSION		".cfg"
@@ -27,7 +26,7 @@
 # define VH             1
 # define D              2
 # define INF            1000
-# define BACKGROUND     93, 176, 200
+# define BACKGROUND     0, 0, 0
 # define E              1e-6
 # define SPHERE_OBJ     {SPHERE, &ft_sphere_intersect, &ft_sphere_fill}
 # define PLANE_OBJ      {PLANE, &ft_plane_intersect, &ft_plane_fill}
@@ -48,6 +47,42 @@
 # define POINT			"point"
 # define DIRECTIONAL	"directional"
 # define LIGHT_TYPES	{AMBIENT, POINT, DIRECTIONAL}
+# define CENTER			"center"
+# define NORMAL			"normal"
+# define COLOR			"color"
+# define ANGLE			"angle"
+# define RADIUS			"radius"
+# define SPECULAR		"specular"
+# define ROTATION		"rotation"
+# define TRANSLATION	"translation"
+# define ERROR   		"Error: "
+# define ERROR_1		"Extension of file is incorrect."
+# define ERROR_2		"Type # is invalid."
+# define ERROR_3		"Curly braces in the file are not valid."
+# define ERROR_4		"The length of the 4th parameter of rotation should be equal to 3."
+# define ERROR_5		"The 4th parameter of rotation is invalid."
+# define ERROR_6		"File not found."
+# define ERROR_7		"File does not contain a camera."
+# define ERROR_8		"File does not contain parameter of camera: \"look_at\"."
+# define ERROR_9		"File does not contain parameter of camera: \"position\"."
+# define ERROR_10		"Parameters of camera: \"position\" and \"look_at\" equal. Impossible to determine camera direction."
+# define ERROR_11		"Param \"type\" of light is invalid."
+# define ERROR_12		"Param \"position\" of light is invalid."
+# define ERROR_13		"Param \"intensity\" of light is invalid."
+# define ERROR_14		"Param \"center\" of sphere is invalid."
+# define ERROR_15		"Param \"radius\" of sphere is invalid."
+# define ERROR_16		"Param \"color\" of sphere is invalid."
+# define ERROR_17		"Param \"center\" of cylinder is invalid."
+# define ERROR_18		"Param \"normal\" of cylinder is invalid."
+# define ERROR_19		"Param \"radius\" of cylinder is invalid."
+# define ERROR_20		"Param \"color\" of cylinder is invalid."
+# define ERROR_21		"Param \"center\" of cone is invalid."
+# define ERROR_22		"Param \"normal\" of cone is invalid."
+# define ERROR_23		"Param \"angle\" of cone is invalid."
+# define ERROR_24		"Param \"color\" of cone is invalid."
+# define ERROR_25		"Param \"point\" of plane is invalid."
+# define ERROR_26		"Param \"normal\" of plane is invalid."
+# define ERROR_27		"Param \"color\" of plane is invalid."
 
 typedef struct 			s_vec3
 {
@@ -55,14 +90,6 @@ typedef struct 			s_vec3
 	double 				y;
 	double 				z;
 }						t_vec3;
-
-typedef struct 			s_vec4
-{
-	double 				x;
-	double 				y;
-	double 				z;
-	double				k;
-}						t_vec4;
 
 typedef struct 			s_ang3
 {
@@ -77,8 +104,6 @@ typedef  struct s_ray
 	t_vec3				*direct;
 	double 				t_min;
 	double				t_max;
-    t_ang3              *a;
-    t_vec3              *t;
 }               		t_ray;
 
 typedef enum 			e_type_obj
@@ -218,48 +243,28 @@ typedef struct			s_data
 
 int						ft_key_press(int key, t_data *data);
 int						ft_close_window(t_data *data);
-
 int						ft_print_error(char *str);
-
-void					ft_draw(t_data *data);
-double 					ft_lighting(t_point *p, t_light *l, t_obj *o, t_vec3 *vec_po);
-
-t_obj                   *ft_create_object(void *obj, t_type_obj type);
+char 					*ft_msg(char *str);
 
 t_vec3                  *ft_create_vec3(double x, double y, double z);
 t_ang3	                *ft_create_ang3(int x, int y, int z);
 t_ray                   *ft_create_ray(t_vec3 *cam, t_vec3 *dir, double t_min, double t_max);
-
 t_point	                *ft_create_point(void);
 
-t_obj                   *ft_scene_intersect(t_obj *o, t_ray *ray);
-void 					ft_sphere_intersect(t_ray *ray, t_obj *o);
-void 					ft_plane_intersect(t_ray *ray, t_obj *o);
-void 					ft_cylinder_intersect(t_ray *ray, t_obj *o);
-void 					ft_cone_intersect(t_ray *ray, t_obj *o);
-
-void 					ft_sphere_fill(t_obj *obj, t_point *p, t_ray *ray);
-void 					ft_cylinder_fill(t_obj *obj, t_point *p, t_ray *ray);
-void 					ft_plane_fill(t_obj *obj, t_point *p, t_ray *ray);
-void 					ft_cone_fill(t_obj *obj, t_point *p, t_ray *ray);
-
-double 					ft_dot(t_vec3 *v1, t_vec3 *v2);
 t_vec3                  *ft_cross_product(t_vec3 *a, t_vec3 *b);
 t_vec3                  *ft_multiply(double k, t_vec3 *v);
 t_vec3                  *ft_subtract(t_vec3 *v1, t_vec3 *v2);
 t_vec3                  *ft_add(t_vec3 *v1, t_vec3 *v2);
+t_vec3                  *ft_normalize_vec3(t_vec3 *v);
 double 					ft_lenv(t_vec3 *v);
+double 					ft_dot(t_vec3 *v1, t_vec3 *v2);
 double 					ft_max(double x, double y);
 double 					ft_min(double x, double y);
-t_vec3                  *ft_normalize_vec3(t_vec3 *v);
-
 int						ft_rgb(int r, int g, int b);
 int 					ft_multiply_color(double k, int color);
 
-void 					ft_camera_look_at(t_data *data);
-//t_cam                   *ft_create_camera(t_vec3 *f, t_vec3 *l, t_vec3 *u, t_vec3 *pos);
-void                    ft_camera_ray(t_data *data, int x, int y);
 
+t_obj                   *ft_create_object(void *obj, t_type_obj type);
 t_cam 					*ft_create_camera(void);
 t_light 				*ft_create_light(t_data *data);
 t_sphere                *ft_create_sphere(t_data *data);
@@ -267,28 +272,32 @@ t_cylinder              *ft_create_cylinder(t_data *data);
 t_cone                  *ft_create_cone(t_data *data);
 t_plane                 *ft_create_plane(t_data *data);
 
-
 void 					ft_update_camera(t_data *data, t_lst* lst);
 void 					ft_update_light(t_data *data, t_lst* lst);
 void 					ft_update_sphere(t_data *data, t_lst* lst);
 void 					ft_update_plane(t_data *data, t_lst* lst);
 void 					ft_update_cylinder(t_data *data, t_lst* lst);
 void 					ft_update_cone(t_data *data, t_lst* lst);
+
 void 					ft_check_valid(t_data *data);
 
 t_vec3 					*ft_translate(t_vec3* o, t_vec3* t);
 t_vec3 					*ft_rotate(t_vec3 *v, t_ang3 *a);
 
-//t_vec3*ft_rotate(t_vec3 *v, t_ang3 *a);
-//t_vec3*ft_translate(t_vec3* o, t_vec3* t);
-//t_vec4*ft_create_vec4(double x, double y, double z);
-//t_vec3 *ft_rotate_x(t_vec3 *v, t_ang3 *a);
-//t_vec3 *ft_rotate_y(t_vec3 *v, t_ang3 *a);
-//t_vec3 *ft_rotate_z(t_vec3 *v, t_ang3 *a);
+void					ft_draw(t_data *data);
+void 					ft_camera_look_at(t_data *data);
+void                    ft_camera_ray(t_data *data, int x, int y);
+double 					ft_lighting(t_point *p, t_light *l, t_obj *o, t_vec3 *vec_po);
 
-
-//t_vec3 *ft_normalize_vec3(t_vec3 *v);
+t_obj                   *ft_scene_intersect(t_obj *o, t_ray *ray);
+void 					ft_sphere_intersect(t_ray *ray, t_obj *o);
+void 					ft_plane_intersect(t_ray *ray, t_obj *o);
+void 					ft_cylinder_intersect(t_ray *ray, t_obj *o);
+void 					ft_cone_intersect(t_ray *ray, t_obj *o);
+void 					ft_sphere_fill(t_obj *obj, t_point *p, t_ray *ray);
+void 					ft_cylinder_fill(t_obj *obj, t_point *p, t_ray *ray);
+void 					ft_plane_fill(t_obj *obj, t_point *p, t_ray *ray);
+void 					ft_cone_fill(t_obj *obj, t_point *p, t_ray *ray);
 
 # include <stdio.h>
-
 #endif

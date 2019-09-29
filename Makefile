@@ -28,7 +28,6 @@ SOURCE = main.c \
         lighting.c \
         intersect_objects.c \
         fill_objects.c \
-        matrix.c \
         camera.c \
         create_objects.c \
         create_geometric_values.c \

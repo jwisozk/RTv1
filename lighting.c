@@ -6,7 +6,7 @@
 /*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/26 20:29:39 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/09/29 00:00:58 by jwisozk          ###   ########.fr       */
+/*   Updated: 2019/09/29 13:32:53 by jwisozk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,12 +59,12 @@ double ft_lighting(t_point *p, t_light *l, t_obj *o, t_vec3 *vec_po)
 	intensity = 0;
 	while (l != NULL)
 	{
-		if (ft_strequ(l->type, "ambient") == 1)
+		if (ft_strequ(l->type, AMBIENT) == 1)
 			intensity += l->intensity;
-		else if (ft_strequ(l->type, "point") == 1 || ft_strequ(l->type, "directional") == 1)
+		else if (ft_strequ(l->type, POINT) == 1 || ft_strequ(l->type, DIRECTIONAL) == 1)
 		{
-			vec_pl = (ft_strequ(l->type, "point") == 1) ? ft_subtract(l->position, p->point) : l->position;
-			t_max = (ft_strequ(l->type, "point") == 1) ? 1.0 : INF;
+			vec_pl = (ft_strequ(l->type, POINT) == 1) ? ft_subtract(l->position, p->point) : l->position;
+			t_max = (ft_strequ(l->type, POINT) == 1) ? 1.0 : INF;
             ray = ft_create_ray(p->point, vec_pl, E, t_max);
 			if (ft_add_shadow(ray, o, &l) == 1)
                 continue ;

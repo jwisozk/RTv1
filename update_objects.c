@@ -6,7 +6,7 @@
 /*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/28 19:06:14 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/09/28 19:09:17 by jwisozk          ###   ########.fr       */
+/*   Updated: 2019/09/29 13:43:50 by jwisozk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,15 +23,15 @@ void 	ft_update_sphere(t_data *data, t_lst* lst)
 	{
 		i = (int*)lst->data;
 		d = (double*)lst->data;
-		if (ft_strequ(lst->type, "center") == 1)
+		if (ft_strequ(lst->type, CENTER) == 1)
 			s->center = ft_create_vec3(d[0], d[1], d[2]);
-		else if (ft_strequ(lst->type, "translation"))
+		else if (ft_strequ(lst->type, TRANSLATION))
 			s->translation = ft_create_vec3(d[0], d[1], d[2]);
-		else if (ft_strequ(lst->type, "color") == 1)
+		else if (ft_strequ(lst->type, COLOR) == 1)
 			s->color = ft_rgb(i[0], i[1], i[2]);
-		else if (ft_strequ(lst->type, "radius"))
+		else if (ft_strequ(lst->type, RADIUS))
 			s->radius = ft_atof((char*)lst->data);
-		else if (ft_strequ(lst->type, "specular"))
+		else if (ft_strequ(lst->type, SPECULAR))
 			s->specular = ft_atoi((char*)lst->data);
 		lst = lst->next;
 	}
@@ -52,22 +52,22 @@ void 		ft_update_cylinder(t_data *data, t_lst* lst)
 	while (lst != NULL)
 	{
 		i = (int*)lst->data;
-		if (ft_strequ(lst->type, "color") == 1)
+		if (ft_strequ(lst->type, COLOR) == 1)
 			c->color = ft_rgb(i[0], i[1], i[2]);
-		else if (ft_strequ(lst->type, "rotation"))
+		else if (ft_strequ(lst->type, ROTATION))
 			c->rotation = ft_create_ang3(i[0], i[1], i[2]);
-		else if (ft_strequ(lst->type, "specular") == 1)
+		else if (ft_strequ(lst->type, SPECULAR) == 1)
 			c->specular = ft_atoi((char*)lst->data);
-		else if (ft_strequ(lst->type, "radius"))
+		else if (ft_strequ(lst->type, RADIUS))
 			c->radius = ft_atof((char*)lst->data);
 		else
 		{
 			d = (double*)lst->data;
-			if (ft_strequ(lst->type, "center") == 1)
+			if (ft_strequ(lst->type, CENTER) == 1)
 				c->center = ft_create_vec3(d[0], d[1], d[2]);
-			else if (ft_strequ(lst->type, "translation"))
+			else if (ft_strequ(lst->type, TRANSLATION))
 				c->translation = ft_create_vec3(d[0], d[1], d[2]);
-			else if (ft_strequ(lst->type, "normal"))
+			else if (ft_strequ(lst->type, NORMAL))
 				c->normal = ft_create_vec3(d[0], d[1], d[2]);
 		}
 		lst = lst->next;
@@ -90,22 +90,22 @@ void 					ft_update_cone(t_data *data, t_lst* lst)
 	while (lst != NULL)
 	{
 		i = (int*)lst->data;
-		if (ft_strequ(lst->type, "color") == 1)
+		if (ft_strequ(lst->type, COLOR) == 1)
 			c->color = ft_rgb(i[0], i[1], i[2]);
-		else if (ft_strequ(lst->type, "rotation"))
+		else if (ft_strequ(lst->type, ROTATION))
 			c->rotation = ft_create_ang3(i[0], i[1], i[2]);
-		else if (ft_strequ(lst->type, "specular") == 1)
+		else if (ft_strequ(lst->type, SPECULAR) == 1)
 			c->specular = ft_atoi((char*)lst->data);
-		else if (ft_strequ(lst->type, "angle"))
+		else if (ft_strequ(lst->type, ANGLE))
 			c->angle = TANH(ft_atoi((char*)lst->data));
 		else
 		{
 			d = (double*)lst->data;
-			if (ft_strequ(lst->type, "center") == 1)
+			if (ft_strequ(lst->type, CENTER) == 1)
 				c->center = ft_create_vec3(d[0], d[1], d[2]);
-			else if (ft_strequ(lst->type, "translation"))
+			else if (ft_strequ(lst->type, TRANSLATION))
 				c->translation = ft_create_vec3(d[0], d[1], d[2]);
-			else if (ft_strequ(lst->type, "normal"))
+			else if (ft_strequ(lst->type, NORMAL))
 				c->normal = ft_create_vec3(d[0], d[1], d[2]);
 		}
 		lst = lst->next;
@@ -128,20 +128,20 @@ void 	ft_update_plane(t_data *data, t_lst* lst)
 	while (lst != NULL)
 	{
 		i = (int*)lst->data;
-		if (ft_strequ(lst->type, "color") == 1)
+		if (ft_strequ(lst->type, COLOR) == 1)
 			p->color = ft_rgb(i[0], i[1], i[2]);
-		else if (ft_strequ(lst->type, "rotation"))
+		else if (ft_strequ(lst->type, ROTATION))
 			p->rotation = ft_create_ang3(i[0], i[1], i[2]);
-		else if (ft_strequ(lst->type, "specular") == 1)
+		else if (ft_strequ(lst->type, SPECULAR) == 1)
 			p->specular = ft_atoi((char*)lst->data);
 		else
 		{
 			d = (double*)lst->data;
-			if (ft_strequ(lst->type, "point") == 1)
+			if (ft_strequ(lst->type, POINT) == 1)
 				p->point = ft_create_vec3(d[0], d[1], d[2]);
-			else if (ft_strequ(lst->type, "translation"))
+			else if (ft_strequ(lst->type, TRANSLATION))
 				p->translation = ft_create_vec3(d[0], d[1], d[2]);
-			else if (ft_strequ(lst->type, "normal"))
+			else if (ft_strequ(lst->type, NORMAL))
 				p->normal = ft_create_vec3(d[0], d[1], d[2]);
 		}
 		lst = lst->next;

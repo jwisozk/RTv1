@@ -6,11 +6,16 @@
 /*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/09 13:37:06 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/09/29 00:27:14 by jwisozk          ###   ########.fr       */
+/*   Updated: 2019/09/29 14:08:13 by jwisozk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "RTv1.h"
+
+char 	*ft_msg(char *str)
+{
+	return (ft_strjoin(ERROR, str));
+}
 
 int		ft_print_error(char *str)
 {
@@ -46,9 +51,6 @@ void	ft_open_window(t_data *data)
 	ft_draw(data);
 	mlx_hook(win_ptr, 17, 0, ft_close_window, data);
 	mlx_hook(win_ptr, 2, 0, ft_key_press, data);
-//	mlx_hook(win_ptr, 4, 0, ft_mouse_press, p);
-//	mlx_hook(win_ptr, 5, 0, ft_mouse_release, p);
-//	mlx_hook(win_ptr, 6, 0, ft_mouse_move, p);
 	mlx_loop(mlx_ptr);
 }
 
@@ -90,9 +92,9 @@ int *ft_rotation_order(int *arr, int array[3], char *str)
 	int j;
 
 	if (ft_strlen(str) != 3)
-		ft_print_error("Error: the length of the 4th parameter of rotation should be equal to 3");
+		ft_print_error(ft_msg(ERROR_4));
 	if (ft_strchr(str, 'x') == NULL || ft_strchr(str, 'y') == NULL || ft_strchr(str, 'z') == NULL)
-		ft_print_error("Error: the 4th parameter of rotation is invalid");
+		ft_print_error(ft_msg(ERROR_5));
 	i = 0;
 	while (i < 3)
 	{
@@ -175,7 +177,7 @@ void	ft_check_braces(int block, int n)
 	if (block != 0 && n == 3)
 		err = 1;
 	if (err == 1)
-		ft_print_error("Error: curly braces in the file are not valid");
+		ft_print_error(ft_msg(ERROR_3));
 }
 
 void ft_get_scene(int fd, t_data *data)
@@ -190,9 +192,7 @@ void ft_get_scene(int fd, t_data *data)
 	t_lst	*lst;
 	t_lst	*tmp;
 	int 	block;
-	int 	t;
 
-	t = 0;
 	lst = NULL;
 	type = NULL;
 	block = 0;
@@ -206,12 +206,11 @@ void ft_get_scene(int fd, t_data *data)
 		if (*line == '#')
 		{
 			type = ft_strsplit(line + 1, ' ')[0];
-			if (type == NULL || t > 0)
-				ft_print_error("Error: type # is invalid");
 			i = 0;
 			while (i < max && ft_strequ(type, arr[i].type) != 1)
 				i++;
-			t++;
+			if (i == max)
+				ft_print_error(ft_msg(ERROR_2));
 			continue ;
 		}
 		if (*line == '{')
@@ -226,7 +225,6 @@ void ft_get_scene(int fd, t_data *data)
 			lst = NULL;
 			ft_check_braces(block, 2);
 			block--;
-			t--;
 		}
 		else if (block == 1 && (str = ft_strsplit(line, ' '))[0] != NULL)
 		{
@@ -235,9 +233,9 @@ void ft_get_scene(int fd, t_data *data)
 				j++;
 			if (j == 2)
 				tmp = ft_new_lst(str[0], str[1]);
-			else if (j == 5 && ft_strequ(str[0], "rotation"))
+			else if (j == 5 && ft_strequ(str[0], ROTATION))
 				tmp = ft_new_lst(str[0], ft_new_arr_i(str[1], str[2], str[3], str[4]));
-			else if (ft_strequ(str[0], "color") || ft_strequ(str[0], "rotation"))
+			else if (ft_strequ(str[0], COLOR) || ft_strequ(str[0], ROTATION))
 				tmp = ft_new_lst(str[0], ft_new_arr_i(str[1], str[2], str[3], NULL));
 			else
 				tmp = ft_new_lst(str[0], ft_new_arr_d(str[1], str[2], str[3]));
@@ -256,15 +254,15 @@ int main(int argc, char **argv)
 	if (argc == 2)
 	{
 		if (ft_strnequ(ft_strrev(argv[1]), ft_strrev(EXTENSION), 4) != 1)
-			ft_print_error("Error: invalid file");
+			ft_print_error(ft_msg(ERROR_1));
 		if ((fd = open(argv[1], O_RDONLY)) == -1)
-			return (ft_print_error("Error: file not found"));
+			return (ft_print_error(ft_msg(ERROR_6)));
 		ft_init_shapes(&data);
 		ft_get_scene(fd, &data);
 		ft_check_valid(&data);
 		ft_open_window(&data);
 	}
 	else
-		ft_print_error("Usage: ./fdf <filename>");
+		ft_print_error("Usage: ./RTv1 <filename>");
 	return (0);
 }
