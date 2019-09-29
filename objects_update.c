@@ -12,11 +12,11 @@
 
 #include "RTv1.h"
 
-void 	ft_update_sphere(t_data *data, t_lst* lst)
+void				ft_update_sphere(t_data *data, t_lst *lst)
 {
-	t_sphere 	*s;
-	double		*d;
-	int 		*i;
+	t_sphere		*s;
+	double			*d;
+	int				*i;
 
 	s = ft_create_sphere(data);
 	while (lst != NULL)
@@ -40,13 +40,11 @@ void 	ft_update_sphere(t_data *data, t_lst* lst)
 	data->sphere = s;
 }
 
-
-
-void 		ft_update_cylinder(t_data *data, t_lst* lst)
+void				ft_update_cylinder(t_data *data, t_lst *lst)
 {
-	t_cylinder 	*c;
-	double		*d;
-	int 		*i;
+	t_cylinder		*c;
+	double			*d;
+	int				*i;
 
 	c = ft_create_cylinder(data);
 	while (lst != NULL)
@@ -79,11 +77,11 @@ void 		ft_update_cylinder(t_data *data, t_lst* lst)
 	data->cylinder = c;
 }
 
-void 					ft_update_cone(t_data *data, t_lst* lst)
+void				ft_update_cone(t_data *data, t_lst *lst)
 {
-	t_cone 		*c;
-	double		*d;
-	int 		*i;
+	t_cone			*c;
+	double			*d;
+	int			*i;
 
 	c = ft_create_cone(data);
 	while (lst != NULL)
@@ -116,12 +114,11 @@ void 					ft_update_cone(t_data *data, t_lst* lst)
 	data->cone = c;
 }
 
-
-void 	ft_update_plane(t_data *data, t_lst* lst)
+void				ft_update_plane(t_data *data, t_lst *lst)
 {
-	t_plane 	*p;
-	double		*d;
-	int 		*i;
+	t_plane			*p;
+	double			*d;
+	int				*i;
 
 	p = ft_create_plane(data);
 	while (lst != NULL)

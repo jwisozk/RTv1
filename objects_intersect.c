@@ -12,16 +12,16 @@
 
 #include "RTv1.h"
 
-void ft_sphere_intersect(t_ray *ray, t_obj *o)
+void				ft_sphere_intersect(t_ray *ray, t_obj *o)
 {
-	t_sphere 	*s;
-	double		t;
+	t_sphere		*s;
+	double			t;
 
 	s = (t_sphere*)o->objects;
 	while (s != NULL)
 	{
 		t = ft_calculate_sphere(ray, s);
-		if (t < o->t && ray->t_min < t && t < ray->t_max )
+		if (t < o->t && ray->t_min < t && t < ray->t_max)
 		{
 			o->obj = s;
 			o->t = t;
@@ -29,16 +29,17 @@ void ft_sphere_intersect(t_ray *ray, t_obj *o)
 		s = s->next;
 	}
 }
-void ft_cylinder_intersect(t_ray *ray, t_obj *o)
+
+void				ft_cylinder_intersect(t_ray *ray, t_obj *o)
 {
-	t_cylinder *c;
-	double		t;
+	t_cylinder		*c;
+	double			t;
 
 	c = (t_cylinder*)o->objects;
 	while (c != NULL)
 	{
 		t = ft_calculate_cylinder(ray, c);
-		if (t < o->t && ray->t_min < t && t < ray->t_max )
+		if (t < o->t && ray->t_min < t && t < ray->t_max)
 		{
 			o->obj = c;
 			o->t = t;
@@ -47,30 +48,30 @@ void ft_cylinder_intersect(t_ray *ray, t_obj *o)
 	}
 }
 
-void    ft_cone_intersect(t_ray *ray, t_obj *o)
+void				ft_cone_intersect(t_ray *ray, t_obj *o)
 {
-    t_cone *c;
-    double		t;
+	t_cone			*c;
+	double			t;
 
-    c = (t_cone*)o->objects;
-    while (c != NULL)
-    {
-        t = ft_calculate_cone(ray, c);
-        if (t < o->t && ray->t_min < t && t < ray->t_max )
-        {
-            o->obj = c;
-            o->t = t;
-        }
-        c = c->next;
-    }
+	c = (t_cone*)o->objects;
+	while (c != NULL)
+	{
+		t = ft_calculate_cone(ray, c);
+		if (t < o->t && ray->t_min < t && t < ray->t_max)
+		{
+			o->obj = c;
+			o->t = t;
+		}
+		c = c->next;
+	}
 }
 
-void ft_plane_intersect(t_ray *ray, t_obj *o)
+void				ft_plane_intersect(t_ray *ray, t_obj *o)
 {
-	t_plane *p;
-	double angle;
-	double t;
-	t_vec3 *op;
+	t_plane			*p;
+	double			angle;
+	double			t;
+	t_vec3			*op;
 
 	p = (t_plane*)o->objects;
 	while (p != NULL)
@@ -80,7 +81,7 @@ void ft_plane_intersect(t_ray *ray, t_obj *o)
 		{
 			op = ft_subtract(p->point, ray->origin);
 			t = ft_dot(op, p->normal) / angle;
-			if (t < o->t && ray->t_min < t && t < ray->t_max )
+			if (t < o->t && ray->t_min < t && t < ray->t_max)
 			{
 				o->obj = p;
 				o->t = t;
@@ -89,4 +90,3 @@ void ft_plane_intersect(t_ray *ray, t_obj *o)
 		p = p->next;
 	}
 }
-
