@@ -12,9 +12,9 @@
 
 #include "RTv1.h"
 
-t_lst *ft_new_lst(char *type, void *data)
+t_lst				*ft_new_lst(char *type, void *data)
 {
-	t_lst *lst;
+	t_lst			*lst;
 
 	lst = (t_lst*)ft_memalloc(sizeof(t_lst));
 	lst->type = type;
@@ -23,7 +23,7 @@ t_lst *ft_new_lst(char *type, void *data)
 	return (lst);
 }
 
-void  ft_add_lst(t_lst **head, t_lst *new)
+void				ft_add_lst(t_lst **head, t_lst *new)
 {
 	if (head != NULL && new != NULL)
 	{
@@ -32,9 +32,9 @@ void  ft_add_lst(t_lst **head, t_lst *new)
 	}
 }
 
-void	ft_check_braces(int *block, int n)
+void				ft_check_braces(int *block, int n)
 {
-	int err;
+	int				err;
 
 	err = 0;
 	if (*block > 0 && n == 1)
@@ -51,10 +51,10 @@ void	ft_check_braces(int *block, int n)
 		ft_print_error(ft_msg(ERROR_3));
 }
 
-int ft_is_hash(char *line, int *i, t_arr_type *arr, int max)
+int					ft_is_hash(char *line, int *i, t_arr_type *arr, int max)
 {
 
-	char 	*type;
+	char			*type;
 
 	if (*line != '#')
 		return (0);
@@ -68,7 +68,7 @@ int ft_is_hash(char *line, int *i, t_arr_type *arr, int max)
 	return (1);
 }
 
-void ft_get_scene(int fd, t_data *data)
+void				ft_get_scene(int fd, t_data *data)
 {
 	char	*line;
 	int		i;

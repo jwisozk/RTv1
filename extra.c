@@ -12,25 +12,24 @@
 
 #include "RTv1.h"
 
-char 	*ft_msg(char *str)
+char				*ft_msg(char *str)
 {
 	return (ft_strjoin(ERROR, str));
 }
 
-int		ft_print_error(char *str)
+int					ft_print_error(char *str)
 {
 	ft_putendl_fd(str, 2);
-
 	exit(0);
 }
 
-int		ft_close_window(t_data *data)
+int					ft_close_window(t_data *data)
 {
 	mlx_destroy_window(data->mlx_ptr, data->win_ptr);
 	exit(0);
 }
 
-int		ft_key_press(int key, t_data *data)
+int					ft_key_press(int key, t_data *data)
 {
 	if (key == 53)
 		ft_close_window(data);

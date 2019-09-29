@@ -12,7 +12,7 @@
 
 #include "RTv1.h"
 
-void  ft_add_obj(t_obj **head, t_obj *new)
+void				ft_add_obj(t_obj **head, t_obj *new)
 {
 	if (head != NULL && new != NULL)
 	{
@@ -21,7 +21,7 @@ void  ft_add_obj(t_obj **head, t_obj *new)
 	}
 }
 
-void ft_create_scene_objects(t_data *data)
+void				ft_create_scene_objects(t_data *data)
 {
 	if (data->sphere != NULL)
 		data->o = ft_create_object(data->sphere, SPHERE);
@@ -48,15 +48,16 @@ void ft_create_scene_objects(t_data *data)
 	}
 }
 
-int *ft_rotation_order(int *arr, int array[3], char *str)
+int					*ft_rotation_order(int *arr, int array[3], char *str)
 {
-	char *pattern = "xyz";
-	int i;
-	int j;
+	static char		*pattern = "xyz";
+	int				i;
+	int				j;
 
 	if (ft_strlen(str) != 3)
 		ft_print_error(ft_msg(ERROR_4));
-	if (ft_strchr(str, 'x') == NULL || ft_strchr(str, 'y') == NULL || ft_strchr(str, 'z') == NULL)
+	if (ft_strchr(str, 'x') == NULL || ft_strchr(str, 'y') == NULL ||
+	ft_strchr(str, 'z') == NULL)
 		ft_print_error(ft_msg(ERROR_5));
 	i = 0;
 	while (i < 3)
@@ -73,9 +74,9 @@ int *ft_rotation_order(int *arr, int array[3], char *str)
 	return (arr);
 }
 
-double *ft_new_arr_d(char *a, char *b, char *c)
+double				*ft_new_arr_d(char *a, char *b, char *c)
 {
-	double *arr;
+	double			*arr;
 
 	arr = (double *)ft_memalloc(sizeof(double) * 3);
 	arr[0] = ft_atof(a);
@@ -84,10 +85,10 @@ double *ft_new_arr_d(char *a, char *b, char *c)
 	return (arr);
 }
 
-int *ft_new_arr_i(char *a, char *b, char *c, char *str)
+int					*ft_new_arr_i(char *a, char *b, char *c, char *str)
 {
-	int *arr;
-	int array[3];
+	int				*arr;
+	int				array[3];
 
 	array[0] = ft_atoi(a);
 	array[1] = ft_atoi(b);

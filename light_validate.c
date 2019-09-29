@@ -12,12 +12,12 @@
 
 #include "RTv1.h"
 
-void ft_check_light(t_data *data)
+void				ft_check_light(t_data *data)
 {
-	t_light *l;
-	static char *arr[3] = LIGHT_TYPES;
-	int i;
-	int c;
+	t_light			*l;
+	static char		*arr[3] = LIGHT_TYPES;
+	int				i;
+	int				c;
 
 	l = data->l;
 	while (l != NULL)

@@ -12,10 +12,10 @@
 
 #include "RTv1.h"
 
-void	ft_update_light(t_data *data, t_lst* lst)
+void				ft_update_light(t_data *data, t_lst *lst)
 {
-	t_light 	*l;
-	double		*d;
+	t_light			*l;
+	double			*d;
 
 	l = ft_create_light(data);
 	while (lst != NULL)

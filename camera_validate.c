@@ -12,15 +12,16 @@
 
 #include "RTv1.h"
 
-void ft_check_camera(t_data *data)
+void				ft_check_camera(t_data *data)
 {
-	t_vec3 *a;
-	t_vec3 *b;
+	t_vec3			*a;
+	t_vec3			*b;
+
 	if (data->cam == NULL)
 		ft_print_error(ft_msg(ERROR_7));
 	a = data->cam->look_at;
 	b = data->cam->pos;
-	if(a == NULL)
+	if (a == NULL)
 		ft_print_error(ft_msg(ERROR_8));
 	if (b == NULL)
 		ft_print_error(ft_msg(ERROR_9));
@@ -29,5 +30,3 @@ void ft_check_camera(t_data *data)
 		a->z == b->z)
 		ft_print_error(ft_msg(ERROR_10));
 }
-
-

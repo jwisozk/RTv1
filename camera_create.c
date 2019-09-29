@@ -12,18 +12,15 @@
 
 #include "RTv1.h"
 
-t_cam *ft_create_camera(void)
+t_cam				*ft_create_camera(void)
 {
-    t_cam *cam;
+	t_cam *cam;
 
-    cam = (t_cam*)ft_memalloc(sizeof(t_cam));
+	cam = (t_cam*)ft_memalloc(sizeof(t_cam));
 	cam->pos = NULL;
 	cam->look_at = NULL;
 	cam->forward = NULL;
 	cam->left = NULL;
 	cam->up = NULL;
-    return (cam);
+	return (cam);
 }
-
-
-

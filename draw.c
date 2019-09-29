@@ -12,11 +12,11 @@
 
 #include "RTv1.h"
 
-t_obj	*ft_find_closest_obj(t_obj* obj, t_ray* ray)
+t_obj				*ft_find_closest_obj(t_obj *obj, t_ray *ray)
 {
-	static t_arr_obj arr[] = ARR_OBJ;
-	int i;
-	int max;
+	static t_arr_obj	arr[] = ARR_OBJ;
+	int					i;
+	int					max;
 
 	i = 0;
 	max = sizeof(arr) / sizeof(t_arr_obj);
@@ -33,11 +33,11 @@ t_obj	*ft_find_closest_obj(t_obj* obj, t_ray* ray)
 	return (NULL);
 }
 
-void 	ft_obj_fill(t_obj *obj, t_point *p, t_ray *ray)
+void				ft_obj_fill(t_obj *obj, t_point *p, t_ray *ray)
 {
-	static t_arr_obj arr[] = ARR_OBJ;
-	int i;
-	int max;
+	static t_arr_obj	arr[] = ARR_OBJ;
+	int					i;
+	int					max;
 
 	i = 0;
 	max = sizeof(arr) / sizeof(t_arr_obj);
@@ -49,11 +49,11 @@ void 	ft_obj_fill(t_obj *obj, t_point *p, t_ray *ray)
 	}
 }
 
-t_obj		*ft_scene_intersect(t_obj *o, t_ray *ray)
+t_obj				*ft_scene_intersect(t_obj *o, t_ray *ray)
 {
-	t_obj *obj;
-	t_obj *tmp_obj;
-	double t;
+	t_obj			*obj;
+	t_obj			*tmp_obj;
+	double			t;
 
 	obj = NULL;
 	t = INF;
@@ -70,24 +70,24 @@ t_obj		*ft_scene_intersect(t_obj *o, t_ray *ray)
 	return (obj);
 }
 
-int ft_trace_ray(t_data *data)
+int					ft_trace_ray(t_data *data)
 {
-	t_vec3 *vec_po;
-	t_obj	*obj;
-	double lighting;
+	t_vec3			*vec_po;
+	t_obj			*obj;
+	double			lighting;
 
 	if ((obj = ft_scene_intersect(data->o, data->ray)) == NULL)
-		return ft_rgb(BACKGROUND);
+		return (ft_rgb(BACKGROUND));
 	ft_obj_fill(obj, data->p, data->ray);
 	vec_po = ft_multiply(-1, data->ray->direct);
 	lighting = ft_lighting(data->p, data->l, data->o, vec_po);
 	return (ft_multiply_color(lighting, data->p->color));
 }
 
-void	ft_draw(t_data *data)
+void				ft_draw(t_data *data)
 {
-	int 	i;
-	int		j;
+	int				i;
+	int				j;
 
 	i = 0;
 	ft_camera_look_at(data);
@@ -103,6 +103,6 @@ void	ft_draw(t_data *data)
 		}
 		i++;
 	}
-	mlx_put_image_to_window(data->mlx_ptr, data->win_ptr, data->img.img_ptr, 0, 0);
+	mlx_put_image_to_window(data->mlx_ptr, data->win_ptr,
+	data->img.img_ptr, 0, 0);
 }
-

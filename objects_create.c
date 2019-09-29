@@ -12,22 +12,22 @@
 
 #include "RTv1.h"
 
-t_obj *ft_create_object(void *obj, t_type_obj type)
+t_obj				*ft_create_object(void *obj, t_type_obj type)
 {
-    t_obj *o;
+	t_obj			*o;
 
-    o = (t_obj*)ft_memalloc(sizeof(t_obj));
-    o->type = type;
-    o->objects = obj;
-    o->obj = NULL;
-    o->t = INF;
-    o->next = NULL;
-    return (o);
+	o = (t_obj*)ft_memalloc(sizeof(t_obj));
+	o->type = type;
+	o->objects = obj;
+	o->obj = NULL;
+	o->t = INF;
+	o->next = NULL;
+	return (o);
 }
 
-t_sphere *ft_create_sphere(t_data *data)
+t_sphere			*ft_create_sphere(t_data *data)
 {
-	t_sphere *s;
+	t_sphere		*s;
 
 	s = (t_sphere*)ft_memalloc(sizeof(t_sphere));
 	s->center = NULL;
@@ -39,9 +39,9 @@ t_sphere *ft_create_sphere(t_data *data)
 	return (s);
 }
 
-t_cylinder *ft_create_cylinder(t_data *data)
+t_cylinder			*ft_create_cylinder(t_data *data)
 {
-	t_cylinder *c;
+	t_cylinder		*c;
 
 	c = (t_cylinder*)ft_memalloc(sizeof(t_cylinder));
 	c->center = NULL;
@@ -55,9 +55,9 @@ t_cylinder *ft_create_cylinder(t_data *data)
 	return (c);
 }
 
-t_cone *ft_create_cone(t_data *data)
+t_cone				*ft_create_cone(t_data *data)
 {
-	t_cone *c;
+	t_cone			*c;
 
 	c = (t_cone*)ft_memalloc(sizeof(t_cone));
 	c->center = NULL;
@@ -71,9 +71,9 @@ t_cone *ft_create_cone(t_data *data)
 	return (c);
 }
 
-t_plane *ft_create_plane(t_data *data)
+t_plane				*ft_create_plane(t_data *data)
 {
-	t_plane *p;
+	t_plane			*p;
 
 	p = (t_plane*)ft_memalloc(sizeof(t_plane));
 	p->normal = NULL;

@@ -19,6 +19,7 @@
 # include <fcntl.h>
 # include <sys/types.h>
 # include <sys/uio.h>
+# include <stdio.h>			// УБРАТЬ
 # define DW             600
 # define DH             600
 # define EXTENSION		".cfg"
@@ -320,5 +321,4 @@ void 					ft_cylinder_fill(t_obj *obj, t_point *p, t_ray *ray);
 void 					ft_plane_fill(t_obj *obj, t_point *p, t_ray *ray);
 void 					ft_cone_fill(t_obj *obj, t_point *p, t_ray *ray);
 
-# include <stdio.h>
 #endif

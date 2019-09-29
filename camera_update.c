@@ -12,10 +12,10 @@
 
 #include "RTv1.h"
 
-void	ft_update_camera(t_data *data, t_lst* lst)
+void				ft_update_camera(t_data *data, t_lst *lst)
 {
-	t_cam 		*cam;
-	double		*d;
+	t_cam			*cam;
+	double			*d;
 
 	cam = ft_create_camera();
 	while (lst != NULL)
@@ -29,4 +29,3 @@ void	ft_update_camera(t_data *data, t_lst* lst)
 	}
 	data->cam = cam;
 }
-

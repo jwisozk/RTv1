@@ -12,7 +12,7 @@
 
 #include "RTv1.h"
 
-void	ft_init_shapes(t_data *data)
+void				ft_init_shapes(t_data *data)
 {
 	data->sphere = NULL;
 	data->plane = NULL;
@@ -24,7 +24,7 @@ void	ft_init_shapes(t_data *data)
 	data->cam = NULL;
 }
 
-void ft_check_valid(t_data *data)
+void				ft_check_valid(t_data *data)
 {
 	ft_check_camera(data);
 	ft_check_light(data);
@@ -34,16 +34,17 @@ void ft_check_valid(t_data *data)
 	ft_check_plane(data);
 }
 
-void	ft_open_window(t_data *data)
+void				ft_open_window(t_data *data)
 {
-	void	*mlx_ptr;
-	void	*win_ptr;
+	void			*mlx_ptr;
+	void			*win_ptr;
 
 	mlx_ptr = mlx_init();
+	// добавить защиту для mlx
 	win_ptr = mlx_new_window(mlx_ptr, DW, DH, "RTv1");
 	data->img.img_ptr = mlx_new_image(mlx_ptr, DW, DH);
 	data->img.img_arr = (int*)mlx_get_data_addr(data->img.img_ptr,
-			&data->img.bit_per_pixel, &data->img.size_line, &data->img.endian);
+	&data->img.bit_per_pixel, &data->img.size_line, &data->img.endian);
 	data->mlx_ptr = mlx_ptr;
 	data->win_ptr = win_ptr;
 	ft_draw(data);
@@ -52,10 +53,10 @@ void	ft_open_window(t_data *data)
 	mlx_loop(mlx_ptr);
 }
 
-int main(int argc, char **argv)
+int					main(int argc, char **argv)
 {
-	int		fd;
-	t_data	data;
+	int				fd;
+	t_data			data;
 
 	if (argc == 2)
 	{

@@ -12,9 +12,9 @@
 
 #include "RTv1.h"
 
-t_light *ft_create_light(t_data *data)
+t_light				*ft_create_light(t_data *data)
 {
-	t_light *l;
+	t_light			*l;
 
 	l = (t_light*)ft_memalloc(sizeof(t_light));
 	l->type = NULL;
@@ -23,4 +23,3 @@ t_light *ft_create_light(t_data *data)
 	l->next = data->l != NULL ? data->l : NULL;
 	return (l);
 }
-
