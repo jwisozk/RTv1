@@ -18,6 +18,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/jwisozk/CLionProjects/RTv1/libft/ft_bzero.c" "/Users/jwisozk/CLionProjects/RTv1/cmake-build-debug/CMakeFiles/RTv1.dir/libft/ft_bzero.c.o"
   "/Users/jwisozk/CLionProjects/RTv1/libft/ft_del.c" "/Users/jwisozk/CLionProjects/RTv1/cmake-build-debug/CMakeFiles/RTv1.dir/libft/ft_del.c.o"
   "/Users/jwisozk/CLionProjects/RTv1/libft/ft_free_all.c" "/Users/jwisozk/CLionProjects/RTv1/cmake-build-debug/CMakeFiles/RTv1.dir/libft/ft_free_all.c.o"
+  "/Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.c" "/Users/jwisozk/CLionProjects/RTv1/cmake-build-debug/CMakeFiles/RTv1.dir/libft/ft_gc.c.o"
   "/Users/jwisozk/CLionProjects/RTv1/libft/ft_isalnum.c" "/Users/jwisozk/CLionProjects/RTv1/cmake-build-debug/CMakeFiles/RTv1.dir/libft/ft_isalnum.c.o"
   "/Users/jwisozk/CLionProjects/RTv1/libft/ft_isalpha.c" "/Users/jwisozk/CLionProjects/RTv1/cmake-build-debug/CMakeFiles/RTv1.dir/libft/ft_isalpha.c.o"
   "/Users/jwisozk/CLionProjects/RTv1/libft/ft_isascii.c" "/Users/jwisozk/CLionProjects/RTv1/cmake-build-debug/CMakeFiles/RTv1.dir/libft/ft_isascii.c.o"

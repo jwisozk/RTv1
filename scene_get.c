@@ -98,6 +98,7 @@ void ft_get_scene(int fd, t_data *data)
 		{
 			if (lst != NULL)
 				arr[i].ft_create_type(data, lst);
+			// add free() + free elem
 			lst = NULL;
 			ft_check_braces(&block, 2);
 		}
@@ -121,6 +122,7 @@ void ft_get_scene(int fd, t_data *data)
 			ft_add_lst(&lst, tmp);
 		}
 	}
+	// Протестить функцию
 	ft_check_braces(&block, 3);
 	ft_create_scene_objects(data);
 }

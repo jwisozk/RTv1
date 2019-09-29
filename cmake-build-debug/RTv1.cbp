@@ -127,6 +127,12 @@
 		<Unit filename="/Users/jwisozk/CLionProjects/RTv1/libft/ft_free_all.c">
 			<Option target="RTv1"/>
 		</Unit>
+		<Unit filename="/Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.c">
+			<Option target="RTv1"/>
+		</Unit>
+		<Unit filename="/Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h">
+			<Option target="RTv1"/>
+		</Unit>
 		<Unit filename="/Users/jwisozk/CLionProjects/RTv1/libft/ft_isalnum.c">
 			<Option target="RTv1"/>
 		</Unit>

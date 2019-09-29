@@ -4,318 +4,412 @@
 CMakeFiles/RTv1.dir/camera.c.o
  /Users/jwisozk/CLionProjects/RTv1/RTv1.h
  /Users/jwisozk/CLionProjects/RTv1/camera.c
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
  /Users/jwisozk/CLionProjects/RTv1/minilibx/mlx.h
 CMakeFiles/RTv1.dir/camera_create.c.o
  /Users/jwisozk/CLionProjects/RTv1/RTv1.h
  /Users/jwisozk/CLionProjects/RTv1/camera_create.c
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
  /Users/jwisozk/CLionProjects/RTv1/minilibx/mlx.h
 CMakeFiles/RTv1.dir/camera_update.c.o
  /Users/jwisozk/CLionProjects/RTv1/RTv1.h
  /Users/jwisozk/CLionProjects/RTv1/camera_update.c
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
  /Users/jwisozk/CLionProjects/RTv1/minilibx/mlx.h
 CMakeFiles/RTv1.dir/camera_validate.c.o
  /Users/jwisozk/CLionProjects/RTv1/RTv1.h
  /Users/jwisozk/CLionProjects/RTv1/camera_validate.c
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
  /Users/jwisozk/CLionProjects/RTv1/minilibx/mlx.h
 CMakeFiles/RTv1.dir/color.c.o
  /Users/jwisozk/CLionProjects/RTv1/RTv1.h
  /Users/jwisozk/CLionProjects/RTv1/color.c
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
  /Users/jwisozk/CLionProjects/RTv1/minilibx/mlx.h
 CMakeFiles/RTv1.dir/draw.c.o
  /Users/jwisozk/CLionProjects/RTv1/RTv1.h
  /Users/jwisozk/CLionProjects/RTv1/draw.c
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
  /Users/jwisozk/CLionProjects/RTv1/minilibx/mlx.h
 CMakeFiles/RTv1.dir/extra.c.o
  /Users/jwisozk/CLionProjects/RTv1/RTv1.h
  /Users/jwisozk/CLionProjects/RTv1/extra.c
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
  /Users/jwisozk/CLionProjects/RTv1/minilibx/mlx.h
 CMakeFiles/RTv1.dir/geometric_create.c.o
  /Users/jwisozk/CLionProjects/RTv1/RTv1.h
  /Users/jwisozk/CLionProjects/RTv1/geometric_create.c
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
  /Users/jwisozk/CLionProjects/RTv1/minilibx/mlx.h
 CMakeFiles/RTv1.dir/libft/ft_atof.c.o
  /Users/jwisozk/CLionProjects/RTv1/libft/ft_atof.c
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
 CMakeFiles/RTv1.dir/libft/ft_atoi.c.o
  /Users/jwisozk/CLionProjects/RTv1/libft/ft_atoi.c
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
 CMakeFiles/RTv1.dir/libft/ft_atoi_base.c.o
  /Users/jwisozk/CLionProjects/RTv1/libft/ft_atoi_base.c
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
 CMakeFiles/RTv1.dir/libft/ft_bzero.c.o
  /Users/jwisozk/CLionProjects/RTv1/libft/ft_bzero.c
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
 CMakeFiles/RTv1.dir/libft/ft_del.c.o
  /Users/jwisozk/CLionProjects/RTv1/libft/ft_del.c
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
 CMakeFiles/RTv1.dir/libft/ft_free_all.c.o
  /Users/jwisozk/CLionProjects/RTv1/libft/ft_free_all.c
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
+ /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
+CMakeFiles/RTv1.dir/libft/ft_gc.c.o
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.c
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
 CMakeFiles/RTv1.dir/libft/ft_isalnum.c.o
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/ft_isalnum.c
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
 CMakeFiles/RTv1.dir/libft/ft_isalpha.c.o
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/ft_isalpha.c
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
 CMakeFiles/RTv1.dir/libft/ft_isascii.c.o
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/ft_isascii.c
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
 CMakeFiles/RTv1.dir/libft/ft_isdigit.c.o
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/ft_isdigit.c
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
 CMakeFiles/RTv1.dir/libft/ft_isprint.c.o
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/ft_isprint.c
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
 CMakeFiles/RTv1.dir/libft/ft_isspace.c.o
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/ft_isspace.c
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
 CMakeFiles/RTv1.dir/libft/ft_itoa.c.o
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/ft_itoa.c
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
 CMakeFiles/RTv1.dir/libft/ft_lstadd.c.o
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/ft_lstadd.c
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
 CMakeFiles/RTv1.dir/libft/ft_lstadd_back.c.o
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/ft_lstadd_back.c
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
 CMakeFiles/RTv1.dir/libft/ft_lstdel.c.o
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/ft_lstdel.c
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
 CMakeFiles/RTv1.dir/libft/ft_lstdelone.c.o
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/ft_lstdelone.c
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
 CMakeFiles/RTv1.dir/libft/ft_lstiter.c.o
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/ft_lstiter.c
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
 CMakeFiles/RTv1.dir/libft/ft_lstmap.c.o
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/ft_lstmap.c
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
 CMakeFiles/RTv1.dir/libft/ft_lstnew.c.o
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/ft_lstnew.c
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
 CMakeFiles/RTv1.dir/libft/ft_memalloc.c.o
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/ft_memalloc.c
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
 CMakeFiles/RTv1.dir/libft/ft_memccpy.c.o
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/ft_memccpy.c
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
 CMakeFiles/RTv1.dir/libft/ft_memchr.c.o
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/ft_memchr.c
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
 CMakeFiles/RTv1.dir/libft/ft_memcmp.c.o
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/ft_memcmp.c
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
 CMakeFiles/RTv1.dir/libft/ft_memcpy.c.o
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/ft_memcpy.c
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
 CMakeFiles/RTv1.dir/libft/ft_memdel.c.o
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/ft_memdel.c
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
 CMakeFiles/RTv1.dir/libft/ft_memmove.c.o
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/ft_memmove.c
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
 CMakeFiles/RTv1.dir/libft/ft_memset.c.o
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/ft_memset.c
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
 CMakeFiles/RTv1.dir/libft/ft_putchar.c.o
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/ft_putchar.c
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
 CMakeFiles/RTv1.dir/libft/ft_putchar_fd.c.o
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/ft_putchar_fd.c
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
 CMakeFiles/RTv1.dir/libft/ft_putendl.c.o
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/ft_putendl.c
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
 CMakeFiles/RTv1.dir/libft/ft_putendl_fd.c.o
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/ft_putendl_fd.c
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
 CMakeFiles/RTv1.dir/libft/ft_putnbr.c.o
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/ft_putnbr.c
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
 CMakeFiles/RTv1.dir/libft/ft_putnbr_fd.c.o
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/ft_putnbr_fd.c
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
 CMakeFiles/RTv1.dir/libft/ft_putstr.c.o
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/ft_putstr.c
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
 CMakeFiles/RTv1.dir/libft/ft_putstr_fd.c.o
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/ft_putstr_fd.c
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
 CMakeFiles/RTv1.dir/libft/ft_strcat.c.o
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/ft_strcat.c
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
 CMakeFiles/RTv1.dir/libft/ft_strchr.c.o
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/ft_strchr.c
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
 CMakeFiles/RTv1.dir/libft/ft_strclr.c.o
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/ft_strclr.c
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
 CMakeFiles/RTv1.dir/libft/ft_strcmp.c.o
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/ft_strcmp.c
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
 CMakeFiles/RTv1.dir/libft/ft_strcpy.c.o
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/ft_strcpy.c
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
 CMakeFiles/RTv1.dir/libft/ft_strdel.c.o
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/ft_strdel.c
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
 CMakeFiles/RTv1.dir/libft/ft_strdup.c.o
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/ft_strdup.c
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
 CMakeFiles/RTv1.dir/libft/ft_strequ.c.o
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/ft_strequ.c
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
 CMakeFiles/RTv1.dir/libft/ft_striter.c.o
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/ft_striter.c
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
 CMakeFiles/RTv1.dir/libft/ft_striteri.c.o
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/ft_striteri.c
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
 CMakeFiles/RTv1.dir/libft/ft_strjoin.c.o
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/ft_strjoin.c
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
 CMakeFiles/RTv1.dir/libft/ft_strlcat.c.o
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/ft_strlcat.c
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
 CMakeFiles/RTv1.dir/libft/ft_strlen.c.o
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/ft_strlen.c
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
 CMakeFiles/RTv1.dir/libft/ft_strmap.c.o
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/ft_strmap.c
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
 CMakeFiles/RTv1.dir/libft/ft_strmapi.c.o
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/ft_strmapi.c
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
 CMakeFiles/RTv1.dir/libft/ft_strncat.c.o
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/ft_strncat.c
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
 CMakeFiles/RTv1.dir/libft/ft_strncmp.c.o
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/ft_strncmp.c
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
 CMakeFiles/RTv1.dir/libft/ft_strncpy.c.o
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/ft_strncpy.c
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
 CMakeFiles/RTv1.dir/libft/ft_strnequ.c.o
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/ft_strnequ.c
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
 CMakeFiles/RTv1.dir/libft/ft_strnew.c.o
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/ft_strnew.c
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
 CMakeFiles/RTv1.dir/libft/ft_strnstr.c.o
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/ft_strnstr.c
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
 CMakeFiles/RTv1.dir/libft/ft_strrchr.c.o
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/ft_strrchr.c
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
 CMakeFiles/RTv1.dir/libft/ft_strrev.c.o
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/ft_strrev.c
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
 CMakeFiles/RTv1.dir/libft/ft_strsplit.c.o
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/ft_strsplit.c
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
 CMakeFiles/RTv1.dir/libft/ft_strstr.c.o
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/ft_strstr.c
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
 CMakeFiles/RTv1.dir/libft/ft_strsub.c.o
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/ft_strsub.c
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
 CMakeFiles/RTv1.dir/libft/ft_strtrim.c.o
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/ft_strtrim.c
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
 CMakeFiles/RTv1.dir/libft/ft_tolower.c.o
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/ft_tolower.c
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
 CMakeFiles/RTv1.dir/libft/ft_toupper.c.o
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/ft_toupper.c
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
 CMakeFiles/RTv1.dir/libft/get_next_line.c.o
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/get_next_line.c
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
 CMakeFiles/RTv1.dir/light_create.c.o
  /Users/jwisozk/CLionProjects/RTv1/RTv1.h
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
  /Users/jwisozk/CLionProjects/RTv1/light_create.c
  /Users/jwisozk/CLionProjects/RTv1/minilibx/mlx.h
 CMakeFiles/RTv1.dir/light_update.c.o
  /Users/jwisozk/CLionProjects/RTv1/RTv1.h
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
  /Users/jwisozk/CLionProjects/RTv1/light_update.c
  /Users/jwisozk/CLionProjects/RTv1/minilibx/mlx.h
 CMakeFiles/RTv1.dir/light_validate.c.o
  /Users/jwisozk/CLionProjects/RTv1/RTv1.h
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
  /Users/jwisozk/CLionProjects/RTv1/light_validate.c
  /Users/jwisozk/CLionProjects/RTv1/minilibx/mlx.h
 CMakeFiles/RTv1.dir/lighting.c.o
  /Users/jwisozk/CLionProjects/RTv1/RTv1.h
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
  /Users/jwisozk/CLionProjects/RTv1/lighting.c
  /Users/jwisozk/CLionProjects/RTv1/minilibx/mlx.h
 CMakeFiles/RTv1.dir/main.c.o
  /Users/jwisozk/CLionProjects/RTv1/RTv1.h
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
  /Users/jwisozk/CLionProjects/RTv1/main.c
  /Users/jwisozk/CLionProjects/RTv1/minilibx/mlx.h
 CMakeFiles/RTv1.dir/objects_calculate.c.o
  /Users/jwisozk/CLionProjects/RTv1/RTv1.h
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
  /Users/jwisozk/CLionProjects/RTv1/minilibx/mlx.h
  /Users/jwisozk/CLionProjects/RTv1/objects_calculate.c
 CMakeFiles/RTv1.dir/objects_create.c.o
  /Users/jwisozk/CLionProjects/RTv1/RTv1.h
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
  /Users/jwisozk/CLionProjects/RTv1/minilibx/mlx.h
  /Users/jwisozk/CLionProjects/RTv1/objects_create.c
 CMakeFiles/RTv1.dir/objects_fill.c.o
  /Users/jwisozk/CLionProjects/RTv1/RTv1.h
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
  /Users/jwisozk/CLionProjects/RTv1/minilibx/mlx.h
  /Users/jwisozk/CLionProjects/RTv1/objects_fill.c
 CMakeFiles/RTv1.dir/objects_intersect.c.o
  /Users/jwisozk/CLionProjects/RTv1/RTv1.h
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
  /Users/jwisozk/CLionProjects/RTv1/minilibx/mlx.h
  /Users/jwisozk/CLionProjects/RTv1/objects_intersect.c
 CMakeFiles/RTv1.dir/objects_update.c.o
  /Users/jwisozk/CLionProjects/RTv1/RTv1.h
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
  /Users/jwisozk/CLionProjects/RTv1/minilibx/mlx.h
  /Users/jwisozk/CLionProjects/RTv1/objects_update.c
 CMakeFiles/RTv1.dir/objects_validate.c.o
  /Users/jwisozk/CLionProjects/RTv1/RTv1.h
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
  /Users/jwisozk/CLionProjects/RTv1/minilibx/mlx.h
  /Users/jwisozk/CLionProjects/RTv1/objects_validate.c
 CMakeFiles/RTv1.dir/operations_d.c.o
  /Users/jwisozk/CLionProjects/RTv1/RTv1.h
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
  /Users/jwisozk/CLionProjects/RTv1/minilibx/mlx.h
  /Users/jwisozk/CLionProjects/RTv1/operations_d.c
 CMakeFiles/RTv1.dir/operations_v.c.o
  /Users/jwisozk/CLionProjects/RTv1/RTv1.h
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
  /Users/jwisozk/CLionProjects/RTv1/minilibx/mlx.h
  /Users/jwisozk/CLionProjects/RTv1/operations_v.c
 CMakeFiles/RTv1.dir/scene_extra.c.o
  /Users/jwisozk/CLionProjects/RTv1/RTv1.h
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
  /Users/jwisozk/CLionProjects/RTv1/minilibx/mlx.h
  /Users/jwisozk/CLionProjects/RTv1/scene_extra.c
 CMakeFiles/RTv1.dir/scene_get.c.o
  /Users/jwisozk/CLionProjects/RTv1/RTv1.h
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
  /Users/jwisozk/CLionProjects/RTv1/minilibx/mlx.h
  /Users/jwisozk/CLionProjects/RTv1/scene_get.c
 CMakeFiles/RTv1.dir/transform.c.o
  /Users/jwisozk/CLionProjects/RTv1/RTv1.h
+ /Users/jwisozk/CLionProjects/RTv1/libft/ft_gc.h
  /Users/jwisozk/CLionProjects/RTv1/libft/libft.h
  /Users/jwisozk/CLionProjects/RTv1/minilibx/mlx.h
  /Users/jwisozk/CLionProjects/RTv1/transform.c

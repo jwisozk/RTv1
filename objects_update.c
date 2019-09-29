@@ -6,7 +6,7 @@
 /*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/28 19:06:14 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/09/29 15:20:04 by jwisozk          ###   ########.fr       */
+/*   Updated: 2019/09/29 18:26:05 by jwisozk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,13 +72,12 @@ void 		ft_update_cylinder(t_data *data, t_lst* lst)
 		}
 		lst = lst->next;
 	}
-	if (c->translation != NULL)
+	if (c->center != NULL && c->translation != NULL)
 		c->center = ft_translate(c->center, c->translation);
 	if (c->rotation != NULL)
 		c->normal = ft_rotate(c->normal, c->rotation);
 	data->cylinder = c;
 }
-
 
 void 					ft_update_cone(t_data *data, t_lst* lst)
 {
@@ -110,7 +109,7 @@ void 					ft_update_cone(t_data *data, t_lst* lst)
 		}
 		lst = lst->next;
 	}
-	if (c->translation != NULL)
+	if (c->center != NULL && c->translation != NULL)
 		c->center = ft_translate(c->center, c->translation);
 	if (c->rotation != NULL)
 		c->normal = ft_rotate(c->normal, c->rotation);
@@ -146,7 +145,7 @@ void 	ft_update_plane(t_data *data, t_lst* lst)
 		}
 		lst = lst->next;
 	}
-	if (p->translation != NULL)
+	if (p->point != NULL && p->translation != NULL)
 		p->point = ft_translate(p->point, p->translation);
 	if (p->rotation != NULL)
 		p->normal = ft_rotate(p->normal, p->rotation);

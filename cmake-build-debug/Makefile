@@ -501,6 +501,33 @@ libft/ft_free_all.c.s:
 	$(MAKE) -f CMakeFiles/RTv1.dir/build.make CMakeFiles/RTv1.dir/libft/ft_free_all.c.s
 .PHONY : libft/ft_free_all.c.s
 
+libft/ft_gc.o: libft/ft_gc.c.o
+
+.PHONY : libft/ft_gc.o
+
+# target to build an object file
+libft/ft_gc.c.o:
+	$(MAKE) -f CMakeFiles/RTv1.dir/build.make CMakeFiles/RTv1.dir/libft/ft_gc.c.o
+.PHONY : libft/ft_gc.c.o
+
+libft/ft_gc.i: libft/ft_gc.c.i
+
+.PHONY : libft/ft_gc.i
+
+# target to preprocess a source file
+libft/ft_gc.c.i:
+	$(MAKE) -f CMakeFiles/RTv1.dir/build.make CMakeFiles/RTv1.dir/libft/ft_gc.c.i
+.PHONY : libft/ft_gc.c.i
+
+libft/ft_gc.s: libft/ft_gc.c.s
+
+.PHONY : libft/ft_gc.s
+
+# target to generate assembly for a file
+libft/ft_gc.c.s:
+	$(MAKE) -f CMakeFiles/RTv1.dir/build.make CMakeFiles/RTv1.dir/libft/ft_gc.c.s
+.PHONY : libft/ft_gc.c.s
+
 libft/ft_isalnum.o: libft/ft_isalnum.c.o
 
 .PHONY : libft/ft_isalnum.o
@@ -2604,6 +2631,9 @@ help:
 	@echo "... libft/ft_free_all.o"
 	@echo "... libft/ft_free_all.i"
 	@echo "... libft/ft_free_all.s"
+	@echo "... libft/ft_gc.o"
+	@echo "... libft/ft_gc.i"
+	@echo "... libft/ft_gc.s"
 	@echo "... libft/ft_isalnum.o"
 	@echo "... libft/ft_isalnum.i"
 	@echo "... libft/ft_isalnum.s"

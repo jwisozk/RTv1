@@ -89,6 +89,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/RTv1.dir/light_update.c.o"
   "CMakeFiles/RTv1.dir/light_validate.c.o"
   "CMakeFiles/RTv1.dir/objects_calculate.c.o"
+  "CMakeFiles/RTv1.dir/libft/ft_gc.c.o"
   "RTv1.pdb"
   "RTv1"
 )
