@@ -242,6 +242,7 @@ typedef struct			s_data
     t_plane				*plane;
     t_cylinder			*cylinder;
     t_cone				*cone;
+	t_gc_vector 		*ptr_mem;
 }						t_data;
 
 int						ft_key_press(int key, t_data *data);

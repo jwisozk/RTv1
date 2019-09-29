@@ -6,7 +6,7 @@
 /*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/29 22:04:45 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/09/29 22:04:45 by jwisozk          ###   ########.fr       */
+/*   Updated: 2019/09/29 22:08:30 by jwisozk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,5 +26,5 @@ typedef struct		s_gc_vector
 void				t_gc(t_gc_vector **vector);
 void				ft_tgc_append(t_gc_vector **vector, void **d);
 t_gc_vector			*init_tgc_vector(ssize_t ssize);
-extern t_gc_vector	*g_memaloced;
+//extern t_gc_vector	*g_memaloced;
 #endif
