@@ -286,7 +286,7 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="RTv1" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="../scenes/scene_1.cfg" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RTv1" TARGET_NAME="RTv1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="RTv1" RUN_TARGET_NAME="RTv1">
+    <configuration name="RTv1" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="../scenes/scene_1.cfg" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="RTv1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="RTv1">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
