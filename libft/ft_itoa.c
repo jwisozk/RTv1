@@ -6,7 +6,7 @@
 /*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/12 19:23:00 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/05/22 17:03:55 by jwisozk          ###   ########.fr       */
+/*   Updated: 2019/09/29 20:57:23 by jwisozk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,7 @@ char			*ft_itoa(int n)
 
 	num = n;
 	len = ft_get_len(n);
-	if (!(str = (char*)malloc(sizeof(char) * (len + 1))))
+	if (!(str = (char*)ft_memalloc(sizeof(char) * (len + 1))))
 		return (NULL);
 	ft_fill_str(str, len);
 	if (num < 0)

@@ -6,7 +6,7 @@
 /*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/14 09:00:11 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/05/22 18:13:46 by jwisozk          ###   ########.fr       */
+/*   Updated: 2019/09/29 20:57:23 by jwisozk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,9 @@ t_list	*ft_lstnew(void const *content, size_t content_size)
 	t_list	*head;
 	void	*data;
 
-	if (!(head = (t_list*)malloc(sizeof(*head))))
+	if (!(head = (t_list*)ft_memalloc(sizeof(*head))))
 		return (NULL);
-	if (!(data = malloc(sizeof(*content) * content_size)))
+	if (!(data = ft_memalloc(sizeof(*content) * content_size)))
 	{
 		free(head);
 		return (NULL);

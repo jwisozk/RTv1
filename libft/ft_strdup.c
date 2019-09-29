@@ -6,7 +6,7 @@
 /*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/28 19:05:46 by jwisozk           #+#    #+#             */
-/*   Updated: 2018/12/16 16:43:33 by jwisozk          ###   ########.fr       */
+/*   Updated: 2019/09/29 20:57:23 by jwisozk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*ft_strdup(char const *s1)
 	len = ft_strlen(s1);
 	if (len + 1 == 0)
 		return (NULL);
-	s2 = (char*)malloc(sizeof(char) * (len + 1));
+	s2 = (char*)ft_memalloc(sizeof(char) * (len + 1));
 	if (!s2)
 		return (NULL);
 	i = 0;

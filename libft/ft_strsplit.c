@@ -6,7 +6,7 @@
 /*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/11 13:00:11 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/05/22 16:47:07 by jwisozk          ###   ########.fr       */
+/*   Updated: 2019/09/29 20:57:23 by jwisozk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,7 +54,7 @@ char			**ft_strsplit(char const *s, char c)
 	int		i;
 
 	count = ft_get_count_words(s, c);
-	if (!(ptr = (char**)malloc(sizeof(*ptr) * (count + 1))))
+	if (!(ptr = (char**)ft_memalloc(sizeof(*ptr) * (count + 1))))
 		return (NULL);
 	ptr[count] = NULL;
 	i = 0;
@@ -64,7 +64,7 @@ char			**ft_strsplit(char const *s, char c)
 		if (*s != c)
 		{
 			len = ft_get_len_word(s, c);
-			if (!(ptr[i] = (char*)malloc(sizeof(char) * (len + 1))))
+			if (!(ptr[i] = (char*)ft_memalloc(sizeof(char) * (len + 1))))
 				return ((char**)ft_free_all((void**)ptr, i));
 			ptr[i] = ft_strncpy(ptr[i], s, len);
 			ptr[i][len] = '\0';
