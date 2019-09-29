@@ -6,7 +6,7 @@
 /*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/09 13:37:42 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/09/29 15:41:25 by jwisozk          ###   ########.fr       */
+/*   Updated: 2019/09/29 15:43:56 by jwisozk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,6 +84,7 @@
 # define ERROR_26		"Param \"normal\" of plane is invalid."
 # define ERROR_27		"Param \"color\" of plane is invalid."
 # define ERROR_28 		"Function close() failed."
+# define ERROR_29 		"Memory was not allocated."
 
 typedef struct 			s_vec3
 {
