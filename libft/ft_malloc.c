@@ -1,30 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_gc.h                                            :+:      :+:    :+:   */
+/*   ft_malloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/09/29 22:04:45 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/09/29 22:04:45 by jwisozk          ###   ########.fr       */
+/*   Created: 2019/09/29 22:01:44 by jwisozk           #+#    #+#             */
+/*   Updated: 2019/09/29 22:23:04 by jwisozk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_GC_H
-# define FT_GC_H
-# include <stdio.h>
-# include <stdlib.h>
-# define TGC_OPTIMAL_SIZE (2u<<5u)
+#include "libft.h"
 
-typedef struct		s_gc_vector
+void	*ft_malloc(size_t size, t_gc_vector *data)
 {
-	ssize_t			count;
-	ssize_t			len;
-	ssize_t			size;
-	void			**data;
-}					t_gc_vector;
-void				t_gc(t_gc_vector **vector);
-void				ft_tgc_append(t_gc_vector **vector, void **d);
-t_gc_vector			*init_tgc_vector(ssize_t ssize);
-extern t_gc_vector	*g_memaloced;
-#endif
+	void *ch;
+//	t_gc_vector *g_memaloced;
+//
+//	g_memaloced = NULL;
+	t_gc_vector *memaloced;
+
+	memaloced = data;
+	ch = NULL;
+	if (!memaloced)
+		memaloced = init_tgc_vector(sizeof(size_t *));
+	ch = malloc(size);
+	ft_bzero(ch, size);
+	if (ch == NULL)
+		exit(3);
+	ft_tgc_append(&memaloced, ch);
+	return (ch);
+}

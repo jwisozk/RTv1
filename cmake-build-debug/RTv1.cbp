@@ -175,6 +175,9 @@
 		<Unit filename="/Users/jwisozk/CLionProjects/RTv1/libft/ft_lstnew.c">
 			<Option target="RTv1"/>
 		</Unit>
+		<Unit filename="/Users/jwisozk/CLionProjects/RTv1/libft/ft_malloc.c">
+			<Option target="RTv1"/>
+		</Unit>
 		<Unit filename="/Users/jwisozk/CLionProjects/RTv1/libft/ft_memalloc.c">
 			<Option target="RTv1"/>
 		</Unit>

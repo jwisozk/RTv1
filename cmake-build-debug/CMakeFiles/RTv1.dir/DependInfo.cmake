@@ -33,6 +33,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/jwisozk/CLionProjects/RTv1/libft/ft_lstiter.c" "/Users/jwisozk/CLionProjects/RTv1/cmake-build-debug/CMakeFiles/RTv1.dir/libft/ft_lstiter.c.o"
   "/Users/jwisozk/CLionProjects/RTv1/libft/ft_lstmap.c" "/Users/jwisozk/CLionProjects/RTv1/cmake-build-debug/CMakeFiles/RTv1.dir/libft/ft_lstmap.c.o"
   "/Users/jwisozk/CLionProjects/RTv1/libft/ft_lstnew.c" "/Users/jwisozk/CLionProjects/RTv1/cmake-build-debug/CMakeFiles/RTv1.dir/libft/ft_lstnew.c.o"
+  "/Users/jwisozk/CLionProjects/RTv1/libft/ft_malloc.c" "/Users/jwisozk/CLionProjects/RTv1/cmake-build-debug/CMakeFiles/RTv1.dir/libft/ft_malloc.c.o"
   "/Users/jwisozk/CLionProjects/RTv1/libft/ft_memalloc.c" "/Users/jwisozk/CLionProjects/RTv1/cmake-build-debug/CMakeFiles/RTv1.dir/libft/ft_memalloc.c.o"
   "/Users/jwisozk/CLionProjects/RTv1/libft/ft_memccpy.c" "/Users/jwisozk/CLionProjects/RTv1/cmake-build-debug/CMakeFiles/RTv1.dir/libft/ft_memccpy.c.o"
   "/Users/jwisozk/CLionProjects/RTv1/libft/ft_memchr.c" "/Users/jwisozk/CLionProjects/RTv1/cmake-build-debug/CMakeFiles/RTv1.dir/libft/ft_memchr.c.o"

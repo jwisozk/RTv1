@@ -906,6 +906,33 @@ libft/ft_lstnew.c.s:
 	$(MAKE) -f CMakeFiles/RTv1.dir/build.make CMakeFiles/RTv1.dir/libft/ft_lstnew.c.s
 .PHONY : libft/ft_lstnew.c.s
 
+libft/ft_malloc.o: libft/ft_malloc.c.o
+
+.PHONY : libft/ft_malloc.o
+
+# target to build an object file
+libft/ft_malloc.c.o:
+	$(MAKE) -f CMakeFiles/RTv1.dir/build.make CMakeFiles/RTv1.dir/libft/ft_malloc.c.o
+.PHONY : libft/ft_malloc.c.o
+
+libft/ft_malloc.i: libft/ft_malloc.c.i
+
+.PHONY : libft/ft_malloc.i
+
+# target to preprocess a source file
+libft/ft_malloc.c.i:
+	$(MAKE) -f CMakeFiles/RTv1.dir/build.make CMakeFiles/RTv1.dir/libft/ft_malloc.c.i
+.PHONY : libft/ft_malloc.c.i
+
+libft/ft_malloc.s: libft/ft_malloc.c.s
+
+.PHONY : libft/ft_malloc.s
+
+# target to generate assembly for a file
+libft/ft_malloc.c.s:
+	$(MAKE) -f CMakeFiles/RTv1.dir/build.make CMakeFiles/RTv1.dir/libft/ft_malloc.c.s
+.PHONY : libft/ft_malloc.c.s
+
 libft/ft_memalloc.o: libft/ft_memalloc.c.o
 
 .PHONY : libft/ft_memalloc.o
@@ -2676,6 +2703,9 @@ help:
 	@echo "... libft/ft_lstnew.o"
 	@echo "... libft/ft_lstnew.i"
 	@echo "... libft/ft_lstnew.s"
+	@echo "... libft/ft_malloc.o"
+	@echo "... libft/ft_malloc.i"
+	@echo "... libft/ft_malloc.s"
 	@echo "... libft/ft_memalloc.o"
 	@echo "... libft/ft_memalloc.i"
 	@echo "... libft/ft_memalloc.s"

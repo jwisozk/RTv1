@@ -6,7 +6,7 @@
 #    By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/29 14:38:14 by jwisozk           #+#    #+#              #
-#    Updated: 2019/06/29 16:46:50 by twill            ###   ########.fr        #
+#    Updated: 2019/09/29 22:01:35 by jwisozk          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -76,8 +76,9 @@ SRC = ft_putchar.c		\
 	  get_next_line.c	\
 	  ft_isspace.c		\
 	  ft_atoi_base.c    \
-	  ft_atof.c     \
-	  ft_gc.c
+	  ft_atof.c         \
+	  ft_gc.c           \
+	  ft_malloc.c
 
 OBJ = $(SRC:.c=.o)
 FLAGS = -Wall -Wextra -Werror

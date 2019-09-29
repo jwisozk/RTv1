@@ -6,7 +6,7 @@
 /*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/30 16:37:25 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/06/29 16:47:54 by twill            ###   ########.fr       */
+/*   Updated: 2019/09/29 22:08:30 by jwisozk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -93,5 +93,6 @@ int					get_next_line(const int fd, char **line);
 int					ft_isspace(char c);
 int					ft_atoi_base(char **str);
 double				ft_atof(const char *str);
+void				*ft_malloc(size_t size, t_gc_vector *data);
 
 #endif
