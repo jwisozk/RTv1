@@ -16,7 +16,7 @@ t_vec3				*ft_create_vec3(double x, double y, double z)
 {
 	t_vec3 *p;
 
-	p = (t_vec3*)ft_memalloc(sizeof(t_vec3));
+	p = (t_vec3*)ft_malloc(sizeof(t_vec3));
 	p->x = x;
 	p->y = y;
 	p->z = z;
@@ -27,7 +27,7 @@ t_ang3				*ft_create_ang3(int x, int y, int z)
 {
 	t_ang3 *a;
 
-	a = (t_ang3*)ft_memalloc(sizeof(t_ang3));
+	a = (t_ang3*)ft_malloc(sizeof(t_ang3));
 	a->x = x;
 	a->y = y;
 	a->z = z;
@@ -39,7 +39,7 @@ t_ray				*ft_create_ray(t_vec3 *origin, t_vec3 *direct,
 {
 	t_ray *i;
 
-	i = (t_ray*)ft_memalloc(sizeof(t_ray));
+	i = (t_ray*)ft_malloc(sizeof(t_ray));
 	i->origin = origin;
 	i->direct = direct;
 	i->t_min = t_min;
@@ -51,7 +51,7 @@ t_point				*ft_create_point(void)
 {
 	t_point *p;
 
-	p = (t_point*)ft_memalloc(sizeof(t_point));
+	p = (t_point*)ft_malloc(sizeof(t_point));
 	p->point = NULL;
 	p->normal = NULL;
 	p->color = ft_rgb(BACKGROUND);

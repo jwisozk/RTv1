@@ -16,7 +16,7 @@ t_obj				*ft_create_object(void *obj, t_type_obj type)
 {
 	t_obj			*o;
 
-	o = (t_obj*)ft_memalloc(sizeof(t_obj));
+	o = (t_obj*)ft_malloc(sizeof(t_obj));
 	o->type = type;
 	o->objects = obj;
 	o->obj = NULL;
@@ -29,7 +29,7 @@ t_sphere			*ft_create_sphere(t_data *data)
 {
 	t_sphere		*s;
 
-	s = (t_sphere*)ft_memalloc(sizeof(t_sphere));
+	s = (t_sphere*)ft_malloc(sizeof(t_sphere));
 	s->center = NULL;
 	s->color = -1;
 	s->radius = -1;
@@ -43,7 +43,7 @@ t_cylinder			*ft_create_cylinder(t_data *data)
 {
 	t_cylinder		*c;
 
-	c = (t_cylinder*)ft_memalloc(sizeof(t_cylinder));
+	c = (t_cylinder*)ft_malloc(sizeof(t_cylinder));
 	c->center = NULL;
 	c->normal = NULL;
 	c->color = -1;
@@ -59,7 +59,7 @@ t_cone				*ft_create_cone(t_data *data)
 {
 	t_cone			*c;
 
-	c = (t_cone*)ft_memalloc(sizeof(t_cone));
+	c = (t_cone*)ft_malloc(sizeof(t_cone));
 	c->center = NULL;
 	c->normal = NULL;
 	c->color = -1;
@@ -75,7 +75,7 @@ t_plane				*ft_create_plane(t_data *data)
 {
 	t_plane			*p;
 
-	p = (t_plane*)ft_memalloc(sizeof(t_plane));
+	p = (t_plane*)ft_malloc(sizeof(t_plane));
 	p->normal = NULL;
 	p->point = NULL;
 	p->color = -1;

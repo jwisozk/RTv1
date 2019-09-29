@@ -6,7 +6,7 @@
 /*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/09 13:37:06 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/09/29 23:12:38 by jwisozk          ###   ########.fr       */
+/*   Updated: 2019/09/29 23:13:46 by jwisozk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,7 +50,7 @@ void				ft_open_window(t_data *data)
 	data->win_ptr = win_ptr;
 	ft_draw(data);
 	if (data->ptr_mem != NULL)
-		t_gc(&data->ptr_mem);
+		ft_gc(&data->ptr_mem);
 	mlx_hook(win_ptr, 17, 0, ft_close_window, data);
 	mlx_hook(win_ptr, 2, 0, ft_key_press, data);
 	mlx_loop(mlx_ptr);

@@ -16,7 +16,7 @@ t_light				*ft_create_light(t_data *data)
 {
 	t_light			*l;
 
-	l = (t_light*)ft_memalloc(sizeof(t_light));
+	l = (t_light*)ft_malloc(sizeof(t_light));
 	l->type = NULL;
 	l->position = NULL;
 	l->intensity = -1;

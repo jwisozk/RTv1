@@ -6,7 +6,7 @@
 /*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/29 14:44:38 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/09/29 23:18:42 by jwisozk          ###   ########.fr       */
+/*   Updated: 2019/09/29 23:20:30 by jwisozk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ t_lst				*ft_new_lst(char *type, void *data)
 {
 	t_lst			*lst;
 
-	lst = (t_lst*)ft_memalloc(sizeof(t_lst));
+	lst = (t_lst*)ft_malloc(sizeof(t_lst));
 	lst->type = type;
 	lst->data = data;
 	lst->next = NULL;
