@@ -1,0 +1,29 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   camera_create.c                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/09/25 14:33:05 by iplastun          #+#    #+#             */
+/*   Updated: 2019/09/29 15:27:09 by jwisozk          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "RTv1.h"
+
+t_cam *ft_create_camera(void)
+{
+    t_cam *cam;
+
+    cam = (t_cam*)malloc(sizeof(t_cam));
+	cam->pos = NULL;
+	cam->look_at = NULL;
+	cam->forward = NULL;
+	cam->left = NULL;
+	cam->up = NULL;
+    return (cam);
+}
+
+
+

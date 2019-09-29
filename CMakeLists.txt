@@ -72,6 +72,6 @@ set(SOURCE_FILES
         libft/ft_toupper.c
         libft/get_next_line.c
         libft/libft.h
-        main.c RTv1.h keys.c draw.c lighting.c operations.c color.c intersect_objects.c fill_objects.c camera.c create_objects.c create_geometric_values.c create_types.c libft/ft_atof.c validate.c update_objects.c transform.c)
+        main.c RTv1.h extra.c draw.c lighting.c operations_v.c color.c objects_intersect.c objects_fill.c camera.c objects_create.c geometric_create.c camera_create.c libft/ft_atof.c camera_validate.c objects_update.c transform.c operations_d.c scene_get.c scene_extra.c objects_validate.c camera_update.c light_create.c light_update.c light_validate.c objects_calculate.c)
 add_executable(RTv1 ${SOURCE_FILES})
 target_link_libraries(RTv1 ${LIBMLX} ${OPENGL} ${APPKIT})

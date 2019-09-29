@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   create_geometric_values.c                          :+:      :+:    :+:   */
+/*   geometric_create.c                      		    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -45,7 +45,6 @@ t_ray	*ft_create_ray(t_vec3 *origin, t_vec3 *direct, double t_min, double t_max)
     i->t_max = t_max;
     return (i);
 }
-
 
 t_point	*ft_create_point(void)
 {

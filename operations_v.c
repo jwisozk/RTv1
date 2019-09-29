@@ -12,16 +12,6 @@
 
 #include "RTv1.h"
 
-double ft_lenv(t_vec3 *v)
-{
-	return sqrt(v->x * v->x + v->y * v->y + v->z * v->z);
-}
-
-double ft_dot(t_vec3 *v1, t_vec3 *v2)
-{
-	return (v1->x * v2->x + v1->y * v2->y + v1->z * v2->z);
-}
-
 t_vec3 *ft_cross_product(t_vec3 *a, t_vec3 *b)
 {
 	t_vec3* c;
@@ -53,16 +43,6 @@ t_vec3 *ft_subtract(t_vec3 *v1, t_vec3 *v2)
 	t_vec3 *p;
 	p = ft_create_vec3(v1->x - v2->x, v1->y - v2->y, v1->z - v2->z);
 	return (p);
-}
-
-double ft_max(double x, double y)
-{
-    return (x > y ? x : y);
-}
-
-double ft_min(double x, double y)
-{
-    return (x < y ? x : y);
 }
 
 t_vec3 *ft_normalize_vec3(t_vec3 *v)

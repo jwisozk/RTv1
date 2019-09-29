@@ -6,7 +6,7 @@
 /*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/09 13:37:42 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/09/29 14:14:26 by jwisozk          ###   ########.fr       */
+/*   Updated: 2019/09/29 15:41:25 by jwisozk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,6 +83,7 @@
 # define ERROR_25		"Param \"point\" of plane is invalid."
 # define ERROR_26		"Param \"normal\" of plane is invalid."
 # define ERROR_27		"Param \"color\" of plane is invalid."
+# define ERROR_28 		"Function close() failed."
 
 typedef struct 			s_vec3
 {
@@ -279,10 +280,29 @@ void 					ft_update_plane(t_data *data, t_lst* lst);
 void 					ft_update_cylinder(t_data *data, t_lst* lst);
 void 					ft_update_cone(t_data *data, t_lst* lst);
 
+double 					ft_calculate_sphere(t_ray *ray, t_sphere *s);
+double 					ft_calculate_cylinder(t_ray *ray, t_cylinder *c);
+double 					ft_calculate_cone(t_ray *ray, t_cone *c);
+
 void 					ft_check_valid(t_data *data);
 
 t_vec3 					*ft_translate(t_vec3* o, t_vec3* t);
 t_vec3 					*ft_rotate(t_vec3 *v, t_ang3 *a);
+
+
+void 					ft_get_scene(int fd, t_data *data);
+void 					ft_create_scene_objects(t_data *data);
+int 					*ft_rotation_order(int *arr, int array[3], char *str);
+double 					*ft_new_arr_d(char *a, char *b, char *c);
+int 					*ft_new_arr_i(char *a, char *b, char *c, char *str);
+
+void 					ft_check_camera(t_data *data);
+void 					ft_check_light(t_data *data);
+void 					ft_check_sphere(t_data *data);
+void 					ft_check_cylinder(t_data *data);
+void 					ft_check_cone(t_data *data);
+void 					ft_check_plane(t_data *data);
+
 
 void					ft_draw(t_data *data);
 void 					ft_camera_look_at(t_data *data);
