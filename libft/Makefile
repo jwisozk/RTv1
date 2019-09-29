@@ -6,7 +6,7 @@
 #    By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/29 14:38:14 by jwisozk           #+#    #+#              #
-#    Updated: 2019/09/29 22:01:35 by jwisozk          ###   ########.fr        #
+#    Updated: 2019/09/29 22:08:30 by jwisozk          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -82,7 +82,7 @@ SRC = ft_putchar.c		\
 
 OBJ = $(SRC:.c=.o)
 FLAGS = -Wall -Wextra -Werror
-DEPS = libft.h
+DEPS = libft.h ft_gc.h
 
 all: $(NAME)
 

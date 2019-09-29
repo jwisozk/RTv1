@@ -20,11 +20,11 @@ void ft_check_sphere(t_data *data)
 	while (s != NULL)
 	{
 		if (s->center == NULL)
-			ft_print_error(ft_msg(ERROR_14));
+			ft_print_error(ft_msg(ERROR_14), data->ptr_mem);
 		if (s->radius < 0)
-			ft_print_error(ft_msg(ERROR_15));
+			ft_print_error(ft_msg(ERROR_15), data->ptr_mem);
 		if (s->color < 0)
-			ft_print_error(ft_msg(ERROR_16));
+			ft_print_error(ft_msg(ERROR_16), data->ptr_mem);
 		s = s->next;
 	}
 }
@@ -37,13 +37,13 @@ void ft_check_cylinder(t_data *data)
 	while (c != NULL)
 	{
 		if (c->center == NULL)
-			ft_print_error(ft_msg(ERROR_17));
+			ft_print_error(ft_msg(ERROR_17), data->ptr_mem);
 		if (c->normal == NULL)
-			ft_print_error(ft_msg(ERROR_18));
+			ft_print_error(ft_msg(ERROR_18), data->ptr_mem);
 		if (c->radius < 0)
-			ft_print_error(ft_msg(ERROR_19));
+			ft_print_error(ft_msg(ERROR_19), data->ptr_mem);
 		if (c->color < 0)
-			ft_print_error(ft_msg(ERROR_20));
+			ft_print_error(ft_msg(ERROR_20), data->ptr_mem);
 		c = c->next;
 	}
 }
@@ -56,13 +56,13 @@ void ft_check_cone(t_data *data)
 	while (c != NULL)
 	{
 		if (c->center == NULL)
-			ft_print_error(ft_msg(ERROR_21));
+			ft_print_error(ft_msg(ERROR_21), data->ptr_mem);
 		if (c->normal == NULL)
-			ft_print_error(ft_msg(ERROR_22));
+			ft_print_error(ft_msg(ERROR_22), data->ptr_mem);
 		if (c->angle < 0)
-			ft_print_error(ft_msg(ERROR_23));
+			ft_print_error(ft_msg(ERROR_23), data->ptr_mem);
 		if (c->color < 0)
-			ft_print_error(ft_msg(ERROR_24));
+			ft_print_error(ft_msg(ERROR_24), data->ptr_mem);
 		c = c->next;
 	}
 }
@@ -75,11 +75,11 @@ void ft_check_plane(t_data *data)
 	while (p != NULL)
 	{
 		if (p->point == NULL)
-			ft_print_error(ft_msg(ERROR_25));
+			ft_print_error(ft_msg(ERROR_25), data->ptr_mem);
 		if (p->normal == NULL)
-			ft_print_error(ft_msg(ERROR_26));
+			ft_print_error(ft_msg(ERROR_26), data->ptr_mem);
 		if (p->color < 0)
-			ft_print_error(ft_msg(ERROR_27));
+			ft_print_error(ft_msg(ERROR_27), data->ptr_mem);
 		p = p->next;
 	}
 }

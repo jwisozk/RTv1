@@ -17,9 +17,10 @@ char				*ft_msg(char *str)
 	return (ft_strjoin(ERROR, str));
 }
 
-int					ft_print_error(char *str)
+int					ft_print_error(char *str, t_gc_vector *ptr_mem)
 {
-//	t_gc(&ptr_mem);
+	if (ptr_mem != NULL)
+		t_gc(&ptr_mem);
 	ft_putendl_fd(str, 2);
 	exit(0);
 }

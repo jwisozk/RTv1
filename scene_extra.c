@@ -48,17 +48,17 @@ void				ft_create_scene_objects(t_data *data)
 	}
 }
 
-int					*ft_rotation_order(int *arr, int array[3], char *str)
+int					*ft_rotation_order(int *arr, int array[3], char *str, t_data *data)
 {
 	static char		*pattern = "xyz";
 	int				i;
 	int				j;
 
 	if (ft_strlen(str) != 3)
-		ft_print_error(ft_msg(ERROR_4));
+		ft_print_error(ft_msg(ERROR_4), data->ptr_mem);
 	if (ft_strchr(str, 'x') == NULL || ft_strchr(str, 'y') == NULL ||
 	ft_strchr(str, 'z') == NULL)
-		ft_print_error(ft_msg(ERROR_5));
+		ft_print_error(ft_msg(ERROR_5), data->ptr_mem);
 	i = 0;
 	while (i < 3)
 	{
@@ -85,7 +85,7 @@ double				*ft_new_arr_d(char *a, char *b, char *c)
 	return (arr);
 }
 
-int					*ft_new_arr_i(char *a, char *b, char *c, char *str)
+int					*ft_new_arr_i(char *a, char *b, char *c, char *str, t_data *data)
 {
 	int				*arr;
 	int				array[3];
@@ -95,7 +95,7 @@ int					*ft_new_arr_i(char *a, char *b, char *c, char *str)
 	array[2] = ft_atoi(c);
 	arr = (int *)ft_memalloc(sizeof(int) * 3);
 	if (str != NULL)
-		arr = ft_rotation_order(arr, array, str);
+		arr = ft_rotation_order(arr, array, str, data);
 	else
 	{
 		arr[0] = array[0];

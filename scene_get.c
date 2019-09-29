@@ -6,7 +6,7 @@
 /*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/29 14:44:38 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/09/29 20:57:23 by jwisozk          ###   ########.fr       */
+/*   Updated: 2019/09/29 23:18:42 by jwisozk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ void				ft_add_lst(t_lst **head, t_lst *new)
 	}
 }
 
-void				ft_check_braces(int *block, int n)
+void				ft_check_braces(int *block, int n, t_data *data)
 {
 	int				err;
 
@@ -48,12 +48,11 @@ void				ft_check_braces(int *block, int n)
 	if (n == 2)
 		(*block)--;
 	if (err == 1)
-		ft_print_error(ft_msg(ERROR_3));
+		ft_print_error(ft_msg(ERROR_3), data->ptr_mem);
 }
 
-int					ft_is_hash(char *line, int *i, t_arr_type *arr, int max)
+int					ft_is_hash(char *line, int *i, t_arr_type *arr, int max, t_data *data)
 {
-
 	char			*type;
 
 	if (*line != '#')
@@ -64,7 +63,7 @@ int					ft_is_hash(char *line, int *i, t_arr_type *arr, int max)
 	while (*i < max && ft_strequ(type, arr[*i].type) != 1)
 		(*i)++;
 	if (*i == max)
-		ft_print_error(ft_msg(ERROR_2));
+		ft_print_error(ft_msg(ERROR_2), data->ptr_mem);
 	return (1);
 }
 
@@ -90,22 +89,22 @@ void				ft_get_scene(int fd, t_data *data)
 			line++;
 		if (*line == '\0')
 			continue ;
-		if (ft_is_hash(line, &i, arr, max) == 1)
+		if (ft_is_hash(line, &i, arr, max, data) == 1)
 			continue ;
 		if (*line == '{')
-			ft_check_braces(&block, 1);
+			ft_check_braces(&block, 1, data);
 		else if (*line == '}')
 		{
 			if (lst != NULL)
 				arr[i].ft_create_type(data, lst);
 			// add free() + free elem
 			lst = NULL;
-			ft_check_braces(&block, 2);
+			ft_check_braces(&block, 2, data);
 		}
 		else if (block == 1)
 		{
 			if ((str = ft_strsplit(line, ' ')) == NULL)
-				ft_print_error(ft_msg(ERROR_29));
+				ft_print_error(ft_msg(ERROR_29), data->ptr_mem);
 			if (str[0] == NULL)
 				continue ;
 			j = 0;
@@ -114,15 +113,15 @@ void				ft_get_scene(int fd, t_data *data)
 			if (j == 2)
 				tmp = ft_new_lst(str[0], str[1]);
 			else if (j == 5 && ft_strequ(str[0], ROTATION))
-				tmp = ft_new_lst(str[0], ft_new_arr_i(str[1], str[2], str[3], str[4]));
+				tmp = ft_new_lst(str[0], ft_new_arr_i(str[1], str[2], str[3], str[4], data));
 			else if (ft_strequ(str[0], COLOR) || ft_strequ(str[0], ROTATION))
-				tmp = ft_new_lst(str[0], ft_new_arr_i(str[1], str[2], str[3], NULL));
+				tmp = ft_new_lst(str[0], ft_new_arr_i(str[1], str[2], str[3], NULL, data));
 			else
 				tmp = ft_new_lst(str[0], ft_new_arr_d(str[1], str[2], str[3]));
 			ft_add_lst(&lst, tmp);
 		}
 	}
 	// Протестить функцию
-	ft_check_braces(&block, 3);
+	ft_check_braces(&block, 3, data);
 	ft_create_scene_objects(data);
 }
