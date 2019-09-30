@@ -9,23 +9,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c4ce9678-f41e-4982-aae6-ce10d81fce1e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RTv1.h" beforeDir="false" afterPath="$PROJECT_DIR$/RTv1.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/camera_validate.c" beforeDir="false" afterPath="$PROJECT_DIR$/camera_validate.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/extra.c" beforeDir="false" afterPath="$PROJECT_DIR$/extra.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/libft/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_gc.h" beforeDir="false" afterPath="$PROJECT_DIR$/libft/ft_gc.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_itoa.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/ft_itoa.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_lstnew.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/ft_lstnew.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_malloc.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/ft_malloc.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_strnew.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/ft_strnew.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_strsplit.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/ft_strsplit.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/libft.h" beforeDir="false" afterPath="$PROJECT_DIR$/libft/libft.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/light_validate.c" beforeDir="false" afterPath="$PROJECT_DIR$/light_validate.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/objects_validate.c" beforeDir="false" afterPath="$PROJECT_DIR$/objects_validate.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scene_extra.c" beforeDir="false" afterPath="$PROJECT_DIR$/scene_extra.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scene_get.c" beforeDir="false" afterPath="$PROJECT_DIR$/scene_get.c" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -92,8 +75,17 @@
       <option name="presentableId" value="Default" />
       <updated>1569824018368</updated>
       <workItem from="1569824019751" duration="242000" />
-      <workItem from="1569824285835" duration="566000" />
+      <workItem from="1569824285835" duration="1017000" />
+      <workItem from="1569828816024" duration="108000" />
     </task>
+    <task id="LOCAL-00001" summary="Fix leaks">
+      <created>1569825005415</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1569825005415</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -111,5 +103,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Fix leaks" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix leaks" />
   </component>
 </project>
