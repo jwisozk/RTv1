@@ -47,11 +47,11 @@ double				ft_add_specular_light(t_point *p, t_light *l,
 
 int					ft_add_shadow(t_ray *ray, t_obj *o, t_light **l)
 {
-//	if (ft_scene_intersect(o, ray) != NULL)
-//	{
-//		(*l) = (*l)->next;
-//		return (1);
-//	}
+	if (ft_scene_intersect(o, ray) != NULL)
+	{
+		(*l) = (*l)->next;
+		return (1);
+	}
 	ray = NULL;
 	o = NULL;
 	l = NULL;

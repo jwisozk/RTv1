@@ -6,7 +6,7 @@
 /*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/26 20:23:15 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/09/27 22:52:18 by jwisozk          ###   ########.fr       */
+/*   Updated: 2019/09/30 20:58:00 by jwisozk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,15 +70,20 @@ void				ft_cone_fill(t_obj *obj, t_point *p, t_ray *ray)
 	p->color = c->color;
 	p->specular = c->specular;
 	p->radius = m * c->angle;
-	p->vec_oc = ft_cross_product(ft_subtract(c->center, ray->origin),
-	c->normal);
+//	p->vec_oc = ft_cross_product(ft_subtract(c->center, ray->origin),
+//	c->normal);
+//	p->vec_oc = NULL;
 	t_vec3 *a = ft_subtract(c->center, ray->origin);
-	double angle_ln = ft_dot(a, c->normal) / (ft_lenv(c->normal) * ft_lenv(a));
-	if (angle_ln < c->angle)
-	{
-//		p->vec_oc = NULL;
-		p->normal = ft_multiply(-1, p->normal);
-	}
+	double angle_ln = ft_dot(a, c->normal);
+	if (angle_ln < 0)
+		p->vec_oc = ft_cross_product(ft_subtract(c->center, ray->origin),	c->normal);
+	else
+		p->vec_oc = NULL;
+
+//	{
+////		p->vec_oc = NULL;
+//		p->normal = ft_multiply(-1, p->normal);
+//	}
 
 }
 
