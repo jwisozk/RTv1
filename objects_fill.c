@@ -72,6 +72,14 @@ void				ft_cone_fill(t_obj *obj, t_point *p, t_ray *ray)
 	p->radius = m * c->angle;
 	p->vec_oc = ft_cross_product(ft_subtract(c->center, ray->origin),
 	c->normal);
+	t_vec3 *a = ft_subtract(c->center, ray->origin);
+	double angle_ln = ft_dot(a, c->normal) / (ft_lenv(c->normal) * ft_lenv(a));
+	if (angle_ln < c->angle)
+	{
+//		p->vec_oc = NULL;
+		p->normal = ft_multiply(-1, p->normal);
+	}
+
 }
 
 void				ft_plane_fill(t_obj *obj, t_point *p, t_ray *ray)

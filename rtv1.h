@@ -27,7 +27,7 @@
 # define VH				1
 # define D				2
 # define INF			1000
-# define BACKGROUND		0, 0, 0
+# define BACKGROUND		0, 255, 0
 # define E				1e-6
 # define SPHERE_OBJ		{SPHERE, &ft_sphere_intersect, &ft_sphere_fill}
 # define PLANE_OBJ		{PLANE, &ft_plane_intersect, &ft_plane_fill}

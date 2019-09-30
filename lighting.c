@@ -16,8 +16,6 @@ double				ft_add_diffuse_light(t_point *p, t_light *l, t_vec3 *vec_pl)
 {
 	double			angle_ln;
 
-//	if (p == NULL)
-//	{
 	angle_ln = ft_dot(p->normal, vec_pl);
 	if (p->vec_oc != NULL && ft_lenv(p->vec_oc) < p->radius)
 		angle_ln *= -1;
@@ -26,7 +24,6 @@ double				ft_add_diffuse_light(t_point *p, t_light *l, t_vec3 *vec_pl)
 			return (l->intensity * angle_ln /
 			(ft_lenv(p->normal) * ft_lenv(vec_pl)));
 		}
-//	}
 	return (0);
 }
 
@@ -50,11 +47,14 @@ double				ft_add_specular_light(t_point *p, t_light *l,
 
 int					ft_add_shadow(t_ray *ray, t_obj *o, t_light **l)
 {
-	if (ft_scene_intersect(o, ray) != NULL)
-	{
-		(*l) = (*l)->next;
-		return (1);
-	}
+//	if (ft_scene_intersect(o, ray) != NULL)
+//	{
+//		(*l) = (*l)->next;
+//		return (1);
+//	}
+	ray = NULL;
+	o = NULL;
+	l = NULL;
 	return (0);
 }
 
