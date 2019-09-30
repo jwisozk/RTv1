@@ -86,6 +86,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/RTv1.dir/objects_fill.c.o"
   "CMakeFiles/RTv1.dir/objects_intersect.c.o"
   "CMakeFiles/RTv1.dir/objects_update.c.o"
+  "CMakeFiles/RTv1.dir/objects_update_min.c.o"
   "CMakeFiles/RTv1.dir/objects_validate.c.o"
   "CMakeFiles/RTv1.dir/operations_d.c.o"
   "CMakeFiles/RTv1.dir/operations_v.c.o"

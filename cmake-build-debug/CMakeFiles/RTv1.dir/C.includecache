@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/Users/iplastun/CLionProjects/RTv1/RTv1.h
+/Users/iplastun/Desktop/nr2/RTv1/RTv1.h
 math.h
 -
 libft/libft.h
-/Users/iplastun/CLionProjects/RTv1/libft/libft.h
+/Users/iplastun/Desktop/nr2/RTv1/libft/libft.h
 minilibx/mlx.h
-/Users/iplastun/CLionProjects/RTv1/minilibx/mlx.h
+/Users/iplastun/Desktop/nr2/RTv1/minilibx/mlx.h
 fcntl.h
 -
 sys/types.h
@@ -22,21 +22,13 @@ sys/uio.h
 stdio.h
 -
 
-/Users/iplastun/CLionProjects/RTv1/extra.c
+/Users/iplastun/Desktop/nr2/RTv1/camera_create.c
 RTv1.h
-/Users/iplastun/CLionProjects/RTv1/RTv1.h
+/Users/iplastun/Desktop/nr2/RTv1/RTv1.h
 
-/Users/iplastun/CLionProjects/RTv1/libft/ft_gc.h
-stdio.h
--
-stdlib.h
--
+/Users/iplastun/Desktop/nr2/RTv1/libft/ft_gc.h
 
-/Users/iplastun/CLionProjects/RTv1/libft/ft_malloc.c
-libft.h
-/Users/iplastun/CLionProjects/RTv1/libft/libft.h
-
-/Users/iplastun/CLionProjects/RTv1/libft/libft.h
+/Users/iplastun/Desktop/nr2/RTv1/libft/libft.h
 unistd.h
 -
 stdlib.h
@@ -44,11 +36,23 @@ stdlib.h
 string.h
 -
 ft_gc.h
-/Users/iplastun/CLionProjects/RTv1/libft/ft_gc.h
+/Users/iplastun/Desktop/nr2/RTv1/libft/ft_gc.h
 
-/Users/iplastun/CLionProjects/RTv1/main.c
+/Users/iplastun/Desktop/nr2/RTv1/light_create.c
 RTv1.h
-/Users/iplastun/CLionProjects/RTv1/RTv1.h
+/Users/iplastun/Desktop/nr2/RTv1/RTv1.h
 
-/Users/iplastun/CLionProjects/RTv1/minilibx/mlx.h
+/Users/iplastun/Desktop/nr2/RTv1/minilibx/mlx.h
+
+/Users/iplastun/Desktop/nr2/RTv1/objects_create.c
+RTv1.h
+/Users/iplastun/Desktop/nr2/RTv1/RTv1.h
+
+/Users/iplastun/Desktop/nr2/RTv1/scene_extra.c
+RTv1.h
+/Users/iplastun/Desktop/nr2/RTv1/RTv1.h
+
+/Users/iplastun/Desktop/nr2/RTv1/scene_get.c
+RTv1.h
+/Users/iplastun/Desktop/nr2/RTv1/RTv1.h
 

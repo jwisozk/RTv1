@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/iplastun/CLionProjects/RTv1
+CMAKE_SOURCE_DIR = /Users/iplastun/Desktop/nr2/RTv1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/iplastun/CLionProjects/RTv1/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/iplastun/CLionProjects/RTv1/cmake-build-debug/CMakeFiles /Users/iplastun/CLionProjects/RTv1/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles /Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/iplastun/CLionProjects/RTv1/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -2472,6 +2472,33 @@ objects_update.c.s:
 	$(MAKE) -f CMakeFiles/RTv1.dir/build.make CMakeFiles/RTv1.dir/objects_update.c.s
 .PHONY : objects_update.c.s
 
+objects_update_min.o: objects_update_min.c.o
+
+.PHONY : objects_update_min.o
+
+# target to build an object file
+objects_update_min.c.o:
+	$(MAKE) -f CMakeFiles/RTv1.dir/build.make CMakeFiles/RTv1.dir/objects_update_min.c.o
+.PHONY : objects_update_min.c.o
+
+objects_update_min.i: objects_update_min.c.i
+
+.PHONY : objects_update_min.i
+
+# target to preprocess a source file
+objects_update_min.c.i:
+	$(MAKE) -f CMakeFiles/RTv1.dir/build.make CMakeFiles/RTv1.dir/objects_update_min.c.i
+.PHONY : objects_update_min.c.i
+
+objects_update_min.s: objects_update_min.c.s
+
+.PHONY : objects_update_min.s
+
+# target to generate assembly for a file
+objects_update_min.c.s:
+	$(MAKE) -f CMakeFiles/RTv1.dir/build.make CMakeFiles/RTv1.dir/objects_update_min.c.s
+.PHONY : objects_update_min.c.s
+
 objects_validate.o: objects_validate.c.o
 
 .PHONY : objects_validate.o
@@ -2904,6 +2931,9 @@ help:
 	@echo "... objects_update.o"
 	@echo "... objects_update.i"
 	@echo "... objects_update.s"
+	@echo "... objects_update_min.o"
+	@echo "... objects_update_min.i"
+	@echo "... objects_update_min.s"
 	@echo "... objects_validate.o"
 	@echo "... objects_validate.i"
 	@echo "... objects_validate.s"

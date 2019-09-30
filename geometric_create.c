@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   geometric_create.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: iplastun <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/24 20:41:27 by iplastun          #+#    #+#             */
-/*   Updated: 2019/09/27 16:40:33 by jwisozk          ###   ########.fr       */
+/*   Updated: 2019/09/30 13:00:07 by iplastun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,8 @@ t_vec3				*ft_create_vec3(double x, double y, double z)
 {
 	t_vec3 *p;
 
-	p = (t_vec3*)ft_malloc(sizeof(t_vec3));
+	if (!(p = (t_vec3*)ft_malloc(sizeof(t_vec3))))
+		ft_print_error(ERROR_29);
 	p->x = x;
 	p->y = y;
 	p->z = z;
@@ -27,7 +28,8 @@ t_ang3				*ft_create_ang3(int x, int y, int z)
 {
 	t_ang3 *a;
 
-	a = (t_ang3*)ft_malloc(sizeof(t_ang3));
+	if (!(a = (t_ang3*)ft_malloc(sizeof(t_ang3))))
+		ft_print_error(ERROR_29);
 	a->x = x;
 	a->y = y;
 	a->z = z;
@@ -39,7 +41,8 @@ t_ray				*ft_create_ray(t_vec3 *origin, t_vec3 *direct,
 {
 	t_ray *i;
 
-	i = (t_ray*)ft_malloc(sizeof(t_ray));
+	if (!(i = (t_ray*)ft_malloc(sizeof(t_ray))))
+		ft_print_error(ERROR_29);
 	i->origin = origin;
 	i->direct = direct;
 	i->t_min = t_min;
@@ -51,7 +54,8 @@ t_point				*ft_create_point(void)
 {
 	t_point *p;
 
-	p = (t_point*)ft_malloc(sizeof(t_point));
+	if (!(p = (t_point*)ft_malloc(sizeof(t_point))))
+		ft_print_error(ERROR_29);
 	p->point = NULL;
 	p->normal = NULL;
 	p->color = ft_rgb(BACKGROUND);

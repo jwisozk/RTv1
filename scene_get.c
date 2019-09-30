@@ -6,7 +6,7 @@
 /*   By: iplastun <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/29 14:44:38 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/09/30 08:07:30 by iplastun         ###   ########.fr       */
+/*   Updated: 2019/09/30 13:02:48 by iplastun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,8 @@ t_lst				*ft_new_lst(char *type, void *data)
 {
 	t_lst			*lst;
 
-	lst = (t_lst*)ft_malloc(sizeof(t_lst));
+	if (!(lst = (t_lst*)ft_malloc(sizeof(t_lst))))
+		ft_print_error(ERROR_29);
 	lst->type = type;
 	lst->data = data;
 	lst->next = NULL;
@@ -51,77 +52,84 @@ void				ft_check_braces(int *block, int n)
 		ft_print_error(ft_msg(ERROR_3));
 }
 
-int					ft_is_hash(char *line, int *i, t_arr_type *arr, int max)
+int					ft_is_hash(char *line, int *i)
 {
-	char			*type;
+	static t_arr_type arr[] = ARR_TYPES;
+	char			**type;
+	int 	max;
 
 	if (*line != '#')
 		return (0);
-
-	type = ft_strsplit(line + 1, ' ')[0];
+	max = sizeof(arr) / sizeof(t_arr_type);
+	if ((type = ft_strsplit(line + 1, ' ')) == NULL)
+		ft_print_error(ft_msg(ERROR_29));
 	*i = 0;
-	while (*i < max && ft_strequ(type, arr[*i].type) != 1)
+	while (*i < max && ft_strequ(type[0], arr[*i].type) != 1)
 		(*i)++;
 	if (*i == max)
 		ft_print_error(ft_msg(ERROR_2));
 	return (1);
 }
 
+void ft_get_data(t_lst	**lst, char *line)
+{
+	int 	j;
+	char	**str;
+	t_lst	*tmp;
+
+	if ((str = ft_strsplit(line, ' ')) == NULL)
+		ft_print_error(ft_msg(ERROR_29));
+	if (str[0] == NULL)
+		return ;
+	j = 0;
+	while (str[j] != NULL)
+		j++;
+	if (j == 2)
+		tmp = ft_new_lst(str[0], str[1]);
+	else if (j == 5 && ft_strequ(str[0], ROTATION))
+		tmp = ft_new_lst(str[0], ft_new_arr_i(str[1], str[2], str[3], str[4]));
+	else if (ft_strequ(str[0], COLOR) || ft_strequ(str[0], ROTATION))
+		tmp = ft_new_lst(str[0], ft_new_arr_i(str[1], str[2], str[3], NULL));
+	else
+		tmp = ft_new_lst(str[0], ft_new_arr_d(str[1], str[2], str[3]));
+	ft_add_lst(lst, tmp);
+}
+
+void				ft_create_type(t_lst **lst, t_data *data, int *block, int *i)
+{
+	static t_arr_type arr[] = ARR_TYPES;
+
+	if (*lst != NULL)
+		arr[*i].ft_create_type(data, *lst);
+	*lst = NULL;
+	ft_check_braces(block, 2);
+}
+
 void				ft_get_scene(int fd, t_data *data)
 {
 	char	*line;
 	int		i;
-	int 	j;
-	char	**str;
-//	char 	*type;
-	static t_arr_type arr[] = ARR_TYPES;
-	int 	max;
 	t_lst	*lst;
-	t_lst	*tmp;
 	int 	block;
+	int 	status;
 
 	lst = NULL;
 	block = 0;
-	max = sizeof(arr) / sizeof(t_arr_type);
-	while (get_next_line(fd, &line) > 0)
+	while ((status = get_next_line(fd, &line)) > 0)
 	{
 		while (ft_isspace(*line) == 1)
 			line++;
-		if (*line == '\0')
-			continue ;
-		if (ft_is_hash(line, &i, arr, max) == 1)
+		if (*line == '\0' || ft_is_hash(line, &i) == 1)
 			continue ;
 		if (*line == '{')
 			ft_check_braces(&block, 1);
 		else if (*line == '}')
-		{
-			if (lst != NULL)
-				arr[i].ft_create_type(data, lst);
-			// add free() + free elem
-			lst = NULL;
-			ft_check_braces(&block, 2);
-		}
+			ft_create_type(&lst, data, &block, &i);
 		else if (block == 1)
-		{
-			if ((str = ft_strsplit(line, ' ')) == NULL)
-				ft_print_error(ft_msg(ERROR_29));
-			if (str[0] == NULL)
-				continue ;
-			j = 0;
-			while (str[j] != NULL)
-				j++;
-			if (j == 2)
-				tmp = ft_new_lst(str[0], str[1]);
-			else if (j == 5 && ft_strequ(str[0], ROTATION))
-				tmp = ft_new_lst(str[0], ft_new_arr_i(str[1], str[2], str[3], str[4]));
-			else if (ft_strequ(str[0], COLOR) || ft_strequ(str[0], ROTATION))
-				tmp = ft_new_lst(str[0], ft_new_arr_i(str[1], str[2], str[3], NULL));
-			else
-				tmp = ft_new_lst(str[0], ft_new_arr_d(str[1], str[2], str[3]));
-			ft_add_lst(&lst, tmp);
-		}
+			ft_get_data(&lst, line);
 	}
-	// Протестить функцию
+	if (status == -1)
+		ft_print_error(ft_msg(ERROR_33));
 	ft_check_braces(&block, 3);
 	ft_create_scene_objects(data);
 }

@@ -8,7 +8,108 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c4ce9678-f41e-4982-aae6-ce10d81fce1e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RTv1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/camera.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/camera_create.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/camera_update.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/camera_validate.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/color.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/draw.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/geometric_create.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_atof.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_atoi.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_atoi_base.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_bzero.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_clean.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_del.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_free_all.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_gc.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_isalnum.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_isalpha.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_isascii.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_isdigit.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_isprint.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_isspace.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_itoa.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_lstadd.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_lstadd_back.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_lstdel.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_lstdelone.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_lstiter.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_lstmap.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_lstnew.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_malloc.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_memalloc.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_memccpy.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_memchr.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_memcmp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_memcpy.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_memdel.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_memmove.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_memset.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_putchar.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_putchar_fd.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_putendl.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_putendl_fd.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_putnbr.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_putnbr_fd.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_putstr.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_putstr_fd.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_strcat.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_strchr.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_strclr.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_strcmp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_strcpy.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_strdel.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_strdup.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_strequ.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_striter.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_striteri.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_strjoin.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_strlcat.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_strlen.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_strmap.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_strmapi.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_strncat.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_strncmp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_strncpy.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_strnequ.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_strnew.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_strnstr.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_strrchr.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_strrev.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_strsplit.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_strstr.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_strsub.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_strtrim.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_tolower.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_toupper.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/get_next_line.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/libft.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/light_create.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/light_update.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/light_validate.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lighting.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/minilibx/libmlx.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/minilibx/mlx_init_loop.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/minilibx/mlx_int_str_to_wordtab.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/minilibx/mlx_new_image.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/minilibx/mlx_new_window.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/minilibx/mlx_shaders.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/minilibx/mlx_xpm.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/objects_calculate.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/objects_create.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/objects_fill.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/objects_intersect.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/objects_update.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/objects_validate.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/operations_d.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/operations_v.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scene_extra.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scene_get.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/transform.o" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -77,6 +178,7 @@
       <workItem from="1569824019751" duration="242000" />
       <workItem from="1569824285835" duration="1017000" />
       <workItem from="1569828816024" duration="108000" />
+      <workItem from="1569829581172" duration="126000" />
     </task>
     <task id="LOCAL-00001" summary="Fix leaks">
       <created>1569825005415</created>

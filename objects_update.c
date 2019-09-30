@@ -6,7 +6,7 @@
 /*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/28 19:06:14 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/09/29 18:26:05 by jwisozk          ###   ########.fr       */
+/*   Updated: 2019/09/30 11:37:29 by iplastun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,6 @@ void				ft_update_sphere(t_data *data, t_lst *lst)
 void				ft_update_cylinder(t_data *data, t_lst *lst)
 {
 	t_cylinder		*c;
-	double			*d;
 	int				*i;
 
 	c = ft_create_cylinder(data);
@@ -59,15 +58,7 @@ void				ft_update_cylinder(t_data *data, t_lst *lst)
 		else if (ft_strequ(lst->type, RADIUS))
 			c->radius = ft_atof((char*)lst->data);
 		else
-		{
-			d = (double*)lst->data;
-			if (ft_strequ(lst->type, CENTER) == 1)
-				c->center = ft_create_vec3(d[0], d[1], d[2]);
-			else if (ft_strequ(lst->type, TRANSLATION))
-				c->translation = ft_create_vec3(d[0], d[1], d[2]);
-			else if (ft_strequ(lst->type, NORMAL))
-				c->normal = ft_create_vec3(d[0], d[1], d[2]);
-		}
+			ft_cylinder_min(&c, lst);
 		lst = lst->next;
 	}
 	if (c->center != NULL && c->translation != NULL)
@@ -80,7 +71,6 @@ void				ft_update_cylinder(t_data *data, t_lst *lst)
 void				ft_update_cone(t_data *data, t_lst *lst)
 {
 	t_cone			*c;
-	double			*d;
 	int			*i;
 
 	c = ft_create_cone(data);
@@ -96,15 +86,7 @@ void				ft_update_cone(t_data *data, t_lst *lst)
 		else if (ft_strequ(lst->type, ANGLE))
 			c->angle = TANH(ft_atoi((char*)lst->data));
 		else
-		{
-			d = (double*)lst->data;
-			if (ft_strequ(lst->type, CENTER) == 1)
-				c->center = ft_create_vec3(d[0], d[1], d[2]);
-			else if (ft_strequ(lst->type, TRANSLATION))
-				c->translation = ft_create_vec3(d[0], d[1], d[2]);
-			else if (ft_strequ(lst->type, NORMAL))
-				c->normal = ft_create_vec3(d[0], d[1], d[2]);
-		}
+			ft_cone_min(&c, lst);
 		lst = lst->next;
 	}
 	if (c->center != NULL && c->translation != NULL)
@@ -117,7 +99,6 @@ void				ft_update_cone(t_data *data, t_lst *lst)
 void				ft_update_plane(t_data *data, t_lst *lst)
 {
 	t_plane			*p;
-	double			*d;
 	int				*i;
 
 	p = ft_create_plane(data);
@@ -131,15 +112,7 @@ void				ft_update_plane(t_data *data, t_lst *lst)
 		else if (ft_strequ(lst->type, SPECULAR) == 1)
 			p->specular = ft_atoi((char*)lst->data);
 		else
-		{
-			d = (double*)lst->data;
-			if (ft_strequ(lst->type, POINT) == 1)
-				p->point = ft_create_vec3(d[0], d[1], d[2]);
-			else if (ft_strequ(lst->type, TRANSLATION))
-				p->translation = ft_create_vec3(d[0], d[1], d[2]);
-			else if (ft_strequ(lst->type, NORMAL))
-				p->normal = ft_create_vec3(d[0], d[1], d[2]);
-		}
+			ft_plane_min(&p, lst);
 		lst = lst->next;
 	}
 	if (p->point != NULL && p->translation != NULL)

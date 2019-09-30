@@ -385,6 +385,12 @@ CMakeFiles/RTv1.dir/objects_update.c.o: ../libft/libft.h
 CMakeFiles/RTv1.dir/objects_update.c.o: ../minilibx/mlx.h
 CMakeFiles/RTv1.dir/objects_update.c.o: ../objects_update.c
 
+CMakeFiles/RTv1.dir/objects_update_min.c.o: ../RTv1.h
+CMakeFiles/RTv1.dir/objects_update_min.c.o: ../libft/ft_gc.h
+CMakeFiles/RTv1.dir/objects_update_min.c.o: ../libft/libft.h
+CMakeFiles/RTv1.dir/objects_update_min.c.o: ../minilibx/mlx.h
+CMakeFiles/RTv1.dir/objects_update_min.c.o: ../objects_update_min.c
+
 CMakeFiles/RTv1.dir/objects_validate.c.o: ../RTv1.h
 CMakeFiles/RTv1.dir/objects_validate.c.o: ../libft/ft_gc.h
 CMakeFiles/RTv1.dir/objects_validate.c.o: ../libft/libft.h

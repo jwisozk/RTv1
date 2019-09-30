@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+         #
+#    By: iplastun <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/08/09 13:59:01 by jwisozk           #+#    #+#              #
-#    Updated: 2019/09/29 15:35:22 by jwisozk          ###   ########.fr        #
+#    Updated: 2019/09/30 11:36:19 by iplastun         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -38,6 +38,7 @@ SOURCE =    main.c \
             geometric_create.c \
             transform.c \
             objects_update.c \
+            objects_update_min.c \
             camera_validate.c  \
             objects_validate.c \
             objects_calculate.c \

@@ -78,7 +78,8 @@ double				*ft_new_arr_d(char *a, char *b, char *c)
 {
 	double			*arr;
 
-	arr = (double *)ft_malloc(sizeof(double) * 3);
+	if (!(arr = (double *)ft_malloc(sizeof(double) * 3)))
+		ft_print_error(ERROR_29);
 	arr[0] = ft_atof(a);
 	arr[1] = ft_atof(b);
 	arr[2] = ft_atof(c);
@@ -93,7 +94,8 @@ int					*ft_new_arr_i(char *a, char *b, char *c, char *str)
 	array[0] = ft_atoi(a);
 	array[1] = ft_atoi(b);
 	array[2] = ft_atoi(c);
-	arr = (int *)ft_malloc(sizeof(int) * 3);
+	if (!(arr = (int *)ft_malloc(sizeof(int) * 3)))
+		ft_print_error(ERROR_29);
 	if (str != NULL)
 		arr = ft_rotation_order(arr, array, str);
 	else

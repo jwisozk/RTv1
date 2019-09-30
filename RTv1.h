@@ -6,7 +6,7 @@
 /*   By: iplastun <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/09 13:37:42 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/09/30 08:11:52 by iplastun         ###   ########.fr       */
+/*   Updated: 2019/09/30 12:35:54 by iplastun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,7 +86,11 @@
 # define ERROR_27		"Param \"color\" of plane is invalid."
 # define ERROR_28 		"Function close() failed."
 # define ERROR_29 		"Memory was not allocated."
-
+# define ERROR_30 		"Function mlx_init() return NULL."
+# define ERROR_31 		"Function mlx_new_window() return NULL."
+# define ERROR_32 		"Function mlx_new_image() return NULL."
+# define ERROR_33 		"Function get_next_line() return -1."
+# define ERROR_34 		"Function ft_new_lst() return NULL."
 typedef struct 			s_vec3
 {
 	double 				x;
@@ -282,6 +286,9 @@ void 					ft_update_sphere(t_data *data, t_lst* lst);
 void 					ft_update_plane(t_data *data, t_lst* lst);
 void 					ft_update_cylinder(t_data *data, t_lst* lst);
 void 					ft_update_cone(t_data *data, t_lst* lst);
+void					ft_cylinder_min(t_cylinder	**c, t_lst *lst);
+void					ft_cone_min(t_cone	**c, t_lst *lst);
+void					ft_plane_min(t_plane	**p, t_lst *lst);
 
 double 					ft_calculate_sphere(t_ray *ray, t_sphere *s);
 double 					ft_calculate_cylinder(t_ray *ray, t_cylinder *c);

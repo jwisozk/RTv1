@@ -16,7 +16,8 @@ t_cam				*ft_create_camera(void)
 {
 	t_cam *cam;
 
-	cam = (t_cam*)ft_malloc(sizeof(t_cam));
+	if (!(cam = (t_cam*)ft_malloc(sizeof(t_cam))))
+		ft_print_error(ERROR_29);
 	cam->pos = NULL;
 	cam->look_at = NULL;
 	cam->forward = NULL;

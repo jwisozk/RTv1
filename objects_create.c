@@ -16,7 +16,8 @@ t_obj				*ft_create_object(void *obj, t_type_obj type)
 {
 	t_obj			*o;
 
-	o = (t_obj*)ft_malloc(sizeof(t_obj));
+	if (!(o = (t_obj*)ft_malloc(sizeof(t_obj))))
+		ft_print_error(ERROR_29);
 	o->type = type;
 	o->objects = obj;
 	o->obj = NULL;
@@ -29,7 +30,8 @@ t_sphere			*ft_create_sphere(t_data *data)
 {
 	t_sphere		*s;
 
-	s = (t_sphere*)ft_malloc(sizeof(t_sphere));
+	if (!(s = (t_sphere*)ft_malloc(sizeof(t_sphere))))
+		ft_print_error(ERROR_29);
 	s->center = NULL;
 	s->color = -1;
 	s->radius = -1;
@@ -43,7 +45,8 @@ t_cylinder			*ft_create_cylinder(t_data *data)
 {
 	t_cylinder		*c;
 
-	c = (t_cylinder*)ft_malloc(sizeof(t_cylinder));
+	if (!(c = (t_cylinder*)ft_malloc(sizeof(t_cylinder))))
+		ft_print_error(ERROR_29);
 	c->center = NULL;
 	c->normal = NULL;
 	c->color = -1;
@@ -59,7 +62,8 @@ t_cone				*ft_create_cone(t_data *data)
 {
 	t_cone			*c;
 
-	c = (t_cone*)ft_malloc(sizeof(t_cone));
+	if (!(c = (t_cone*)ft_malloc(sizeof(t_cone))))
+		ft_print_error(ERROR_29);
 	c->center = NULL;
 	c->normal = NULL;
 	c->color = -1;
@@ -75,7 +79,8 @@ t_plane				*ft_create_plane(t_data *data)
 {
 	t_plane			*p;
 
-	p = (t_plane*)ft_malloc(sizeof(t_plane));
+	if (!(p = (t_plane*)ft_malloc(sizeof(t_plane))))
+		ft_print_error(ERROR_29);
 	p->normal = NULL;
 	p->point = NULL;
 	p->color = -1;

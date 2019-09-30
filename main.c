@@ -6,7 +6,7 @@
 /*   By: iplastun <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/09 13:37:06 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/09/30 08:51:22 by iplastun         ###   ########.fr       */
+/*   Updated: 2019/09/30 12:02:54 by iplastun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,10 +40,12 @@ void				ft_open_window(t_data *data)
 	void			*mlx_ptr;
 	void			*win_ptr;
 
-	mlx_ptr = mlx_init();
-	// добавить защиту для mlx
-	win_ptr = mlx_new_window(mlx_ptr, DW, DH, "RTv1");
-	data->img.img_ptr = mlx_new_image(mlx_ptr, DW, DH);
+	if((mlx_ptr = mlx_init()) == NULL)
+		ft_print_error(ft_msg(ERROR_30));
+	if ((win_ptr = mlx_new_window(mlx_ptr, DW, DH, "RTv1")) == NULL)
+		ft_print_error(ft_msg(ERROR_31));
+	if ((data->img.img_ptr = mlx_new_image(mlx_ptr, DW, DH)) == NULL)
+		ft_print_error(ft_msg(ERROR_32));
 	data->img.img_arr = (int*)mlx_get_data_addr(data->img.img_ptr,
 	&data->img.bit_per_pixel, &data->img.size_line, &data->img.endian);
 	data->mlx_ptr = mlx_ptr;
