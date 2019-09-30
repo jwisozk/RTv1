@@ -78,7 +78,8 @@ SRC = ft_putchar.c		\
 	  ft_atoi_base.c    \
 	  ft_atof.c         \
 	  ft_gc.c           \
-	  ft_malloc.c
+	  ft_malloc.c       \
+	  ft_clean.c
 
 OBJ = $(SRC:.c=.o)
 FLAGS = -Wall -Wextra -Werror

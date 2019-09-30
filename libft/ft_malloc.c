@@ -3,31 +3,28 @@
 /*                                                        :::      ::::::::   */
 /*   ft_malloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: iplastun <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/29 22:01:44 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/09/29 22:38:10 by jwisozk          ###   ########.fr       */
+/*   Updated: 2019/09/30 08:50:03 by iplastun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_malloc(size_t size, t_gc_vector *ptr_mem)
+void	*ft_malloc(size_t size)
 {
 	void *ch;
-//	t_gc_vector *g_memaloced;
-//
-//	g_memaloced = NULL;
-	t_gc_vector *memaloced;
+	static t_gc_vector *memalloced = NULL;
 
-	memaloced = ptr_mem;
 	ch = NULL;
-	if (!memaloced)
-		memaloced = init_tgc_vector(sizeof(size_t *));
+	if (!memalloced)
+		memalloced = init_tgc_vector(sizeof(size_t *));
 	ch = malloc(size);
 	ft_bzero(ch, size);
 	if (ch == NULL)
-		exit(3);
-	ft_tgc_append(&memaloced, ch);
+		ft_gc(&memalloced);
+	else
+		ft_tgc_append(&memalloced, ch);
 	return (ch);
 }

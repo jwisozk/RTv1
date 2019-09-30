@@ -18,15 +18,15 @@ void				ft_check_camera(t_data *data)
 	t_vec3			*b;
 
 	if (data->cam == NULL)
-		ft_print_error(ft_msg(ERROR_7), data->ptr_mem);
+		ft_print_error(ft_msg(ERROR_7));
 	a = data->cam->look_at;
 	b = data->cam->pos;
 	if (a == NULL)
-		ft_print_error(ft_msg(ERROR_8), data->ptr_mem);
+		ft_print_error(ft_msg(ERROR_8));
 	if (b == NULL)
-		ft_print_error(ft_msg(ERROR_9), data->ptr_mem);
+		ft_print_error(ft_msg(ERROR_9));
 	if (a->x == b->x &&
 		a->y == b->y &&
 		a->z == b->z)
-		ft_print_error(ft_msg(ERROR_10), data->ptr_mem);
+		ft_print_error(ft_msg(ERROR_10));
 }

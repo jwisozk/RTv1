@@ -52,7 +52,7 @@ char			*ft_itoa(int n)
 
 	num = n;
 	len = ft_get_len(n);
-	if (!(str = (char*)ft_memalloc(sizeof(char) * (len + 1))))
+	if (!(str = (char*)ft_malloc(sizeof(char) * (len + 1))))
 		return (NULL);
 	ft_fill_str(str, len);
 	if (num < 0)

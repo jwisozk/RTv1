@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: iplastun <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/09 13:37:06 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/09/29 23:13:46 by jwisozk          ###   ########.fr       */
+/*   Updated: 2019/09/30 08:51:22 by iplastun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ void				ft_init_shapes(t_data *data)
 	data->o = NULL;
 	data->l = NULL;
 	data->cam = NULL;
-	data->ptr_mem = NULL;
+	data->pass = NULL;
 }
 
 void				ft_check_valid(t_data *data)
@@ -49,8 +49,7 @@ void				ft_open_window(t_data *data)
 	data->mlx_ptr = mlx_ptr;
 	data->win_ptr = win_ptr;
 	ft_draw(data);
-	if (data->ptr_mem != NULL)
-		ft_gc(&data->ptr_mem);
+	ft_clean(data->pass);
 	mlx_hook(win_ptr, 17, 0, ft_close_window, data);
 	mlx_hook(win_ptr, 2, 0, ft_key_press, data);
 	mlx_loop(mlx_ptr);
@@ -65,17 +64,17 @@ int					main(int argc, char **argv)
 	{
 		ft_init_shapes(&data);
 		if (ft_strnequ(ft_strrev(argv[1]), ft_strrev(EXTENSION), 4) != 1)
-			ft_print_error(ft_msg(ERROR_1), data.ptr_mem);
+			ft_print_error(ft_msg(ERROR_1));
 		if ((fd = open(argv[1], O_RDONLY)) == -1)
-			return (ft_print_error(ft_msg(ERROR_6), data.ptr_mem));
+			return (ft_print_error(ft_msg(ERROR_6)));
 		ft_init_shapes(&data);
 		ft_get_scene(fd, &data);
 		if (close(fd) == -1)
-			return (ft_print_error(ft_msg(ERROR_28), data.ptr_mem));
+			return (ft_print_error(ft_msg(ERROR_28)));
 		ft_check_valid(&data);
 		ft_open_window(&data);
 	}
 	else
-		ft_print_error("Usage: ./RTv1 <filename>", NULL);
+		ft_print_error("Usage: ./RTv1 <filename>");
 	return (0);
 }

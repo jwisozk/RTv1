@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   RTv1.h                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: iplastun <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/09 13:37:42 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/09/29 23:22:02 by jwisozk          ###   ########.fr       */
+/*   Updated: 2019/09/30 08:11:52 by iplastun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -242,12 +242,12 @@ typedef struct			s_data
     t_plane				*plane;
     t_cylinder			*cylinder;
     t_cone				*cone;
-	t_gc_vector 		*ptr_mem;
+    void				*pass;
 }						t_data;
 
 int						ft_key_press(int key, t_data *data);
 int						ft_close_window(t_data *data);
-int						ft_print_error(char *str, t_gc_vector *ptr_mem);
+int						ft_print_error(char *str);
 char 					*ft_msg(char *str);
 
 t_vec3                  *ft_create_vec3(double x, double y, double z);
@@ -295,9 +295,9 @@ t_vec3 					*ft_rotate(t_vec3 *v, t_ang3 *a);
 
 void 					ft_get_scene(int fd, t_data *data);
 void 					ft_create_scene_objects(t_data *data);
-int 					*ft_rotation_order(int *arr, int array[3], char *str, t_data *data);
+int 					*ft_rotation_order(int *arr, int array[3], char *str);
 double 					*ft_new_arr_d(char *a, char *b, char *c);
-int 					*ft_new_arr_i(char *a, char *b, char *c, char *str, t_data *data);
+int 					*ft_new_arr_i(char *a, char *b, char *c, char *str);
 
 void 					ft_check_camera(t_data *data);
 void 					ft_check_light(t_data *data);

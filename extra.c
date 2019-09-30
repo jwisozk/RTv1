@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   extra.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: iplastun <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/09 16:09:56 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/09/29 23:07:48 by jwisozk          ###   ########.fr       */
+/*   Updated: 2019/09/30 08:57:07 by iplastun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,11 +17,14 @@ char				*ft_msg(char *str)
 	return (ft_strjoin(ERROR, str));
 }
 
-int					ft_print_error(char *str, t_gc_vector *ptr_mem)
+int					ft_print_error(char *str)
 {
-	if (ptr_mem != NULL)
-		ft_gc(&ptr_mem);
+	void *pass;
+
+	pass = NULL;
 	ft_putendl_fd(str, 2);
+	ft_clean(pass);
+	ft_malloc(0);
 	exit(0);
 }
 
