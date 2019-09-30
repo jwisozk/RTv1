@@ -14,8 +14,8 @@
 
 void	*ft_malloc(size_t size)
 {
-	void *ch;
-	static t_gc_vector *memalloced = NULL;
+	void					*ch;
+	static t_gc_vector		*memalloced = NULL;
 
 	ch = NULL;
 	if (!memalloced)

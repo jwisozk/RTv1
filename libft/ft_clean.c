@@ -17,4 +17,3 @@ void	ft_clean(void *data)
 	ft_memdel(&data);
 	ft_malloc(0);
 }
-

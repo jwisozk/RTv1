@@ -12,7 +12,8 @@
 
 #ifndef FT_GC_H
 # define FT_GC_H
-# define TGC_OPTIMAL_SIZE (2u<<5u)
+# define TGC_OPTIMAL_SIZE	(2u<<5u)
+
 typedef struct		s_gc_vector
 {
 	ssize_t			count;
@@ -20,6 +21,7 @@ typedef struct		s_gc_vector
 	ssize_t			size;
 	void			**data;
 }					t_gc_vector;
+
 void				ft_gc(t_gc_vector **vector);
 void				ft_tgc_append(t_gc_vector **vector, void **d);
 t_gc_vector			*init_tgc_vector(ssize_t ssize);

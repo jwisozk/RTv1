@@ -3,19 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atof.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jwisozk <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: jwisozk <marvin@42.fr>                    +#+  +:+       +#+         */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/09/25 18:23:53 by jwisozk          #+#    #+#             */
-/*   Updated: 2019/09/25 18:28:50 by jwisozk         ###   ########.fr       */
+/*   Created: 2019/09/25 18:23:53 by jwisozk          #+#    #+#              */
+/*   Updated: 2019/09/25 18:28:50 by jwisozk         ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static double ft_loop(const char *str, double sign)
+static double		ft_loop(const char *str, double sign)
 {
 	double	value;
-	int 	point;
+	int		point;
 
 	point = 0;
 	value = 0;
@@ -37,7 +37,7 @@ static double ft_loop(const char *str, double sign)
 	return (value * sign);
 }
 
-double ft_atof(const char *str)
+double				ft_atof(const char *str)
 {
 	double	sign;
 
@@ -50,4 +50,3 @@ double ft_atof(const char *str)
 		str++;
 	return (ft_loop(str, sign));
 }
-
