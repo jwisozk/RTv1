@@ -38,7 +38,7 @@ void				ft_check_cylinder(t_data *data)
 	{
 		if (c->center == NULL)
 			ft_print_error(ft_msg(ERROR_17));
-		if (c->normal == NULL)
+		if (c->normal == NULL || ft_lenv(c->normal) != 1)
 			ft_print_error(ft_msg(ERROR_18));
 		if (c->radius < 0)
 			ft_print_error(ft_msg(ERROR_19));
@@ -57,7 +57,7 @@ void				ft_check_cone(t_data *data)
 	{
 		if (c->center == NULL)
 			ft_print_error(ft_msg(ERROR_21));
-		if (c->normal == NULL)
+		if (c->normal == NULL || ft_lenv(c->normal) != 1)
 			ft_print_error(ft_msg(ERROR_22));
 		if (c->angle < 0)
 			ft_print_error(ft_msg(ERROR_23));
@@ -76,7 +76,7 @@ void				ft_check_plane(t_data *data)
 	{
 		if (p->point == NULL)
 			ft_print_error(ft_msg(ERROR_25));
-		if (p->normal == NULL)
+		if (p->normal == NULL || ft_lenv(p->normal) != 1)
 			ft_print_error(ft_msg(ERROR_26));
 		if (p->color < 0)
 			ft_print_error(ft_msg(ERROR_27));
