@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/09/24 20:31:01 by iplastun          #+#    #+#             */
+/*   Created: 2019/09/24 20:31:01 by jwisozk          #+#    #+#             */
 /*   Updated: 2019/09/29 20:54:43 by jwisozk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "RTv1.h"
+#include "rtv1.h"
 
 t_obj				*ft_create_object(void *obj, t_type_obj type)
 {

@@ -6,11 +6,11 @@
 /*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/28 19:06:14 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/09/30 11:37:29 by iplastun         ###   ########.fr       */
+/*   Updated: 2019/09/30 11:37:29 by jwisozk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "RTv1.h"
+#include "rtv1.h"
 
 void				ft_update_sphere(t_data *data, t_lst *lst)
 {
@@ -71,7 +71,7 @@ void				ft_update_cylinder(t_data *data, t_lst *lst)
 void				ft_update_cone(t_data *data, t_lst *lst)
 {
 	t_cone			*c;
-	int			*i;
+	int				*i;
 
 	c = ft_create_cone(data);
 	while (lst != NULL)

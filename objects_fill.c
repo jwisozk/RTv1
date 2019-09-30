@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "RTv1.h"
+#include "rtv1.h"
 
 void				ft_sphere_fill(t_obj *obj, t_point *p, t_ray *ray)
 {

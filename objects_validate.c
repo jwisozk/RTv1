@@ -10,11 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "RTv1.h"
+#include "rtv1.h"
 
-void ft_check_sphere(t_data *data)
+void				ft_check_sphere(t_data *data)
 {
-	t_sphere *s;
+	t_sphere		*s;
 
 	s = data->sphere;
 	while (s != NULL)
@@ -29,9 +29,9 @@ void ft_check_sphere(t_data *data)
 	}
 }
 
-void ft_check_cylinder(t_data *data)
+void				ft_check_cylinder(t_data *data)
 {
-	t_cylinder *c;
+	t_cylinder		*c;
 
 	c = data->cylinder;
 	while (c != NULL)
@@ -48,9 +48,9 @@ void ft_check_cylinder(t_data *data)
 	}
 }
 
-void ft_check_cone(t_data *data)
+void				ft_check_cone(t_data *data)
 {
-	t_cone *c;
+	t_cone			*c;
 
 	c = data->cone;
 	while (c != NULL)
@@ -67,9 +67,9 @@ void ft_check_cone(t_data *data)
 	}
 }
 
-void ft_check_plane(t_data *data)
+void				ft_check_plane(t_data *data)
 {
-	t_plane *p;
+	t_plane			*p;
 
 	p = data->plane;
 	while (p != NULL)
@@ -83,4 +83,3 @@ void ft_check_plane(t_data *data)
 		p = p->next;
 	}
 }
-

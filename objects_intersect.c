@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "RTv1.h"
+#include "rtv1.h"
 
 void				ft_sphere_intersect(t_ray *ray, t_obj *o)
 {

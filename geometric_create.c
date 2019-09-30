@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   geometric_create.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: iplastun <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: jwisozk <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/09/24 20:41:27 by iplastun          #+#    #+#             */
-/*   Updated: 2019/09/30 13:00:07 by iplastun         ###   ########.fr       */
+/*   Created: 2019/09/24 20:41:27 by jwisozk          #+#    #+#             */
+/*   Updated: 2019/09/30 13:00:07 by jwisozk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "RTv1.h"
+#include "rtv1.h"
 
 t_vec3				*ft_create_vec3(double x, double y, double z)
 {

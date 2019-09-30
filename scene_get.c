@@ -3,35 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   scene_get.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: iplastun <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: jwisozk <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/29 14:44:38 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/09/30 13:02:48 by iplastun         ###   ########.fr       */
+/*   Updated: 2019/09/30 13:02:48 by jwisozk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "RTv1.h"
-
-t_lst				*ft_new_lst(char *type, void *data)
-{
-	t_lst			*lst;
-
-	if (!(lst = (t_lst*)ft_malloc(sizeof(t_lst))))
-		ft_print_error(ERROR_29);
-	lst->type = type;
-	lst->data = data;
-	lst->next = NULL;
-	return (lst);
-}
-
-void				ft_add_lst(t_lst **head, t_lst *new)
-{
-	if (head != NULL && new != NULL)
-	{
-		new->next = *head;
-		*head = new;
-	}
-}
+#include "rtv1.h"
 
 void				ft_check_braces(int *block, int n)
 {
@@ -54,9 +33,9 @@ void				ft_check_braces(int *block, int n)
 
 int					ft_is_hash(char *line, int *i)
 {
-	static t_arr_type arr[] = ARR_TYPES;
-	char			**type;
-	int 	max;
+	static t_arr_type		arr[] = ARR_TYPES;
+	char					**type;
+	int						max;
 
 	if (*line != '#')
 		return (0);
@@ -71,9 +50,9 @@ int					ft_is_hash(char *line, int *i)
 	return (1);
 }
 
-void ft_get_data(t_lst	**lst, char *line)
+void				ft_get_data(t_lst **lst, char *line)
 {
-	int 	j;
+	int		j;
 	char	**str;
 	t_lst	*tmp;
 
@@ -95,9 +74,10 @@ void ft_get_data(t_lst	**lst, char *line)
 	ft_add_lst(lst, tmp);
 }
 
-void				ft_create_type(t_lst **lst, t_data *data, int *block, int *i)
+void				ft_create_type(t_lst **lst, t_data *data,
+					int *block, int *i)
 {
-	static t_arr_type arr[] = ARR_TYPES;
+	static t_arr_type	arr[] = ARR_TYPES;
 
 	if (*lst != NULL)
 		arr[*i].ft_create_type(data, *lst);
@@ -107,11 +87,11 @@ void				ft_create_type(t_lst **lst, t_data *data, int *block, int *i)
 
 void				ft_get_scene(int fd, t_data *data)
 {
-	char	*line;
-	int		i;
-	t_lst	*lst;
-	int 	block;
-	int 	status;
+	char			*line;
+	int				i;
+	t_lst			*lst;
+	int				block;
+	int				status;
 
 	lst = NULL;
 	block = 0;

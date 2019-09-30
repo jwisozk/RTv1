@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "RTv1.h"
+#include "rtv1.h"
 
 double				ft_add_diffuse_light(t_point *p, t_light *l, t_vec3 *vec_pl)
 {

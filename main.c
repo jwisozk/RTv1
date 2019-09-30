@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: iplastun <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: jwisozk <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/09 13:37:06 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/09/30 12:02:54 by iplastun         ###   ########.fr       */
+/*   Updated: 2019/09/30 12:02:54 by jwisozk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "RTv1.h"
+#include "rtv1.h"
 
 void				ft_init_shapes(t_data *data)
 {
@@ -40,7 +40,7 @@ void				ft_open_window(t_data *data)
 	void			*mlx_ptr;
 	void			*win_ptr;
 
-	if((mlx_ptr = mlx_init()) == NULL)
+	if ((mlx_ptr = mlx_init()) == NULL)
 		ft_print_error(ft_msg(ERROR_30));
 	if ((win_ptr = mlx_new_window(mlx_ptr, DW, DH, "RTv1")) == NULL)
 		ft_print_error(ft_msg(ERROR_31));

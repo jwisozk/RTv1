@@ -1,33 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   operations_d.c                                     :+:      :+:    :+:   */
+/*   etc_2.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/09/29 14:35:34 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/09/29 14:35:34 by jwisozk          ###   ########.fr       */
+/*   Created: 2019/08/09 16:09:56 by jwisozk           #+#    #+#             */
+/*   Updated: 2019/09/30 08:57:07 by jwisozk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "rtv1.h"
 
-double				ft_lenv(t_vec3 *v)
+char				*ft_msg(char *str)
 {
-	return (sqrt(v->x * v->x + v->y * v->y + v->z * v->z));
-}
-
-double				ft_dot(t_vec3 *v1, t_vec3 *v2)
-{
-	return (v1->x * v2->x + v1->y * v2->y + v1->z * v2->z);
-}
-
-double				ft_max(double x, double y)
-{
-	return (x > y ? x : y);
-}
-
-double				ft_min(double x, double y)
-{
-	return (x < y ? x : y);
+	return (ft_strjoin(ERROR, str));
 }

@@ -43,10 +43,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/iplastun/Desktop/nr2/RTv1
+CMAKE_SOURCE_DIR = /Users/jwisozk/Desktop/nr2/RTv1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/RTv1.dir/depend.make
@@ -59,1225 +59,1225 @@ include CMakeFiles/RTv1.dir/flags.make
 
 CMakeFiles/RTv1.dir/libft/ft_atoi.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/libft/ft_atoi.c.o: ../libft/ft_atoi.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/RTv1.dir/libft/ft_atoi.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_atoi.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/libft/ft_atoi.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/RTv1.dir/libft/ft_atoi.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_atoi.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_atoi.c
 
 CMakeFiles/RTv1.dir/libft/ft_atoi.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/libft/ft_atoi.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/libft/ft_atoi.c > CMakeFiles/RTv1.dir/libft/ft_atoi.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_atoi.c > CMakeFiles/RTv1.dir/libft/ft_atoi.c.i
 
 CMakeFiles/RTv1.dir/libft/ft_atoi.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/libft/ft_atoi.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/libft/ft_atoi.c -o CMakeFiles/RTv1.dir/libft/ft_atoi.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_atoi.c -o CMakeFiles/RTv1.dir/libft/ft_atoi.c.s
 
 CMakeFiles/RTv1.dir/libft/ft_atoi_base.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/libft/ft_atoi_base.c.o: ../libft/ft_atoi_base.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/RTv1.dir/libft/ft_atoi_base.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_atoi_base.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/libft/ft_atoi_base.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/RTv1.dir/libft/ft_atoi_base.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_atoi_base.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_atoi_base.c
 
 CMakeFiles/RTv1.dir/libft/ft_atoi_base.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/libft/ft_atoi_base.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/libft/ft_atoi_base.c > CMakeFiles/RTv1.dir/libft/ft_atoi_base.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_atoi_base.c > CMakeFiles/RTv1.dir/libft/ft_atoi_base.c.i
 
 CMakeFiles/RTv1.dir/libft/ft_atoi_base.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/libft/ft_atoi_base.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/libft/ft_atoi_base.c -o CMakeFiles/RTv1.dir/libft/ft_atoi_base.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_atoi_base.c -o CMakeFiles/RTv1.dir/libft/ft_atoi_base.c.s
 
 CMakeFiles/RTv1.dir/libft/ft_bzero.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/libft/ft_bzero.c.o: ../libft/ft_bzero.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/RTv1.dir/libft/ft_bzero.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_bzero.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/libft/ft_bzero.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/RTv1.dir/libft/ft_bzero.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_bzero.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_bzero.c
 
 CMakeFiles/RTv1.dir/libft/ft_bzero.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/libft/ft_bzero.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/libft/ft_bzero.c > CMakeFiles/RTv1.dir/libft/ft_bzero.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_bzero.c > CMakeFiles/RTv1.dir/libft/ft_bzero.c.i
 
 CMakeFiles/RTv1.dir/libft/ft_bzero.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/libft/ft_bzero.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/libft/ft_bzero.c -o CMakeFiles/RTv1.dir/libft/ft_bzero.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_bzero.c -o CMakeFiles/RTv1.dir/libft/ft_bzero.c.s
 
 CMakeFiles/RTv1.dir/libft/ft_del.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/libft/ft_del.c.o: ../libft/ft_del.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/RTv1.dir/libft/ft_del.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_del.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/libft/ft_del.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/RTv1.dir/libft/ft_del.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_del.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_del.c
 
 CMakeFiles/RTv1.dir/libft/ft_del.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/libft/ft_del.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/libft/ft_del.c > CMakeFiles/RTv1.dir/libft/ft_del.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_del.c > CMakeFiles/RTv1.dir/libft/ft_del.c.i
 
 CMakeFiles/RTv1.dir/libft/ft_del.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/libft/ft_del.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/libft/ft_del.c -o CMakeFiles/RTv1.dir/libft/ft_del.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_del.c -o CMakeFiles/RTv1.dir/libft/ft_del.c.s
 
 CMakeFiles/RTv1.dir/libft/ft_free_all.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/libft/ft_free_all.c.o: ../libft/ft_free_all.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/RTv1.dir/libft/ft_free_all.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_free_all.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/libft/ft_free_all.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/RTv1.dir/libft/ft_free_all.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_free_all.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_free_all.c
 
 CMakeFiles/RTv1.dir/libft/ft_free_all.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/libft/ft_free_all.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/libft/ft_free_all.c > CMakeFiles/RTv1.dir/libft/ft_free_all.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_free_all.c > CMakeFiles/RTv1.dir/libft/ft_free_all.c.i
 
 CMakeFiles/RTv1.dir/libft/ft_free_all.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/libft/ft_free_all.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/libft/ft_free_all.c -o CMakeFiles/RTv1.dir/libft/ft_free_all.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_free_all.c -o CMakeFiles/RTv1.dir/libft/ft_free_all.c.s
 
 CMakeFiles/RTv1.dir/libft/ft_isalnum.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/libft/ft_isalnum.c.o: ../libft/ft_isalnum.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/RTv1.dir/libft/ft_isalnum.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_isalnum.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/libft/ft_isalnum.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/RTv1.dir/libft/ft_isalnum.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_isalnum.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_isalnum.c
 
 CMakeFiles/RTv1.dir/libft/ft_isalnum.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/libft/ft_isalnum.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/libft/ft_isalnum.c > CMakeFiles/RTv1.dir/libft/ft_isalnum.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_isalnum.c > CMakeFiles/RTv1.dir/libft/ft_isalnum.c.i
 
 CMakeFiles/RTv1.dir/libft/ft_isalnum.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/libft/ft_isalnum.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/libft/ft_isalnum.c -o CMakeFiles/RTv1.dir/libft/ft_isalnum.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_isalnum.c -o CMakeFiles/RTv1.dir/libft/ft_isalnum.c.s
 
 CMakeFiles/RTv1.dir/libft/ft_isalpha.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/libft/ft_isalpha.c.o: ../libft/ft_isalpha.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/RTv1.dir/libft/ft_isalpha.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_isalpha.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/libft/ft_isalpha.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/RTv1.dir/libft/ft_isalpha.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_isalpha.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_isalpha.c
 
 CMakeFiles/RTv1.dir/libft/ft_isalpha.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/libft/ft_isalpha.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/libft/ft_isalpha.c > CMakeFiles/RTv1.dir/libft/ft_isalpha.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_isalpha.c > CMakeFiles/RTv1.dir/libft/ft_isalpha.c.i
 
 CMakeFiles/RTv1.dir/libft/ft_isalpha.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/libft/ft_isalpha.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/libft/ft_isalpha.c -o CMakeFiles/RTv1.dir/libft/ft_isalpha.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_isalpha.c -o CMakeFiles/RTv1.dir/libft/ft_isalpha.c.s
 
 CMakeFiles/RTv1.dir/libft/ft_isascii.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/libft/ft_isascii.c.o: ../libft/ft_isascii.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/RTv1.dir/libft/ft_isascii.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_isascii.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/libft/ft_isascii.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/RTv1.dir/libft/ft_isascii.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_isascii.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_isascii.c
 
 CMakeFiles/RTv1.dir/libft/ft_isascii.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/libft/ft_isascii.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/libft/ft_isascii.c > CMakeFiles/RTv1.dir/libft/ft_isascii.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_isascii.c > CMakeFiles/RTv1.dir/libft/ft_isascii.c.i
 
 CMakeFiles/RTv1.dir/libft/ft_isascii.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/libft/ft_isascii.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/libft/ft_isascii.c -o CMakeFiles/RTv1.dir/libft/ft_isascii.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_isascii.c -o CMakeFiles/RTv1.dir/libft/ft_isascii.c.s
 
 CMakeFiles/RTv1.dir/libft/ft_isdigit.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/libft/ft_isdigit.c.o: ../libft/ft_isdigit.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/RTv1.dir/libft/ft_isdigit.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_isdigit.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/libft/ft_isdigit.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/RTv1.dir/libft/ft_isdigit.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_isdigit.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_isdigit.c
 
 CMakeFiles/RTv1.dir/libft/ft_isdigit.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/libft/ft_isdigit.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/libft/ft_isdigit.c > CMakeFiles/RTv1.dir/libft/ft_isdigit.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_isdigit.c > CMakeFiles/RTv1.dir/libft/ft_isdigit.c.i
 
 CMakeFiles/RTv1.dir/libft/ft_isdigit.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/libft/ft_isdigit.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/libft/ft_isdigit.c -o CMakeFiles/RTv1.dir/libft/ft_isdigit.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_isdigit.c -o CMakeFiles/RTv1.dir/libft/ft_isdigit.c.s
 
 CMakeFiles/RTv1.dir/libft/ft_isprint.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/libft/ft_isprint.c.o: ../libft/ft_isprint.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/RTv1.dir/libft/ft_isprint.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_isprint.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/libft/ft_isprint.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/RTv1.dir/libft/ft_isprint.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_isprint.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_isprint.c
 
 CMakeFiles/RTv1.dir/libft/ft_isprint.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/libft/ft_isprint.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/libft/ft_isprint.c > CMakeFiles/RTv1.dir/libft/ft_isprint.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_isprint.c > CMakeFiles/RTv1.dir/libft/ft_isprint.c.i
 
 CMakeFiles/RTv1.dir/libft/ft_isprint.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/libft/ft_isprint.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/libft/ft_isprint.c -o CMakeFiles/RTv1.dir/libft/ft_isprint.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_isprint.c -o CMakeFiles/RTv1.dir/libft/ft_isprint.c.s
 
 CMakeFiles/RTv1.dir/libft/ft_isspace.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/libft/ft_isspace.c.o: ../libft/ft_isspace.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/RTv1.dir/libft/ft_isspace.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_isspace.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/libft/ft_isspace.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/RTv1.dir/libft/ft_isspace.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_isspace.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_isspace.c
 
 CMakeFiles/RTv1.dir/libft/ft_isspace.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/libft/ft_isspace.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/libft/ft_isspace.c > CMakeFiles/RTv1.dir/libft/ft_isspace.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_isspace.c > CMakeFiles/RTv1.dir/libft/ft_isspace.c.i
 
 CMakeFiles/RTv1.dir/libft/ft_isspace.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/libft/ft_isspace.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/libft/ft_isspace.c -o CMakeFiles/RTv1.dir/libft/ft_isspace.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_isspace.c -o CMakeFiles/RTv1.dir/libft/ft_isspace.c.s
 
 CMakeFiles/RTv1.dir/libft/ft_itoa.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/libft/ft_itoa.c.o: ../libft/ft_itoa.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/RTv1.dir/libft/ft_itoa.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_itoa.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/libft/ft_itoa.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/RTv1.dir/libft/ft_itoa.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_itoa.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_itoa.c
 
 CMakeFiles/RTv1.dir/libft/ft_itoa.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/libft/ft_itoa.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/libft/ft_itoa.c > CMakeFiles/RTv1.dir/libft/ft_itoa.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_itoa.c > CMakeFiles/RTv1.dir/libft/ft_itoa.c.i
 
 CMakeFiles/RTv1.dir/libft/ft_itoa.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/libft/ft_itoa.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/libft/ft_itoa.c -o CMakeFiles/RTv1.dir/libft/ft_itoa.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_itoa.c -o CMakeFiles/RTv1.dir/libft/ft_itoa.c.s
 
 CMakeFiles/RTv1.dir/libft/ft_lstadd.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/libft/ft_lstadd.c.o: ../libft/ft_lstadd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/RTv1.dir/libft/ft_lstadd.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_lstadd.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/libft/ft_lstadd.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/RTv1.dir/libft/ft_lstadd.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_lstadd.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_lstadd.c
 
 CMakeFiles/RTv1.dir/libft/ft_lstadd.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/libft/ft_lstadd.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/libft/ft_lstadd.c > CMakeFiles/RTv1.dir/libft/ft_lstadd.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_lstadd.c > CMakeFiles/RTv1.dir/libft/ft_lstadd.c.i
 
 CMakeFiles/RTv1.dir/libft/ft_lstadd.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/libft/ft_lstadd.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/libft/ft_lstadd.c -o CMakeFiles/RTv1.dir/libft/ft_lstadd.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_lstadd.c -o CMakeFiles/RTv1.dir/libft/ft_lstadd.c.s
 
 CMakeFiles/RTv1.dir/libft/ft_lstadd_back.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/libft/ft_lstadd_back.c.o: ../libft/ft_lstadd_back.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/RTv1.dir/libft/ft_lstadd_back.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_lstadd_back.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/libft/ft_lstadd_back.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/RTv1.dir/libft/ft_lstadd_back.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_lstadd_back.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_lstadd_back.c
 
 CMakeFiles/RTv1.dir/libft/ft_lstadd_back.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/libft/ft_lstadd_back.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/libft/ft_lstadd_back.c > CMakeFiles/RTv1.dir/libft/ft_lstadd_back.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_lstadd_back.c > CMakeFiles/RTv1.dir/libft/ft_lstadd_back.c.i
 
 CMakeFiles/RTv1.dir/libft/ft_lstadd_back.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/libft/ft_lstadd_back.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/libft/ft_lstadd_back.c -o CMakeFiles/RTv1.dir/libft/ft_lstadd_back.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_lstadd_back.c -o CMakeFiles/RTv1.dir/libft/ft_lstadd_back.c.s
 
 CMakeFiles/RTv1.dir/libft/ft_lstdel.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/libft/ft_lstdel.c.o: ../libft/ft_lstdel.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/RTv1.dir/libft/ft_lstdel.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_lstdel.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/libft/ft_lstdel.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/RTv1.dir/libft/ft_lstdel.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_lstdel.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_lstdel.c
 
 CMakeFiles/RTv1.dir/libft/ft_lstdel.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/libft/ft_lstdel.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/libft/ft_lstdel.c > CMakeFiles/RTv1.dir/libft/ft_lstdel.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_lstdel.c > CMakeFiles/RTv1.dir/libft/ft_lstdel.c.i
 
 CMakeFiles/RTv1.dir/libft/ft_lstdel.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/libft/ft_lstdel.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/libft/ft_lstdel.c -o CMakeFiles/RTv1.dir/libft/ft_lstdel.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_lstdel.c -o CMakeFiles/RTv1.dir/libft/ft_lstdel.c.s
 
 CMakeFiles/RTv1.dir/libft/ft_lstdelone.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/libft/ft_lstdelone.c.o: ../libft/ft_lstdelone.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/RTv1.dir/libft/ft_lstdelone.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_lstdelone.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/libft/ft_lstdelone.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/RTv1.dir/libft/ft_lstdelone.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_lstdelone.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_lstdelone.c
 
 CMakeFiles/RTv1.dir/libft/ft_lstdelone.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/libft/ft_lstdelone.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/libft/ft_lstdelone.c > CMakeFiles/RTv1.dir/libft/ft_lstdelone.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_lstdelone.c > CMakeFiles/RTv1.dir/libft/ft_lstdelone.c.i
 
 CMakeFiles/RTv1.dir/libft/ft_lstdelone.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/libft/ft_lstdelone.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/libft/ft_lstdelone.c -o CMakeFiles/RTv1.dir/libft/ft_lstdelone.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_lstdelone.c -o CMakeFiles/RTv1.dir/libft/ft_lstdelone.c.s
 
 CMakeFiles/RTv1.dir/libft/ft_lstiter.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/libft/ft_lstiter.c.o: ../libft/ft_lstiter.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/RTv1.dir/libft/ft_lstiter.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_lstiter.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/libft/ft_lstiter.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/RTv1.dir/libft/ft_lstiter.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_lstiter.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_lstiter.c
 
 CMakeFiles/RTv1.dir/libft/ft_lstiter.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/libft/ft_lstiter.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/libft/ft_lstiter.c > CMakeFiles/RTv1.dir/libft/ft_lstiter.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_lstiter.c > CMakeFiles/RTv1.dir/libft/ft_lstiter.c.i
 
 CMakeFiles/RTv1.dir/libft/ft_lstiter.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/libft/ft_lstiter.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/libft/ft_lstiter.c -o CMakeFiles/RTv1.dir/libft/ft_lstiter.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_lstiter.c -o CMakeFiles/RTv1.dir/libft/ft_lstiter.c.s
 
 CMakeFiles/RTv1.dir/libft/ft_lstmap.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/libft/ft_lstmap.c.o: ../libft/ft_lstmap.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/RTv1.dir/libft/ft_lstmap.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_lstmap.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/libft/ft_lstmap.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/RTv1.dir/libft/ft_lstmap.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_lstmap.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_lstmap.c
 
 CMakeFiles/RTv1.dir/libft/ft_lstmap.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/libft/ft_lstmap.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/libft/ft_lstmap.c > CMakeFiles/RTv1.dir/libft/ft_lstmap.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_lstmap.c > CMakeFiles/RTv1.dir/libft/ft_lstmap.c.i
 
 CMakeFiles/RTv1.dir/libft/ft_lstmap.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/libft/ft_lstmap.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/libft/ft_lstmap.c -o CMakeFiles/RTv1.dir/libft/ft_lstmap.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_lstmap.c -o CMakeFiles/RTv1.dir/libft/ft_lstmap.c.s
 
 CMakeFiles/RTv1.dir/libft/ft_lstnew.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/libft/ft_lstnew.c.o: ../libft/ft_lstnew.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/RTv1.dir/libft/ft_lstnew.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_lstnew.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/libft/ft_lstnew.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/RTv1.dir/libft/ft_lstnew.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_lstnew.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_lstnew.c
 
 CMakeFiles/RTv1.dir/libft/ft_lstnew.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/libft/ft_lstnew.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/libft/ft_lstnew.c > CMakeFiles/RTv1.dir/libft/ft_lstnew.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_lstnew.c > CMakeFiles/RTv1.dir/libft/ft_lstnew.c.i
 
 CMakeFiles/RTv1.dir/libft/ft_lstnew.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/libft/ft_lstnew.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/libft/ft_lstnew.c -o CMakeFiles/RTv1.dir/libft/ft_lstnew.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_lstnew.c -o CMakeFiles/RTv1.dir/libft/ft_lstnew.c.s
 
 CMakeFiles/RTv1.dir/libft/ft_memalloc.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/libft/ft_memalloc.c.o: ../libft/ft_memalloc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/RTv1.dir/libft/ft_memalloc.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_memalloc.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/libft/ft_memalloc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/RTv1.dir/libft/ft_memalloc.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_memalloc.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_memalloc.c
 
 CMakeFiles/RTv1.dir/libft/ft_memalloc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/libft/ft_memalloc.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/libft/ft_memalloc.c > CMakeFiles/RTv1.dir/libft/ft_memalloc.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_memalloc.c > CMakeFiles/RTv1.dir/libft/ft_memalloc.c.i
 
 CMakeFiles/RTv1.dir/libft/ft_memalloc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/libft/ft_memalloc.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/libft/ft_memalloc.c -o CMakeFiles/RTv1.dir/libft/ft_memalloc.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_memalloc.c -o CMakeFiles/RTv1.dir/libft/ft_memalloc.c.s
 
 CMakeFiles/RTv1.dir/libft/ft_memccpy.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/libft/ft_memccpy.c.o: ../libft/ft_memccpy.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/RTv1.dir/libft/ft_memccpy.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_memccpy.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/libft/ft_memccpy.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/RTv1.dir/libft/ft_memccpy.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_memccpy.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_memccpy.c
 
 CMakeFiles/RTv1.dir/libft/ft_memccpy.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/libft/ft_memccpy.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/libft/ft_memccpy.c > CMakeFiles/RTv1.dir/libft/ft_memccpy.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_memccpy.c > CMakeFiles/RTv1.dir/libft/ft_memccpy.c.i
 
 CMakeFiles/RTv1.dir/libft/ft_memccpy.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/libft/ft_memccpy.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/libft/ft_memccpy.c -o CMakeFiles/RTv1.dir/libft/ft_memccpy.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_memccpy.c -o CMakeFiles/RTv1.dir/libft/ft_memccpy.c.s
 
 CMakeFiles/RTv1.dir/libft/ft_memchr.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/libft/ft_memchr.c.o: ../libft/ft_memchr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/RTv1.dir/libft/ft_memchr.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_memchr.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/libft/ft_memchr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/RTv1.dir/libft/ft_memchr.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_memchr.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_memchr.c
 
 CMakeFiles/RTv1.dir/libft/ft_memchr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/libft/ft_memchr.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/libft/ft_memchr.c > CMakeFiles/RTv1.dir/libft/ft_memchr.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_memchr.c > CMakeFiles/RTv1.dir/libft/ft_memchr.c.i
 
 CMakeFiles/RTv1.dir/libft/ft_memchr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/libft/ft_memchr.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/libft/ft_memchr.c -o CMakeFiles/RTv1.dir/libft/ft_memchr.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_memchr.c -o CMakeFiles/RTv1.dir/libft/ft_memchr.c.s
 
 CMakeFiles/RTv1.dir/libft/ft_memcmp.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/libft/ft_memcmp.c.o: ../libft/ft_memcmp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/RTv1.dir/libft/ft_memcmp.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_memcmp.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/libft/ft_memcmp.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/RTv1.dir/libft/ft_memcmp.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_memcmp.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_memcmp.c
 
 CMakeFiles/RTv1.dir/libft/ft_memcmp.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/libft/ft_memcmp.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/libft/ft_memcmp.c > CMakeFiles/RTv1.dir/libft/ft_memcmp.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_memcmp.c > CMakeFiles/RTv1.dir/libft/ft_memcmp.c.i
 
 CMakeFiles/RTv1.dir/libft/ft_memcmp.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/libft/ft_memcmp.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/libft/ft_memcmp.c -o CMakeFiles/RTv1.dir/libft/ft_memcmp.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_memcmp.c -o CMakeFiles/RTv1.dir/libft/ft_memcmp.c.s
 
 CMakeFiles/RTv1.dir/libft/ft_memcpy.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/libft/ft_memcpy.c.o: ../libft/ft_memcpy.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/RTv1.dir/libft/ft_memcpy.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_memcpy.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/libft/ft_memcpy.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/RTv1.dir/libft/ft_memcpy.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_memcpy.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_memcpy.c
 
 CMakeFiles/RTv1.dir/libft/ft_memcpy.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/libft/ft_memcpy.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/libft/ft_memcpy.c > CMakeFiles/RTv1.dir/libft/ft_memcpy.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_memcpy.c > CMakeFiles/RTv1.dir/libft/ft_memcpy.c.i
 
 CMakeFiles/RTv1.dir/libft/ft_memcpy.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/libft/ft_memcpy.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/libft/ft_memcpy.c -o CMakeFiles/RTv1.dir/libft/ft_memcpy.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_memcpy.c -o CMakeFiles/RTv1.dir/libft/ft_memcpy.c.s
 
 CMakeFiles/RTv1.dir/libft/ft_memdel.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/libft/ft_memdel.c.o: ../libft/ft_memdel.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/RTv1.dir/libft/ft_memdel.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_memdel.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/libft/ft_memdel.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/RTv1.dir/libft/ft_memdel.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_memdel.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_memdel.c
 
 CMakeFiles/RTv1.dir/libft/ft_memdel.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/libft/ft_memdel.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/libft/ft_memdel.c > CMakeFiles/RTv1.dir/libft/ft_memdel.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_memdel.c > CMakeFiles/RTv1.dir/libft/ft_memdel.c.i
 
 CMakeFiles/RTv1.dir/libft/ft_memdel.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/libft/ft_memdel.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/libft/ft_memdel.c -o CMakeFiles/RTv1.dir/libft/ft_memdel.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_memdel.c -o CMakeFiles/RTv1.dir/libft/ft_memdel.c.s
 
 CMakeFiles/RTv1.dir/libft/ft_memmove.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/libft/ft_memmove.c.o: ../libft/ft_memmove.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/RTv1.dir/libft/ft_memmove.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_memmove.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/libft/ft_memmove.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/RTv1.dir/libft/ft_memmove.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_memmove.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_memmove.c
 
 CMakeFiles/RTv1.dir/libft/ft_memmove.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/libft/ft_memmove.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/libft/ft_memmove.c > CMakeFiles/RTv1.dir/libft/ft_memmove.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_memmove.c > CMakeFiles/RTv1.dir/libft/ft_memmove.c.i
 
 CMakeFiles/RTv1.dir/libft/ft_memmove.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/libft/ft_memmove.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/libft/ft_memmove.c -o CMakeFiles/RTv1.dir/libft/ft_memmove.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_memmove.c -o CMakeFiles/RTv1.dir/libft/ft_memmove.c.s
 
 CMakeFiles/RTv1.dir/libft/ft_memset.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/libft/ft_memset.c.o: ../libft/ft_memset.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/RTv1.dir/libft/ft_memset.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_memset.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/libft/ft_memset.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/RTv1.dir/libft/ft_memset.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_memset.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_memset.c
 
 CMakeFiles/RTv1.dir/libft/ft_memset.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/libft/ft_memset.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/libft/ft_memset.c > CMakeFiles/RTv1.dir/libft/ft_memset.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_memset.c > CMakeFiles/RTv1.dir/libft/ft_memset.c.i
 
 CMakeFiles/RTv1.dir/libft/ft_memset.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/libft/ft_memset.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/libft/ft_memset.c -o CMakeFiles/RTv1.dir/libft/ft_memset.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_memset.c -o CMakeFiles/RTv1.dir/libft/ft_memset.c.s
 
 CMakeFiles/RTv1.dir/libft/ft_putchar.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/libft/ft_putchar.c.o: ../libft/ft_putchar.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/RTv1.dir/libft/ft_putchar.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_putchar.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/libft/ft_putchar.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/RTv1.dir/libft/ft_putchar.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_putchar.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_putchar.c
 
 CMakeFiles/RTv1.dir/libft/ft_putchar.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/libft/ft_putchar.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/libft/ft_putchar.c > CMakeFiles/RTv1.dir/libft/ft_putchar.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_putchar.c > CMakeFiles/RTv1.dir/libft/ft_putchar.c.i
 
 CMakeFiles/RTv1.dir/libft/ft_putchar.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/libft/ft_putchar.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/libft/ft_putchar.c -o CMakeFiles/RTv1.dir/libft/ft_putchar.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_putchar.c -o CMakeFiles/RTv1.dir/libft/ft_putchar.c.s
 
 CMakeFiles/RTv1.dir/libft/ft_putchar_fd.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/libft/ft_putchar_fd.c.o: ../libft/ft_putchar_fd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/RTv1.dir/libft/ft_putchar_fd.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_putchar_fd.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/libft/ft_putchar_fd.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/RTv1.dir/libft/ft_putchar_fd.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_putchar_fd.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_putchar_fd.c
 
 CMakeFiles/RTv1.dir/libft/ft_putchar_fd.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/libft/ft_putchar_fd.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/libft/ft_putchar_fd.c > CMakeFiles/RTv1.dir/libft/ft_putchar_fd.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_putchar_fd.c > CMakeFiles/RTv1.dir/libft/ft_putchar_fd.c.i
 
 CMakeFiles/RTv1.dir/libft/ft_putchar_fd.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/libft/ft_putchar_fd.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/libft/ft_putchar_fd.c -o CMakeFiles/RTv1.dir/libft/ft_putchar_fd.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_putchar_fd.c -o CMakeFiles/RTv1.dir/libft/ft_putchar_fd.c.s
 
 CMakeFiles/RTv1.dir/libft/ft_putendl.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/libft/ft_putendl.c.o: ../libft/ft_putendl.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/RTv1.dir/libft/ft_putendl.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_putendl.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/libft/ft_putendl.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/RTv1.dir/libft/ft_putendl.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_putendl.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_putendl.c
 
 CMakeFiles/RTv1.dir/libft/ft_putendl.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/libft/ft_putendl.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/libft/ft_putendl.c > CMakeFiles/RTv1.dir/libft/ft_putendl.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_putendl.c > CMakeFiles/RTv1.dir/libft/ft_putendl.c.i
 
 CMakeFiles/RTv1.dir/libft/ft_putendl.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/libft/ft_putendl.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/libft/ft_putendl.c -o CMakeFiles/RTv1.dir/libft/ft_putendl.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_putendl.c -o CMakeFiles/RTv1.dir/libft/ft_putendl.c.s
 
 CMakeFiles/RTv1.dir/libft/ft_putendl_fd.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/libft/ft_putendl_fd.c.o: ../libft/ft_putendl_fd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/RTv1.dir/libft/ft_putendl_fd.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_putendl_fd.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/libft/ft_putendl_fd.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/RTv1.dir/libft/ft_putendl_fd.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_putendl_fd.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_putendl_fd.c
 
 CMakeFiles/RTv1.dir/libft/ft_putendl_fd.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/libft/ft_putendl_fd.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/libft/ft_putendl_fd.c > CMakeFiles/RTv1.dir/libft/ft_putendl_fd.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_putendl_fd.c > CMakeFiles/RTv1.dir/libft/ft_putendl_fd.c.i
 
 CMakeFiles/RTv1.dir/libft/ft_putendl_fd.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/libft/ft_putendl_fd.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/libft/ft_putendl_fd.c -o CMakeFiles/RTv1.dir/libft/ft_putendl_fd.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_putendl_fd.c -o CMakeFiles/RTv1.dir/libft/ft_putendl_fd.c.s
 
 CMakeFiles/RTv1.dir/libft/ft_putnbr.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/libft/ft_putnbr.c.o: ../libft/ft_putnbr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/RTv1.dir/libft/ft_putnbr.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_putnbr.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/libft/ft_putnbr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/RTv1.dir/libft/ft_putnbr.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_putnbr.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_putnbr.c
 
 CMakeFiles/RTv1.dir/libft/ft_putnbr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/libft/ft_putnbr.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/libft/ft_putnbr.c > CMakeFiles/RTv1.dir/libft/ft_putnbr.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_putnbr.c > CMakeFiles/RTv1.dir/libft/ft_putnbr.c.i
 
 CMakeFiles/RTv1.dir/libft/ft_putnbr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/libft/ft_putnbr.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/libft/ft_putnbr.c -o CMakeFiles/RTv1.dir/libft/ft_putnbr.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_putnbr.c -o CMakeFiles/RTv1.dir/libft/ft_putnbr.c.s
 
 CMakeFiles/RTv1.dir/libft/ft_putnbr_fd.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/libft/ft_putnbr_fd.c.o: ../libft/ft_putnbr_fd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/RTv1.dir/libft/ft_putnbr_fd.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_putnbr_fd.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/libft/ft_putnbr_fd.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/RTv1.dir/libft/ft_putnbr_fd.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_putnbr_fd.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_putnbr_fd.c
 
 CMakeFiles/RTv1.dir/libft/ft_putnbr_fd.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/libft/ft_putnbr_fd.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/libft/ft_putnbr_fd.c > CMakeFiles/RTv1.dir/libft/ft_putnbr_fd.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_putnbr_fd.c > CMakeFiles/RTv1.dir/libft/ft_putnbr_fd.c.i
 
 CMakeFiles/RTv1.dir/libft/ft_putnbr_fd.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/libft/ft_putnbr_fd.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/libft/ft_putnbr_fd.c -o CMakeFiles/RTv1.dir/libft/ft_putnbr_fd.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_putnbr_fd.c -o CMakeFiles/RTv1.dir/libft/ft_putnbr_fd.c.s
 
 CMakeFiles/RTv1.dir/libft/ft_putstr.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/libft/ft_putstr.c.o: ../libft/ft_putstr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/RTv1.dir/libft/ft_putstr.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_putstr.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/libft/ft_putstr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/RTv1.dir/libft/ft_putstr.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_putstr.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_putstr.c
 
 CMakeFiles/RTv1.dir/libft/ft_putstr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/libft/ft_putstr.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/libft/ft_putstr.c > CMakeFiles/RTv1.dir/libft/ft_putstr.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_putstr.c > CMakeFiles/RTv1.dir/libft/ft_putstr.c.i
 
 CMakeFiles/RTv1.dir/libft/ft_putstr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/libft/ft_putstr.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/libft/ft_putstr.c -o CMakeFiles/RTv1.dir/libft/ft_putstr.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_putstr.c -o CMakeFiles/RTv1.dir/libft/ft_putstr.c.s
 
 CMakeFiles/RTv1.dir/libft/ft_putstr_fd.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/libft/ft_putstr_fd.c.o: ../libft/ft_putstr_fd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/RTv1.dir/libft/ft_putstr_fd.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_putstr_fd.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/libft/ft_putstr_fd.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/RTv1.dir/libft/ft_putstr_fd.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_putstr_fd.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_putstr_fd.c
 
 CMakeFiles/RTv1.dir/libft/ft_putstr_fd.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/libft/ft_putstr_fd.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/libft/ft_putstr_fd.c > CMakeFiles/RTv1.dir/libft/ft_putstr_fd.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_putstr_fd.c > CMakeFiles/RTv1.dir/libft/ft_putstr_fd.c.i
 
 CMakeFiles/RTv1.dir/libft/ft_putstr_fd.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/libft/ft_putstr_fd.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/libft/ft_putstr_fd.c -o CMakeFiles/RTv1.dir/libft/ft_putstr_fd.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_putstr_fd.c -o CMakeFiles/RTv1.dir/libft/ft_putstr_fd.c.s
 
 CMakeFiles/RTv1.dir/libft/ft_strcat.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/libft/ft_strcat.c.o: ../libft/ft_strcat.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/RTv1.dir/libft/ft_strcat.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_strcat.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/libft/ft_strcat.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/RTv1.dir/libft/ft_strcat.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_strcat.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_strcat.c
 
 CMakeFiles/RTv1.dir/libft/ft_strcat.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/libft/ft_strcat.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/libft/ft_strcat.c > CMakeFiles/RTv1.dir/libft/ft_strcat.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_strcat.c > CMakeFiles/RTv1.dir/libft/ft_strcat.c.i
 
 CMakeFiles/RTv1.dir/libft/ft_strcat.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/libft/ft_strcat.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/libft/ft_strcat.c -o CMakeFiles/RTv1.dir/libft/ft_strcat.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_strcat.c -o CMakeFiles/RTv1.dir/libft/ft_strcat.c.s
 
 CMakeFiles/RTv1.dir/libft/ft_strchr.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/libft/ft_strchr.c.o: ../libft/ft_strchr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/RTv1.dir/libft/ft_strchr.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_strchr.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/libft/ft_strchr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/RTv1.dir/libft/ft_strchr.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_strchr.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_strchr.c
 
 CMakeFiles/RTv1.dir/libft/ft_strchr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/libft/ft_strchr.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/libft/ft_strchr.c > CMakeFiles/RTv1.dir/libft/ft_strchr.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_strchr.c > CMakeFiles/RTv1.dir/libft/ft_strchr.c.i
 
 CMakeFiles/RTv1.dir/libft/ft_strchr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/libft/ft_strchr.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/libft/ft_strchr.c -o CMakeFiles/RTv1.dir/libft/ft_strchr.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_strchr.c -o CMakeFiles/RTv1.dir/libft/ft_strchr.c.s
 
 CMakeFiles/RTv1.dir/libft/ft_strclr.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/libft/ft_strclr.c.o: ../libft/ft_strclr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/RTv1.dir/libft/ft_strclr.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_strclr.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/libft/ft_strclr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/RTv1.dir/libft/ft_strclr.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_strclr.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_strclr.c
 
 CMakeFiles/RTv1.dir/libft/ft_strclr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/libft/ft_strclr.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/libft/ft_strclr.c > CMakeFiles/RTv1.dir/libft/ft_strclr.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_strclr.c > CMakeFiles/RTv1.dir/libft/ft_strclr.c.i
 
 CMakeFiles/RTv1.dir/libft/ft_strclr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/libft/ft_strclr.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/libft/ft_strclr.c -o CMakeFiles/RTv1.dir/libft/ft_strclr.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_strclr.c -o CMakeFiles/RTv1.dir/libft/ft_strclr.c.s
 
 CMakeFiles/RTv1.dir/libft/ft_strcmp.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/libft/ft_strcmp.c.o: ../libft/ft_strcmp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/RTv1.dir/libft/ft_strcmp.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_strcmp.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/libft/ft_strcmp.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/RTv1.dir/libft/ft_strcmp.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_strcmp.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_strcmp.c
 
 CMakeFiles/RTv1.dir/libft/ft_strcmp.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/libft/ft_strcmp.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/libft/ft_strcmp.c > CMakeFiles/RTv1.dir/libft/ft_strcmp.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_strcmp.c > CMakeFiles/RTv1.dir/libft/ft_strcmp.c.i
 
 CMakeFiles/RTv1.dir/libft/ft_strcmp.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/libft/ft_strcmp.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/libft/ft_strcmp.c -o CMakeFiles/RTv1.dir/libft/ft_strcmp.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_strcmp.c -o CMakeFiles/RTv1.dir/libft/ft_strcmp.c.s
 
 CMakeFiles/RTv1.dir/libft/ft_strcpy.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/libft/ft_strcpy.c.o: ../libft/ft_strcpy.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/RTv1.dir/libft/ft_strcpy.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_strcpy.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/libft/ft_strcpy.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/RTv1.dir/libft/ft_strcpy.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_strcpy.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_strcpy.c
 
 CMakeFiles/RTv1.dir/libft/ft_strcpy.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/libft/ft_strcpy.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/libft/ft_strcpy.c > CMakeFiles/RTv1.dir/libft/ft_strcpy.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_strcpy.c > CMakeFiles/RTv1.dir/libft/ft_strcpy.c.i
 
 CMakeFiles/RTv1.dir/libft/ft_strcpy.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/libft/ft_strcpy.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/libft/ft_strcpy.c -o CMakeFiles/RTv1.dir/libft/ft_strcpy.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_strcpy.c -o CMakeFiles/RTv1.dir/libft/ft_strcpy.c.s
 
 CMakeFiles/RTv1.dir/libft/ft_strdel.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/libft/ft_strdel.c.o: ../libft/ft_strdel.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/RTv1.dir/libft/ft_strdel.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_strdel.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/libft/ft_strdel.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/RTv1.dir/libft/ft_strdel.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_strdel.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_strdel.c
 
 CMakeFiles/RTv1.dir/libft/ft_strdel.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/libft/ft_strdel.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/libft/ft_strdel.c > CMakeFiles/RTv1.dir/libft/ft_strdel.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_strdel.c > CMakeFiles/RTv1.dir/libft/ft_strdel.c.i
 
 CMakeFiles/RTv1.dir/libft/ft_strdel.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/libft/ft_strdel.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/libft/ft_strdel.c -o CMakeFiles/RTv1.dir/libft/ft_strdel.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_strdel.c -o CMakeFiles/RTv1.dir/libft/ft_strdel.c.s
 
 CMakeFiles/RTv1.dir/libft/ft_strdup.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/libft/ft_strdup.c.o: ../libft/ft_strdup.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/RTv1.dir/libft/ft_strdup.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_strdup.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/libft/ft_strdup.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/RTv1.dir/libft/ft_strdup.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_strdup.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_strdup.c
 
 CMakeFiles/RTv1.dir/libft/ft_strdup.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/libft/ft_strdup.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/libft/ft_strdup.c > CMakeFiles/RTv1.dir/libft/ft_strdup.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_strdup.c > CMakeFiles/RTv1.dir/libft/ft_strdup.c.i
 
 CMakeFiles/RTv1.dir/libft/ft_strdup.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/libft/ft_strdup.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/libft/ft_strdup.c -o CMakeFiles/RTv1.dir/libft/ft_strdup.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_strdup.c -o CMakeFiles/RTv1.dir/libft/ft_strdup.c.s
 
 CMakeFiles/RTv1.dir/libft/ft_strequ.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/libft/ft_strequ.c.o: ../libft/ft_strequ.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/RTv1.dir/libft/ft_strequ.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_strequ.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/libft/ft_strequ.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/RTv1.dir/libft/ft_strequ.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_strequ.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_strequ.c
 
 CMakeFiles/RTv1.dir/libft/ft_strequ.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/libft/ft_strequ.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/libft/ft_strequ.c > CMakeFiles/RTv1.dir/libft/ft_strequ.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_strequ.c > CMakeFiles/RTv1.dir/libft/ft_strequ.c.i
 
 CMakeFiles/RTv1.dir/libft/ft_strequ.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/libft/ft_strequ.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/libft/ft_strequ.c -o CMakeFiles/RTv1.dir/libft/ft_strequ.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_strequ.c -o CMakeFiles/RTv1.dir/libft/ft_strequ.c.s
 
 CMakeFiles/RTv1.dir/libft/ft_striter.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/libft/ft_striter.c.o: ../libft/ft_striter.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/RTv1.dir/libft/ft_striter.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_striter.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/libft/ft_striter.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/RTv1.dir/libft/ft_striter.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_striter.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_striter.c
 
 CMakeFiles/RTv1.dir/libft/ft_striter.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/libft/ft_striter.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/libft/ft_striter.c > CMakeFiles/RTv1.dir/libft/ft_striter.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_striter.c > CMakeFiles/RTv1.dir/libft/ft_striter.c.i
 
 CMakeFiles/RTv1.dir/libft/ft_striter.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/libft/ft_striter.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/libft/ft_striter.c -o CMakeFiles/RTv1.dir/libft/ft_striter.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_striter.c -o CMakeFiles/RTv1.dir/libft/ft_striter.c.s
 
 CMakeFiles/RTv1.dir/libft/ft_striteri.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/libft/ft_striteri.c.o: ../libft/ft_striteri.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/RTv1.dir/libft/ft_striteri.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_striteri.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/libft/ft_striteri.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/RTv1.dir/libft/ft_striteri.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_striteri.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_striteri.c
 
 CMakeFiles/RTv1.dir/libft/ft_striteri.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/libft/ft_striteri.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/libft/ft_striteri.c > CMakeFiles/RTv1.dir/libft/ft_striteri.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_striteri.c > CMakeFiles/RTv1.dir/libft/ft_striteri.c.i
 
 CMakeFiles/RTv1.dir/libft/ft_striteri.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/libft/ft_striteri.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/libft/ft_striteri.c -o CMakeFiles/RTv1.dir/libft/ft_striteri.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_striteri.c -o CMakeFiles/RTv1.dir/libft/ft_striteri.c.s
 
 CMakeFiles/RTv1.dir/libft/ft_strjoin.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/libft/ft_strjoin.c.o: ../libft/ft_strjoin.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/RTv1.dir/libft/ft_strjoin.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_strjoin.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/libft/ft_strjoin.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/RTv1.dir/libft/ft_strjoin.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_strjoin.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_strjoin.c
 
 CMakeFiles/RTv1.dir/libft/ft_strjoin.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/libft/ft_strjoin.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/libft/ft_strjoin.c > CMakeFiles/RTv1.dir/libft/ft_strjoin.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_strjoin.c > CMakeFiles/RTv1.dir/libft/ft_strjoin.c.i
 
 CMakeFiles/RTv1.dir/libft/ft_strjoin.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/libft/ft_strjoin.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/libft/ft_strjoin.c -o CMakeFiles/RTv1.dir/libft/ft_strjoin.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_strjoin.c -o CMakeFiles/RTv1.dir/libft/ft_strjoin.c.s
 
 CMakeFiles/RTv1.dir/libft/ft_strlcat.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/libft/ft_strlcat.c.o: ../libft/ft_strlcat.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/RTv1.dir/libft/ft_strlcat.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_strlcat.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/libft/ft_strlcat.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/RTv1.dir/libft/ft_strlcat.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_strlcat.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_strlcat.c
 
 CMakeFiles/RTv1.dir/libft/ft_strlcat.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/libft/ft_strlcat.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/libft/ft_strlcat.c > CMakeFiles/RTv1.dir/libft/ft_strlcat.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_strlcat.c > CMakeFiles/RTv1.dir/libft/ft_strlcat.c.i
 
 CMakeFiles/RTv1.dir/libft/ft_strlcat.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/libft/ft_strlcat.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/libft/ft_strlcat.c -o CMakeFiles/RTv1.dir/libft/ft_strlcat.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_strlcat.c -o CMakeFiles/RTv1.dir/libft/ft_strlcat.c.s
 
 CMakeFiles/RTv1.dir/libft/ft_strlen.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/libft/ft_strlen.c.o: ../libft/ft_strlen.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/RTv1.dir/libft/ft_strlen.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_strlen.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/libft/ft_strlen.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/RTv1.dir/libft/ft_strlen.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_strlen.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_strlen.c
 
 CMakeFiles/RTv1.dir/libft/ft_strlen.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/libft/ft_strlen.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/libft/ft_strlen.c > CMakeFiles/RTv1.dir/libft/ft_strlen.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_strlen.c > CMakeFiles/RTv1.dir/libft/ft_strlen.c.i
 
 CMakeFiles/RTv1.dir/libft/ft_strlen.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/libft/ft_strlen.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/libft/ft_strlen.c -o CMakeFiles/RTv1.dir/libft/ft_strlen.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_strlen.c -o CMakeFiles/RTv1.dir/libft/ft_strlen.c.s
 
 CMakeFiles/RTv1.dir/libft/ft_strmap.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/libft/ft_strmap.c.o: ../libft/ft_strmap.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/RTv1.dir/libft/ft_strmap.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_strmap.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/libft/ft_strmap.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/RTv1.dir/libft/ft_strmap.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_strmap.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_strmap.c
 
 CMakeFiles/RTv1.dir/libft/ft_strmap.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/libft/ft_strmap.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/libft/ft_strmap.c > CMakeFiles/RTv1.dir/libft/ft_strmap.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_strmap.c > CMakeFiles/RTv1.dir/libft/ft_strmap.c.i
 
 CMakeFiles/RTv1.dir/libft/ft_strmap.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/libft/ft_strmap.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/libft/ft_strmap.c -o CMakeFiles/RTv1.dir/libft/ft_strmap.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_strmap.c -o CMakeFiles/RTv1.dir/libft/ft_strmap.c.s
 
 CMakeFiles/RTv1.dir/libft/ft_strmapi.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/libft/ft_strmapi.c.o: ../libft/ft_strmapi.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/RTv1.dir/libft/ft_strmapi.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_strmapi.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/libft/ft_strmapi.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/RTv1.dir/libft/ft_strmapi.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_strmapi.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_strmapi.c
 
 CMakeFiles/RTv1.dir/libft/ft_strmapi.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/libft/ft_strmapi.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/libft/ft_strmapi.c > CMakeFiles/RTv1.dir/libft/ft_strmapi.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_strmapi.c > CMakeFiles/RTv1.dir/libft/ft_strmapi.c.i
 
 CMakeFiles/RTv1.dir/libft/ft_strmapi.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/libft/ft_strmapi.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/libft/ft_strmapi.c -o CMakeFiles/RTv1.dir/libft/ft_strmapi.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_strmapi.c -o CMakeFiles/RTv1.dir/libft/ft_strmapi.c.s
 
 CMakeFiles/RTv1.dir/libft/ft_strncat.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/libft/ft_strncat.c.o: ../libft/ft_strncat.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/RTv1.dir/libft/ft_strncat.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_strncat.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/libft/ft_strncat.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/RTv1.dir/libft/ft_strncat.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_strncat.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_strncat.c
 
 CMakeFiles/RTv1.dir/libft/ft_strncat.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/libft/ft_strncat.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/libft/ft_strncat.c > CMakeFiles/RTv1.dir/libft/ft_strncat.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_strncat.c > CMakeFiles/RTv1.dir/libft/ft_strncat.c.i
 
 CMakeFiles/RTv1.dir/libft/ft_strncat.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/libft/ft_strncat.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/libft/ft_strncat.c -o CMakeFiles/RTv1.dir/libft/ft_strncat.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_strncat.c -o CMakeFiles/RTv1.dir/libft/ft_strncat.c.s
 
 CMakeFiles/RTv1.dir/libft/ft_strncmp.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/libft/ft_strncmp.c.o: ../libft/ft_strncmp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/RTv1.dir/libft/ft_strncmp.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_strncmp.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/libft/ft_strncmp.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/RTv1.dir/libft/ft_strncmp.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_strncmp.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_strncmp.c
 
 CMakeFiles/RTv1.dir/libft/ft_strncmp.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/libft/ft_strncmp.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/libft/ft_strncmp.c > CMakeFiles/RTv1.dir/libft/ft_strncmp.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_strncmp.c > CMakeFiles/RTv1.dir/libft/ft_strncmp.c.i
 
 CMakeFiles/RTv1.dir/libft/ft_strncmp.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/libft/ft_strncmp.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/libft/ft_strncmp.c -o CMakeFiles/RTv1.dir/libft/ft_strncmp.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_strncmp.c -o CMakeFiles/RTv1.dir/libft/ft_strncmp.c.s
 
 CMakeFiles/RTv1.dir/libft/ft_strncpy.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/libft/ft_strncpy.c.o: ../libft/ft_strncpy.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/RTv1.dir/libft/ft_strncpy.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_strncpy.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/libft/ft_strncpy.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/RTv1.dir/libft/ft_strncpy.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_strncpy.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_strncpy.c
 
 CMakeFiles/RTv1.dir/libft/ft_strncpy.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/libft/ft_strncpy.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/libft/ft_strncpy.c > CMakeFiles/RTv1.dir/libft/ft_strncpy.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_strncpy.c > CMakeFiles/RTv1.dir/libft/ft_strncpy.c.i
 
 CMakeFiles/RTv1.dir/libft/ft_strncpy.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/libft/ft_strncpy.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/libft/ft_strncpy.c -o CMakeFiles/RTv1.dir/libft/ft_strncpy.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_strncpy.c -o CMakeFiles/RTv1.dir/libft/ft_strncpy.c.s
 
 CMakeFiles/RTv1.dir/libft/ft_strnequ.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/libft/ft_strnequ.c.o: ../libft/ft_strnequ.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/RTv1.dir/libft/ft_strnequ.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_strnequ.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/libft/ft_strnequ.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/RTv1.dir/libft/ft_strnequ.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_strnequ.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_strnequ.c
 
 CMakeFiles/RTv1.dir/libft/ft_strnequ.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/libft/ft_strnequ.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/libft/ft_strnequ.c > CMakeFiles/RTv1.dir/libft/ft_strnequ.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_strnequ.c > CMakeFiles/RTv1.dir/libft/ft_strnequ.c.i
 
 CMakeFiles/RTv1.dir/libft/ft_strnequ.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/libft/ft_strnequ.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/libft/ft_strnequ.c -o CMakeFiles/RTv1.dir/libft/ft_strnequ.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_strnequ.c -o CMakeFiles/RTv1.dir/libft/ft_strnequ.c.s
 
 CMakeFiles/RTv1.dir/libft/ft_strnew.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/libft/ft_strnew.c.o: ../libft/ft_strnew.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/RTv1.dir/libft/ft_strnew.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_strnew.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/libft/ft_strnew.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/RTv1.dir/libft/ft_strnew.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_strnew.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_strnew.c
 
 CMakeFiles/RTv1.dir/libft/ft_strnew.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/libft/ft_strnew.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/libft/ft_strnew.c > CMakeFiles/RTv1.dir/libft/ft_strnew.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_strnew.c > CMakeFiles/RTv1.dir/libft/ft_strnew.c.i
 
 CMakeFiles/RTv1.dir/libft/ft_strnew.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/libft/ft_strnew.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/libft/ft_strnew.c -o CMakeFiles/RTv1.dir/libft/ft_strnew.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_strnew.c -o CMakeFiles/RTv1.dir/libft/ft_strnew.c.s
 
 CMakeFiles/RTv1.dir/libft/ft_strnstr.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/libft/ft_strnstr.c.o: ../libft/ft_strnstr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/RTv1.dir/libft/ft_strnstr.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_strnstr.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/libft/ft_strnstr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/RTv1.dir/libft/ft_strnstr.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_strnstr.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_strnstr.c
 
 CMakeFiles/RTv1.dir/libft/ft_strnstr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/libft/ft_strnstr.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/libft/ft_strnstr.c > CMakeFiles/RTv1.dir/libft/ft_strnstr.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_strnstr.c > CMakeFiles/RTv1.dir/libft/ft_strnstr.c.i
 
 CMakeFiles/RTv1.dir/libft/ft_strnstr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/libft/ft_strnstr.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/libft/ft_strnstr.c -o CMakeFiles/RTv1.dir/libft/ft_strnstr.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_strnstr.c -o CMakeFiles/RTv1.dir/libft/ft_strnstr.c.s
 
 CMakeFiles/RTv1.dir/libft/ft_strrchr.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/libft/ft_strrchr.c.o: ../libft/ft_strrchr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/RTv1.dir/libft/ft_strrchr.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_strrchr.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/libft/ft_strrchr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/RTv1.dir/libft/ft_strrchr.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_strrchr.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_strrchr.c
 
 CMakeFiles/RTv1.dir/libft/ft_strrchr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/libft/ft_strrchr.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/libft/ft_strrchr.c > CMakeFiles/RTv1.dir/libft/ft_strrchr.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_strrchr.c > CMakeFiles/RTv1.dir/libft/ft_strrchr.c.i
 
 CMakeFiles/RTv1.dir/libft/ft_strrchr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/libft/ft_strrchr.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/libft/ft_strrchr.c -o CMakeFiles/RTv1.dir/libft/ft_strrchr.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_strrchr.c -o CMakeFiles/RTv1.dir/libft/ft_strrchr.c.s
 
 CMakeFiles/RTv1.dir/libft/ft_strrev.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/libft/ft_strrev.c.o: ../libft/ft_strrev.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/RTv1.dir/libft/ft_strrev.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_strrev.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/libft/ft_strrev.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/RTv1.dir/libft/ft_strrev.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_strrev.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_strrev.c
 
 CMakeFiles/RTv1.dir/libft/ft_strrev.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/libft/ft_strrev.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/libft/ft_strrev.c > CMakeFiles/RTv1.dir/libft/ft_strrev.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_strrev.c > CMakeFiles/RTv1.dir/libft/ft_strrev.c.i
 
 CMakeFiles/RTv1.dir/libft/ft_strrev.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/libft/ft_strrev.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/libft/ft_strrev.c -o CMakeFiles/RTv1.dir/libft/ft_strrev.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_strrev.c -o CMakeFiles/RTv1.dir/libft/ft_strrev.c.s
 
 CMakeFiles/RTv1.dir/libft/ft_strsplit.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/libft/ft_strsplit.c.o: ../libft/ft_strsplit.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/RTv1.dir/libft/ft_strsplit.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_strsplit.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/libft/ft_strsplit.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/RTv1.dir/libft/ft_strsplit.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_strsplit.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_strsplit.c
 
 CMakeFiles/RTv1.dir/libft/ft_strsplit.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/libft/ft_strsplit.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/libft/ft_strsplit.c > CMakeFiles/RTv1.dir/libft/ft_strsplit.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_strsplit.c > CMakeFiles/RTv1.dir/libft/ft_strsplit.c.i
 
 CMakeFiles/RTv1.dir/libft/ft_strsplit.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/libft/ft_strsplit.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/libft/ft_strsplit.c -o CMakeFiles/RTv1.dir/libft/ft_strsplit.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_strsplit.c -o CMakeFiles/RTv1.dir/libft/ft_strsplit.c.s
 
 CMakeFiles/RTv1.dir/libft/ft_strstr.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/libft/ft_strstr.c.o: ../libft/ft_strstr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/RTv1.dir/libft/ft_strstr.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_strstr.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/libft/ft_strstr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/RTv1.dir/libft/ft_strstr.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_strstr.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_strstr.c
 
 CMakeFiles/RTv1.dir/libft/ft_strstr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/libft/ft_strstr.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/libft/ft_strstr.c > CMakeFiles/RTv1.dir/libft/ft_strstr.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_strstr.c > CMakeFiles/RTv1.dir/libft/ft_strstr.c.i
 
 CMakeFiles/RTv1.dir/libft/ft_strstr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/libft/ft_strstr.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/libft/ft_strstr.c -o CMakeFiles/RTv1.dir/libft/ft_strstr.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_strstr.c -o CMakeFiles/RTv1.dir/libft/ft_strstr.c.s
 
 CMakeFiles/RTv1.dir/libft/ft_strsub.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/libft/ft_strsub.c.o: ../libft/ft_strsub.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/RTv1.dir/libft/ft_strsub.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_strsub.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/libft/ft_strsub.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/RTv1.dir/libft/ft_strsub.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_strsub.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_strsub.c
 
 CMakeFiles/RTv1.dir/libft/ft_strsub.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/libft/ft_strsub.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/libft/ft_strsub.c > CMakeFiles/RTv1.dir/libft/ft_strsub.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_strsub.c > CMakeFiles/RTv1.dir/libft/ft_strsub.c.i
 
 CMakeFiles/RTv1.dir/libft/ft_strsub.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/libft/ft_strsub.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/libft/ft_strsub.c -o CMakeFiles/RTv1.dir/libft/ft_strsub.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_strsub.c -o CMakeFiles/RTv1.dir/libft/ft_strsub.c.s
 
 CMakeFiles/RTv1.dir/libft/ft_strtrim.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/libft/ft_strtrim.c.o: ../libft/ft_strtrim.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/RTv1.dir/libft/ft_strtrim.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_strtrim.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/libft/ft_strtrim.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/RTv1.dir/libft/ft_strtrim.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_strtrim.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_strtrim.c
 
 CMakeFiles/RTv1.dir/libft/ft_strtrim.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/libft/ft_strtrim.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/libft/ft_strtrim.c > CMakeFiles/RTv1.dir/libft/ft_strtrim.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_strtrim.c > CMakeFiles/RTv1.dir/libft/ft_strtrim.c.i
 
 CMakeFiles/RTv1.dir/libft/ft_strtrim.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/libft/ft_strtrim.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/libft/ft_strtrim.c -o CMakeFiles/RTv1.dir/libft/ft_strtrim.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_strtrim.c -o CMakeFiles/RTv1.dir/libft/ft_strtrim.c.s
 
 CMakeFiles/RTv1.dir/libft/ft_tolower.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/libft/ft_tolower.c.o: ../libft/ft_tolower.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/RTv1.dir/libft/ft_tolower.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_tolower.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/libft/ft_tolower.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/RTv1.dir/libft/ft_tolower.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_tolower.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_tolower.c
 
 CMakeFiles/RTv1.dir/libft/ft_tolower.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/libft/ft_tolower.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/libft/ft_tolower.c > CMakeFiles/RTv1.dir/libft/ft_tolower.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_tolower.c > CMakeFiles/RTv1.dir/libft/ft_tolower.c.i
 
 CMakeFiles/RTv1.dir/libft/ft_tolower.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/libft/ft_tolower.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/libft/ft_tolower.c -o CMakeFiles/RTv1.dir/libft/ft_tolower.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_tolower.c -o CMakeFiles/RTv1.dir/libft/ft_tolower.c.s
 
 CMakeFiles/RTv1.dir/libft/ft_toupper.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/libft/ft_toupper.c.o: ../libft/ft_toupper.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/RTv1.dir/libft/ft_toupper.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_toupper.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/libft/ft_toupper.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/RTv1.dir/libft/ft_toupper.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_toupper.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_toupper.c
 
 CMakeFiles/RTv1.dir/libft/ft_toupper.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/libft/ft_toupper.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/libft/ft_toupper.c > CMakeFiles/RTv1.dir/libft/ft_toupper.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_toupper.c > CMakeFiles/RTv1.dir/libft/ft_toupper.c.i
 
 CMakeFiles/RTv1.dir/libft/ft_toupper.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/libft/ft_toupper.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/libft/ft_toupper.c -o CMakeFiles/RTv1.dir/libft/ft_toupper.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_toupper.c -o CMakeFiles/RTv1.dir/libft/ft_toupper.c.s
 
 CMakeFiles/RTv1.dir/libft/get_next_line.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/libft/get_next_line.c.o: ../libft/get_next_line.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/RTv1.dir/libft/get_next_line.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/get_next_line.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/libft/get_next_line.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/RTv1.dir/libft/get_next_line.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/get_next_line.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/libft/get_next_line.c
 
 CMakeFiles/RTv1.dir/libft/get_next_line.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/libft/get_next_line.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/libft/get_next_line.c > CMakeFiles/RTv1.dir/libft/get_next_line.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/libft/get_next_line.c > CMakeFiles/RTv1.dir/libft/get_next_line.c.i
 
 CMakeFiles/RTv1.dir/libft/get_next_line.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/libft/get_next_line.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/libft/get_next_line.c -o CMakeFiles/RTv1.dir/libft/get_next_line.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/libft/get_next_line.c -o CMakeFiles/RTv1.dir/libft/get_next_line.c.s
 
 CMakeFiles/RTv1.dir/main.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/main.c.o: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/RTv1.dir/main.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/main.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/RTv1.dir/main.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/main.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/main.c
 
 CMakeFiles/RTv1.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/main.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/main.c > CMakeFiles/RTv1.dir/main.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/main.c > CMakeFiles/RTv1.dir/main.c.i
 
 CMakeFiles/RTv1.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/main.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/main.c -o CMakeFiles/RTv1.dir/main.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/main.c -o CMakeFiles/RTv1.dir/main.c.s
 
 CMakeFiles/RTv1.dir/extra.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/extra.c.o: ../extra.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/RTv1.dir/extra.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/extra.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/extra.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/RTv1.dir/extra.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/extra.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/extra.c
 
 CMakeFiles/RTv1.dir/extra.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/extra.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/extra.c > CMakeFiles/RTv1.dir/extra.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/extra.c > CMakeFiles/RTv1.dir/extra.c.i
 
 CMakeFiles/RTv1.dir/extra.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/extra.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/extra.c -o CMakeFiles/RTv1.dir/extra.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/extra.c -o CMakeFiles/RTv1.dir/extra.c.s
 
 CMakeFiles/RTv1.dir/draw.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/draw.c.o: ../draw.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/RTv1.dir/draw.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/draw.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/draw.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/RTv1.dir/draw.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/draw.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/draw.c
 
 CMakeFiles/RTv1.dir/draw.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/draw.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/draw.c > CMakeFiles/RTv1.dir/draw.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/draw.c > CMakeFiles/RTv1.dir/draw.c.i
 
 CMakeFiles/RTv1.dir/draw.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/draw.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/draw.c -o CMakeFiles/RTv1.dir/draw.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/draw.c -o CMakeFiles/RTv1.dir/draw.c.s
 
 CMakeFiles/RTv1.dir/lighting.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/lighting.c.o: ../lighting.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/RTv1.dir/lighting.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/lighting.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/lighting.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/RTv1.dir/lighting.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/lighting.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/lighting.c
 
 CMakeFiles/RTv1.dir/lighting.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/lighting.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/lighting.c > CMakeFiles/RTv1.dir/lighting.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/lighting.c > CMakeFiles/RTv1.dir/lighting.c.i
 
 CMakeFiles/RTv1.dir/lighting.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/lighting.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/lighting.c -o CMakeFiles/RTv1.dir/lighting.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/lighting.c -o CMakeFiles/RTv1.dir/lighting.c.s
 
 CMakeFiles/RTv1.dir/operations_v.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/operations_v.c.o: ../operations_v.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/RTv1.dir/operations_v.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/operations_v.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/operations_v.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/RTv1.dir/operations_v.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/operations_v.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/operations_v.c
 
 CMakeFiles/RTv1.dir/operations_v.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/operations_v.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/operations_v.c > CMakeFiles/RTv1.dir/operations_v.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/operations_v.c > CMakeFiles/RTv1.dir/operations_v.c.i
 
 CMakeFiles/RTv1.dir/operations_v.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/operations_v.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/operations_v.c -o CMakeFiles/RTv1.dir/operations_v.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/operations_v.c -o CMakeFiles/RTv1.dir/operations_v.c.s
 
 CMakeFiles/RTv1.dir/color.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/color.c.o: ../color.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/RTv1.dir/color.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/color.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/color.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/RTv1.dir/color.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/color.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/color.c
 
 CMakeFiles/RTv1.dir/color.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/color.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/color.c > CMakeFiles/RTv1.dir/color.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/color.c > CMakeFiles/RTv1.dir/color.c.i
 
 CMakeFiles/RTv1.dir/color.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/color.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/color.c -o CMakeFiles/RTv1.dir/color.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/color.c -o CMakeFiles/RTv1.dir/color.c.s
 
 CMakeFiles/RTv1.dir/objects_intersect.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/objects_intersect.c.o: ../objects_intersect.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/RTv1.dir/objects_intersect.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/objects_intersect.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/objects_intersect.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/RTv1.dir/objects_intersect.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/objects_intersect.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/objects_intersect.c
 
 CMakeFiles/RTv1.dir/objects_intersect.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/objects_intersect.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/objects_intersect.c > CMakeFiles/RTv1.dir/objects_intersect.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/objects_intersect.c > CMakeFiles/RTv1.dir/objects_intersect.c.i
 
 CMakeFiles/RTv1.dir/objects_intersect.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/objects_intersect.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/objects_intersect.c -o CMakeFiles/RTv1.dir/objects_intersect.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/objects_intersect.c -o CMakeFiles/RTv1.dir/objects_intersect.c.s
 
 CMakeFiles/RTv1.dir/objects_fill.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/objects_fill.c.o: ../objects_fill.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/RTv1.dir/objects_fill.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/objects_fill.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/objects_fill.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/RTv1.dir/objects_fill.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/objects_fill.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/objects_fill.c
 
 CMakeFiles/RTv1.dir/objects_fill.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/objects_fill.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/objects_fill.c > CMakeFiles/RTv1.dir/objects_fill.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/objects_fill.c > CMakeFiles/RTv1.dir/objects_fill.c.i
 
 CMakeFiles/RTv1.dir/objects_fill.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/objects_fill.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/objects_fill.c -o CMakeFiles/RTv1.dir/objects_fill.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/objects_fill.c -o CMakeFiles/RTv1.dir/objects_fill.c.s
 
 CMakeFiles/RTv1.dir/camera.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/camera.c.o: ../camera.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/RTv1.dir/camera.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/camera.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/camera.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/RTv1.dir/camera.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/camera.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/camera.c
 
 CMakeFiles/RTv1.dir/camera.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/camera.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/camera.c > CMakeFiles/RTv1.dir/camera.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/camera.c > CMakeFiles/RTv1.dir/camera.c.i
 
 CMakeFiles/RTv1.dir/camera.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/camera.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/camera.c -o CMakeFiles/RTv1.dir/camera.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/camera.c -o CMakeFiles/RTv1.dir/camera.c.s
 
 CMakeFiles/RTv1.dir/objects_create.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/objects_create.c.o: ../objects_create.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/RTv1.dir/objects_create.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/objects_create.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/objects_create.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/RTv1.dir/objects_create.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/objects_create.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/objects_create.c
 
 CMakeFiles/RTv1.dir/objects_create.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/objects_create.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/objects_create.c > CMakeFiles/RTv1.dir/objects_create.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/objects_create.c > CMakeFiles/RTv1.dir/objects_create.c.i
 
 CMakeFiles/RTv1.dir/objects_create.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/objects_create.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/objects_create.c -o CMakeFiles/RTv1.dir/objects_create.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/objects_create.c -o CMakeFiles/RTv1.dir/objects_create.c.s
 
 CMakeFiles/RTv1.dir/geometric_create.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/geometric_create.c.o: ../geometric_create.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/RTv1.dir/geometric_create.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/geometric_create.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/geometric_create.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/RTv1.dir/geometric_create.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/geometric_create.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/geometric_create.c
 
 CMakeFiles/RTv1.dir/geometric_create.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/geometric_create.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/geometric_create.c > CMakeFiles/RTv1.dir/geometric_create.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/geometric_create.c > CMakeFiles/RTv1.dir/geometric_create.c.i
 
 CMakeFiles/RTv1.dir/geometric_create.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/geometric_create.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/geometric_create.c -o CMakeFiles/RTv1.dir/geometric_create.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/geometric_create.c -o CMakeFiles/RTv1.dir/geometric_create.c.s
 
 CMakeFiles/RTv1.dir/camera_create.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/camera_create.c.o: ../camera_create.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object CMakeFiles/RTv1.dir/camera_create.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/camera_create.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/camera_create.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object CMakeFiles/RTv1.dir/camera_create.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/camera_create.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/camera_create.c
 
 CMakeFiles/RTv1.dir/camera_create.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/camera_create.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/camera_create.c > CMakeFiles/RTv1.dir/camera_create.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/camera_create.c > CMakeFiles/RTv1.dir/camera_create.c.i
 
 CMakeFiles/RTv1.dir/camera_create.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/camera_create.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/camera_create.c -o CMakeFiles/RTv1.dir/camera_create.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/camera_create.c -o CMakeFiles/RTv1.dir/camera_create.c.s
 
 CMakeFiles/RTv1.dir/libft/ft_atof.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/libft/ft_atof.c.o: ../libft/ft_atof.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object CMakeFiles/RTv1.dir/libft/ft_atof.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_atof.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/libft/ft_atof.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object CMakeFiles/RTv1.dir/libft/ft_atof.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_atof.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_atof.c
 
 CMakeFiles/RTv1.dir/libft/ft_atof.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/libft/ft_atof.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/libft/ft_atof.c > CMakeFiles/RTv1.dir/libft/ft_atof.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_atof.c > CMakeFiles/RTv1.dir/libft/ft_atof.c.i
 
 CMakeFiles/RTv1.dir/libft/ft_atof.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/libft/ft_atof.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/libft/ft_atof.c -o CMakeFiles/RTv1.dir/libft/ft_atof.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_atof.c -o CMakeFiles/RTv1.dir/libft/ft_atof.c.s
 
 CMakeFiles/RTv1.dir/camera_validate.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/camera_validate.c.o: ../camera_validate.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object CMakeFiles/RTv1.dir/camera_validate.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/camera_validate.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/camera_validate.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object CMakeFiles/RTv1.dir/camera_validate.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/camera_validate.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/camera_validate.c
 
 CMakeFiles/RTv1.dir/camera_validate.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/camera_validate.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/camera_validate.c > CMakeFiles/RTv1.dir/camera_validate.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/camera_validate.c > CMakeFiles/RTv1.dir/camera_validate.c.i
 
 CMakeFiles/RTv1.dir/camera_validate.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/camera_validate.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/camera_validate.c -o CMakeFiles/RTv1.dir/camera_validate.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/camera_validate.c -o CMakeFiles/RTv1.dir/camera_validate.c.s
 
 CMakeFiles/RTv1.dir/objects_update.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/objects_update.c.o: ../objects_update.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object CMakeFiles/RTv1.dir/objects_update.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/objects_update.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/objects_update.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object CMakeFiles/RTv1.dir/objects_update.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/objects_update.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/objects_update.c
 
 CMakeFiles/RTv1.dir/objects_update.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/objects_update.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/objects_update.c > CMakeFiles/RTv1.dir/objects_update.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/objects_update.c > CMakeFiles/RTv1.dir/objects_update.c.i
 
 CMakeFiles/RTv1.dir/objects_update.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/objects_update.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/objects_update.c -o CMakeFiles/RTv1.dir/objects_update.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/objects_update.c -o CMakeFiles/RTv1.dir/objects_update.c.s
 
 CMakeFiles/RTv1.dir/transform.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/transform.c.o: ../transform.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object CMakeFiles/RTv1.dir/transform.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/transform.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/transform.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object CMakeFiles/RTv1.dir/transform.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/transform.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/transform.c
 
 CMakeFiles/RTv1.dir/transform.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/transform.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/transform.c > CMakeFiles/RTv1.dir/transform.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/transform.c > CMakeFiles/RTv1.dir/transform.c.i
 
 CMakeFiles/RTv1.dir/transform.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/transform.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/transform.c -o CMakeFiles/RTv1.dir/transform.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/transform.c -o CMakeFiles/RTv1.dir/transform.c.s
 
 CMakeFiles/RTv1.dir/operations_d.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/operations_d.c.o: ../operations_d.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object CMakeFiles/RTv1.dir/operations_d.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/operations_d.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/operations_d.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object CMakeFiles/RTv1.dir/operations_d.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/operations_d.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/operations_d.c
 
 CMakeFiles/RTv1.dir/operations_d.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/operations_d.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/operations_d.c > CMakeFiles/RTv1.dir/operations_d.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/operations_d.c > CMakeFiles/RTv1.dir/operations_d.c.i
 
 CMakeFiles/RTv1.dir/operations_d.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/operations_d.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/operations_d.c -o CMakeFiles/RTv1.dir/operations_d.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/operations_d.c -o CMakeFiles/RTv1.dir/operations_d.c.s
 
 CMakeFiles/RTv1.dir/scene_get.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/scene_get.c.o: ../scene_get.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object CMakeFiles/RTv1.dir/scene_get.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/scene_get.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/scene_get.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object CMakeFiles/RTv1.dir/scene_get.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/scene_get.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/scene_get.c
 
 CMakeFiles/RTv1.dir/scene_get.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/scene_get.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/scene_get.c > CMakeFiles/RTv1.dir/scene_get.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/scene_get.c > CMakeFiles/RTv1.dir/scene_get.c.i
 
 CMakeFiles/RTv1.dir/scene_get.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/scene_get.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/scene_get.c -o CMakeFiles/RTv1.dir/scene_get.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/scene_get.c -o CMakeFiles/RTv1.dir/scene_get.c.s
 
 CMakeFiles/RTv1.dir/scene_extra.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/scene_extra.c.o: ../scene_extra.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object CMakeFiles/RTv1.dir/scene_extra.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/scene_extra.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/scene_extra.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object CMakeFiles/RTv1.dir/scene_extra.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/scene_extra.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/scene_extra.c
 
 CMakeFiles/RTv1.dir/scene_extra.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/scene_extra.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/scene_extra.c > CMakeFiles/RTv1.dir/scene_extra.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/scene_extra.c > CMakeFiles/RTv1.dir/scene_extra.c.i
 
 CMakeFiles/RTv1.dir/scene_extra.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/scene_extra.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/scene_extra.c -o CMakeFiles/RTv1.dir/scene_extra.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/scene_extra.c -o CMakeFiles/RTv1.dir/scene_extra.c.s
 
 CMakeFiles/RTv1.dir/objects_validate.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/objects_validate.c.o: ../objects_validate.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object CMakeFiles/RTv1.dir/objects_validate.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/objects_validate.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/objects_validate.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object CMakeFiles/RTv1.dir/objects_validate.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/objects_validate.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/objects_validate.c
 
 CMakeFiles/RTv1.dir/objects_validate.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/objects_validate.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/objects_validate.c > CMakeFiles/RTv1.dir/objects_validate.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/objects_validate.c > CMakeFiles/RTv1.dir/objects_validate.c.i
 
 CMakeFiles/RTv1.dir/objects_validate.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/objects_validate.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/objects_validate.c -o CMakeFiles/RTv1.dir/objects_validate.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/objects_validate.c -o CMakeFiles/RTv1.dir/objects_validate.c.s
 
 CMakeFiles/RTv1.dir/camera_update.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/camera_update.c.o: ../camera_update.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object CMakeFiles/RTv1.dir/camera_update.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/camera_update.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/camera_update.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object CMakeFiles/RTv1.dir/camera_update.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/camera_update.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/camera_update.c
 
 CMakeFiles/RTv1.dir/camera_update.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/camera_update.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/camera_update.c > CMakeFiles/RTv1.dir/camera_update.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/camera_update.c > CMakeFiles/RTv1.dir/camera_update.c.i
 
 CMakeFiles/RTv1.dir/camera_update.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/camera_update.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/camera_update.c -o CMakeFiles/RTv1.dir/camera_update.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/camera_update.c -o CMakeFiles/RTv1.dir/camera_update.c.s
 
 CMakeFiles/RTv1.dir/light_create.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/light_create.c.o: ../light_create.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building C object CMakeFiles/RTv1.dir/light_create.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/light_create.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/light_create.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building C object CMakeFiles/RTv1.dir/light_create.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/light_create.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/light_create.c
 
 CMakeFiles/RTv1.dir/light_create.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/light_create.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/light_create.c > CMakeFiles/RTv1.dir/light_create.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/light_create.c > CMakeFiles/RTv1.dir/light_create.c.i
 
 CMakeFiles/RTv1.dir/light_create.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/light_create.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/light_create.c -o CMakeFiles/RTv1.dir/light_create.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/light_create.c -o CMakeFiles/RTv1.dir/light_create.c.s
 
 CMakeFiles/RTv1.dir/light_update.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/light_update.c.o: ../light_update.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building C object CMakeFiles/RTv1.dir/light_update.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/light_update.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/light_update.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building C object CMakeFiles/RTv1.dir/light_update.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/light_update.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/light_update.c
 
 CMakeFiles/RTv1.dir/light_update.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/light_update.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/light_update.c > CMakeFiles/RTv1.dir/light_update.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/light_update.c > CMakeFiles/RTv1.dir/light_update.c.i
 
 CMakeFiles/RTv1.dir/light_update.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/light_update.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/light_update.c -o CMakeFiles/RTv1.dir/light_update.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/light_update.c -o CMakeFiles/RTv1.dir/light_update.c.s
 
 CMakeFiles/RTv1.dir/light_validate.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/light_validate.c.o: ../light_validate.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building C object CMakeFiles/RTv1.dir/light_validate.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/light_validate.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/light_validate.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building C object CMakeFiles/RTv1.dir/light_validate.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/light_validate.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/light_validate.c
 
 CMakeFiles/RTv1.dir/light_validate.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/light_validate.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/light_validate.c > CMakeFiles/RTv1.dir/light_validate.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/light_validate.c > CMakeFiles/RTv1.dir/light_validate.c.i
 
 CMakeFiles/RTv1.dir/light_validate.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/light_validate.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/light_validate.c -o CMakeFiles/RTv1.dir/light_validate.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/light_validate.c -o CMakeFiles/RTv1.dir/light_validate.c.s
 
 CMakeFiles/RTv1.dir/objects_calculate.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/objects_calculate.c.o: ../objects_calculate.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building C object CMakeFiles/RTv1.dir/objects_calculate.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/objects_calculate.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/objects_calculate.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building C object CMakeFiles/RTv1.dir/objects_calculate.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/objects_calculate.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/objects_calculate.c
 
 CMakeFiles/RTv1.dir/objects_calculate.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/objects_calculate.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/objects_calculate.c > CMakeFiles/RTv1.dir/objects_calculate.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/objects_calculate.c > CMakeFiles/RTv1.dir/objects_calculate.c.i
 
 CMakeFiles/RTv1.dir/objects_calculate.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/objects_calculate.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/objects_calculate.c -o CMakeFiles/RTv1.dir/objects_calculate.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/objects_calculate.c -o CMakeFiles/RTv1.dir/objects_calculate.c.s
 
 CMakeFiles/RTv1.dir/libft/ft_gc.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/libft/ft_gc.c.o: ../libft/ft_gc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building C object CMakeFiles/RTv1.dir/libft/ft_gc.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_gc.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/libft/ft_gc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building C object CMakeFiles/RTv1.dir/libft/ft_gc.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_gc.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_gc.c
 
 CMakeFiles/RTv1.dir/libft/ft_gc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/libft/ft_gc.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/libft/ft_gc.c > CMakeFiles/RTv1.dir/libft/ft_gc.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_gc.c > CMakeFiles/RTv1.dir/libft/ft_gc.c.i
 
 CMakeFiles/RTv1.dir/libft/ft_gc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/libft/ft_gc.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/libft/ft_gc.c -o CMakeFiles/RTv1.dir/libft/ft_gc.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_gc.c -o CMakeFiles/RTv1.dir/libft/ft_gc.c.s
 
 CMakeFiles/RTv1.dir/libft/ft_malloc.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/libft/ft_malloc.c.o: ../libft/ft_malloc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Building C object CMakeFiles/RTv1.dir/libft/ft_malloc.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_malloc.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/libft/ft_malloc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Building C object CMakeFiles/RTv1.dir/libft/ft_malloc.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_malloc.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_malloc.c
 
 CMakeFiles/RTv1.dir/libft/ft_malloc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/libft/ft_malloc.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/libft/ft_malloc.c > CMakeFiles/RTv1.dir/libft/ft_malloc.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_malloc.c > CMakeFiles/RTv1.dir/libft/ft_malloc.c.i
 
 CMakeFiles/RTv1.dir/libft/ft_malloc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/libft/ft_malloc.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/libft/ft_malloc.c -o CMakeFiles/RTv1.dir/libft/ft_malloc.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_malloc.c -o CMakeFiles/RTv1.dir/libft/ft_malloc.c.s
 
 CMakeFiles/RTv1.dir/libft/ft_clean.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/libft/ft_clean.c.o: ../libft/ft_clean.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Building C object CMakeFiles/RTv1.dir/libft/ft_clean.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_clean.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/libft/ft_clean.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Building C object CMakeFiles/RTv1.dir/libft/ft_clean.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/libft/ft_clean.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_clean.c
 
 CMakeFiles/RTv1.dir/libft/ft_clean.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/libft/ft_clean.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/libft/ft_clean.c > CMakeFiles/RTv1.dir/libft/ft_clean.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_clean.c > CMakeFiles/RTv1.dir/libft/ft_clean.c.i
 
 CMakeFiles/RTv1.dir/libft/ft_clean.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/libft/ft_clean.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/libft/ft_clean.c -o CMakeFiles/RTv1.dir/libft/ft_clean.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/libft/ft_clean.c -o CMakeFiles/RTv1.dir/libft/ft_clean.c.s
 
 CMakeFiles/RTv1.dir/objects_update_min.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/objects_update_min.c.o: ../objects_update_min.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Building C object CMakeFiles/RTv1.dir/objects_update_min.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/objects_update_min.c.o   -c /Users/iplastun/Desktop/nr2/RTv1/objects_update_min.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Building C object CMakeFiles/RTv1.dir/objects_update_min.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/objects_update_min.c.o   -c /Users/jwisozk/Desktop/nr2/RTv1/objects_update_min.c
 
 CMakeFiles/RTv1.dir/objects_update_min.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/objects_update_min.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iplastun/Desktop/nr2/RTv1/objects_update_min.c > CMakeFiles/RTv1.dir/objects_update_min.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwisozk/Desktop/nr2/RTv1/objects_update_min.c > CMakeFiles/RTv1.dir/objects_update_min.c.i
 
 CMakeFiles/RTv1.dir/objects_update_min.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/objects_update_min.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iplastun/Desktop/nr2/RTv1/objects_update_min.c -o CMakeFiles/RTv1.dir/objects_update_min.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwisozk/Desktop/nr2/RTv1/objects_update_min.c -o CMakeFiles/RTv1.dir/objects_update_min.c.s
 
 # Object files for target RTv1
 RTv1_OBJECTS = \
@@ -1476,7 +1476,7 @@ RTv1: CMakeFiles/RTv1.dir/objects_update_min.c.o
 RTv1: CMakeFiles/RTv1.dir/build.make
 RTv1: ../minilibx/libmlx.a
 RTv1: CMakeFiles/RTv1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Linking C executable RTv1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Linking C executable RTv1"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/RTv1.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -1489,6 +1489,6 @@ CMakeFiles/RTv1.dir/clean:
 .PHONY : CMakeFiles/RTv1.dir/clean
 
 CMakeFiles/RTv1.dir/depend:
-	cd /Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/iplastun/Desktop/nr2/RTv1 /Users/iplastun/Desktop/nr2/RTv1 /Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug /Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug /Users/iplastun/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles/RTv1.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/jwisozk/Desktop/nr2/RTv1 /Users/jwisozk/Desktop/nr2/RTv1 /Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug /Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug /Users/jwisozk/Desktop/nr2/RTv1/cmake-build-debug/CMakeFiles/RTv1.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/RTv1.dir/depend
 

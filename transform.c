@@ -10,9 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "RTv1.h"
+#include "rtv1.h"
 
-t_vec3 *ft_translate(t_vec3* o, t_vec3* t)
+t_vec3				*ft_translate(t_vec3 *o, t_vec3 *t)
 {
 	o->x += t->x;
 	o->y += t->y;
@@ -20,7 +20,7 @@ t_vec3 *ft_translate(t_vec3* o, t_vec3* t)
 	return (o);
 }
 
-void ft_rot(double *a, double *b, int degree)
+void				ft_rot(double *a, double *b, int degree)
 {
 	double tmp_a;
 	double tmp_b;
@@ -31,7 +31,7 @@ void ft_rot(double *a, double *b, int degree)
 	*b = tmp_a * SIN(degree) + tmp_b * COS(degree);
 }
 
-t_vec3 *ft_rotate(t_vec3 *v, t_ang3 *a)
+t_vec3				*ft_rotate(t_vec3 *v, t_ang3 *a)
 {
 	if (a->x)
 		ft_rot(&v->y, &v->z, a->x);
@@ -41,4 +41,3 @@ t_vec3 *ft_rotate(t_vec3 *v, t_ang3 *a)
 		ft_rot(&v->x, &v->y, a->z);
 	return (v);
 }
-

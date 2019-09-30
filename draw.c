@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "RTv1.h"
+#include "rtv1.h"
 
 t_obj				*ft_find_closest_obj(t_obj *obj, t_ray *ray)
 {

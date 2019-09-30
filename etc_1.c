@@ -1,21 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   extra.c                                            :+:      :+:    :+:   */
+/*   etc_1.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/09 16:09:56 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/09/30 08:57:07 by iplastun         ###   ########.fr       */
+/*   Updated: 2019/09/30 08:57:07 by jwisozk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "RTv1.h"
-
-char				*ft_msg(char *str)
-{
-	return (ft_strjoin(ERROR, str));
-}
+#include "rtv1.h"
 
 int					ft_print_error(char *str)
 {
@@ -38,4 +33,25 @@ int					ft_key_press(int key, t_data *data)
 	if (key == 53)
 		ft_close_window(data);
 	return (0);
+}
+
+t_lst				*ft_new_lst(char *type, void *data)
+{
+	t_lst			*lst;
+
+	if (!(lst = (t_lst*)ft_malloc(sizeof(t_lst))))
+		ft_print_error(ERROR_29);
+	lst->type = type;
+	lst->data = data;
+	lst->next = NULL;
+	return (lst);
+}
+
+void				ft_add_lst(t_lst **head, t_lst *new)
+{
+	if (head != NULL && new != NULL)
+	{
+		new->next = *head;
+		*head = new;
+	}
 }

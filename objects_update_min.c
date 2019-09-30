@@ -5,14 +5,14 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/09/30 11:32:50 by iplastun          #+#    #+#             */
-/*   Updated: 2019/09/30 11:37:29 by iplastun         ###   ########.fr       */
+/*   Created: 2019/09/30 11:32:50 by jwisozk          #+#    #+#             */
+/*   Updated: 2019/09/30 11:37:29 by jwisozk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "RTv1.h"
+#include "rtv1.h"
 
-void				ft_cylinder_min(t_cylinder	**c, t_lst *lst)
+void				ft_cylinder_min(t_cylinder **c, t_lst *lst)
 {
 	double			*d;
 
@@ -25,7 +25,7 @@ void				ft_cylinder_min(t_cylinder	**c, t_lst *lst)
 		(*c)->normal = ft_create_vec3(d[0], d[1], d[2]);
 }
 
-void				ft_cone_min(t_cone	**c, t_lst *lst)
+void				ft_cone_min(t_cone **c, t_lst *lst)
 {
 	double			*d;
 
@@ -38,7 +38,7 @@ void				ft_cone_min(t_cone	**c, t_lst *lst)
 		(*c)->normal = ft_create_vec3(d[0], d[1], d[2]);
 }
 
-void	ft_plane_min(t_plane	**p, t_lst *lst)
+void				ft_plane_min(t_plane **p, t_lst *lst)
 {
 	double			*d;
 
@@ -50,4 +50,3 @@ void	ft_plane_min(t_plane	**p, t_lst *lst)
 	else if (ft_strequ(lst->type, NORMAL))
 		(*p)->normal = ft_create_vec3(d[0], d[1], d[2]);
 }
-
