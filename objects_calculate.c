@@ -6,7 +6,7 @@
 /*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/29 15:37:59 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/09/29 15:41:25 by jwisozk          ###   ########.fr       */
+/*   Updated: 2019/09/30 18:40:48 by jwisozk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,11 @@
 
 static double		ft_compare_t(double t1, double t2)
 {
-	if (t1 > 0 && t2 > 0)
+	if (t1 > E && t2 > E)
 		return (ft_min(t1, t2));
-	else if (0 < t1 && t1 < INF)
+	else if (E < t1 && t1 < INF)
 		return (t1);
-	else if (0 < t2 && t2 < INF)
+	else if (E < t2 && t2 < INF)
 		return (t2);
 	else
 		return (INF);
