@@ -14,6 +14,6 @@
 
 void	ft_del(void *s, size_t n)
 {
-	free(s);
+	ft_memdel(&s);
 	(void)n;
 }

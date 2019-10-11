@@ -3,17 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_clean.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: iplastun <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/30 17:22:25 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/09/30 17:22:25 by jwisozk          ###   ########.fr       */
+/*   Updated: 2019/10/11 13:37:35 by iplastun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_clean(void *data)
+void	ft_clean(void)
 {
-	ft_memdel(&data);
 	ft_malloc(0);
 }

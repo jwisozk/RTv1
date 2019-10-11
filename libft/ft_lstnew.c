@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: iplastun <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/14 09:00:11 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/09/29 20:57:23 by jwisozk          ###   ########.fr       */
+/*   Updated: 2019/10/11 12:59:10 by iplastun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,12 +21,12 @@ t_list	*ft_lstnew(void const *content, size_t content_size)
 		return (NULL);
 	if (!(data = ft_malloc(sizeof(*content) * content_size)))
 	{
-		free(head);
+		ft_memdel((void**)&head);
 		return (NULL);
 	}
 	if (content == NULL)
 	{
-		free(data);
+		ft_memdel((void**)&data);
 		head->content = NULL;
 		head->content_size = 0;
 	}

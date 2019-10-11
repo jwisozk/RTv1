@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: iplastun <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/30 17:23:19 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/09/30 17:23:19 by jwisozk          ###   ########.fr       */
+/*   Updated: 2019/10/10 23:25:38 by iplastun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,13 +43,13 @@ static char		*ft_get_str(const int fd, int *status)
 			*status = -1;
 			break ;
 		}
-		free(tmp);
+		ft_strdel(&tmp);
 		tmp = str;
 	}
 	if (ret == -1)
 		*status = -1;
 	if (*status == -1)
-		free(tmp);
+		ft_strdel(&tmp);
 	return (str);
 }
 
@@ -66,7 +66,7 @@ static void		ft_deltmp(t_list **head, t_list **tmp)
 			lst = lst->next;
 		lst->next = (*tmp)->next;
 	}
-	free(*tmp);
+	ft_memdel((void **)tmp);
 }
 
 static int		ft_get_line(char *str, char **line, t_list **lst, t_list **tmp)
@@ -83,13 +83,13 @@ static int		ft_get_line(char *str, char **line, t_list **lst, t_list **tmp)
 		if (!(lt = ft_strsub(str, 0, new - str)) ||
 			!(new = ft_strdup(new + 1)))
 		{
-			free(lt);
-			free(str);
+			ft_strdel(&lt);
+			ft_strdel(&str);
 			ft_deltmp(lst, tmp);
 			return (-1);
 		}
-		free(str);
-		(*new != '\0') ? end = new : free(new);
+		ft_strdel(&str);
+		(*new != '\0') ? end = new : ft_strdel(&new);
 	}
 	(end != NULL) ? (*tmp)->content = end : ft_deltmp(lst, tmp);
 	*line = lt;
@@ -116,7 +116,7 @@ int				get_next_line(const int fd, char **line)
 	if (tmp == NULL)
 	{
 		if (!(tmp = ft_lstnew(NULL, 1)))
-			free(str);
+			ft_strdel(&str);
 		if (tmp == NULL)
 			return (-1);
 		tmp->content_size = (size_t)fd;

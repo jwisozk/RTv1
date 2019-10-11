@@ -3,31 +3,31 @@
 /*                                                        :::      ::::::::   */
 /*   ft_gc.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: iplastun <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/30 17:22:41 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/09/30 17:22:41 by jwisozk          ###   ########.fr       */
+/*   Updated: 2019/10/11 14:31:54 by iplastun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_gc_vector	*init_tgc_vector(ssize_t ssize)
+t_gc	*ft_gc_create(void)
 {
-	t_gc_vector *vector;
+	t_gc *vector;
 
-	vector = malloc(sizeof(t_gc_vector));
-	ft_bzero(vector, sizeof(t_gc_vector));
+	vector = malloc(sizeof(t_gc));
+	ft_bzero(vector, sizeof(t_gc));
 	if (vector)
 	{
-		vector->len = TGC_OPTIMAL_SIZE;
-		vector->size = ssize;
-		vector->data = malloc(ssize * TGC_OPTIMAL_SIZE);
+		vector->len = GC_SIZE;
+		vector->size = sizeof(size_t *);
+		vector->data = malloc(vector->size * GC_SIZE);
 	}
 	return (vector);
 }
 
-void		ft_gc(t_gc_vector **vector)
+void		ft_gc_clean(t_gc **vector)
 {
 	size_t size;
 
@@ -35,15 +35,13 @@ void		ft_gc(t_gc_vector **vector)
 	{
 		size = (*vector)->count;
 		while (size--)
-		{
 			free((*vector)->data[size]);
-		}
 		free((*vector)->data);
 		free(*vector);
 	}
 }
 
-void		ft_resize_vector(t_gc_vector **vector)
+void		ft_gc_resize(t_gc **vector)
 {
 	void **temp;
 	void **vec_data;
@@ -59,12 +57,12 @@ void		ft_resize_vector(t_gc_vector **vector)
 	}
 }
 
-void		ft_tgc_append(t_gc_vector **vector, void **data)
+void		ft_gc_add(t_gc **vector, void *data)
 {
 	if (*vector)
 	{
 		if ((*vector)->len - (*vector)->count <= 1)
-			ft_resize_vector(vector);
+			ft_gc_resize(vector);
 		(*vector)->data[(*vector)->count] = data;
 		++(*vector)->count;
 	}

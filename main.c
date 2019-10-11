@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: iplastun <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/30 17:05:58 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/09/30 17:05:58 by jwisozk          ###   ########.fr       */
+/*   Updated: 2019/10/11 13:42:00 by iplastun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,7 @@ void				ft_open_window(t_data *data)
 	data->mlx_ptr = mlx_ptr;
 	data->win_ptr = win_ptr;
 	ft_draw(data);
-	ft_clean(data->pass);
+	ft_clean();
 	mlx_hook(win_ptr, 17, 0, ft_close_window, data);
 	mlx_hook(win_ptr, 2, 0, ft_key_press, data);
 	mlx_loop(mlx_ptr);
@@ -64,15 +64,11 @@ int					main(int argc, char **argv)
 
 	if (argc == 2)
 	{
-		ft_init_shapes(&data);
-		if (ft_strnequ(ft_strrev(argv[1]), ft_strrev(EXTENSION), 4) != 1)
-			ft_print_error(ft_msg(ERROR_1));
-		if ((fd = open(argv[1], O_RDONLY)) == -1)
-			return (ft_print_error(ft_msg(ERROR_6)));
+		ft_check_argv(argv[1]);
+		ft_open_file(argv[1], &fd);
 		ft_init_shapes(&data);
 		ft_get_scene(fd, &data);
-		if (close(fd) == -1)
-			return (ft_print_error(ft_msg(ERROR_28)));
+		ft_close_file(fd);
 		ft_check_valid(&data);
 		ft_open_window(&data);
 	}

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   rtv1.h                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: iplastun <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/30 17:04:13 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/09/30 17:04:13 by jwisozk          ###   ########.fr       */
+/*   Updated: 2019/10/10 21:52:34 by iplastun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -321,5 +321,8 @@ void					ft_plane_fill(t_obj *obj, t_point *p, t_ray *ray);
 void					ft_cone_fill(t_obj *obj, t_point *p, t_ray *ray);
 t_lst					*ft_new_lst(char *type, void *data);
 void					ft_add_lst(t_lst **head, t_lst *new);
+void					ft_check_argv(char *str);
+void					ft_open_file(char *name, int *fd);
+void					ft_close_file(const int fd);
 
 #endif

@@ -3,27 +3,26 @@
 /*                                                        :::      ::::::::   */
 /*   ft_gc.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: iplastun <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/30 17:23:06 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/09/30 17:23:06 by jwisozk          ###   ########.fr       */
+/*   Updated: 2019/10/11 14:31:54 by iplastun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_GC_H
 # define FT_GC_H
-# define TGC_OPTIMAL_SIZE	(2u<<5u)
+# define GC_SIZE	64
 
-typedef struct		s_gc_vector
+typedef struct		s_gc
 {
 	ssize_t			count;
 	ssize_t			len;
 	ssize_t			size;
 	void			**data;
-}					t_gc_vector;
-
-void				ft_gc(t_gc_vector **vector);
-void				ft_tgc_append(t_gc_vector **vector, void **d);
-t_gc_vector			*init_tgc_vector(ssize_t ssize);
+}					t_gc;
+void				ft_gc_clean(t_gc **vector);
+void				ft_gc_add(t_gc **vector, void *d);
+t_gc				*ft_gc_create(void);
 
 #endif

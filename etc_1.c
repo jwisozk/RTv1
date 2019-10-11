@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   etc_1.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: iplastun <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/30 17:05:23 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/09/30 17:05:23 by jwisozk          ###   ########.fr       */
+/*   Updated: 2019/10/11 13:42:09 by iplastun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,8 @@
 
 int					ft_print_error(char *str)
 {
-	void *pass;
-
-	pass = NULL;
 	ft_putendl_fd(str, 2);
-	ft_clean(pass);
+	ft_clean();
 	exit(0);
 }
 

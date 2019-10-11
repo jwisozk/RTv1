@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: iplastun <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/30 17:23:40 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/09/30 17:23:40 by jwisozk          ###   ########.fr       */
+/*   Updated: 2019/10/11 13:39:22 by iplastun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -94,6 +94,6 @@ int					ft_isspace(char c);
 int					ft_atoi_base(char **str);
 double				ft_atof(const char *str);
 void				*ft_malloc(size_t size);
-void				ft_clean(void *data);
+void				ft_clean(void);
 
 #endif
