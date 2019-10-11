@@ -6,7 +6,7 @@
 /*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/26 20:23:15 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/09/30 20:58:00 by jwisozk          ###   ########.fr       */
+/*   Updated: 2019/10/11 17:17:02 by jwisozk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,6 +50,20 @@ void				ft_cylinder_fill(t_obj *obj, t_point *p, t_ray *ray)
 	c->normal);
 }
 
+static t_vec3		*ft_cone_fill_min(t_cone *c, t_ray *ray)
+{
+	t_vec3 			*a;
+	t_vec3			*vec_oc;
+
+	a = ft_subtract(c->center, ray->origin);
+	double angle_ln = ft_dot(a, c->normal);
+	if (angle_ln < 0)
+		vec_oc = ft_cross_product(ft_subtract(c->center, ray->origin),	c->normal);
+	else
+		vec_oc = NULL;
+	return (vec_oc);
+}
+
 void				ft_cone_fill(t_obj *obj, t_point *p, t_ray *ray)
 {
 	t_cone			*c;
@@ -70,21 +84,7 @@ void				ft_cone_fill(t_obj *obj, t_point *p, t_ray *ray)
 	p->color = c->color;
 	p->specular = c->specular;
 	p->radius = m * c->angle;
-//	p->vec_oc = ft_cross_product(ft_subtract(c->center, ray->origin),
-//	c->normal);
-//	p->vec_oc = NULL;
-	t_vec3 *a = ft_subtract(c->center, ray->origin);
-	double angle_ln = ft_dot(a, c->normal);
-	if (angle_ln < 0)
-		p->vec_oc = ft_cross_product(ft_subtract(c->center, ray->origin),	c->normal);
-	else
-		p->vec_oc = NULL;
-
-//	{
-////		p->vec_oc = NULL;
-//		p->normal = ft_multiply(-1, p->normal);
-//	}
-
+	p->vec_oc = ft_cone_fill_min(c, ray);
 }
 
 void				ft_plane_fill(t_obj *obj, t_point *p, t_ray *ray)

@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_gc.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: iplastun <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/30 17:23:06 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/10/11 14:31:54 by iplastun         ###   ########.fr       */
+/*   Updated: 2019/10/11 17:30:42 by jwisozk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_GC_H
 # define FT_GC_H
-# define GC_SIZE	64
+# define GC_SIZE	16777216
 
 typedef struct		s_gc
 {
