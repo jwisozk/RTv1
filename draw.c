@@ -84,7 +84,7 @@ int					ft_trace_ray(t_data *data)
 		return (ft_rgb(BACKGROUND));
 	ft_obj_fill(obj, data->p, data->ray);
 	lighting = ft_lighting(data->p, data->l, data->o);
-	return (ft_multiply_color(lighting, data->p->color));
+	return (ft_multiply_color(lighting, data->p->color, data->p->specular));
 }
 
 void				ft_draw(t_data *data)

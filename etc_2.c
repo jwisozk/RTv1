@@ -36,7 +36,7 @@ void				ft_photo(char *str)
 	mlx_put_image_to_window(mlx_ptr, win_ptr, data.img.img_ptr, 0, 0);
 	data.mlx_ptr = mlx_ptr;
 	data.win_ptr = win_ptr;
-	ft_malloc(0);
+	ft_clean();
 	mlx_hook(win_ptr, 17, 0, ft_close_window, &data);
 	mlx_hook(win_ptr, 2, 0, ft_key_press, &data);
 	mlx_loop(mlx_ptr);

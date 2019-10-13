@@ -64,8 +64,8 @@ int					ft_add_shadow(t_point *p, t_obj *o, t_light **l, t_vec3 *vec_pl)
 	ol = ft_subtract((*l)->position, p->cam);
 	t_max = (ft_strequ((*l)->type, POINT) == 1) ? 1.0 : INF;
 	ray = ft_create_ray(p->cam, ol, E, t_max);
-	if (ft_check_intersect(ray, o, l) == 1)
-		return (1);
+//	if (ft_check_intersect(ray, o, l) == 1)
+//		return (1);
 	ray = ft_create_ray(p->point, vec_pl, E, t_max);
 	if (ft_check_intersect(ray, o, l) == 1)
 		return (1);

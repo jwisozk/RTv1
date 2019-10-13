@@ -3,17 +3,16 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: jwisozk <marvin@42.fr>                    +#+  +:+       +#+         #
+#    By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/08/09 13:59:01 by jwisozk           #+#    #+#              #
-#    Updated: 2019/09/30 11:36:19 by jwisozk         ###   ########.fr        #
+#    Updated: 2019/10/13 15:17:32 by twill            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = RTv1
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror
-
 HEADERS = rtv1.h
 LIBMLX = minilibx/libmlx.a
 FRAMEWORKS = -framework OpenGL -framework AppKit

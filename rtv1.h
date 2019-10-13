@@ -20,8 +20,8 @@
 # include <sys/types.h>
 # include <sys/uio.h>
 
-# define DW				600
-# define DH				600
+# define DW				601
+# define DH				601
 # define EXTENSION		".cfg"
 # define VW				1
 # define VH				1
@@ -278,7 +278,7 @@ double					ft_dot(t_vec3 *v1, t_vec3 *v2);
 double					ft_max(double x, double y);
 double					ft_min(double x, double y);
 int						ft_rgb(int r, int g, int b);
-int						ft_multiply_color(double k, int color);
+int						ft_multiply_color(double k, int color, int specular);
 t_obj					*ft_create_object(void *obj, t_type_obj type);
 t_cam					*ft_create_camera(void);
 t_light					*ft_create_light(t_data *data);

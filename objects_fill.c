@@ -46,7 +46,7 @@ void				ft_cylinder_fill(t_obj *obj, t_point *p, t_ray *ray)
 	p->color = c->color;
 	p->specular = c->specular;
 	p->normal = ft_normalize_vec3(radius);
-	p->normal = (ft_dot(p->normal, p->po) < 0) ? ft_multiply(-1, p->normal) :
+	p->normal = (ft_dot(p->normal, p->po) <= 0) ? ft_multiply(-1, p->normal) :
 				p->normal;
 }
 

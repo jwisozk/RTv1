@@ -14,7 +14,9 @@
 
 static double		ft_compare_t(double t1, double t2)
 {
-	if (t1 > E && t2 > E)
+	if (t1 == t2)
+		return (t1);
+	else if (t1 > E && t2 > E)
 		return (ft_min(t1, t2));
 	else if (E < t1 && t1 < INF)
 		return (t1);
@@ -37,7 +39,7 @@ double				ft_calculate_sphere(t_ray *ray, t_sphere *s)
 	k[1] = 2 * ft_dot(oc, ray->direct);
 	k[2] = ft_dot(oc, oc) - s->radius * s->radius;
 	discriminant = k[1] * k[1] - 4 * k[0] * k[2];
-	if (discriminant > 0)
+	if (discriminant >= 0)
 	{
 		t1 = (-k[1] + sqrt(discriminant)) / (2 * k[0]);
 		t2 = (-k[1] - sqrt(discriminant)) / (2 * k[0]);
@@ -62,7 +64,7 @@ double				ft_calculate_cylinder(t_ray *ray, t_cylinder *c)
 	k[2] = ft_dot(oc, oc) - pow(ft_dot(oc, c->normal), 2) -
 	c->radius * c->radius;
 	discriminant = k[1] * k[1] - 4 * k[0] * k[2];
-	if (discriminant > 0)
+	if (discriminant >= 0)
 	{
 		t1 = (-k[1] + sqrt(discriminant)) / (2 * k[0]);
 		t2 = (-k[1] - sqrt(discriminant)) / (2 * k[0]);
@@ -87,7 +89,7 @@ double				ft_calculate_cone(t_ray *ray, t_cone *c)
 	k[2] = ft_dot(oc, oc) - (1 + pow(c->angle, 2)) *
 	pow(ft_dot(oc, c->normal), 2);
 	discriminant = k[1] * k[1] - 4 * k[0] * k[2];
-	if (discriminant > 0)
+	if (discriminant >= 0)
 	{
 		t1 = (-k[1] + sqrt(discriminant)) / (2 * k[0]);
 		t2 = (-k[1] - sqrt(discriminant)) / (2 * k[0]);
