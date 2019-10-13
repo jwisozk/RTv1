@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   objects_create.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: iplastun <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/30 17:06:55 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/09/30 17:06:55 by jwisozk          ###   ########.fr       */
+/*   Updated: 2019/10/13 14:25:28 by iplastun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ t_obj				*ft_create_object(void *obj, t_type_obj type)
 	t_obj			*o;
 
 	if (!(o = (t_obj*)ft_malloc(sizeof(t_obj))))
-		ft_print_error(ERROR_29);
+		ft_print(ft_msg(ERROR_29));
 	o->type = type;
 	o->objects = obj;
 	o->obj = NULL;
@@ -31,7 +31,7 @@ t_sphere			*ft_create_sphere(t_data *data)
 	t_sphere		*s;
 
 	if (!(s = (t_sphere*)ft_malloc(sizeof(t_sphere))))
-		ft_print_error(ERROR_29);
+		ft_print(ft_msg(ERROR_29));
 	s->center = NULL;
 	s->color = -1;
 	s->radius = -1;
@@ -46,7 +46,7 @@ t_cylinder			*ft_create_cylinder(t_data *data)
 	t_cylinder		*c;
 
 	if (!(c = (t_cylinder*)ft_malloc(sizeof(t_cylinder))))
-		ft_print_error(ERROR_29);
+		ft_print(ft_msg(ERROR_29));
 	c->center = NULL;
 	c->normal = NULL;
 	c->color = -1;
@@ -63,7 +63,7 @@ t_cone				*ft_create_cone(t_data *data)
 	t_cone			*c;
 
 	if (!(c = (t_cone*)ft_malloc(sizeof(t_cone))))
-		ft_print_error(ERROR_29);
+		ft_print(ft_msg(ERROR_29));
 	c->center = NULL;
 	c->normal = NULL;
 	c->color = -1;
@@ -80,7 +80,7 @@ t_plane				*ft_create_plane(t_data *data)
 	t_plane			*p;
 
 	if (!(p = (t_plane*)ft_malloc(sizeof(t_plane))))
-		ft_print_error(ERROR_29);
+		ft_print(ft_msg(ERROR_29));
 	p->normal = NULL;
 	p->point = NULL;
 	p->color = -1;

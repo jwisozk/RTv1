@@ -3,17 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_gc.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: iplastun <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/30 17:23:06 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/10/11 17:30:42 by jwisozk          ###   ########.fr       */
+/*   Updated: 2019/10/13 13:47:18 by iplastun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_GC_H
 # define FT_GC_H
 # define GC_SIZE	16777216
-
+# define GC_ERROR	"Array of pointers is overflow."
 typedef struct		s_gc
 {
 	ssize_t			count;

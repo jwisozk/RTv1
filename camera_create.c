@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   camera_create.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: iplastun <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/30 17:06:35 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/09/30 17:06:35 by jwisozk          ###   ########.fr       */
+/*   Updated: 2019/10/13 14:25:28 by iplastun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ t_cam				*ft_create_camera(void)
 	t_cam *cam;
 
 	if (!(cam = (t_cam*)ft_malloc(sizeof(t_cam))))
-		ft_print_error(ERROR_29);
+		ft_print(ft_msg(ERROR_29));
 	cam->pos = NULL;
 	cam->look_at = NULL;
 	cam->forward = NULL;

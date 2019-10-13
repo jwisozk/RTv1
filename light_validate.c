@@ -31,11 +31,11 @@ void				ft_check_light(t_data *data)
 			i++;
 		}
 		if (c == 3)
-			ft_print_error(ft_msg(ERROR_11));
+			ft_print(ft_msg(ERROR_11));
 		if (l->position == NULL)
-			ft_print_error(ft_msg(ERROR_12));
+			ft_print(ft_msg(ERROR_12));
 		if (l->intensity < 0)
-			ft_print_error(ft_msg(ERROR_13));
+			ft_print(ft_msg(ERROR_13));
 		l = l->next;
 	}
 }

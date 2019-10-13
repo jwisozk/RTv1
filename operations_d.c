@@ -31,3 +31,10 @@ double				ft_min(double x, double y)
 {
 	return (x < y ? x : y);
 }
+
+int					ft_compare_vec3(t_vec3 *a, t_vec3 *b)
+{
+	if (a->x == b->x && a->y == b->y && a->z == b->z)
+		return (1);
+	return (0);
+}

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_gc.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jwisozk  <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: iplastun <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/30 17:22:41 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/10/11 14:31:54 by jwisozk          ###   ########.fr       */
+/*   Updated: 2019/10/13 14:19:07 by iplastun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,12 +45,19 @@ void		ft_gc_resize(t_gc **vector)
 {
 	void **temp;
 	void **vec_data;
+	ssize_t size;
 
 	if (*vector)
 	{
 		temp = (*vector)->data;
-		vec_data = malloc(((*vector)->len * (*vector)->size) * 2);
-		vec_data = ft_memmove(vec_data, temp, (*vector)->len * (*vector)->size);
+		size = (*vector)->len * (*vector)->size;
+		if (!(vec_data = malloc(size * 2)))
+		{
+			ft_gc_clean(vector);
+			ft_putendl_fd(GC_ERROR, 2);
+			exit(0);
+		}
+		vec_data = ft_memmove(vec_data, temp, size);
 		free(temp);
 		(*vector)->data = vec_data;
 		(*vector)->len = (*vector)->len * 2;

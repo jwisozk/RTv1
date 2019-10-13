@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   rtv1.h                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jwisozk  <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: iplastun <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/30 17:04:13 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/10/10 21:52:34 by jwisozk          ###   ########.fr       */
+/*   Updated: 2019/10/13 14:34:21 by iplastun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,6 +56,11 @@
 # define SPECULAR		"specular"
 # define ROTATION		"rotation"
 # define TRANSLATION	"translation"
+# define TEAM			"R4Y7r4c1N9_C4P031R4"
+# define PHOTO			".foto4ka"
+# define PHOTO_W		1000
+# define PHOTO_H		667
+# define USAGE			"Usage: ./RTv1 <filename>"
 # define ERROR  		"Error: "
 # define ERROR_1		"Extension of file is incorrect."
 # define ERROR_2		"Type # is invalid."
@@ -93,6 +98,7 @@
 # define ERROR_32		"Function mlx_new_image() return NULL."
 # define ERROR_33		"Function get_next_line() return -1."
 # define ERROR_34		"Function ft_new_lst() return NULL."
+# define ERROR_35		"Function mlx_xpm_file_to_image() return NULL."
 
 typedef struct			s_vec3
 {
@@ -118,7 +124,7 @@ typedef struct			s_ray
 
 typedef enum			e_type_obj
 {
-	SPHERE,
+	SPHERE = 0,
 	CYLINDER,
 	PLANE,
 	CONE
@@ -231,8 +237,10 @@ typedef struct			s_point
 	t_vec3				*normal;
 	int					color;
 	int					specular;
-	double				radius;
-	t_vec3				*vec_oc;
+	t_type_obj			type;
+	t_vec3				*po;
+	t_vec3				*center;
+	t_vec3				*cam;
 }						t_point;
 
 typedef struct			s_data
@@ -254,7 +262,6 @@ typedef struct			s_data
 
 int						ft_key_press(int key, t_data *data);
 int						ft_close_window(t_data *data);
-int						ft_print_error(char *str);
 char					*ft_msg(char *str);
 t_vec3					*ft_create_vec3(double x, double y, double z);
 t_ang3					*ft_create_ang3(int x, int y, int z);
@@ -308,8 +315,7 @@ void					ft_check_plane(t_data *data);
 void					ft_draw(t_data *data);
 void					ft_camera_look_at(t_data *data);
 void					ft_camera_ray(t_data *data, int x, int y);
-double					ft_lighting(t_point *p, t_light *l, t_obj *o,
-						t_vec3 *vec_po);
+double					ft_lighting(t_point *p, t_light *l, t_obj *o);
 t_obj					*ft_scene_intersect(t_obj *o, t_ray *ray);
 void					ft_sphere_intersect(t_ray *ray, t_obj *o);
 void					ft_plane_intersect(t_ray *ray, t_obj *o);
@@ -324,5 +330,6 @@ void					ft_add_lst(t_lst **head, t_lst *new);
 void					ft_check_argv(char *str);
 void					ft_open_file(char *name, int *fd);
 void					ft_close_file(const int fd);
+int						ft_compare_vec3(t_vec3 *a, t_vec3 *b);
 
 #endif

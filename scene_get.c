@@ -28,7 +28,7 @@ void				ft_check_braces(int *block, int n)
 	if (n == 2)
 		(*block)--;
 	if (err == 1)
-		ft_print_error(ft_msg(ERROR_3));
+		ft_print(ft_msg(ERROR_3));
 }
 
 int					ft_is_hash(char *line, int *i)
@@ -41,12 +41,12 @@ int					ft_is_hash(char *line, int *i)
 		return (0);
 	max = sizeof(arr) / sizeof(t_arr_type);
 	if ((type = ft_strsplit(line + 1, ' ')) == NULL)
-		ft_print_error(ft_msg(ERROR_29));
+		ft_print(ft_msg(ERROR_29));
 	*i = 0;
 	while (*i < max && ft_strequ(type[0], arr[*i].type) != 1)
 		(*i)++;
 	if (*i == max)
-		ft_print_error(ft_msg(ERROR_2));
+		ft_print(ft_msg(ERROR_2));
 	return (1);
 }
 
@@ -57,7 +57,7 @@ void				ft_get_data(t_lst **lst, char *line)
 	t_lst	*tmp;
 
 	if ((str = ft_strsplit(line, ' ')) == NULL)
-		ft_print_error(ft_msg(ERROR_29));
+		ft_print(ft_msg(ERROR_29));
 	if (str[0] == NULL)
 		return ;
 	j = 0;
@@ -109,7 +109,7 @@ void				ft_get_scene(int fd, t_data *data)
 			ft_get_data(&lst, line);
 	}
 	if (status == -1)
-		ft_print_error(ft_msg(ERROR_33));
+		ft_print(ft_msg(ERROR_33));
 	ft_check_braces(&block, 3);
 	ft_create_scene_objects(data);
 }

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   scene_extra.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: iplastun <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/29 14:53:22 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/09/29 23:20:30 by jwisozk          ###   ########.fr       */
+/*   Updated: 2019/10/13 14:25:28 by iplastun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,10 +55,10 @@ int					*ft_rotation_order(int *arr, int array[3], char *str)
 	int				j;
 
 	if (ft_strlen(str) != 3)
-		ft_print_error(ft_msg(ERROR_4));
+		ft_print(ft_msg(ERROR_4));
 	if (ft_strchr(str, 'x') == NULL || ft_strchr(str, 'y') == NULL ||
 	ft_strchr(str, 'z') == NULL)
-		ft_print_error(ft_msg(ERROR_5));
+		ft_print(ft_msg(ERROR_5));
 	i = 0;
 	while (i < 3)
 	{
@@ -79,7 +79,7 @@ double				*ft_new_arr_d(char *a, char *b, char *c)
 	double			*arr;
 
 	if (!(arr = (double *)ft_malloc(sizeof(double) * 3)))
-		ft_print_error(ERROR_29);
+		ft_print(ft_msg(ERROR_29));
 	arr[0] = ft_atof(a);
 	arr[1] = ft_atof(b);
 	arr[2] = ft_atof(c);
@@ -95,7 +95,7 @@ int					*ft_new_arr_i(char *a, char *b, char *c, char *str)
 	array[1] = ft_atoi(b);
 	array[2] = ft_atoi(c);
 	if (!(arr = (int *)ft_malloc(sizeof(int) * 3)))
-		ft_print_error(ERROR_29);
+		ft_print(ft_msg(ERROR_29));
 	if (str != NULL)
 		arr = ft_rotation_order(arr, array, str);
 	else

@@ -95,5 +95,6 @@ int					ft_atoi_base(char **str);
 double				ft_atof(const char *str);
 void				*ft_malloc(size_t size);
 void				ft_clean(void);
+void				ft_print(char *str);
 
 #endif

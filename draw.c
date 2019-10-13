@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   draw.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jwisozk <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: iplastun <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/26 20:23:15 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/09/27 18:39:06 by jwisozk          ###   ########.fr       */
+/*   Updated: 2019/10/13 12:16:25 by iplastun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,12 @@ void				ft_obj_fill(t_obj *obj, t_point *p, t_ray *ray)
 	while (i < max)
 	{
 		if (arr[i].type == obj->type)
+		{
+			p->type = obj->type;
+			p->po = ft_multiply(-1, ray->direct);
+			p->cam = ray->origin;
 			arr[i].ft_obj_fill(obj, p, ray);
+		}
 		i++;
 	}
 }
@@ -72,15 +77,13 @@ t_obj				*ft_scene_intersect(t_obj *o, t_ray *ray)
 
 int					ft_trace_ray(t_data *data)
 {
-	t_vec3			*vec_po;
 	t_obj			*obj;
 	double			lighting;
 
 	if ((obj = ft_scene_intersect(data->o, data->ray)) == NULL)
 		return (ft_rgb(BACKGROUND));
 	ft_obj_fill(obj, data->p, data->ray);
-	vec_po = ft_multiply(-1, data->ray->direct);
-	lighting = ft_lighting(data->p, data->l, data->o, vec_po);
+	lighting = ft_lighting(data->p, data->l, data->o);
 	return (ft_multiply_color(lighting, data->p->color));
 }
 

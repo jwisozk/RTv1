@@ -3,21 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   etc_1.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jwisozk  <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: iplastun <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/30 17:05:23 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/10/11 13:42:09 by jwisozk          ###   ########.fr       */
+/*   Updated: 2019/10/13 14:25:28 by iplastun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "rtv1.h"
-
-int					ft_print_error(char *str)
-{
-	ft_putendl_fd(str, 2);
-	ft_clean();
-	exit(0);
-}
 
 int					ft_close_window(t_data *data)
 {
@@ -37,7 +30,7 @@ t_lst				*ft_new_lst(char *type, void *data)
 	t_lst			*lst;
 
 	if (!(lst = (t_lst*)ft_malloc(sizeof(t_lst))))
-		ft_print_error(ERROR_29);
+		ft_print(ft_msg(ERROR_29));
 	lst->type = type;
 	lst->data = data;
 	lst->next = NULL;
