@@ -49,7 +49,7 @@ void				ft_camera_look_at(t_data *data)
 	data->cam->pos));
 	if (forward->x == 0 && forward->z == 0 &&
 	(forward->y == 1 || forward->y == -1))
-		tmp = ft_create_vec3(0, 0, 1);
+		tmp = ft_create_vec3(0, 0, -1);
 	else
 		tmp = ft_create_vec3(0, 1, 0);
 	left = ft_normalize_vec3(ft_cross_product(tmp, forward));

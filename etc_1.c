@@ -45,3 +45,22 @@ void				ft_add_lst(t_lst **head, t_lst *new)
 		*head = new;
 	}
 }
+
+int					ft_check_substr(char *str, int num)
+{
+	if (num == 2)
+	{
+		if (ft_strequ(str, TYPE) || ft_strequ(str, INTENSITY)
+		|| ft_strequ(str, ANGLE) || ft_strequ(str, RADIUS) ||
+		ft_strequ(str, SPECULAR))
+			return (1);
+	}
+	if (num == 4)
+	{
+		if (ft_strequ(str, POSITION) || ft_strequ(str, LOOK_AT)
+		|| ft_strequ(str, CENTER) || ft_strequ(str, NORMAL) ||
+		ft_strequ(str, TRANSLATION) || ft_strequ(str, POINT))
+			return (1);
+	}
+	return (0);
+}

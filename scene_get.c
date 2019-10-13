@@ -63,14 +63,19 @@ void				ft_get_data(t_lst **lst, char *line)
 	j = 0;
 	while (str[j] != NULL)
 		j++;
-	if (j == 2)
+	if (j == 1 || j == 3)
+		return ;
+	if (j == 2 && ft_check_substr(str[0], j) == 1)
 		tmp = ft_new_lst(str[0], str[1]);
+	else if (j == 4 && ft_check_substr(str[0], j) == 1)
+		tmp = ft_new_lst(str[0], ft_new_arr_d(str[1], str[2], str[3]));
+	else if (j == 4 && (ft_strequ(str[0], COLOR) ||
+	ft_strequ(str[0], ROTATION)))
+		tmp = ft_new_lst(str[0], ft_new_arr_i(str[1], str[2], str[3], NULL));
 	else if (j == 5 && ft_strequ(str[0], ROTATION))
 		tmp = ft_new_lst(str[0], ft_new_arr_i(str[1], str[2], str[3], str[4]));
-	else if (ft_strequ(str[0], COLOR) || ft_strequ(str[0], ROTATION))
-		tmp = ft_new_lst(str[0], ft_new_arr_i(str[1], str[2], str[3], NULL));
 	else
-		tmp = ft_new_lst(str[0], ft_new_arr_d(str[1], str[2], str[3]));
+		tmp = NULL;
 	ft_add_lst(lst, tmp);
 }
 

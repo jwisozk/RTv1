@@ -48,6 +48,10 @@
 # define POINT			"point"
 # define DIRECTIONAL	"directional"
 # define LIGHT_TYPES	{AMBIENT, POINT, DIRECTIONAL}
+# define TYPE			"type"
+# define INTENSITY		"intensity"
+# define LOOK_AT		"look_at"
+# define POSITION		"position"
 # define CENTER			"center"
 # define NORMAL			"normal"
 # define COLOR			"color"
@@ -331,5 +335,5 @@ void					ft_check_argv(char *str);
 void					ft_open_file(char *name, int *fd);
 void					ft_close_file(const int fd);
 int						ft_compare_vec3(t_vec3 *a, t_vec3 *b);
-
+int						ft_check_substr(char *str, int num);
 #endif
