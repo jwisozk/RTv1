@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   objects_fill.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: iplastun <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: twill <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/26 20:23:15 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/10/13 11:41:04 by iplastun         ###   ########.fr       */
+/*   Updated: 2019/10/13 11:41:04 by twill            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,14 +58,14 @@ void				ft_cone_fill(t_obj *obj, t_point *p, t_ray *ray)
 	t_vec3 *radius;
 	double m;
 
-	c = (t_cone *) obj->obj;
+	c = (t_cone *)obj->obj;
 	p->point = ft_add(ray->origin, ft_multiply(obj->t, ray->direct));
 	oc = ft_subtract(ray->origin, c->center);
 	m = ft_dot(ray->direct, ft_multiply(obj->t, c->normal)) +
 		ft_dot(oc, c->normal);
 	pc = ft_subtract(p->point, c->center);
 	radius = ft_subtract(pc, ft_multiply(m * (1 + pow(c->angle, 2)),
-										 c->normal));
+	c->normal));
 	c->normal = (ft_dot(c->normal, p->po) < 0) ? ft_multiply(-1, c->normal) :
 				c->normal;
 	p->color = c->color;

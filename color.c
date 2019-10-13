@@ -22,7 +22,7 @@ int					ft_multiply_color(double k, int color, int specular)
 	int				r;
 	int				g;
 	int				b;
-	int 			p;
+	int				p;
 
 	p = 0;
 	r = (color >> 16 & 255) * k;

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   etc_2.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: iplastun <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: twill <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/30 17:05:28 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/10/13 14:32:43 by iplastun         ###   ########.fr       */
+/*   Updated: 2019/10/13 14:32:43 by twill            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char				*ft_msg(char *str)
 
 void				ft_photo(char *str)
 {
-	t_data 			data;
+	t_data			data;
 	void			*mlx_ptr;
 	void			*win_ptr;
 	int				width;
@@ -31,7 +31,8 @@ void				ft_photo(char *str)
 		ft_print(ft_msg(ERROR_30));
 	if ((win_ptr = mlx_new_window(mlx_ptr, width, height, TEAM)) == NULL)
 		ft_print(ft_msg(ERROR_31));
-	if ((data.img.img_ptr = mlx_xpm_file_to_image(mlx_ptr, str, &width, &height)) == NULL)
+	if ((data.img.img_ptr =
+	mlx_xpm_file_to_image(mlx_ptr, str, &width, &height)) == NULL)
 		ft_print(ft_msg(ERROR_35));
 	mlx_put_image_to_window(mlx_ptr, win_ptr, data.img.img_ptr, 0, 0);
 	data.mlx_ptr = mlx_ptr;
@@ -44,9 +45,9 @@ void				ft_photo(char *str)
 
 void				ft_check_argv(char *str)
 {
-	char 	*ext1;
-	char 	*ext2;
-	
+	char			*ext1;
+	char			*ext2;
+
 	if (ft_strequ(str, PHOTO))
 		ft_photo(str);
 	ext1 = ft_strrev(str);

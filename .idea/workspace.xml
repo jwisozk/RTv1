@@ -8,15 +8,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c4ce9678-f41e-4982-aae6-ce10d81fce1e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/scenes/etc_7.cfg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/etc_8.cfg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/etc_9.cfg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/camera.c" beforeDir="false" afterPath="$PROJECT_DIR$/camera.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/camera_create.c" beforeDir="false" afterPath="$PROJECT_DIR$/camera_create.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/color.c" beforeDir="false" afterPath="$PROJECT_DIR$/color.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/draw.c" beforeDir="false" afterPath="$PROJECT_DIR$/draw.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/etc_1.c" beforeDir="false" afterPath="$PROJECT_DIR$/etc_1.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etc_2.c" beforeDir="false" afterPath="$PROJECT_DIR$/etc_2.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geometric_create.c" beforeDir="false" afterPath="$PROJECT_DIR$/geometric_create.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/libft/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_clean.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/ft_clean.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_free_all.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/ft_free_all.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_gc.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/ft_gc.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_gc.h" beforeDir="false" afterPath="$PROJECT_DIR$/libft/ft_gc.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_lstnew.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/ft_lstnew.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_malloc.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/ft_malloc.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_memdel.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/ft_memdel.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_print.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/ft_print.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_strdup.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/ft_strdup.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_strnew.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/ft_strnew.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/get_next_line.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/get_next_line.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/libft.a" beforeDir="false" afterPath="$PROJECT_DIR$/libft/libft.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/libft.h" beforeDir="false" afterPath="$PROJECT_DIR$/libft/libft.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/light_create.c" beforeDir="false" afterPath="$PROJECT_DIR$/light_create.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lighting.c" beforeDir="false" afterPath="$PROJECT_DIR$/lighting.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/minilibx/libmlx.a" beforeDir="false" afterPath="$PROJECT_DIR$/minilibx/libmlx.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/objects_create.c" beforeDir="false" afterPath="$PROJECT_DIR$/objects_create.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/objects_fill.c" beforeDir="false" afterPath="$PROJECT_DIR$/objects_fill.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rtv1.h" beforeDir="false" afterPath="$PROJECT_DIR$/rtv1.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scene_extra.c" beforeDir="false" afterPath="$PROJECT_DIR$/scene_extra.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scene_get.c" beforeDir="false" afterPath="$PROJECT_DIR$/scene_get.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/etc_3.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/etc_3.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/etc_8.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/etc_8.cfg" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,110 +51,29 @@
     <option name="formatViaClangd" value="false" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.61480623">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/lighting.c">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="427">
-                  <caret line="59" selection-start-line="59" selection-end-line="59" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/scenes/etc_3.cfg">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="210">
-                  <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/scenes/etc_8.cfg">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="693">
-                  <caret line="47" column="17" selection-start-line="47" selection-start-column="17" selection-end-line="47" selection-end-column="17" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/etc_1.c">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="631">
-                  <caret line="65" selection-start-line="65" selection-end-line="65" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/light_validate.c">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-217" />
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/scene_get.c">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="315">
-                  <caret line="15" selection-start-line="15" selection-end-line="15" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/scenes/etc_8.cfg">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="357">
-                  <caret line="30" column="15" selection-start-line="30" selection-start-column="15" selection-end-line="30" selection-end-column="15" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/scenes/9_2.cfg">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="315">
-                  <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/rtv1.h">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="484">
-                  <caret line="332" column="24" selection-start-line="332" selection-start-column="24" selection-end-line="332" selection-end-column="24" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/etc_2.c">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="248">
-                  <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scenes/etc_9.cfg">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>&quot;type&quot;</find>
       <find>look</find>
+      <find>iplastun &lt;marvin@42.fr&gt;</find>
+      <find>iplastun</find>
     </findStrings>
+    <replaceStrings>
+      <replace>twill &lt;marvin@42.fr&gt;</replace>
+      <replace>twill</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -139,11 +81,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/etc_2.c" />
         <option value="$PROJECT_DIR$/Makefile" />
         <option value="$PROJECT_DIR$/scenes/scene_4_rotation.cfg" />
         <option value="$PROJECT_DIR$/scenes/scene_3_translate.cfg" />
-        <option value="$PROJECT_DIR$/objects_fill.c" />
         <option value="$PROJECT_DIR$/objects_calculate.c" />
         <option value="$PROJECT_DIR$/scenes/6_2.cfg" />
         <option value="$PROJECT_DIR$/scenes/basic_shapes_cylinder_ii.cfg" />
@@ -153,7 +93,6 @@
         <option value="$PROJECT_DIR$/scenes/7_4.cfg" />
         <option value="$USER_HOME$/Downloads/computer-graphics-from-scratch-master/demos/raytracer-04.html" />
         <option value="$PROJECT_DIR$/scenes/8_2.cfg" />
-        <option value="$PROJECT_DIR$/color.c" />
         <option value="$PROJECT_DIR$/draw.c" />
         <option value="$PROJECT_DIR$/scenes/9_1.cfg" />
         <option value="$PROJECT_DIR$/scenes/4_plane.cfg" />
@@ -163,14 +102,26 @@
         <option value="$PROJECT_DIR$/scenes/etc_2.cfg" />
         <option value="$PROJECT_DIR$/scenes/etc_4.cfg" />
         <option value="$PROJECT_DIR$/scenes/etc_7.cfg" />
-        <option value="$PROJECT_DIR$/lighting.c" />
         <option value="$PROJECT_DIR$/scenes/etc_3.cfg" />
         <option value="$PROJECT_DIR$/camera.c" />
         <option value="$PROJECT_DIR$/rtv1.h" />
-        <option value="$PROJECT_DIR$/etc_1.c" />
         <option value="$PROJECT_DIR$/scene_get.c" />
         <option value="$PROJECT_DIR$/scenes/9_2.cfg" />
+        <option value="$PROJECT_DIR$/color.c" />
+        <option value="$PROJECT_DIR$/etc_1.c" />
+        <option value="$PROJECT_DIR$/objects_fill.c" />
+        <option value="$PROJECT_DIR$/lighting.c" />
+        <option value="$PROJECT_DIR$/etc_2.c" />
+        <option value="$PROJECT_DIR$/libft/ft_print.c" />
+        <option value="$PROJECT_DIR$/libft/ft_gc.h" />
+        <option value="$PROJECT_DIR$/libft/ft_gc.c" />
+        <option value="$PROJECT_DIR$/libft/ft_memdel.c" />
+        <option value="$PROJECT_DIR$/libft/ft_lstnew.c" />
+        <option value="$PROJECT_DIR$/libft/ft_free_all.c" />
+        <option value="$PROJECT_DIR$/libft/libft.h" />
+        <option value="$PROJECT_DIR$/libft/ft_clean.c" />
         <option value="$PROJECT_DIR$/scenes/etc_8.cfg" />
+        <option value="$PROJECT_DIR$/scenes/etc_9.cfg" />
       </list>
     </option>
   </component>
@@ -195,6 +146,11 @@
               <item name="RTv1_jwisozk" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="~/CLionProjects/RTv1_jwisozk" type="442cc68d:ScopeViewTreeModel$RootNode" />
             </path>
+            <path>
+              <item name="RTv1_jwisozk" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="~/CLionProjects/RTv1_jwisozk" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="scenes" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -207,7 +163,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/scenes" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C/C++" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -254,7 +210,7 @@
       <workItem from="1570802499420" duration="1753000" />
       <workItem from="1570967944224" duration="3034000" />
       <workItem from="1570971436994" duration="11742000" />
-      <workItem from="1570985387260" duration="6354000" />
+      <workItem from="1570985387260" duration="10576000" />
     </task>
     <task id="LOCAL-00001" summary="Fix leaks">
       <created>1569825005415</created>
@@ -267,11 +223,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20929000" />
+    <option name="totallyTimeSpent" value="25151000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="2048" height="1125" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" sideWeight="0.50108695" side_tool="true" weight="0.20808254" />
       <window_info id="Favorites" order="1" side_tool="true" />
@@ -288,7 +243,7 @@
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5006418" side_tool="true" weight="0.32650602" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32891566" />
       <window_info anchor="bottom" id="CMake" order="11" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="12" sideWeight="0.5005149" side_tool="true" visible="true" weight="0.18296224" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="12" sideWeight="0.5005149" side_tool="true" visible="true" weight="0.21103582" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -386,13 +341,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/objects_fill.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1008">
-          <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scenes/etc_6.cfg">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -471,13 +419,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/color.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scenes/4_plane.cfg">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
@@ -537,24 +478,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lighting.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="59" selection-start-line="59" selection-end-line="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scenes/etc_3.cfg">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/camera.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="51" column="35" selection-start-line="51" selection-start-column="35" selection-end-line="51" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -574,27 +501,6 @@
         <state relative-caret-position="-1636" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rtv1.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="332" column="24" selection-start-line="332" selection-start-column="24" selection-end-line="332" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/etc_2.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/etc_1.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="631">
-          <caret line="65" selection-start-line="65" selection-end-line="65" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/light_validate.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-217" />
@@ -607,10 +513,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scenes/etc_8.cfg">
+    <entry file="file://$PROJECT_DIR$/rtv1.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="693">
-          <caret line="47" column="17" selection-start-line="47" selection-start-column="17" selection-end-line="47" selection-end-column="17" />
+        <state relative-caret-position="484">
+          <caret line="332" column="24" selection-start-line="332" selection-start-column="24" selection-end-line="332" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -618,6 +524,125 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scenes/etc_8.cfg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="643">
+          <caret line="74" selection-start-line="74" selection-end-line="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/camera.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="694">
+          <caret line="45" column="16" lean-forward="true" selection-start-line="45" selection-start-column="16" selection-end-line="45" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/color.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/objects_fill.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="67" selection-start-line="67" selection-end-line="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lighting.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="68" column="10" selection-start-line="68" selection-start-column="10" selection-end-line="68" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/etc_2.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/etc_1.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libft/ft_print.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libft/ft_gc.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="29" column="6" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libft/ft_gc.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="45" column="12" selection-start-line="45" selection-start-column="12" selection-end-line="45" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libft/ft_memdel.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libft/ft_lstnew.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libft/ft_free_all.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libft/libft.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libft/ft_clean.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scenes/etc_8.cfg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scenes/etc_9.cfg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
         </state>
       </provider>
     </entry>

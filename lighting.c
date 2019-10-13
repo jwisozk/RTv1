@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   lighting.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: iplastun <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: twill <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/26 20:29:39 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/10/13 12:58:10 by iplastun         ###   ########.fr       */
+/*   Updated: 2019/10/13 12:58:10 by twill            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,10 @@ double				ft_add_diffuse_light(t_point *p, t_light *l, t_vec3 *vec_pl)
 
 	angle_ln = ft_dot(p->normal, vec_pl);
 	if (angle_ln > 0)
-		{
-			return (l->intensity * angle_ln /
-			(ft_lenv(p->normal) * ft_lenv(vec_pl)));
-		}
+	{
+		return (l->intensity * angle_ln /
+		(ft_lenv(p->normal) * ft_lenv(vec_pl)));
+	}
 	return (0);
 }
 
@@ -32,7 +32,8 @@ double				ft_add_specular_light(t_point *p, t_light *l,
 	double			angle_rv;
 
 	if (p->type == CONE)
-		p->specular = (ft_compare_vec3(p->center, l->position) == 1) ? -1 : p->specular;
+		p->specular = (ft_compare_vec3(p->center, l->position) == 1) ? -1 :
+		p->specular;
 	if (p->specular > 0)
 	{
 		vec_pr = ft_subtract(ft_multiply(2.0 * ft_dot(p->normal, vec_pl),
@@ -45,7 +46,7 @@ double				ft_add_specular_light(t_point *p, t_light *l,
 	return (0);
 }
 
-int 				ft_check_intersect(t_ray *ray, t_obj *o, t_light **l)
+int					ft_check_intersect(t_ray *ray, t_obj *o, t_light **l)
 {
 	if (ft_scene_intersect(o, ray) != NULL)
 	{
@@ -55,7 +56,8 @@ int 				ft_check_intersect(t_ray *ray, t_obj *o, t_light **l)
 	return (0);
 }
 
-int					ft_add_shadow(t_point *p, t_obj *o, t_light **l, t_vec3 *vec_pl)
+int					ft_add_shadow(t_point *p, t_obj *o, t_light **l,
+					t_vec3 *vec_pl)
 {
 	t_ray			*ray;
 	double			t_max;
@@ -64,7 +66,7 @@ int					ft_add_shadow(t_point *p, t_obj *o, t_light **l, t_vec3 *vec_pl)
 	ray = ft_create_ray(p->point, vec_pl, E, t_max);
 	if (ft_check_intersect(ray, o, l) == 1)
 		return (1);
-	return(0);
+	return (0);
 }
 
 double				ft_lighting(t_point *p, t_light *l, t_obj *o)

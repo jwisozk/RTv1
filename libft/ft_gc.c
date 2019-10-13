@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_gc.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: iplastun <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: twill <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/30 17:22:41 by jwisozk           #+#    #+#             */
-/*   Updated: 2019/10/13 14:19:07 by iplastun         ###   ########.fr       */
+/*   Updated: 2019/10/13 14:19:07 by twill            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_gc	*ft_gc_create(void)
+t_gc		*ft_gc_create(void)
 {
 	t_gc *vector;
 
@@ -43,9 +43,9 @@ void		ft_gc_clean(t_gc **vector)
 
 void		ft_gc_resize(t_gc **vector)
 {
-	void **temp;
-	void **vec_data;
-	ssize_t size;
+	void		**temp;
+	void		**vec_data;
+	ssize_t		size;
 
 	if (*vector)
 	{
